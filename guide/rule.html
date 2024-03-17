@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rule</title>
+  <link rel="stylesheet" href="css/common.css">
+  <style>
+    .promise {width: 600px; height: auto; padding: 30px; background-color: #122223; color: #fff; font-size: 26px; font-weight: 700;}
+  </style>
+</head>
+<body>
+  <div class="promise">
+    야인시대팀 약속해요~<br>
+    1. 작업 시작 전에 main 브랜치에서 꼭 내려기!!! <br>
+    2. 꼭 각자 브랜치에서 작업하기!!! <br>
+    3. 다른사람의 브랜치 건들지 말기!!!! <br>
+    4. 규칙 꼭 지켜서 작업하기!!!! <br>
+    5. 기한내에 작업하기!!!  <br>
+    6. 좋은결과물 만들고 취업 좋은곳으로 하기!!!
+  </div>
+
+  <div class="tit-area">
+    <h2>서브페이지 레이아웃 규칙</h2>
+  </div>
+  <a href="sub_guide.html">서브페이지 가이드 참고 링크이동</a>
+  <p>VS코드로 직접보셔야합니다. 서브페이지 작업할 때 참고!</p>
+
+  <div class="tit-area">
+    <h2>클래스명 규칙</h2>
+  </div>
+  <ol>
+    <li>소문자만 작성가능</li>
+    <li>단어와 단어 사이에는 -로구분 <strong>ex - tit-area</strong></li>
+  </ol>
+
+  <div class="tit-area">
+    <h2>script 규칙</h2>
+  </div>
+  <ol>
+    <li>변수명/함수명 명사로 시작</li>
+    <li>낙타기법 사용 <strong>ex - currentIdx</strong></li>
+  </ol>
+
+  <div class="tit-area">
+    <h2>이미지명 규칙</h2>
+  </div>
+  <ol>
+    <li>소문자만 작성가능</li>
+    <li>스네이크기법 사용 <strong>ex - bg_hotel_intro</strong></li>
+    <li>최대 3단계 까지만 사용 <strong>ex - bg_hotel_intro</strong></li>
+    <li>
+      백그라운드	: bg_ <br>
+      버튼		: btn_ <br>
+      아이콘		: ico_ <br>
+      이미지		: img_
+    </li>
+  </ol>
+
+  <div class="tit-area">
+    <h2>주석 규칙</h2>
+  </div>
+
+  <ol>
+    <li>
+      기본 작업 주석 <br>
+      html<br>
+      &lt;!-- 콘텐츠명 (s) --&gt;<br>
+      &lt;!-- 콘텐츠명 (e) --&gt;
+
+      css<br>
+      /* 콘텐츠명 */<br>
+
+      script<br>
+      //콘텐츠명
+    </li>
+    <li>
+      수정 작업 주석 <br>
+      html<br>
+      한줄일 때 (html 마크업 뒤에 주석 달기) <br>
+      &lt;!-- 수정 240317 박소현 : 제목변경 --&gt;<br>
+
+      두줄이상일 때<br>
+      &lt;!-- 수정 240317 박소현 : 레이아웃변경 (s) --&gt;<br>
+      &lt;!-- 수정 240317 박소현 : 레이아웃변경 (e) --&gt;
+
+      css<br>
+      css {} 괄호 뒤에 주석 달기 <br>
+      /* 수정 240317 박소현: 컬러변경 */<br>
+
+      script<br>
+      위와 동일
+    </li>
+  </ol>
+
+  <div class="tit-area">
+    <h2>css 작성 규칙</h2>
+  </div>
+  <ol>
+    <li>
+      속성과 속성 사이에는 한칸 띄어쓰기, 세미콜론 뒤에는 한칸 띄어쓰기<br>
+      <strong>ex - .bg {display: block; width: 50px;}</strong>
+    </li>
+    <li>
+      다중선택자가 있을 경우 한칸씩 띄어쓰기 <br>
+      <strong>ex - <br>
+        header, <br>
+        footer {background-color:#ccc;}
+      </strong>
+    </li>
+    <li>css 속성 순서 (네이버 규칙 참고 후 적용) <br>
+      <a href="https://uxkm.io/publishing/css/03-cssMiddleclass/10-css_attr_rule#gsc.tab=0">네이버 css 속성순서 규칙 읽어주세요! 링크이동</a>
+    </li>
+  </ol>
+
+  <div class="tit-area">
+    <h2>커밋메시지 규칙 두개중 골라야 되용! 선생님께 물어보고 진행</h2>
+  </div>
+
+  <h3>쉬운 규칙</h3>
+  <ol>
+    <li>[new] 박소현/html/헤더레이아웃작업</li>
+    <li>[new] 박소현/css/헤더스타일작업</li>
+    <li>[mod] 박소현/html/헤더레이아웃수정</li>
+    <li>[mod] 박소현/css/헤더스타일작업</li>
+  </ol>
+
+  <h3>깃허브 커밋메시지 규칙</h3>
+  <ol>
+    <li>[feat] 박소현/js/클릭이벤트추가</li>
+    <li>feat : 새로운 기능 추가, 기존의 기능을 요구 사항에 맞추어 수정</li>
+    <li>fix : 기능에 대한 버그 수정</li>
+    <li>build : 빌드 관련 수정</li>
+    <li>chore : 패키지 매니저 수정, 그 외 기타 수정 ex - .gitignore</li>
+    <li>ci : CI 관련 설정 수정</li>
+    <li>docs : 문서(주석) 수정</li>
+    <li>style : 코드 스타일, 포맷팅에 대한 수정</li>
+    <li>refactor : 기능의 변화가 아닌 코드 리팩터링 ex) 변수 이름 변경</li>
+    <li>test : 테스트 코드 추가/수정</li>
+    <li>release : 버전 릴리즈</li>
+  </ol>
+</body>
+</html>
