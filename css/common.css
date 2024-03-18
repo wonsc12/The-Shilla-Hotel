@@ -19,3 +19,41 @@ body {font-family: 'WantedSans', sans-serif;}
 @media only screen and (max-width: 480px) {
   /* 모바일 크기에서 적용되는 스타일 */
 }
+
+/* footer */
+footer {
+  background: #222;
+  color:#fff;
+}
+footer .footer_wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 72px 0;
+}
+footer .footer_wrap > ul {
+  display: flex;
+  flex-direction: column;
+  gap:62px;
+}
+.footer_shilla {
+  display: flex;
+}
+footer .footer_wrap .footer_shilla ul {
+  display: flex;
+}
+footer .footer_wrap .footer_shilla ul > li + li,
+.footer_stay {
+  padding-left:61px;
+}
+.footer_shilla ul > li a img,
+.footer_mono a img,
+.footer_stay a img {
+  margin-bottom: 32px;
+}
+.footer_monostay {
+  display: flex;
+}
+.footer_mono, .footer_stay {
+  display: flex;
+  flex-direction: column;
+}
