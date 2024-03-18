@@ -19,3 +19,28 @@ body {font-family: 'WantedSans', sans-serif;}
 @media only screen and (max-width: 480px) {
   /* 모바일 크기에서 적용되는 스타일 */
 }
+
+/* footer */
+footer {
+  background: #222;
+  color:#fff;
+}
+footer .footer_wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 72px 0;
+}
+footer .footer_wrap > ul {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer_wrap .footer_shilla {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer_wrap .footer_shilla ul {
+  display: flex;
+}
+footer .footer_wrap .footer_shilla ul > li + li {
+  padding-left:61px;
+}
