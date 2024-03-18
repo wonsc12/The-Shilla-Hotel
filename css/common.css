@@ -33,14 +33,27 @@ footer .footer_wrap {
 footer .footer_wrap > ul {
   display: flex;
   flex-direction: column;
+  gap:62px;
 }
-footer .footer_wrap .footer_shilla {
+.footer_shilla {
   display: flex;
-  flex-direction: column;
 }
 footer .footer_wrap .footer_shilla ul {
   display: flex;
 }
-footer .footer_wrap .footer_shilla ul > li + li {
+footer .footer_wrap .footer_shilla ul > li + li,
+.footer_stay {
   padding-left:61px;
+}
+.footer_shilla ul > li a img,
+.footer_mono a img,
+.footer_stay a img {
+  margin-bottom: 32px;
+}
+.footer_monostay {
+  display: flex;
+}
+.footer_mono, .footer_stay {
+  display: flex;
+  flex-direction: column;
 }
