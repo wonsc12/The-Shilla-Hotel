@@ -1,4 +1,6 @@
 
+/*객실소개 */
+
 const slideWrapper = document.querySelector('.slide_wrapper');
 let slideContainer = slideWrapper.querySelector('.slide_wrapper > .slides');
 let tablist = [];
