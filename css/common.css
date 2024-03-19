@@ -7,7 +7,7 @@
 /* 임시 */
 .temp-area {width: 100%; height: 200px; line-height: 200px; background-color: #ebebeb; color: #000;  margin-top: 50px; text-align: center; font-size:30px}
 
-body {font-family: 'WantedSans', sans-serif;}
+body {color: #222; font-family: 'WantedSans', sans-serif;}
 
 /* footer */
 footer {
@@ -81,6 +81,26 @@ footer .footer-wrap ul a img {
   display: flex;
   gap: 166px;
 }
+
+/* sub-breadcrumbs */
+.breadcrumbs {}
+.breadcrumbs > ol {display: flex; justify-content: flex-end;}
+.breadcrumbs > ol > li {width: 156px;}
+.breadcrumbs > ol > li a,
+.breadcrumbs > ol > li button  {display: block; width: 100%; padding: 10px 0; text-align: center;}
+.breadcrumbs > ol > li button span {display: block; position: relative;}
+.breadcrumbs > ol > li button span:after {content: ''; position: absolute; top:50%; right: 0; margin-top:-2px; border-width: 6px 4px;  border-style: solid; border-color:#222 transparent transparent transparent; }
+.breadcrumbs > ol > li.active button span:after {transform: rotate(-180deg); margin-top: -8px;}
+.breadcrumbs .drop-menu {display: none; border: 1px solid #ccc;}
+.breadcrumbs > ol > li.active .drop-menu {display: block;}
+.breadcrumbs .drop-menu li > a {font-size:12px;}
+.breadcrumbs .drop-menu li > a:hover {background-color: #ccc;}
+
+
+
+
+
+
 
 /* 태블릿 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 1024px) {
