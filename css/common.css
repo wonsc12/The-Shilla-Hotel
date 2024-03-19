@@ -25,41 +25,39 @@ footer {
   background: #222;
   color:#fff;
 }
-footer .footer_wrap {
-  width: 1390px;
-  margin: 0 auto;
+footer .footer-wrap {
   padding: 72px 0;
 }
-footer .footer_wrap > ul {
+footer .footer-wrap > ul {
   display: flex;
   flex-direction: column;
   gap:62px;
 }
-.footer_shilla {
+.footer-shilla {
   display: flex;
-align-items: flex-start;
-gap: 70px;
+  align-items: flex-start;
+  gap: 70px;
 }
-footer .footer_wrap .footer_shilla ul {
+footer .footer-wrap .footer-shilla ul {
   display: flex;
 }
-footer .footer_wrap .footer_shilla ul > li + li,
+footer .footer-wrap .footer-shilla ul > li + li,
 .footer_stay {
   padding-left:260px;
 }
-.footer_shilla ul > li a img,
+.footer-shilla ul > li a img,
 .footer_mono a img,
 .footer_stay a img {
   margin-bottom: 32px;
 }
-.footer_monostay {
+.footer-monostay {
   display: flex;
 }
-.footer_mono, .footer_stay {
+.footer-mono, .footer-stay {
   display: flex;
   flex-direction: column;
 }
-.footer_wrap em {
+.footer-wrap em {
   color: #A1A1A1;
   font-family: "Wanted Sans";
   font-size: 24px;
