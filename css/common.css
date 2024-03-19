@@ -9,17 +9,6 @@
 
 body {font-family: 'WantedSans', sans-serif;}
 
-
-/* 태블릿 사이즈 미디어 쿼리 */
-@media only screen and (max-width: 1024px) {
-  /* 태블릿 크기에서 적용되는 스타일 */
-}
-
-/* 모바일 사이즈 미디어 쿼리 */
-@media only screen and (max-width: 480px) {
-  /* 모바일 크기에서 적용되는 스타일 */
-}
-
 /* footer */
 footer {
   background: #222;
@@ -91,4 +80,14 @@ footer .footer-wrap ul a img {
 .footer-family-list > ul {
   display: flex;
   gap: 166px;
+}
+
+/* 태블릿 사이즈 미디어 쿼리 */
+@media only screen and (max-width: 1024px) {
+  /* 태블릿 크기에서 적용되는 스타일 */
+}
+
+/* 모바일 사이즈 미디어 쿼리 */
+@media only screen and (max-width: 480px) {
+  /* 모바일 크기에서 적용되는 스타일 */
 }
