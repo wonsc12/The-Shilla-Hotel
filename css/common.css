@@ -19,14 +19,16 @@ footer .footer-wrap {
 }
 footer .footer-wrap > ul {
   display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 62px;
+  flex-wrap: wrap;
 }
 
 footer .footer-wrap .footer-shilla {
   display: flex;
-  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 124px;
+  gap: 70px;
+
 }
 footer .footer-wrap .footer-shilla ul {
   display: flex;
@@ -35,7 +37,9 @@ footer .footer-wrap .footer-shilla ul {
 .footer-stay {
   padding-left:81px;
 }
-footer .footer-wrap ul a img {
+footer .footer-wrap > ul a img {
+  width: 448px;
+  height: 216px;
   margin-bottom: 32px;
 }
 .footer-mono,
