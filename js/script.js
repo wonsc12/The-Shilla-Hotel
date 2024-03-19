@@ -126,18 +126,20 @@ function makeSlide(target){
     });
     
     slideContainer.innerHTML = tabListHtml;
+    $(".slides").bxSlider({
+      minSlides:2,
+      maxSlides:3,
+      slideWidth:300,
+      moveSlide:1,
+      pager:false,
+      slideMargin:20,
+      speed:200
+    
+    });
     
   }
 }
+makeSlide('deluxe');
 
-$(".animated").bxSlider({
-  minSlides:2,
-  maxSlides:3,
-  slideWidth:300,
-  moveSlide:1,
-  pager:false,
-  slideMargin:20,
-  speed:200
 
-});
 
