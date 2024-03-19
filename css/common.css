@@ -7,18 +7,7 @@
 /* 임시 */
 .temp-area {width: 100%; height: 200px; line-height: 200px; background-color: #ebebeb; color: #000;  margin-top: 50px; text-align: center; font-size:30px}
 
-body {font-family: 'WantedSans', sans-serif;}
-
-
-/* 태블릿 사이즈 미디어 쿼리 */
-@media only screen and (max-width: 1024px) {
-  /* 태블릿 크기에서 적용되는 스타일 */
-}
-
-/* 모바일 사이즈 미디어 쿼리 */
-@media only screen and (max-width: 480px) {
-  /* 모바일 크기에서 적용되는 스타일 */
-}
+body {color: #222; font-family: 'WantedSans', sans-serif;}
 
 /* footer */
 footer {
@@ -29,31 +18,33 @@ footer .footer-wrap {
   padding: 72px 0;
 }
 footer .footer-wrap > ul {
-  display: flex;
-  flex-direction: column;
-  gap:62px;
+  display: inline-flex;
+  flex-wrap: wrap;
 }
-footer .footer-wrap > ul li {
+
+footer .footer-wrap .footer-shilla {
   display: flex;
+  align-items: flex-start;
   width: 100%;
+  margin-bottom: 124px;
   gap: 70px;
+
 }
 footer .footer-wrap .footer-shilla ul {
   display: flex;
 }
-footer .footer-wrap .footer-shilla ul > li + li,
-.footer_stay {
-  padding-left:260px;
+.footer-shilla li,
+.footer-stay {
+  padding-left:81px;
 }
-footer .footer-wrap ul a img {
+footer .footer-wrap > ul a img {
+  width: 448px;
+  height: 216px;
   margin-bottom: 32px;
 }
-.footer-monostay {
+.footer-mono,
+.footer-stay {
   display: flex;
-}
-.footer-mono, .footer-stay {
-  display: flex;
-  flex-direction: column;
 }
 
 .footer-wrap ul h2 {
@@ -79,6 +70,7 @@ footer .footer-wrap ul a img {
   background: url('../images/svg_footer_logo.svg') no-repeat;
   width: 304px;
   height: 35px;
+  text-indent: -9999em;
 }
 .footer-info-list ul {
   display: flex;
@@ -91,4 +83,34 @@ footer .footer-wrap ul a img {
 .footer-family-list > ul {
   display: flex;
   gap: 166px;
+}
+
+/* sub-breadcrumbs */
+.breadcrumbs {}
+.breadcrumbs > ol {display: flex; justify-content: flex-end;}
+.breadcrumbs > ol > li {width: 156px;}
+.breadcrumbs > ol > li a,
+.breadcrumbs > ol > li button  {display: block; width: 100%; padding: 10px 0; text-align: center;}
+.breadcrumbs > ol > li button span {display: block; position: relative;}
+.breadcrumbs > ol > li button span:after {content: ''; position: absolute; top:50%; right: 0; margin-top:-2px; border-width: 6px 4px;  border-style: solid; border-color:#222 transparent transparent transparent; }
+.breadcrumbs > ol > li.active button span:after {transform: rotate(-180deg); margin-top: -8px;}
+.breadcrumbs .drop-menu {display: none; border: 1px solid #ccc;}
+.breadcrumbs > ol > li.active .drop-menu {display: block;}
+.breadcrumbs .drop-menu li > a {font-size:12px;}
+.breadcrumbs .drop-menu li > a:hover {background-color: #ccc;}
+
+
+
+
+
+
+
+/* 태블릿 사이즈 미디어 쿼리 */
+@media only screen and (max-width: 1024px) {
+  /* 태블릿 크기에서 적용되는 스타일 */
+}
+
+/* 모바일 사이즈 미디어 쿼리 */
+@media only screen and (max-width: 480px) {
+  /* 모바일 크기에서 적용되는 스타일 */
 }
