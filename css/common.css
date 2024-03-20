@@ -17,7 +17,7 @@
   --subcolor01: #F1E3C4;
   --subcolor02: #D4B297;
   --error-color: #e9473f;
-  --sucess-color: ##7ec04d;
+  --sucess-color: ##7ec04d; 
 }
 /* 임시 */
 .temp-area {width: 100%; height: 200px; line-height: 200px; background-color: #ebebeb; color: #000;  margin-top: 50px; text-align: center; font-size:30px}
