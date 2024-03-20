@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+/* section home */
+.section.home {position: relative; background: url(../images/bg_main_01.png) no-repeat center center; background-size: cover;}
+.section.home .main-txt {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100%; text-align: center;}
+.section.home .main-txt strong {color: var(--white); font-size: 50px; font-weight: 100;
+
+
 /* 객실소개 담장자 최원석*/
 /*.container{
   width: 1400px;
