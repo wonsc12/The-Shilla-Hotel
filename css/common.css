@@ -22,16 +22,13 @@
 /* 임시 */
 .temp-area {width: 100%; height: 200px; line-height: 200px; background-color: #ebebeb; color: #000;  margin-top: 50px; text-align: center; font-size:30px}
 
-body {color: #222; font-family: 'WantedSans', sans-serif; font-weight: 400;}
+body {color: #222; font-family: 'WantedSans', sans-serif;}
 
 /* 블라인드 */
 .blind {display: inline-block; position: absolute !important; width: 1px; height: 1px; margin: -1px; border: 0; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%);}
 
 /* 100% */
 .full {width: 100%;}
-
-/* section */
-.section {height: 100vh;}
 
 /* title  */
 .tit-h2 {font-size:calc(var(--font-size) * 3); font-weight: 700;}
