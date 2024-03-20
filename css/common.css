@@ -24,6 +24,12 @@
 
 body {color: #222; font-family: 'WantedSans', sans-serif;}
 
+/* 블라인드 */
+.blind {display: inline-block; position: absolute !important; width: 1px; height: 1px; margin: -1px; border: 0; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%);}
+
+/* 100% */
+.full {width: 100%;}
+
 /* title  */
 .tit-h2 {font-size:calc(var(--font-size) * 3); font-weight: 700;}
 .tit-h3 {font-size:calc(var(--font-size) * 2); font-weight: 700;}
