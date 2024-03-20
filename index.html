@@ -21,16 +21,51 @@
     <!-- 작업담당자 : 박소현 (s) -->
     <header>
       <div class="header-wrap">
-        <div class="all-menu">
-          <button type="button">
-            <span>전체메뉴</span>
-          </button>
+        <div class="left-hd">
+          <div class="all-menu">
+            <button type="button">
+              <span>
+                <span class="blind">전체메뉴</span>
+              </span>
+            </button>
+          </div>
+          <h1 class="logo">
+            <a href="#">
+              <span class="blind">the shilla</span>
+            </a>
+          </h1>
         </div>
-        <h1 class="logo">
-          <a href="#">
-            <span class="blind">the shilla</span>
-          </a>
-        </h1>
+        <ul class="util-list">
+          <li>
+            <a href="#">예약하기</a>
+          </li>
+          <li>
+            <a href="#">예약조회</a>
+          </li>
+          <li>
+            <a href="#">로그인</a>
+          </li>
+          <li>
+            <a href="#">회원가입</a>
+          </li>
+          <li>
+            <div class="lang-drop"> <!--active 클래스 일때 ul block-->
+              <button type="button">
+                <span>한국어</span>
+              </button>
+              <ul>
+                <li>
+                  <a href="#">한국어</a>
+                </li>
+                <li>
+                  <a href="#">영어</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
       </div>
     </header>
     <div class="allmenu-wrap">
@@ -47,8 +82,12 @@
       <!-- scroll-navi (e) -->
 
       <!-- 작업담당자 : 박소현 (s) -->
-      <div class="section temp-area">
-        섹션1 작업중
+      <div class="section home">
+        <div class="temp-area" style="position:absolute; top:100px; right:0; width:200px; margin:0;">날씨영역</div>
+        <div class="main-txt">
+          <strong>Relaxing Rest, The Shilla Hotel</strong>
+        </div>
+        <div class="temp-area" style="position:absolute; bottom:0">폼영역</div>
       </div>
       <!-- 작업담당자 : 박소현 (e) -->
 
