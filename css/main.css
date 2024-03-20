@@ -1,75 +1,39 @@
 @charset "utf-8";
 
-/* 객실소개 */
-.container {
- 
-}
-.container .center {
+/* 객실소개 담장자 최원석*/
+/*.container{
   width: 1400px;
   margin: 0 auto;
 }
-.container .center .menuflex {
-  display: flex;
-  justify-content: space-between;
-}
-.container .center .menuflex .tabMenu {
-  width: 40%;
-  display: flex;
-  padding: 41px 0;
-}
-.container .center .menuflex .tabMenu li {
-  width: 120px;
-  line-height: 40px;
-  height: 40px;
-  text-align: center;
-  margin-right: 2px;
-}
-.container .center .menuflex .tabMenu li a {
-  background-color: #fff;
-  color: #000;
-  border-radius: 8px;
-  display: block;
-  height: 100%;
-  text-align: center;
-}
-.container .center .menuflex .tabMenu li a.active {
-  color: #fff;
-  background: #0063E5;
-}
-.container .center .wrap {
-  position: relative;
+ */
+ .section .container .center {
+  width: 1400px;
   margin: 0 auto;
-  overflow: hidden;
-  padding-top: 200px;
 }
-.container .center .wrap .tabcont {
-  height: 591px;
-  width: 450%;
-  display: flex;
-  gap: 30px;
-  left: 0;
-  position: relative;
-}
-.container .center .wrap .tabcont > li {
-  display: none;
-  width: 450px;
-  height: 591px;
-  background: #ccc;
-}
-.container .center .wrap .tabcont > li .slidebox .smallcenter {
-  width: 450px;
-  height: 591px;
-}
-.container .center .wrap .tabcont > li .slidebox .smallcenter img {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-}
-.container .center .wrap .tabcont > li.active {
+.section .container .center .tit-area {
   display: flex;
   justify-content: space-between;
 }
-
+.section .container .center #tabs ul {
+  display: flex;
+}
+.section .container .center #tabs #tabs-1, .section .container .center #tabs #tabs-2, .section .container .center #tabs #tabs-3, .section .container .center #tabs #tabs-4 {
+  position: relative;
+}
+.section .container .center #tabs #tabs-1 .tab-slide li > img, .section .container .center #tabs #tabs-2 .tab-slide li > img, .section .container .center #tabs #tabs-3 .tab-slide li > img, .section .container .center #tabs #tabs-4 .tab-slide li > img {
+  width: 450px;
+  height: 592px;
+}
+.section .container .center #tabs #tabs-1 .tab-slide li .bg, .section .container .center #tabs #tabs-2 .tab-slide li .bg, .section .container .center #tabs #tabs-3 .tab-slide li .bg, .section .container .center #tabs #tabs-4 .tab-slide li .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.section .container .center #tabs #tabs-1 .tab-slide li .bg2, .section .container .center #tabs #tabs-2 .tab-slide li .bg2, .section .container .center #tabs #tabs-3 .tab-slide li .bg2, .section .container .center #tabs #tabs-4 .tab-slide li .bg2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
 
 
