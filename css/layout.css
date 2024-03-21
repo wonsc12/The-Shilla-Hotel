@@ -4,7 +4,7 @@
 
 /* header */
 header {position: fixed; top: 0px; left: 0; right: 0; z-index: 999;}
-.header-wrap {display: flex; justify-content: space-between; align-items: center; height: 100px; padding: 32px 48px;}
+.header-wrap {display: flex; justify-content: space-between; align-items: center; padding: 32px 48px;}
 .header-wrap .left-hd {display: flex; align-items: center; gap: 16px;}
 .header-wrap .all-menu > button {position: relative; width: 36px; height: 36px; padding: 12px 5px;}
 .header-wrap .all-menu > button:before,
