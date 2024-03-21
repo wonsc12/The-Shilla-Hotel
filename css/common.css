@@ -18,8 +18,12 @@
   --subcolor01: #F1E3C4;
   --subcolor02: #D4B297;
   --error-color: #e9473f;
+<<<<<<< HEAD
+  --sucess-color: ##7ec04d; 
+=======
   --sucess-color: ##7ec04d;
   --line-height: 27px;
+>>>>>>> 3ee371ad9186818a991b3e17be49697ac71192d9
 }
 /* 임시 */
 .temp-area {width: 100%; height: 200px; line-height: 200px; background-color: #ebebeb; color: #000;  margin-top: 50px; text-align: center; font-size:30px}
