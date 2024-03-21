@@ -19,6 +19,7 @@
   --subcolor02: #D4B297;
   --error-color: #e9473f;
   --sucess-color: ##7ec04d;
+  --line-height: 27px;
 }
 /* 임시 */
 .temp-area {width: 100%; height: 200px; line-height: 200px; background-color: #ebebeb; color: #000;  margin-top: 50px; text-align: center; font-size:30px}
@@ -31,15 +32,15 @@ body {color: #222; font-family: 'WantedSans', sans-serif; font-weight: 400;}
 /* 100% */
 .full {width: 100%;}
 
-/* section */
-.section {height: 100vh;}
-
 /* title  */
 .tit-h2 {font-size:calc(var(--font-size) * 3); font-weight: 700;}
 .tit-h3 {font-size:calc(var(--font-size) * 2); font-weight: 700;}
 .tit-h4 {font-size:calc(var(--font-size) * 1.5); font-weight: 700;}
 .tit-h5 {font-size:calc(var(--font-size) * 1.125); font-weight: 700;}
 .tit-h6 {font-size:calc(var(--font-size) * 1); font-weight: 400;}
+
+/* sub - tit-area */
+.tit-area {display: flex; flex-direction: column; gap: var(--line-height); margin: calc(var(--line-height)*3) 0 calc(var(--line-height)*2)};
 
 /* sub-breadcrumbs */
 .breadcrumbs {}
