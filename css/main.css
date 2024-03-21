@@ -10,7 +10,7 @@
 
 /* 객실소개 최원석*/
 
- .section .container .tit-area {
+.section .container .tit-area {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -31,7 +31,6 @@
   line-height: 40px;
   height: 40px;
   text-align: center;
-  margin-right: 2px;
 }
 .section .container .tit-area .tab .tab-menu li a {
   background-color: #fff;
@@ -78,8 +77,14 @@
   bottom: 0;
   left: 0;
 }
-
-/* 이벤트 최원석*/
+.section .container #tabs .tab-content #tabs-1 .swiper .swiper-pagination, .section .container #tabs .tab-content #tabs-2 .swiper .swiper-pagination, .section .container #tabs .tab-content #tabs-3 .swiper .swiper-pagination, .section .container #tabs .tab-content #tabs-4 .swiper .swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+.section .container #tabs .tab-content #tabs-1 .swiper .swiper-pagination .swiper-pagination-bullet, .section .container #tabs .tab-content #tabs-2 .swiper .swiper-pagination .swiper-pagination-bullet, .section .container #tabs .tab-content #tabs-3 .swiper .swiper-pagination .swiper-pagination-bullet, .section .container #tabs .tab-content #tabs-4 .swiper .swiper-pagination .swiper-pagination-bullet {
+  background: #000;
+}
 
 .section .container .tab2 {
   width: 30%;
@@ -142,7 +147,14 @@
   bottom: 0;
   left: 0;
 }
-
+.section .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-pagination, .section .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-pagination, .section .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-pagination, .section .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-pagination {
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+}
+.section .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-pagination .swiper-pagination-bullet, .section .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-pagination .swiper-pagination-bullet, .section .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-pagination .swiper-pagination-bullet, .section .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-pagination .swiper-pagination-bullet {
+  background: #000;
+}
 
 
 
