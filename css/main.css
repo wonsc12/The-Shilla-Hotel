@@ -17,6 +17,8 @@
  .section .container {
   width: 1400px;
   margin: 0 auto;
+  display: none;
+ 
 }
 .section .container .tit-area {
   display: flex;
