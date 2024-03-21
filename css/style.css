@@ -7,3 +7,148 @@ li {
   list-style: none;
 }
 
+.section .container .tit-area {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.section .container .tit-area .tab {
+  width: 30%;
+}
+.section .container .tit-area .tab .tab-menu {
+  width: 100%;
+  padding: 41px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section .container .tit-area .tab .tab-menu li {
+  width: 120px;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+}
+.section .container .tit-area .tab .tab-menu li a {
+  background-color: #fff;
+  color: #000;
+  display: block;
+  height: 100%;
+  text-align: center;
+}
+.section .container .tit-area .tab .tab-menu li a.active {
+  color: #000;
+  background: #fff;
+  font-weight: bold;
+}
+.section .container #tabs .tab-content {
+  display: flex;
+  overflow-x: hidden;
+}
+.section .container #tabs .tab-content #tabs-1, .section .container #tabs .tab-content #tabs-2, .section .container #tabs .tab-content #tabs-3, .section .container #tabs .tab-content #tabs-4 {
+  width: 100%;
+}
+.section .container #tabs .tab-content #tabs-1 .swiper .swiper-wrapper, .section .container #tabs .tab-content #tabs-2 .swiper .swiper-wrapper, .section .container #tabs .tab-content #tabs-3 .swiper .swiper-wrapper, .section .container #tabs .tab-content #tabs-4 .swiper .swiper-wrapper {
+  display: flex;
+}
+.section .container #tabs .tab-content #tabs-1 .swiper .swiper-wrapper .swiper-slide, .section .container #tabs .tab-content #tabs-2 .swiper .swiper-wrapper .swiper-slide, .section .container #tabs .tab-content #tabs-3 .swiper .swiper-wrapper .swiper-slide, .section .container #tabs .tab-content #tabs-4 .swiper .swiper-wrapper .swiper-slide {
+  position: relative;
+}
+.section .container #tabs .tab-content #tabs-1 .swiper .swiper-wrapper .swiper-slide .image-box, .section .container #tabs .tab-content #tabs-2 .swiper .swiper-wrapper .swiper-slide .image-box, .section .container #tabs .tab-content #tabs-3 .swiper .swiper-wrapper .swiper-slide .image-box, .section .container #tabs .tab-content #tabs-4 .swiper .swiper-wrapper .swiper-slide .image-box {
+  width: 450px;
+  height: 592px;
+}
+.section .container #tabs .tab-content #tabs-1 .swiper .swiper-wrapper .swiper-slide .image-box img, .section .container #tabs .tab-content #tabs-2 .swiper .swiper-wrapper .swiper-slide .image-box img, .section .container #tabs .tab-content #tabs-3 .swiper .swiper-wrapper .swiper-slide .image-box img, .section .container #tabs .tab-content #tabs-4 .swiper .swiper-wrapper .swiper-slide .image-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section .container #tabs .tab-content #tabs-1 .swiper .swiper-wrapper .swiper-slide .bg, .section .container #tabs .tab-content #tabs-2 .swiper .swiper-wrapper .swiper-slide .bg, .section .container #tabs .tab-content #tabs-3 .swiper .swiper-wrapper .swiper-slide .bg, .section .container #tabs .tab-content #tabs-4 .swiper .swiper-wrapper .swiper-slide .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.section .container #tabs .tab-content #tabs-1 .swiper .swiper-wrapper .swiper-slide .bg2, .section .container #tabs .tab-content #tabs-2 .swiper .swiper-wrapper .swiper-slide .bg2, .section .container #tabs .tab-content #tabs-3 .swiper .swiper-wrapper .swiper-slide .bg2, .section .container #tabs .tab-content #tabs-4 .swiper .swiper-wrapper .swiper-slide .bg2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.section .container #tabs .tab-content #tabs-1 .swiper .swiper-pagination, .section .container #tabs .tab-content #tabs-2 .swiper .swiper-pagination, .section .container #tabs .tab-content #tabs-3 .swiper .swiper-pagination, .section .container #tabs .tab-content #tabs-4 .swiper .swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+.section .container #tabs .tab-content #tabs-1 .swiper .swiper-pagination .swiper-pagination-bullet, .section .container #tabs .tab-content #tabs-2 .swiper .swiper-pagination .swiper-pagination-bullet, .section .container #tabs .tab-content #tabs-3 .swiper .swiper-pagination .swiper-pagination-bullet, .section .container #tabs .tab-content #tabs-4 .swiper .swiper-pagination .swiper-pagination-bullet {
+  background: #000;
+}
+
+.section .container .tab2 {
+  width: 30%;
+}
+.section .container .tab2 .tab-menu2 {
+  width: 100%;
+  padding: 41px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.section .container .tab2 .tab-menu2 li {
+  width: 120px;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  margin-right: 2px;
+}
+.section .container .tab2 .tab-menu2 li a {
+  background-color: #fff;
+  color: #000;
+  display: block;
+  height: 100%;
+  text-align: center;
+}
+.section .container .tab2 .tab-menu2 li a.active {
+  color: #000;
+  background: #fff;
+  font-weight: bold;
+}
+.section .container #tabs2 .tab-content2 {
+  display: flex;
+  overflow-x: hidden;
+}
+.section .container #tabs2 .tab-content2 #tabs-1, .section .container #tabs2 .tab-content2 #tabs-2, .section .container #tabs2 .tab-content2 #tabs-3, .section .container #tabs2 .tab-content2 #tabs-4 {
+  width: 100%;
+}
+.section .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-wrapper, .section .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-wrapper, .section .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-wrapper, .section .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-wrapper {
+  display: flex;
+}
+.section .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-wrapper .swiper-slide, .section .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-wrapper .swiper-slide, .section .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-wrapper .swiper-slide, .section .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-wrapper .swiper-slide {
+  position: relative;
+}
+.section .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-wrapper .swiper-slide .image-box, .section .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-wrapper .swiper-slide .image-box, .section .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-wrapper .swiper-slide .image-box, .section .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-wrapper .swiper-slide .image-box {
+  width: 450px;
+  height: 592px;
+}
+.section .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-wrapper .swiper-slide .image-box img, .section .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-wrapper .swiper-slide .image-box img, .section .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-wrapper .swiper-slide .image-box img, .section .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-wrapper .swiper-slide .image-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-wrapper .swiper-slide .bg, .section .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-wrapper .swiper-slide .bg, .section .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-wrapper .swiper-slide .bg, .section .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-wrapper .swiper-slide .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.section .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-wrapper .swiper-slide .bg2, .section .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-wrapper .swiper-slide .bg2, .section .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-wrapper .swiper-slide .bg2, .section .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-wrapper .swiper-slide .bg2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.section .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-pagination, .section .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-pagination, .section .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-pagination, .section .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-pagination {
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+}
+.section .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-pagination .swiper-pagination-bullet, .section .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-pagination .swiper-pagination-bullet, .section .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-pagination .swiper-pagination-bullet, .section .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-pagination .swiper-pagination-bullet {
+  background: #000;
+}
