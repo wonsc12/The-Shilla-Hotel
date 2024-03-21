@@ -6,7 +6,7 @@ li{list-style:none;}
     .tit-area{   display: flex; justify-content: space-between; flex-direction: row; align-items: center;
       .tab{ width: 30%;
         .tab-menu {  width: 100%;   padding: 41px 0; display: flex; justify-content: space-between; align-items: center;
-          li {width:120px; line-height: 40px;   height:40px; text-align: center; margin-right: 2px;
+          li {width:120px; line-height: 40px;   height:40px; text-align: center; 
           
               a {background-color: #fff; color:#000; 
                   display: block;height:100%;text-align: center;         
@@ -37,6 +37,13 @@ li{list-style:none;}
                   bottom: 0;
                   left: 0;}
               }
+            }
+            .swiper-pagination{ position:absolute; bottom: 0;z-index: 10;
+              .swiper-pagination-bullet {  background: #000;
+               
+            }
+            
+              
             }
           }  
         } 
@@ -79,6 +86,9 @@ li{list-style:none;}
                   bottom: 0;
                   left: 0;}
               }
+            }
+            .swiper-pagination { position: absolute; bottom: -0px; z-index: 10;
+              .swiper-pagination-bullet {  background: #000;}
             }
           }  
         } 

@@ -1,15 +1,17 @@
 	var swiper = new Swiper(".swiper", {
 		autoplay: {
-			delay: 3000,
-			disableOnInteraction: false,
+			delay: 4000,
+			disableOnInteraction: true,
 			loop:true
 		},
+		
 		
 		slidesPerView: 1,
  		 spaceBetween: 10,
 		pagination: {  
 			el: ".swiper-pagination", 
 			clickable: true, 
+			
 				
 		},	
 		navigation: {
@@ -34,19 +36,19 @@
 		
 	});
 	// $('.swiper-slide').hover(function() {swiper.autoplay.stop();}, function(){swiper.autoplay.start();});
-	$('.start').on('click',function(){
-		swiper.autoplay.start();
-		return false;
-	});
-	$('.stop').on('click',function(){
-		swiper.autoplay.stop();
-		return false;
-	});
+	// $('.start').on('click',function(){
+	// 	swiper.autoplay.start();
+	// 	return false;
+	// });
+	// $('.stop').on('click',function(){
+	// 	swiper.autoplay.stop();
+	// 	return false;
+	// });
 	
 
 	var swiper2 = new Swiper(".rswiper", {
 		autoplay: {
-			delay: 3000,
+			delay: 4000,
 			disableOnInteraction: false,
 			loop:true
 			
@@ -80,6 +82,15 @@
 		  },
 		},
 	});
+	// $('.swiper-slide').hover(function() {swiper.autoplay.stop();}, function(){swiper.autoplay.start();});
+	// $('.start').on('click',function(){
+	// 	swiper.autoplay.start();
+	// 	return false;
+	// });
+	// $('.stop').on('click',function(){
+	// 	swiper.autoplay.stop();
+	// 	return false;
+	// });
 
 
 	let tabmenu = $('.tab-menu a');
