@@ -39,8 +39,13 @@ body {color: #222; font-family: 'WantedSans', sans-serif; font-weight: 400;}
 .tit-h5 {font-size:calc(var(--font-size) * 1.125); font-weight: 700;}
 .tit-h6 {font-size:calc(var(--font-size) * 1); font-weight: 400;}
 
+/* sub-section */
+.section.full {height: 100vh;}
+.section.fix {height: 600px;}
+
 /* sub - tit-area */
 .tit-area {display: flex; flex-direction: column; gap: var(--line-height); margin: calc(var(--line-height)*3) 0 calc(var(--line-height)*2)};
+.tit-area .desc {font-size: 20px;}
 
 /* sub-breadcrumbs */
 .breadcrumbs {}
@@ -49,7 +54,7 @@ body {color: #222; font-family: 'WantedSans', sans-serif; font-weight: 400;}
 .breadcrumbs > ol > li a,
 .breadcrumbs > ol > li button  {display: block; width: 100%; padding: 10px 0; text-align: center;}
 .breadcrumbs > ol > li button span {display: block; position: relative;}
-.breadcrumbs > ol > li button span:after {content: ''; position: absolute; top:50%; right: 0; margin-top:-2px; border-width: 6px 4px;  border-style: solid; border-color:#222 transparent transparent transparent; }
+.breadcrumbs > ol > li button span:after {content: ''; position: absolute; top:50%; right: 0; margin-top:-2px; border-width: 6px 4px;  border-style: solid; border-color:#222 transparent transparent transparent;}
 .breadcrumbs > ol > li.active button span:after {transform: rotate(-180deg); margin-top: -8px;}
 .breadcrumbs .drop-menu {display: none; border: 1px solid #ccc;}
 .breadcrumbs > ol > li.active .drop-menu {display: block;}
