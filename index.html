@@ -21,7 +21,51 @@
     <!-- 작업담당자 : 박소현 (s) -->
     <header>
       <div class="header-wrap">
-        
+        <div class="left-hd">
+          <div class="all-menu">
+            <button type="button">
+              <span>
+                <span class="blind">전체메뉴</span>
+              </span>
+            </button>
+          </div>
+          <h1 class="logo">
+            <a href="#">
+              <span class="blind">the shilla</span>
+            </a>
+          </h1>
+        </div>
+        <ul class="util-list">
+          <li>
+            <a href="#">예약하기</a>
+          </li>
+          <li>
+            <a href="#">예약조회</a>
+          </li>
+          <li>
+            <a href="#">로그인</a>
+          </li>
+          <li>
+            <a href="#">회원가입</a>
+          </li>
+          <li>
+            <div class="lang-drop"> <!--active 클래스 일때 ul block-->
+              <button type="button">
+                <span>한국어</span>
+              </button>
+              <ul>
+                <li>
+                  <a href="#">한국어</a>
+                </li>
+                <li>
+                  <a href="#">영어</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
       </div>
     </header>
     <div class="allmenu-wrap">
@@ -38,8 +82,12 @@
       <!-- scroll-navi (e) -->
 
       <!-- 작업담당자 : 박소현 (s) -->
-      <div class="section temp-area">
-        섹션1 작업중
+      <div class="section home">
+        <div class="temp-area" style="position:absolute; top:100px; right:0; width:200px; margin:0;">날씨영역</div>
+        <div class="main-txt">
+          <strong>Relaxing Rest, The Shilla Hotel</strong>
+        </div>
+        <div class="temp-area" style="position:absolute; bottom:0">폼영역</div>
       </div>
       <!-- 작업담당자 : 박소현 (e) -->
 
@@ -466,40 +514,44 @@
     <footer>
       <div class="footer-wrap container">
         <ul>
-          <li class="footer-shilla">
+          <li class="full">
             <h2>the shilla hotel</h2>
-            <ul>
-              <li>
+            <div>
+              <div>
                 <a href="#">
                   <img src="images/img_footer_seoul.jpg" alt="서울신라">
                   <p>The Shilla Seoul</p>
                 </a>
-              </li>
-              <li>
+              </div>
+              <div>
                 <a href="#">
                   <img src="images/img_footer_jeju.jpg" alt="제주신라">
                   <p>The Shilla jeju</p>
                 </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </li>
-          <li class="footer-mono">
+          <li>
             <h2>shilla monogram</h2>
-            <a href="#">
-              <img src="images/img_footer_monogram.jpg" alt="">
-              <p>Shilla monogram</p>
-            </a>
+            <div>
+              <a href="#">
+                <img src="images/img_footer_monogram.jpg" alt="">
+                <p>Shilla monogram</p>
+              </a>
+            </div>
           </li>
-          <li class="footer-stay">
+          <li>
             <h2>shilla stay</h2>
-            <a href="#">
-              <img src="images/img_footer_stay.jpg" alt="">
-              <p>Shilla stay</p>
-            </a>
+            <div>
+              <a href="#">
+                <img src="images/img_footer_stay.jpg" alt="">
+                <p>Shilla stay</p>
+              </a>
+            </div>
           </li>
         </ul>
         <div class="footer-info-list">
-          <h2><a href="#">신라호텔</a></h2>
+          <h2><a href="index.html">신라호텔</a></h2>
           <ul>
             <li><a href="#">신라리워즈 약관</a></li>
             <li><a href="#">개인정보 처리방침</a></li>
@@ -515,22 +567,23 @@
             <li><a href="#"><img src="images/svg_footer_vant.svg" alt="피트니스멤버십"></a></li>
           </ul>
           <div class="footer-family-site">
-            <a href="#">FAMILY SITE</a>
-            <ul>
-              <li><a href="#">신라호텔</a></li>
-              <li><a href="#">신라면세점</a></li>
-              <li><a href="#">신라숍</a></li>
-              <li><a href="#">삼성상품권</a></li>
-              <li><a href="#">반트</a></li>
-            </ul>
+            <select>
+              <option value="FAMILY SITE">FAMILY SITE</option>
+              <option value="신라호텔">신라호텔</option>
+              <option value="신라면세점">신라면세점</option>
+              <option value="신라숍">신라숍</option>
+              <option value="삼성상품권">삼성상품권</option>
+              <option value="반트">반트</option>
+            </select>
+            <span class="icoArrow"><i class="fa-solid fa-chevron-down"></i></span>
           </div>
         </div>
         <div class="footer-bottom">
           <ul>
             <li>서울 특별시 중구 동호로 249</li>
-            <li>대표이사 : 이부진</li>
-            <li>사업자등록번호 203-81-43363</li>
-            <li>통신판매신고번호 중구 00272호</li>
+            <li><strong>대표이사</strong> 이부진</li>
+            <li><strong>사업자등록번호</strong> 203-81-43363</li>
+            <li><strong>통신판매신고번호</strong> 중구 00272호</li>
             <li>copyright &copy; hotel shilla co.ltd. all right reserved.</li>
           </ul>
         </div>
