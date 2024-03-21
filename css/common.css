@@ -39,6 +39,15 @@ body {color: #222; font-family: 'WantedSans', sans-serif; font-weight: 400;}
 .tit-h5 {font-size:calc(var(--font-size) * 1.125); font-weight: 700;}
 .tit-h6 {font-size:calc(var(--font-size) * 1); font-weight: 400;}
 
+/* button */
+[class^=btn-] {display: inline-flex; justify-content: center; align-items:center; text-align: center;}
+[class^=btn-].icon {gap: 16px;}
+[class^=btn-].l {min-width: 200px; min-height: 250px; font-size: 24px;} 
+[class^=btn-].m {min-width: 212px; min-height: 54px; padding: 18px 0; font-size: 16px;} 
+[class^=btn-].s {min-width: 94px; min-height: 27px; padding: 5px 20px; font-size: 14px;}
+.btn-p {background-color: var(--maincolor, #222); color: var(--white, #fff);}
+.btn-s {background-color:var(--white, #fff); color: var(--black, #222); border: 1px solid var(--bg-dark-gray, #ccc);}
+
 /* sub-section */
 .section.full {height: 100vh;}
 .section.fix {height: 600px;}
