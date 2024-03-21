@@ -1,16 +1,13 @@
-@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
 
-/* section */
-.section {height: 100vh; overflow: hidden;}
+li {
+  list-style: none;
+}
 
-/* section home */
-.section.home {position: relative; background: url(../images/bg_main_01.png) no-repeat center center; background-size: cover;}
-.section.home .main-txt {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100%; text-align: center;}
-.section.home .main-txt strong {color: var(--white); font-size: 50px; font-weight: 100;}
-
-/* 객실소개 최원석*/
-
- .section .container .tit-area {
+.section .container .tit-area {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -79,8 +76,6 @@
   left: 0;
 }
 
-/* 이벤트 최원석*/
-
 .section .container .tab2 {
   width: 30%;
 }
@@ -141,27 +136,4 @@
   position: absolute;
   bottom: 0;
   left: 0;
-}
-
-
-
-
-/* membership */
-
-.membership {
-  background: url('../images/bg_main_membership.png') no-repeat;
-}
-
-
-
-
-
-/* 태블릿 사이즈 미디어 쿼리 */
-@media only screen and (max-width: 1024px) {
-  /* 태블릿 크기에서 적용되는 스타일 */
-}
-
-/* 모바일 사이즈 미디어 쿼리 */
-@media only screen and (max-width: 480px) {
-  /* 모바일 크기에서 적용되는 스타일 */
 }
