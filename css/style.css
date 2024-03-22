@@ -131,7 +131,6 @@ li {
 .section .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-wrapper .swiper-slide .image-box img, .section .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-wrapper .swiper-slide .image-box img, .section .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-wrapper .swiper-slide .image-box img, .section .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-wrapper .swiper-slide .image-box img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
      object-fit: cover;
 }
 .section .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-wrapper .swiper-slide .bg, .section .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-wrapper .swiper-slide .bg, .section .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-wrapper .swiper-slide .bg, .section .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-wrapper .swiper-slide .bg {
