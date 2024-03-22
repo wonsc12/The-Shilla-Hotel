@@ -162,6 +162,24 @@
 
 .membership {
   background: url('../images/bg_main_membership.png') no-repeat;
+  background-size: contain;
+  color:var(--white, #fff);
+  text-transform: uppercase;
+}
+.membership-area {
+  
+}
+.membership-card {
+  margin:0 auto;
+}
+.membership-content img {
+  width: 320px;
+  height: 200px;
+}
+.membership-content p {
+  width: 480px;
+  text-align: center;
+  color: var(--black, #222);
 }
 
 
