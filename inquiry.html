@@ -91,10 +91,10 @@
                 <div class="ipt-wrap select">
                   <select name="" id="" class="ipt">
                     <option value="">지점을 선택해주세요.</option>
-                    <option value="">dddd</option>
-                    <option value="">dddd</option>
-                    <option value="">dddd</option>
-                    <option value="">dddd</option>
+                    <option value="">서울 신라</option>
+                    <option value="">제주 신라</option>
+                    <option value="">신라모노그램</option>
+                    <option value="">신라 스테이</option>
                   </select>
                 </div>
               </div>
@@ -102,18 +102,18 @@
             <li>
               <div class="item">구분</div>
               <div class="data">
-                <ul class="filter-list">
+                <ul class="radio-list">
                   <li>
-                    <input type="radio" name="classification" id="cf_01" class="ipt">
+                    <input type="radio" name="classification" id="cf_01" class="ipt blind" checked>
                     <label for="cf_01">칭찬</label>
                   </li>
                   <li>
-                    <input type="radio" name="classification" id="cf_02" class="ipt">
+                    <input type="radio" name="classification" id="cf_02" class="ipt blind">
                     <label for="cf_02">불만</label>
                   </li>
                   <li>
-                    <input type="radio" name="classification" id="cf_03" class="ipt">
-                    <label for="cf_03">칭찬</label>
+                    <input type="radio" name="classification" id="cf_03" class="ipt blind">
+                    <label for="cf_03">문의</label>
                   </li>
                 </ul>
               </div>
@@ -122,7 +122,7 @@
               <div class="item">제목</div>
               <div class="data">
                 <div class="ipt-wrap">
-                  <input type="text" class="ipt">
+                  <input type="text" class="ipt" placeholder="제목을 입력해주세요.">
                 </div>
               </div>
             </li>
@@ -130,7 +130,7 @@
               <div class="item">내용</div>
               <div class="data">
                 <div class="ipt-wrap">
-                  <textarea name="" id="" cols="30" rows="10" class="ipt"></textarea>
+                  <textarea name="" id="" cols="30" rows="10" class="ipt" placeholder="내용을 입력해주세요."></textarea>
                   </div>
               </div>
             </li>
@@ -138,21 +138,45 @@
               <div class="item">게스트이름</div>
               <div class="data">
                 <div class="ipt-wrap">
-                  <input type="text" class="ipt">
+                  <input type="text" class="ipt" placeholder="이름을 입력해주세요.">
                 </div>
               </div>
             </li>
             <li>
               <div class="item">휴대폰번호</div>
-              <div class="data">
+              <div class="data side-btn">
                 <div class="ipt-wrap">
-                  <input type="tel" class="ipt">
+                  <input type="tel" class="ipt" placeholder="‘-’ 제외하고 숫자만 입력해주세요.">
                 </div>
+                <button type="button" class="btn-s s">
+                  <span>인증번호 요청</span>
+                </button>
               </div>
             </li>
+            <!-- 인증번호 요청 완료 후 (s) -->
+            <li>
+              <div class="item">휴대폰번호</div>
+              <div class="data side-btn">
+                <div class="ipt-wrap ceri">
+                  <input type="tel" class="ipt">
+                  <span class="count">
+                    03:00
+                  </span>
+                </div>
+                <button type="button" class="btn-p s">
+                  <span>인증번호 확인</span>
+                </button>
+              </div>
+              
+            </li>
+            <!-- 인증번호 요청 완료 후 (e) -->
             <li>
               <div class="item">이메일</div>
-              <div class="data">
+              <div class="data email">
+                <div class="ipt-wrap">
+                  <input type="email" class="ipt">
+                </div>
+                <div class="at">@</div>
                 <div class="ipt-wrap">
                   <input type="email" class="ipt">
                 </div>
@@ -161,16 +185,32 @@
             <li>
               <div class="item">답변회신방법</div>
               <div class="data">
-                <div class="ipt-wrap">
-                  라디오
-                </div>
+                <ul class="radio-list">
+                  <li>
+                    <input type="radio" name="reply" id="rp_01" class="ipt blind" checked>
+                    <label for="rp_01">이메일</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="reply" id="rp_02" class="ipt blind">
+                    <label for="rp_02">전화</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="reply" id="rp_03" class="ipt blind">
+                    <label for="rp_03">SMS</label>
+                  </li>
+                </ul>
               </div>
             </li>
             <li>
               <div class="item option">첨부파일</div>
-              <div class="data">
+              <div class="data file">
                 <div class="ipt-wrap">
-                  <input type="file" class="ipt">
+                  <input type="text" class="ipt" readonly>
+                </div>
+                <div class="ipt-wrap">
+                  <input type="file" id="file" class="ipt blind" title="첨부하기">
+                  <label for="file" class="btn-s s">첨부하기</label>
+                  <span class="file-name"></span>
                 </div>
               </div>
             </li>
@@ -178,15 +218,15 @@
 
           <div class="terms-area">
             <div class="ipt-wrap">
-              <input type="checkbox">
-              <label for="">dddddd</label>
+              <input type="checkbox" id="check" class="ipt blind">
+              <label for="check">(필수) 개인정보 수집 및 이용에 관한동의</label>
               <a href="#" class="links">전문보기</a>
             </div>
           </div>
           <!-- 작업담당자 : 박소현 (e) -->
         </div>
 
-        <div class="btn-area">
+        <div class="btn-area bottom">
           <button type="button" class="btn-p m">
             <span>등록하기</span>
            </button>
@@ -196,5 +236,7 @@
     <!-- 작업담당자 : 박소현 (e) -->
     <footer class="temp-area" style="position:relative">푸터공통영역</footer> <!-- 임시 : 완성된 후 넣어야함 -->
   </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="js/sub.js"></script>	
 </body>
 </html>
