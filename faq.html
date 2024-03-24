@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>타이틀명</title> <!--타이틀명 바꾸기-->
-  <link rel="stylesheet" href="../css/common.css"> <!--경로바꿔야댐-->
-  <link rel="stylesheet" href="../css/layout.css"> <!--경로바꿔야댐-->
-  <link rel="stylesheet" href="../css/content.css"> <!--경로바꿔야댐-->
+  <title>FAQ</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/content.css">
 </head>
 <body>
   <div class="wrapper">
@@ -85,10 +85,70 @@
           <!-- 작업담당자 : 박소현 (e) -->
         </div>
       </div>
-      <!-- 다음 섹션 작업 영역입니다. -->
       <div class="section">
-        <div class="container">
-          <div class="temp-area">작업영역</div>
+        <div class="search-area">
+          <div class="container">
+            <div class="top">
+              <div class="pick">
+                <div class="ipt-wrap select">
+                  <select name="hotel" id="hotel" class="ipt">
+                    <option value="" selected>전체호텔</option>
+                    <option value="seoul">서울 신라</option>
+                    <option value="jeju">제주 신라</option>
+                    <option value="mono">신라모노그램</option>
+                    <option value="stay">신라 스테이</option>
+                  </select>
+                </div>
+                <div class="date-wrap">
+                  <input type="date" class="ipt">
+                  <input type="date" class="ipt">
+                </div>
+              </div>
+
+              <div class="search">
+                <input type="text" class="ipt">
+                <button type="button" class="btn-p m">검색</button>
+              </div>
+              
+            </div>
+            <div class="bottom">
+              <strong class="tit-h4">키워드</strong>
+              <ul class="check-list">
+                <li>
+                  <input type="checkbox" name="keyword" id="key_01" class="ipt blind">
+                  <label for="key_01">조식</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="keyword" id="key_02" class="ipt blind">
+                  <label for="key_02">조식</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="keyword" id="key_03" class="ipt blind">
+                  <label for="key_03">조식</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="keyword" id="key_04" class="ipt blind">
+                  <label for="key_04">조식</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="keyword" id="key_05" class="ipt blind">
+                  <label for="key_05">조식</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="keyword" id="key_06" class="ipt blind">
+                  <label for="key_06">조식</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="keyword" id="key_07" class="ipt blind">
+                  <label for="key_07">조식</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="keyword" id="key_08" class="ipt blind">
+                  <label for="key_08">조식</label>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </main>
