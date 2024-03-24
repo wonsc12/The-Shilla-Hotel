@@ -305,10 +305,30 @@
 
 /* 시설소개 */
 
-.facility {
-  
+.facilities-slider {
+  position: relative;
 }
-
+.facilities-inner {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto; 
+}
+.facilities-list li {
+  width: 31%;
+}
+.facilities-img p {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+.facilities-img span {
+  display: block;
+  font-size: var(--font-size);
+  text-align: center;
+}
+.facilities-txt {
+  margin-top: 48px;
+}
 
 
 /* 태블릿 사이즈 미디어 쿼리 */
