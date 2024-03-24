@@ -216,11 +216,11 @@
   color:var(--white, #fff);
   text-transform: uppercase;
 }
-.membership div {
-  overflow: hidden;
-}
 .membership-card {
+  position: relative;
+  width: 1400px;
   margin:63px auto;
+  overflow: hidden;
 }
 .membership-pager {
   font-size:calc(var(--font-size) * 1.5);
@@ -237,6 +237,7 @@
   display: flex;
   justify-content: center;
   gap: 50px;
+  margin-bottom: 80px;
 }
 .membership-content div {
   display: flex;
@@ -259,12 +260,54 @@
   line-height: var(--line-height, 27px);
 }
 .membership-btn {
-  
+  display: flex;
+  justify-content: center;
+  gap:10px;
+}
+.membership-link {
+  position: relative;
+  width: 180px;
+  height: 52px;
+  margin: 0 10px;
+  padding: 0 30px;
+  color: var(--black, #2222);
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: .06em;
+  line-height: 52px;
+  text-align: left;
+  border: 1px solid var(--black, #222);
+  box-sizing: border-box;
+}
+.membership-link span::after{
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 25px;
+  width: 10px;
+  height: 1px;
+  background: var(--black, #2222);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.membership-link span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 25px;
+  height: 1px;
+  width: 30px;
+  margin-top: 4px;
+  background: var(--black, #2222);
 }
 
 /* 시설소개 */
 
-
+.facility {
+  
+}
 
 
 
