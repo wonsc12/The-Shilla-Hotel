@@ -17,7 +17,7 @@
   align-items: center;
 }
 .room4 .container .tit-area .tab {
-  width: 30%;
+  width: 33%;
 }
 .room4 .container .tit-area .tab .tab-menu {
   width: 100%;
@@ -27,7 +27,7 @@
   align-items: center;
 }
 .room4 .container .tit-area .tab .tab-menu li {
-  width: 120px;
+  width: 25%;
   line-height: 40px;
   height: 40px;
   text-align: center;
@@ -35,6 +35,7 @@
 .room4 .container .tit-area .tab .tab-menu li a {
   background-color: #fff;
   color: #000;
+  font-size: 1.2rem;
   display: block;
   height: 100%;
   text-align: center;
@@ -115,8 +116,6 @@
   background: #000;
 }
 
-/* 이벤트 최원석 */
-
 .event4 .container .tit-area {
   display: flex;
   justify-content: space-between;
@@ -124,7 +123,7 @@
   align-items: center;
 }
 .event4 .container .tit-area .tab2 {
-  width: 30%;
+  width: 33%;
 }
 .event4 .container .tit-area .tab2 .tab-menu2 {
   width: 100%;
@@ -134,7 +133,7 @@
   align-items: center;
 }
 .event4 .container .tit-area .tab2 .tab-menu2 li {
-  width: 120px;
+  width: 25%;
   line-height: 40px;
   height: 40px;
   text-align: center;
@@ -142,6 +141,7 @@
 .event4 .container .tit-area .tab2 .tab-menu2 li a {
   background-color: #fff;
   color: #000;
+  font-size: 1.2rem;
   display: block;
   height: 100%;
   text-align: center;
@@ -151,12 +151,16 @@
   background: #fff;
   font-weight: bold;
 }
-.event4 .container #tabs2 .tab-content2 #tabs-1, .event4 .container #tabs2 .tab-content2 #tabs-2, 
-.event4 .container #tabs2 .tab-content2 #tabs-3, .event4 .container #tabs2 .tab-content2 #tabs-4 {
+.event4 .container #tabs2 .tab-content2 #tabs-1, 
+.event4 .container #tabs2 .tab-content2 #tabs-2, 
+.event4 .container #tabs2 .tab-content2 #tabs-3, 
+.event4 .container #tabs2 .tab-content2 #tabs-4 {
   width: 100%;
 }
-.event4 .container #tabs2 .tab-content2 #tabs-1 .swiper, .event4 .container #tabs2 .tab-content2 #tabs-2 .swiper, 
-.event4 .container #tabs2 .tab-content2 #tabs-3 .swiper, .event4 .container #tabs2 .tab-content2 #tabs-4 .swiper {
+.event4 .container #tabs2 .tab-content2 #tabs-1 .swiper, 
+.event4 .container #tabs2 .tab-content2 #tabs-2 .swiper, 
+.event4 .container #tabs2 .tab-content2 #tabs-3 .swiper, 
+.event4 .container #tabs2 .tab-content2 #tabs-4 .swiper {
   padding-bottom: 18px;
 }
 .event4 .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-wrapper, 
