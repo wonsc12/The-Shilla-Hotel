@@ -51,6 +51,8 @@ body {color: #222; font-family: 'Wanted Sans', sans-serif; font-weight: 400;}
 [class^=btn-].l {min-width: 200px; min-height: 250px; font-size: 24px;} 
 [class^=btn-].m {min-width: 212px; min-height: 54px; padding: 18px 0; font-size: 16px;} 
 [class^=btn-].s {min-width: 94px; min-height: 27px; padding: 5px 20px; font-size: 14px;}
+[class^=btn-].more {min-width: 684px; min-height: 54px; font-size: 16px;}
+[class^=btn-].more span:before {content: '+'; padding-right: 16px;}
 .btn-p {background-color: var(--maincolor, #222); color: var(--white, #fff);}
 .btn-s {background-color:var(--white, #fff); color: var(--black, #222); border: 1px solid var(--bg-dark-gray, #ccc);}
 .btn-area {display: flex;}
