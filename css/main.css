@@ -218,7 +218,17 @@
 }
 .membership-pager {
   font-size:calc(var(--font-size) * 1.5);
-  margin-bottom: 140px;
+  margin: 0 auto;
+  margin-top: var(--line-height);
+  margin-bottom: 130px;
+  border-bottom: 1px solid #ccc;
+  
+}
+.membership-pager li {
+  display: block;
+  width: 464px;
+  text-align: center;
+  padding: 20px;
 }
 .membership-pager li:active {
   border-bottom: 6px solid #ccc;
@@ -231,6 +241,8 @@
 .membership-card {
   position: relative;
   overflow: hidden;
+  width: 1084px;
+  margin: 0 auto;
 }
 .membership-wrapper {
   display: flex;
