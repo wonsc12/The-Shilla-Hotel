@@ -123,6 +123,8 @@ textarea::placeholder {color: var(--placeholder, #999); line-height: var(--line-
 .terms-area > .ipt-wrap {display: flex; gap: 24px; align-items: center;}
 
 /* sub-section */
+.section + .section {margin-top: 80px;}
+.section.mt0 {margin-top: 0;}
 .section.full {height: 100vh;}
 .section.fix {height: 600px;}
 
@@ -163,6 +165,10 @@ textarea::placeholder {color: var(--placeholder, #999); line-height: var(--line-
 .search-area.horizontal .pick {align-items: end;}
 .search-area.horizontal .pick .select {width: 327px;}
 .search-area.horizontal .search {width: 100%; margin-top: 0;}
+
+/* 총 몇건 */
+.total-num-area {}
+.total-num-area > em {font-weight: 700;}
 
 /* 태블릿 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 1024px) {
