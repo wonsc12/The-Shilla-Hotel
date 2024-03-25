@@ -9,6 +9,7 @@
 .event-list .info {display: flex; flex-direction: column; gap: 10px;}
 .event-list .desc {font-size: 20px;}
 .event-list .date {font-size: 20px; color: #666;}
+
 /* 서브페이지 객실 스탠다드 이그제큐티브 스위트 */
 
 .delux .container .deluxes .stardardtitle h2 {
