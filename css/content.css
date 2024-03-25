@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-<<<<<<< HEAD
 /* 이벤트 프로모션 리스트 */
 .event-list {display: flex; justify-content: space-between; flex-wrap: wrap;}
 .event-list li {width: calc((100% / 2) - 12px);}
@@ -10,7 +9,6 @@
 .event-list .info {display: flex; flex-direction: column; gap: 10px;}
 .event-list .desc {font-size: 20px;}
 .event-list .date {font-size: 20px; color: #666;}
-=======
 /* 서브페이지 객실 스탠다드 이그제큐티브 스위트 */
 
 .delux .container .deluxes .stardardtitle h2 {
@@ -707,7 +705,6 @@
 }
 
 
->>>>>>> cws
 
 /* 태블릿 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 1024px) {
