@@ -216,49 +216,50 @@
   color:var(--white, #fff);
   text-transform: uppercase;
 }
-.membership-card {
-  position: relative;
-  width: 1400px;
-  margin:63px auto;
-  overflow: hidden;
-}
 .membership-pager {
   font-size:calc(var(--font-size) * 1.5);
   margin-bottom: 140px;
 }
 .membership-pager li:active {
-  /* border-bottom: 6px solid #ccc; */
+  border-bottom: 6px solid #ccc;
 }
 .membership-pager li a {
-  width: 100%;
   display: block;
+  width: 100%;
 }
-.membership-content {
+
+.membership-card {
+  position: relative;
+  overflow: hidden;
+}
+.membership-wrapper {
   display: flex;
-  justify-content: center;
-  gap: 50px;
   margin-bottom: 80px;
+  width: 100%;
 }
-.membership-content div {
+.membership-wrapper > li {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 40px;
+  width: 100%;
 }
-.membership-content ul {
+.membership-wrapper > li ul {
   display: flex;
-  gap: 10px;
+  gap: 65px;
 }
-.membership-content img {
-  width: 320px;
-  height: 200px;
+.membership-wrapper > li ul li img {
+  width: 318px;
+  border-radius: 6px;
+  box-shadow: 2px 0 3px rgba(0,0,0,.2);
 }
-.membership-content p {
+.membership-wrapper p {
   width: 480px;
   text-align: center;
   color: var(--black, #222);
   margin: 0 auto;
   line-height: var(--line-height, 27px);
 }
+
 .membership-btn {
   display: flex;
   justify-content: center;
