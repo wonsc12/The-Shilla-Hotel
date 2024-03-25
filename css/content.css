@@ -10,6 +10,13 @@
 .event-list .desc {font-size: 20px;}
 .event-list .date {font-size: 20px; color: #666;}
 
+/* FAQ - Tab */
+.tab-wrap {}
+.tabList.faq {display: flex; justify-content: space-between; align-items: center;}
+.tabList.faq > li {width:20%; border:1px solid var(--bg-dark-gray, #ccc); padding: 14px 0; text-align: center;}
+.tabList.faq > li.on {border-bottom: 0; border-top: 6px solid var(--black, #222); font-weight: 700;}
+.tabList.faq > li + li {border-left: 0;}
+
 /* 서브페이지 객실 스탠다드 이그제큐티브 스위트 */
 
 .delux .container .deluxes .stardardtitle h2 {
