@@ -12,10 +12,15 @@
 
 /* FAQ - Tab */
 .tab-wrap {}
-.tabList.faq {display: flex; justify-content: space-between; align-items: center;}
-.tabList.faq > li {width:20%; border:1px solid var(--bg-dark-gray, #ccc); padding: 14px 0; text-align: center;}
-.tabList.faq > li.on {border-bottom: 0; border-top: 6px solid var(--black, #222); font-weight: 700;}
-.tabList.faq > li + li {border-left: 0;}
+.tab-list.faq {display: flex; justify-content: space-between; align-items: center;}
+.tab-list.faq > li {position:relative; width:20%; border:1px solid var(--bg-dark-gray, #ccc); padding: 14px 0; text-align: center;}
+.tab-list.faq > li.on {border-bottom: 0;}
+.tab-list.faq > li.on:before {content:''; position: absolute; top: -1px; left: 0; width:100%; height:7px; background-color: var(--black, #222);}
+.tab-list.faq > li + li {border-left: 0;}
+.tab-list.faq > li a {display: block;}
+.tab-list.faq > li.on a {font-weight: 700;}
+.tab-list.faq + .tab-content .tab-pannel {display: none;}
+.tab-list.faq + .tab-content .tab-pannel.on {display: block;}
 
 /* 서브페이지 객실 스탠다드 이그제큐티브 스위트 */
 
