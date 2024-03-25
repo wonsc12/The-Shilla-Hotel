@@ -3,8 +3,9 @@
 <<<<<<< HEAD
 /* 이벤트 프로모션 리스트 */
 .event-list {display: flex; justify-content: space-between; flex-wrap: wrap;}
-.event-list > li {width: calc((100% / 2) - 12px); display: flex; flex-direction: column; gap: 20px;}
-.event-list > li:nth-child(n+3) {margin-top: 54px;}
+.event-list li {width: calc((100% / 2) - 12px);}
+.event-list li:nth-child(n+3) {margin-top: 54px;}
+.event-list .block {display: flex; flex-direction: column; gap: 20px;}
 .event-list .img-wrap {width: 100%; height: 352px;}
 .event-list .info {display: flex; flex-direction: column; gap: 10px;}
 .event-list .desc {font-size: 20px;}
