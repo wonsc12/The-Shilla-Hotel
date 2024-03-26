@@ -9,10 +9,11 @@
   <link rel="stylesheet" href="../css/content.css"> <!--경로바꿔야댐-->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="../js/sub.js"></script>	<!--경로바꿔야댐-->
+  <script src="../js/pub.js"></script>	<!--경로바꿔야댐-->
 </head>
 <body>
   <div class="wrapper">
-    <header class="temp-area" style="position:relative">헤더공통영역</header> <!-- 임시 : 완성된 후 넣어야함 -->
+    <header class="sticky" id="header"></header>
     <!-- 작업담당자 : 담당자명 (s) -->
     <main id="content">
       <!-- 클래스 없을떄:박소현 full:100vh(최원석) / fix:600px (이다영) -->
@@ -95,7 +96,7 @@
       </div>
     </main>
     <!-- 작업담당자 : 담당자명 (e) -->
-    <footer class="temp-area" style="position:relative">푸터공통영역</footer> <!-- 임시 : 완성된 후 넣어야함 -->
+   <footer id="footer"></footer>
   </div>
   
 </body>
