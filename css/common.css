@@ -10,7 +10,7 @@
   --black: #222;
   --white: #fff;
   --border: #525252;
-  --aco-txt: #666;
+  --acco-txt: #666;
   --placeholder: #999;
   --bg-light-gray: #f8f8f8;
   --bg-dark-gray: #ccc;
@@ -171,6 +171,9 @@ textarea::placeholder {color: var(--placeholder, #999); line-height: var(--line-
 /* 총 몇건 */
 .total-num-area {margin: 50px 0 30px;}
 .total-num-area > em {font-weight: 700;}
+
+/* flag */
+.flag {position: absolute; top: 0; left: 0; min-width: 124px; padding: 14px 20px; background-color: var(--black, #222); color: var(--white, #fff); text-align: center;}
 
 /* 태블릿 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 1024px) {

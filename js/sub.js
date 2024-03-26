@@ -75,6 +75,9 @@ $(function(){
 		$(this).closest('.tab-wrap').find('.tab-content > .tab-pannel').removeClass('on');
 		$(this).closest('.tab-wrap').find('.tab-content > .tab-pannel:eq('+$(this).closest('li').index()+')').addClass('on');
 	})
+
+	// ACCORDIAN
+	
 });
 
 /*
