@@ -343,10 +343,9 @@
   margin: 0 auto; 
   overflow: hidden;
 }
-.facilities-list li {
+.facilities-img {
   position: relative;
   width: 30%;
-  margin:0 10px;
   opacity: .5;
   transform: scale(.84);
   transition: all .3s ease-in-out;
@@ -392,13 +391,14 @@
   display: block;
   z-index: 10;
   text-indent: -9999em;
+  margin: 0 auto;
 }
 .intro-prev {
-  margin-left: 349px;
+  margin-left: 369px;
   background: #D4B297;
 }
 .intro-next {
-  margin-left: 502px;
+  margin-left: 462px;
   background: #122223;
 }
 .intro-prev::after {
@@ -406,7 +406,7 @@
   position: absolute;
   display: block;
   top: 50%;
-  left: 35.8%;
+  left: 38.1%;
   width: 20px;
   height: 1px;
   background: var(--white, #fff);
@@ -418,7 +418,7 @@
   position: absolute;
   display: block;
   top: 52.5%;
-  left: 36%;
+  left: 38.5%;
   height: 1px;
   width: 50px;
   margin-top: 4px;
@@ -446,7 +446,10 @@
   width: 50px;
   margin-top: 4px;
   background: var(--white, #fff);
+}
 
+.swiper-slide-active {
+  display: block;
 }
 
 /* 태블릿 사이즈 미디어 쿼리 */
