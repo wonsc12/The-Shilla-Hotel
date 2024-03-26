@@ -77,6 +77,10 @@ $(function(){
 		$(this).closest('.tab-wrap').find('.tab-content > .tab-pannel').removeClass('on');
 		$(this).closest('.tab-wrap').find('.tab-content > .tab-pannel:eq('+$(this).closest('li').index()+')').addClass('on');
 	})
+
+
+
+	
 });
 
 // 서브페이지 객실소개
@@ -120,6 +124,7 @@ const swiper2= new Swiper(".myswiper2", {
 		},
 
 });
+
 
 	
 

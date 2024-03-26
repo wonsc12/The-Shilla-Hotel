@@ -45,80 +45,44 @@
   background: #fff;
   font-weight: bold;
 }
-.room4 .container .tit-area .tab .tab-menu li a::after.active { 
-  content: ''; 
-  width: 5px;
-  height: 1px;
-  color: red;
-}
-.room4 .container #tabs .tab-content #tabs-1, 
-.room4 .container #tabs .tab-content #tabs-2, 
-.room4 .container #tabs .tab-content #tabs-3, 
-.room4 .container #tabs .tab-content #tabs-4 {
+.room4 .container #tabs .tab-content #tabs-1, .room4 .container #tabs .tab-content #tabs-2, .room4 .container #tabs .tab-content #tabs-3, .room4 .container #tabs .tab-content #tabs-4 {
   width: 100%;
 }
-.room4 .container #tabs .tab-content #tabs-1 .swiper, 
-.room4 .container #tabs .tab-content #tabs-2 .swiper, 
-.room4 .container #tabs .tab-content #tabs-3 .swiper, 
-.room4 .container #tabs .tab-content #tabs-4 .swiper {
+.room4 .container #tabs .tab-content #tabs-1 .sswiper, .room4 .container #tabs .tab-content #tabs-2 .sswiper, .room4 .container #tabs .tab-content #tabs-3 .sswiper, .room4 .container #tabs .tab-content #tabs-4 .sswiper {
   padding-bottom: 18px;
 }
-.room4 .container #tabs .tab-content #tabs-1 .swiper .swiper-wrapper, 
-.room4 .container #tabs .tab-content #tabs-2 .swiper .swiper-wrapper, 
-.room4 .container #tabs .tab-content #tabs-3 .swiper .swiper-wrapper, 
-.room4 .container #tabs .tab-content #tabs-4 .swiper .swiper-wrapper {
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper, .room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper, .room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper, .room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper {
   display: flex;
 }
-.room4 .container #tabs .tab-content #tabs-1 .swiper .swiper-wrapper .swiper-slide, 
-.room4 .container #tabs .tab-content #tabs-2 .swiper .swiper-wrapper .swiper-slide, 
-.room4 .container #tabs .tab-content #tabs-3 .swiper .swiper-wrapper .swiper-slide, 
-.room4 .container #tabs .tab-content #tabs-4 .swiper .swiper-wrapper .swiper-slide {
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide, .room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide, .room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide, .room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide {
   position: relative;
 }
-.room4 .container #tabs .tab-content #tabs-1 .swiper .swiper-wrapper .swiper-slide .image-box, 
-.room4 .container #tabs .tab-content #tabs-2 .swiper .swiper-wrapper .swiper-slide .image-box, 
-.room4 .container #tabs .tab-content #tabs-3 .swiper .swiper-wrapper .swiper-slide .image-box, 
-.room4 .container #tabs .tab-content #tabs-4 .swiper .swiper-wrapper .swiper-slide .image-box {
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide #image-box, .room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide #image-box, .room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide #image-box, .room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide #image-box {
   width: 450px;
   height: 592px;
 }
-.room4 .container #tabs .tab-content #tabs-1 .swiper .swiper-wrapper .swiper-slide .image-box img, 
-.room4 .container #tabs .tab-content #tabs-2 .swiper .swiper-wrapper .swiper-slide .image-box img, 
-.room4 .container #tabs .tab-content #tabs-3 .swiper .swiper-wrapper .swiper-slide .image-box img, 
-.room4 .container #tabs .tab-content #tabs-4 .swiper .swiper-wrapper .swiper-slide .image-box img {
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide #image-box img, .room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide #image-box img, .room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide #image-box img, .room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide #image-box img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.room4 .container #tabs .tab-content #tabs-1 .swiper .swiper-wrapper .swiper-slide .bg, 
-.room4 .container #tabs .tab-content #tabs-2 .swiper .swiper-wrapper .swiper-slide .bg, 
-.room4 .container #tabs .tab-content #tabs-3 .swiper .swiper-wrapper .swiper-slide .bg, 
-.room4 .container #tabs .tab-content #tabs-4 .swiper .swiper-wrapper .swiper-slide .bg {
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide .bg, .room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide .bg, .room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide .bg, .room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide .bg {
   position: absolute;
   top: 0;
   left: 0;
 }
-.room4 .container #tabs .tab-content #tabs-1 .swiper .swiper-wrapper .swiper-slide .bg2, 
-.room4 .container #tabs .tab-content #tabs-2 .swiper .swiper-wrapper .swiper-slide .bg2, 
-.room4 .container #tabs .tab-content #tabs-3 .swiper .swiper-wrapper .swiper-slide .bg2, 
-.room4 .container #tabs .tab-content #tabs-4 .swiper .swiper-wrapper .swiper-slide .bg2 {
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide .bg2, .room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide .bg2, .room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide .bg2, .room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide .bg2 {
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.room4 .container #tabs .tab-content #tabs-1 .swiper .swiper-pagination, 
-.room4 .container #tabs .tab-content #tabs-2 .swiper .swiper-pagination, 
-.room4 .container #tabs .tab-content #tabs-3 .swiper .swiper-pagination, 
-.room4 .container #tabs .tab-content #tabs-4 .swiper .swiper-pagination {
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .swiper-pagination, .room4 .container #tabs .tab-content #tabs-2 .sswiper .swiper-pagination, .room4 .container #tabs .tab-content #tabs-3 .sswiper .swiper-pagination, .room4 .container #tabs .tab-content #tabs-4 .sswiper .swiper-pagination {
   position: absolute;
   bottom: 0;
   z-index: 10;
 }
-.room4 .container #tabs .tab-content #tabs-1 .swiper .swiper-pagination .swiper-pagination-bullet, 
-.room4 .container #tabs .tab-content #tabs-2 .swiper .swiper-pagination .swiper-pagination-bullet, 
-.room4 .container #tabs .tab-content #tabs-3 .swiper .swiper-pagination .swiper-pagination-bullet, 
-.room4 .container #tabs .tab-content #tabs-4 .swiper .swiper-pagination .swiper-pagination-bullet {
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .swiper-pagination .swiper-pagination-bullet, .room4 .container #tabs .tab-content #tabs-2 .sswiper .swiper-pagination .swiper-pagination-bullet, .room4 .container #tabs .tab-content #tabs-3 .sswiper .swiper-pagination .swiper-pagination-bullet, .room4 .container #tabs .tab-content #tabs-4 .sswiper .swiper-pagination .swiper-pagination-bullet {
   background: #000;
 }
 
@@ -157,78 +121,46 @@
   background: #fff;
   font-weight: bold;
 }
-.event4 .container #tabs2 .tab-content2 #tabs-1, 
-.event4 .container #tabs2 .tab-content2 #tabs-2, 
-.event4 .container #tabs2 .tab-content2 #tabs-3, 
-.event4 .container #tabs2 .tab-content2 #tabs-4 {
+.event4 .container #tabs2 .tab-content2 #tabs-1, .event4 .container #tabs2 .tab-content2 #tabs-2, .event4 .container #tabs2 .tab-content2 #tabs-3, .event4 .container #tabs2 .tab-content2 #tabs-4 {
   width: 100%;
 }
-.event4 .container #tabs2 .tab-content2 #tabs-1 .swiper, 
-.event4 .container #tabs2 .tab-content2 #tabs-2 .swiper, 
-.event4 .container #tabs2 .tab-content2 #tabs-3 .swiper, 
-.event4 .container #tabs2 .tab-content2 #tabs-4 .swiper {
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper, .event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper, .event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper, .event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper {
   padding-bottom: 18px;
 }
-.event4 .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-wrapper, 
-.event4 .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-wrapper, 
-.event4 .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-wrapper, 
-.event4 .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-wrapper {
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper, .event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper, .event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper, .event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper {
   display: flex;
 }
-.event4 .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-wrapper .swiper-slide, 
-.event4 .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-wrapper .swiper-slide, 
-.event4 .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-wrapper .swiper-slide, 
-.event4 .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-wrapper .swiper-slide {
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide, .event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide, .event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide, .event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide {
   position: relative;
 }
-.event4 .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-wrapper .swiper-slide .image-box, 
-.event4 .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-wrapper .swiper-slide .image-box, 
-.event4 .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-wrapper .swiper-slide .image-box, 
-.event4 .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-wrapper .swiper-slide .image-box {
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide #image-box, .event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide #image-box, .event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide #image-box, .event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide #image-box {
   width: 450px;
   height: 592px;
 }
-.event4 .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-wrapper .swiper-slide .image-box img, 
-.event4 .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-wrapper .swiper-slide .image-box img, 
-.event4 .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-wrapper .swiper-slide .image-box img, 
-.event4 .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-wrapper .swiper-slide .image-box img {
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide #image-box img, .event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide #image-box img, .event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide #image-box img, .event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide #image-box img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.event4 .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-wrapper .swiper-slide .bg, 
-.event4 .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-wrapper .swiper-slide .bg, 
-.event4 .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-wrapper .swiper-slide .bg, 
-.event4 .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-wrapper .swiper-slide .bg {
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide .bg, .event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide .bg, .event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide .bg, .event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide .bg {
   position: absolute;
   top: 0;
   left: 0;
 }
-.event4 .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-wrapper .swiper-slide .bg2, 
-.event4 .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-wrapper .swiper-slide .bg2, 
-.event4 .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-wrapper .swiper-slide .bg2, 
-.event4 .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-wrapper .swiper-slide .bg2 {
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide .bg2, .event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide .bg2, .event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide .bg2, .event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide .bg2 {
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.event4 .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-pagination, 
-.event4 .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-pagination, 
-.event4 .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-pagination, 
-.event4 .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-pagination {
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .swiper-pagination, .event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .swiper-pagination, .event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .swiper-pagination, .event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .swiper-pagination {
   position: absolute;
   bottom: 0px;
   z-index: 10;
 }
-.event4 .container #tabs2 .tab-content2 #tabs-1 .swiper .swiper-pagination .swiper-pagination-bullet, 
-.event4 .container #tabs2 .tab-content2 #tabs-2 .swiper .swiper-pagination .swiper-pagination-bullet, 
-.event4 .container #tabs2 .tab-content2 #tabs-3 .swiper .swiper-pagination .swiper-pagination-bullet, 
-.event4 .container #tabs2 .tab-content2 #tabs-4 .swiper .swiper-pagination .swiper-pagination-bullet {
-  background: #222;
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .swiper-pagination .swiper-pagination-bullet, .event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .swiper-pagination .swiper-pagination-bullet, .event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .swiper-pagination .swiper-pagination-bullet, .event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .swiper-pagination .swiper-pagination-bullet {
+  background: #000;
 }
-
-
 
 
 
