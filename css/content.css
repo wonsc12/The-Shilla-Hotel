@@ -22,6 +22,17 @@
 .tab-list.faq + .tab-content .tab-pannel {display: none;}
 .tab-list.faq + .tab-content .tab-pannel.on {display: block;}
 
+/* FAQ - 아코디언 */
+.faq-list {border-top: 1px solid var(--black, #222);}
+.faq-list li {border-bottom: 1px solid var(--bg-dark-gray, #ccc);}
+.acco-item .acco-head {display: flex; justify-content: space-between; position: relative; width: 100%;}
+.acco-item .acco-head:after {content: ''; position: absolute; top: 50%; transform: translateY(-50%); right: 24px; border-width: 6px 4px; border-style: solid; border-color: #222 transparent transparent transparent;}
+.acco-item.on .acco-head:after {transform: rotate(180deg); top: calc(50% - 10px);}
+.acco-item .acco-btn {display:block; width: 100%; padding: 14px 24px; font-size: 18px;}
+.acco-item .category {display:inline-block; min-width: 102px;}
+.acco-item .acco-body {display:none; padding: 24px; background-color: var(--bg-light-gray, #f8f8f8); color: var(--acco-txt, #666);}
+.acco-item.on .acco-body {display: block;}
+
 /* 서브페이지 객실 스탠다드 이그제큐티브 스위트 */
 
 .delux .container .deluxes .stardardtitle h3 {
