@@ -1,5 +1,710 @@
 @charset "utf-8";
 
+/* 이벤트 프로모션 리스트 */
+.event-list {display: flex; justify-content: space-between; flex-wrap: wrap;}
+.event-list li {width: calc((100% / 2) - 12px);}
+.event-list li:nth-child(n+3) {margin-top: 54px;}
+.event-list .block {display: flex; flex-direction: column; gap: 20px;}
+.event-list .img-wrap {width: 100%; height: 352px;}
+.event-list .info {display: flex; flex-direction: column; gap: 10px;}
+.event-list .desc {font-size: 20px;}
+.event-list .date {font-size: 20px; color: #666;}
+/* 서브페이지 객실 스탠다드 이그제큐티브 스위트 */
+
+.delux .container .deluxes .stardardtitle h2 {
+  text-align: center;
+}
+.delux .container .deluxes .deluxe-box {
+  display: flex;
+  justify-content: space-between;
+}
+.delux .container .deluxes .deluxe-box .deluxe1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+}
+.delux .container .deluxes .deluxe-box .deluxe1 p {
+  font-size: 20px;
+}
+.delux .container .deluxes .deluxe-box .swiper {
+  width: 880px;
+  height: 600px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.delux .container .deluxes .deluxe-box .swiper .swiper-wrapper .swiper-slide {
+  width: 880px;
+  height: 600px;
+}
+.delux .container .deluxes .deluxe-box .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.business-deluxe .container .business-deluxe .business-deluxetitle h2 {
+  text-align: center;
+}
+.business-deluxe .container .business-deluxe .business-deluxebox {
+  display: flex;
+  justify-content: space-between;
+}
+.business-deluxe .container .business-deluxe .business-deluxebox .swiper {
+  width: 880px;
+  height: 600px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.business-deluxe .container .business-deluxe .business-deluxebox .swiper .swiper-wrapper .swiper-slide {
+  width: 880px;
+  height: 600px;
+}
+.business-deluxe .container .business-deluxe .business-deluxebox .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.business-deluxe .container .business-deluxe .business-deluxebox .business-deluxe2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.business-deluxe .container .business-deluxe .business-deluxebox .business-deluxe2 .business-deluxet p {
+  font-size: 20px;
+}
+.barrier-free .container .barrier-frees .barrier-freetitle h2 {
+  text-align: center;
+}
+.barrier-free .container .barrier-frees .barrier-free-box {
+  display: flex;
+  justify-content: space-between;
+}
+.barrier-free .container .barrier-frees .barrier-free-box .barrier-free1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+}
+.barrier-free .container .barrier-frees .barrier-free-box .barrier-free1 p {
+  font-size: 20px;
+}
+.barrier-free .container .barrier-frees .barrier-free-box .barrier-free2 .swiper {
+  width: 880px;
+  height: 600px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.barrier-free .container .barrier-frees .barrier-free-box .barrier-free2 .swiper .swiper-wrapper .swiper-slide {
+  width: 880px;
+  height: 600px;
+}
+.barrier-free .container .barrier-frees .barrier-free-box .barrier-free2 .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.coner-deluxe .container .coner-deluxes .coner-title h2 {
+  text-align: center;
+}
+.coner-deluxe .container .coner-deluxes .coner-deluxe-box {
+  display: flex;
+  justify-content: space-between;
+}
+.coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe1 .swiper {
+  width: 880px;
+  height: 600px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe1 .swiper .swiper-wrapper .swiper-slide {
+  width: 880px;
+  height: 600px;
+}
+.coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe1 .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe2 p {
+  font-size: 20px;
+}
+.executive-business .container .executive-business .executive-title h2 {
+  text-align: center;
+}
+.executive-business .container .executive-business .executive-box {
+  display: flex;
+  justify-content: space-between;
+}
+.executive-business .container .executive-business .executive-box .executive1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+}
+.executive-business .container .executive-business .executive-box .executive1 p {
+  font-size: 20px;
+}
+.executive-business .container .executive-business .executive-box .executive2 .swiper {
+  width: 880px;
+  height: 600px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.executive-business .container .executive-business .executive-box .executive2 .swiper .swiper-wrapper .swiper-slide {
+  width: 880px;
+  height: 600px;
+}
+.executive-business .container .executive-business .executive-box .executive2 .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.executive-grand .container .executive-grand .executive-grandtitle h2 {
+  text-align: center;
+}
+.executive-grand .container .executive-grand .executive-grandbox {
+  display: flex;
+  justify-content: space-between;
+}
+.executive-grand .container .executive-grand .executive-grandbox .executive-grand1 .swiper {
+  width: 880px;
+  height: 600px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.executive-grand .container .executive-grand .executive-grandbox .executive-grand1 .swiper .swiper-wrapper .swiper-slide {
+  width: 880px;
+  height: 600px;
+}
+.executive-grand .container .executive-grand .executive-grandbox .executive-grand1 .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.executive-grand .container .executive-grand .executive-grandbox .executive-grand2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.executive-grand .container .executive-grand .executive-grandbox .executive-grand2 .executive-grande p {
+  font-size: 20px;
+}
+.suites .container .suite .suitetitle h2 {
+  text-align: center;
+}
+.suites .container .suite .suite-box {
+  display: flex;
+  justify-content: space-between;
+}
+.suites .container .suite .suite-box .suite1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+}
+.suites .container .suite .suite-box .suite1 p {
+  font-size: 20px;
+}
+.suites .container .suite .suite-box .suite2 .swiper {
+  width: 880px;
+  height: 600px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.suites .container .suite .suite-box .suite2 .swiper .swiper-wrapper .swiper-slide {
+  width: 880px;
+  height: 600px;
+}
+.suites .container .suite .suite-box .suite2 .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.korea-suites .container .korea-suite .korea-suitetitle h2 {
+  text-align: center;
+}
+.korea-suites .container .korea-suite .korea-suitebox {
+  display: flex;
+  justify-content: space-between;
+}
+.korea-suites .container .korea-suite .korea-suitebox .korea-suite1 .swiper {
+  width: 880px;
+  height: 600px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.korea-suites .container .korea-suite .korea-suitebox .korea-suite1 .swiper .swiper-wrapper .swiper-slide {
+  width: 880px;
+  height: 600px;
+}
+.korea-suites .container .korea-suite .korea-suitebox .korea-suite1 .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.korea-suites .container .korea-suite .korea-suitebox .korea-suite2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.korea-suites .container .korea-suite .korea-suitebox .korea-suite2 p {
+  font-size: 20px;
+}
+.coner-suite .container .coner-suites .coner-suitetitle h2 {
+  text-align: center;
+}
+.coner-suite .container .coner-suites .coner-suite-box {
+  display: flex;
+  justify-content: space-between;
+}
+.coner-suite .container .coner-suites .coner-suite-box .coner-suite1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+}
+.coner-suite .container .coner-suites .coner-suite-box .coner-suite1 p {
+  font-size: 20px;
+}
+.coner-suite .container .coner-suites .coner-suite-box .coner-suite2 .swiper {
+  width: 880px;
+  height: 600px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.coner-suite .container .coner-suites .coner-suite-box .coner-suite2 .swiper .swiper-wrapper .swiper-slide {
+  width: 880px;
+  height: 600px;
+}
+.coner-suite .container .coner-suites .coner-suite-box .coner-suite2 .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Premier-suite .container .Premier-suit .Premier-suit h2 {
+  text-align: center;
+}
+.Premier-suite .container .Premier-suit .Premier-suitbox {
+  display: flex;
+  justify-content: space-between;
+}
+.Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit1 .swiper {
+  width: 880px;
+  height: 600px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit1 .swiper .swiper-wrapper .swiper-slide {
+  width: 880px;
+  height: 600px;
+}
+.Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit1 .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 p {
+  font-size: 20px;
+}
+
+/* 다이닝 라연 콘티넨탈 아리아께 팔선 */
+
+.layeon .container .layeont {
+  text-align: center;
+}
+.layeon .container .layeont p {
+  font-size: 24px;
+}
+.layeon .container .layeontime table {
+  border-collapse: collapse;
+}
+.layeon .container .layeontime table .caption {
+  width: 100%;
+  height: 100%;
+  color: #222;
+}
+.layeon .container .layeontime table .caption h4 {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.layeon .container .layeontime table tbody th, .layeon .container .layeontime table tbody td {
+  border: 1px solid;
+  height: 89px;
+  font-size: 24px;
+}
+
+.arestaurant .container .restaurant {
+  display: flex;
+  justify-content: space-between;
+}
+.arestaurant .container .restaurant .restaurant-image {
+  width: 880px;
+  height: 600px;
+}
+.arestaurant .container .restaurant .restaurant-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.arestaurant .container .restaurant .restaurant-explanation {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.arestaurant .container .restaurant .restaurant-explanation p {
+  font-size: 24px;
+}
+
+.arestaurant2 .container .restaurant {
+  display: flex;
+  justify-content: space-between;
+}
+.arestaurant2 .container .restaurant .restaurant-explanation {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+}
+.arestaurant2 .container .restaurant .restaurant-explanation p {
+  font-size: 24px;
+}
+.arestaurant2 .container .restaurant .restaurant-explanation .call-reservation {
+  display: flex;
+  justify-content: space-between;
+}
+.arestaurant2 .container .restaurant .restaurant-explanation .call-reservation .reservation p {
+  font-size: 24px;
+}
+.arestaurant2 .container .restaurant .restaurant-explanation .call-reservation .inquiry p {
+  font-size: 24px;
+}
+.arestaurant2 .container .restaurant .restaurant-image {
+  width: 880px;
+  height: 600px;
+}
+.arestaurant2 .container .restaurant .restaurant-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.infomenu .container .myswiper2 .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.infomenu .container .myswiper2 .swiper-wrapper .swiper-slide img {
+  width: 1400px;
+  height: 520px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.infomenu .container .information-email .information2 {
+  display: flex;
+  justify-content: space-between;
+}
+.infomenu .container .email p {
+  font-size: 24px;
+}
+
+.continental .container .continentalt {
+  text-align: center;
+}
+.continental .container .continentalt p {
+  font-size: 24px;
+}
+.continental .container .continentaltime table {
+  border-collapse: collapse;
+}
+.continental .container .continentaltime table .caption {
+  width: 100%;
+  height: 100%;
+  color: #222;
+}
+.continental .container .continentaltime table .caption h3 {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.continental .container .continentaltime table tbody th, .continental .container .continentaltime table tbody td {
+  border: 1px solid;
+  height: 89px;
+  font-size: 24px;
+}
+
+.arestaurant .container .restaurant {
+  display: flex;
+  justify-content: space-between;
+}
+.arestaurant .container .restaurant .restaurant-image {
+  width: 880px;
+  height: 600px;
+}
+.arestaurant .container .restaurant .restaurant-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.arestaurant .container .restaurant .restaurant-explanation {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.arestaurant .container .restaurant .restaurant-explanation p {
+  font-size: 24px;
+}
+
+.arestaurant2 .container .restaurant {
+  display: flex;
+  justify-content: space-between;
+}
+.arestaurant2 .container .restaurant .restaurant-explanation {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+}
+.arestaurant2 .container .restaurant .restaurant-explanation p {
+  font-size: 24px;
+}
+.arestaurant2 .container .restaurant .restaurant-image {
+  width: 880px;
+  height: 600px;
+}
+.arestaurant2 .container .restaurant .restaurant-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.infomenu .container .myswiper2 .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.infomenu .container .myswiper2 .swiper-wrapper .swiper-slide img {
+  width: 1400px;
+  height: 520px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.infomenu .container .information-email .information2 {
+  display: flex;
+  justify-content: space-between;
+}
+.aliakke .container .aliakket {
+  text-align: center;
+}
+.aliakke .container .aliakket p {
+  font-size: 24px;
+}
+.aliakke .container .aliakketime table {
+  border-collapse: collapse;
+}
+.aliakke .container .aliakketime table .caption {
+  width: 100%;
+  height: 100%;
+  color: #222;
+}
+.aliakke .container .aliakketime table .caption h3 {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.aliakke .container .aliakketime table tbody th, .aliakke .container .aliakketime table tbody td {
+  border: 1px solid;
+  height: 89px;
+  font-size: 24px;
+}
+
+.arestaurant .container .restaurant {
+  display: flex;
+  justify-content: space-between;
+}
+.arestaurant .container .restaurant .restaurant-image {
+  width: 880px;
+  height: 600px;
+}
+.arestaurant .container .restaurant .restaurant-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.arestaurant .container .restaurant .restaurant-explanation p {
+  font-size: 24px;
+}
+
+.arestaurant2 .container .restaurant {
+  display: flex;
+  justify-content: space-between;
+}
+.arestaurant2 .container .restaurant .restaurant-explanation p {
+  font-size: 24px;
+}
+.arestaurant2 .container .restaurant .restaurant-image {
+  width: 880px;
+  height: 600px;
+}
+.arestaurant2 .container .restaurant .restaurant-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.infomenu .container .myswiper2 .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.infomenu .container .myswiper2 .swiper-wrapper .swiper-slide img {
+  width: 1400px;
+  height: 520px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.infomenu .container .information-email .information2 {
+  display: flex;
+  justify-content: space-between;
+}
+.palseon .container .palseont {
+  text-align: center;
+}
+.palseon .container .palseont p {
+  font-size: 24px;
+}
+.palseon .container .palseontime table {
+  border-collapse: collapse;
+}
+.palseon .container .palseontime table .caption {
+  width: 100%;
+  height: 100%;
+  color: #222;
+}
+.palseon .container .palseontime table .caption h3 {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.palseon .container .palseontime table tbody th, .palseon .container .palseontime table tbody td {
+  border: 1px solid;
+  height: 89px;
+  font-size: 24px;
+}
+
+.arestaurant .container .restaurant {
+  display: flex;
+  justify-content: space-between;
+}
+.arestaurant .container .restaurant .restaurant-image {
+  width: 880px;
+  height: 600px;
+}
+.arestaurant .container .restaurant .restaurant-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.arestaurant .container .restaurant .restaurant-explanation p {
+  font-size: 24px;
+}
+
+.arestaurant2 .container .restaurant {
+  display: flex;
+  justify-content: space-between;
+}
+.arestaurant2 .container .restaurant .restaurant-explanation p {
+  font-size: 24px;
+}
+.arestaurant2 .container .restaurant .restaurant-image {
+  width: 880px;
+  height: 600px;
+}
+.arestaurant2 .container .restaurant .restaurant-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.infomenu .container .myswiper2 .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.infomenu .container .myswiper2 .swiper-wrapper .swiper-slide img {
+  width: 1400px;
+  height: 520px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.infomenu .container .information-email .information2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 서브페이지 멤버쉽 */
+
+.membership4 .container .membership4t {
+  text-align: center;
+}
+.membership4 .container .membership4t p {
+  font-size: 24px;
+}
+.membership4 .container .point-benefit {
+  text-align: center;
+}
+.membership4 .container .point-benefit .benefit p {
+  font-size: 24px;
+}
+
+.membershipcard-image .container .memberscard-title {
+  text-align: center;
+}
+.membershipcard-image .container .memberscard-title p {
+  font-size: 24px;
+}
+.membershipcard-image .container .membercardi {
+  display: flex;
+  justify-content: space-between;
+}
+.membershipcard-image .container .membercardi .card4 .card-explanation > ul .redcard {
+  color: red;
+}
+.membershipcard-image .container .mpage {
+  text-align: center;
+  display: block;
+  width: 100%;
+  color: red;
+}
+.membershipcard-image .container .member-info {
+  text-align: center;
+}
+
+
 
 /* 태블릿 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 1024px) {

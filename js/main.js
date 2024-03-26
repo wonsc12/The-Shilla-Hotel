@@ -75,6 +75,8 @@
 		tabcontent2.eq(targetIdx2).show(); // 인덱스 번호로 요소를 선택하는 메서드 eq
 	})
 	tabmenu2.eq(0).trigger('click');
+
+
 	
 	
 

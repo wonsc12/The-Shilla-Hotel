@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>타이틀명</title>
+  <title>라연</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/content.css">
@@ -19,7 +20,8 @@
             브레드크럼 공통영역
           </div>
           <div class="tit-area">
-            <h2>라연</h2>
+            <h2 class="tit-h2">타이틀영역</h2>
+            <p class="desc">설명입니다. 설명입니다.</p>
           </div>
           <!-- 작업담당자 : 박소현 (e) -->
 
@@ -29,73 +31,118 @@
           </div>
           <!-- 타이틀과 같은 섹션의 작업 영역입니다. -->
         </div>
-        <div class="section container-layeon">
-          <!-- 작업 영역입니다. -->
-          <div class="layeon">
-            <h2>전통과 품격의 한식 레스토랑 라연 </h2> 
-            <p>전통의 맛을 세심하고 세련되게 표현한 한식당, 羅宴<br>  
-              예(禮)와 격(格)을 갖추어 정성으로 차려낸 라연만의 한식 정찬을 소개합니다.</p> 
+        <div class="section layeon">
+          <!-- 작업 영역입니다. -->  
+          <div class="container">
+            <div class="layeont">
+              <h2 class="tit-h2">전통과 품격의 한식 레스토랑 라연 </h2> 
+              <p>전통의 맛을 세심하고 세련되게 표현한 한식당, 羅宴<br> 
+                예(禮)와 격(格)을 갖추어 정성으로 차려낸 라연만의 한식 정찬을 소개합니다.</p> 
+            </div>
+            <div class="layeontime">
+              <table>
+                <caption class="caption">
+                  <h3 class="tit-h3">운영시간</h3>
+                </caption>
+                <tbody>
+                  <tr>
+                    <th rowspan="2">WEEKDAY / WEEKEND</th>
+                    <td>LUNCH</td>
+                    <td>17:30 ~ 21:30</td>
+                  </tr>
+                  <tr>
+                    <td>DINNER</td>
+                    <td>17:30 ~ 21:30</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
-        <div class="section container-layeontime">
-          <h2>운영시간
-            <table></table>
-          </h2>
-        </div>
-        <div class="section container-Restaurant">
-          <div class="Restaurant-image"></div>
-          <div class="Restaurant-explanation">
-            <h2>Restaurant</h2>
-            <p>전국 각지에서 엄수한 <br>
-              제철 식재료를 정통 조리법을<br>
-              바탕으로 현대적인 방법으로<br>
-              재해석한 라연에서 한식의 정수를<br>
-              경험해 보시길 바랍니다.</p>
-          </div>
-        </div>
-        <div class="section container-Restaurant">
-          <div class="Restaurant-explanation">
-            <p>Restaurant</p>
-            <p>라연은 시즈널 메뉴로 운영되,시즌 변경시<br>
-              메뉴 구성 및 가격이 변동될수 있습니다.<br></p>
-            <p>LOCATION : 호텔별관 한옥</p>
-            <p>CAPACITY : 홀(40석),룸 10개(104석)</p>
-            <div class="call-reservation">
-              <div class="reservation">
-                <p>예약하기</p>
+        <div class="section arestaurant">
+          <div class="container">
+            <div class="restaurant">
+              <div class="restaurant-image">
+                <img src="images/img_mainroom_swite1.jpg" alt="">
               </div>
-              <div class="문의하기">
-                <p>문의하기</p>
+              <div class="restaurant-explanation">
+                <h3 class="tit-h3">Restaurant</h3>
+                <p>전국 각지에서 엄수한<br> 
+                  제철 식재료를 정통 조리법을<br> 
+                  바탕으로 현대적인 방법으로<br> 
+                  재해석한 라연에서 한식의 정수를<br> 
+                  경험해 보시길 바랍니다.</p>
               </div>
             </div>
           </div>
-          <div class="Restaurant-image"></div>
         </div>
-        <div class="section container-menu">
-          <h2>대표메뉴</h2>
-          <div class="swiper sswiper">
-            <ul class="swiper-wrapper ">
-              <li class="swiper-slide">
-                <div class="Representative-image"></div>
-              </li>
-            </ul>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+        <div class="section arestaurant2">
+          <div class="container">
+            <div class="restaurant">
+              <div class="restaurant-explanation">
+                <h3 class="tit-h3">Restaurant</h3>
+                <p>라연은 시즈널 메뉴로 운영되,시즌 변경시<br>
+                  메뉴 구성 및 가격이 변동될수 있습니다.<br></p>
+                <p>LOCATION : 호텔별관 한옥</p>
+                <p>CAPACITY : 홀(40석),룸 10개(104석)</p>
+                <div class="call-reservation">
+                  <div class="reservation">
+                    <a href="#none"><p>예약하기</p></a>
+                  </div>
+                  <div class="inquiry">
+                    <a href="#none"><p>문의하기</p></a>
+                  </div>
+                </div>
+              </div>
+              <div class="restaurant-image">
+                <img src="images/img_mainroom_swite3.jpg" alt="">
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="section container-information">
-          <div class="information2">
-            <h2>추가정보</h2>
-            <h2>메뉴보기</h2>
+        </div>  
+        <div class="section infomenu">
+          <div class="container">
+            <div class="menu">
+              <h3 class="tit-h3">대표메뉴</h3>
+            </div>
+            <div class="swiper myswiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide dsf">
+                  <img src="images/img_mainroom_deluxe2.jpg" alt="deluxe2">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/img_mainroom_dexule3.jpg" alt="dexule3">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/img_mainroom_dexule4.jpg" alt="dexule4">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/img_mainroom_dexule5.jpg" alt="dexule5">
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="information-email">
+              <div class="information2">
+                <h4 class="tit-h4">추가정보</h4>
+                <a href="#none"><h4 class="tit-h4">메뉴보기</h4></a>
+              </div>
+              <div class="email">
+                <p>레스토랑 사정에 따라 운영 시간이 변경될 수 있습니다.</p>
+                <p>문의·예약 T. 02.2660.9014 ㅣ E-MAIL. turnapple123@naver.co.kr</p>
+              </div>
+            </div>
           </div>
-          <div class="email">
-            <p>레스토랑 사정에 따라 운영 시간이 변경될 수 있습니다.</p>
-            <p>문의·예약 T. 02.2660.9014 ㅣ E-MAIL. turnapple123@naver.co.kr</p>
-          </div>
-        </div>       
+        </div>    
     </main>
     <!-- 작업담당자 : 최원석 (e) -->
     <footer>푸터공통영역</footer> <!-- 임시 : 완성된 후 넣어야함 -->
   </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="js/sub.js"></script>
 </body>
 </html>
