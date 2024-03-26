@@ -83,29 +83,45 @@
 
 	// membership
 
-let membershipParent = $('.membership-card'),
-		membershipWrap = $('.membership-wrapper'),
-		membership = $('.membership-wrapper > li'),
-		membershipPager = $('.membership-pager > li > a');
-		currentIdx = 0;
+// let membershipParent = $('.membership-card'),
+// 		membershipWrap = $('.membership-wrapper'),
+// 		membership = $('.membership-wrapper > li'),
+// 		membershipPager = $('.membership-pager > li > a');
+// 		currentIdx = 0;
 
-		memberWidth = membershipParent.outerWidth();
-		membershipWrap.css({width:memberWidth * membership.length + 'px'})
+// 		memberWidth = membershipParent.outerWidth();
+// 		membershipWrap.css({width:memberWidth * membership.length + 'px'})
 
-		function moveSlide(num){
-			let memberslide = -num * memberWidth;
-      slideContainer.stop().animate({
-        transform : `translateX(${memberslide}px)`
-      });
+// 		function moveSlide(num){
+// 			let memberslide = -num * memberWidth;
+//       slideContainer.stop().animate({
+//         transform : `translateX(${memberslide}px)`
+//       });
 
-      currentIdx = num;
+//       currentIdx = num;
 
-		};
-		updateSlide();
+// 		};
+// 		updateSlide();
 
-		//페이저 누르면 이동
-    membershipPager.click(function(e){
-      e.preventDefault();
-      let targetIdx = $(this).index();
-      moveSlide(targetIdx);
-    });
+// 		//페이저 누르면 이동
+//     membershipPager.click(function(e){
+//       e.preventDefault();
+//       let targetIdx = $(this).index();
+//       moveSlide(targetIdx);
+//     });
+
+/* 시설소개 */
+
+const swipers = new Swiper('.swiper-container', {
+  loop: true,
+  slidesPerView: 'auto',
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: true
+  },
+  centeredSlides: true,
+  navigation: {
+    nextEl: '.intro-next',
+    prevEl: '.intro-prev',
+  }
+});

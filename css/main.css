@@ -337,21 +337,24 @@
 
 /* 시설소개 */
 
-.facilities-slider {
+.facilities-slide {
   position: relative;
-}
-.facilities-inner {
-  overflow: hidden;
   width: 100%;
   margin: 0 auto; 
+  overflow: hidden;
 }
 .facilities-list li {
-  width: 31%;
+  position: relative;
+  width: 30%;
+  margin:0 10px;
+  opacity: .5;
+  transform: scale(.84);
+  transition: all .3s ease-in-out;
+  overflow: hidden;
 }
 .facilities-img p {
   display: block;
   text-align: center;
-  margin: 20px auto;
 }
 .facilities-img span {
   display: block;
@@ -361,7 +364,90 @@
 .facilities-txt {
   margin-top: 48px;
 }
+.facilities-txt span {
+  display: block;
+  margin: 10px auto;
+  width: 400px;
+}
+.swiper-backface-hidden .swiper-slide {
+  transform: scale(.90) translateZ(0);
+}
+.swiper-slide.swiper-slide-active {  
+  transform: scale(1) !important;
+  opacity: 1 !important;
+}
+.intro-btn {
+  display: flex;
+  position: absolute;
+  top: 65%;
+  cursor: pointer;
+}
+.intro-prev,
+.intro-next {
+  top: 300px;
+  left: 50%;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  width: 100px;
+  height: 100px;
+  display: block;
+  z-index: 10;
+  text-indent: -9999em;
+}
+.intro-prev {
+  margin-left: 349px;
+  background: #D4B297;
+}
+.intro-next {
+  margin-left: 502px;
+  background: #122223;
+}
+.intro-prev::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 35.8%;
+  width: 20px;
+  height: 1px;
+  background: var(--white, #fff);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.intro-prev::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 52.5%;
+  left: 36%;
+  height: 1px;
+  width: 50px;
+  margin-top: 4px;
+  background: var(--white, #fff);
+}
+.intro-next::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 1.7%;
+  width: 20px;
+  height: 1px;
+  background: var(--white, #fff);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.intro-next::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 52.5%;
+  right: 2%;
+  height: 1px;
+  width: 50px;
+  margin-top: 4px;
+  background: var(--white, #fff);
 
+}
 
 /* 태블릿 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 1024px) {
