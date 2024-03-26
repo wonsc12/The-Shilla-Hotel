@@ -79,15 +79,15 @@ $(function(){
 	// ACCORDIAN
 	$('.acco-item').eq(0).addClass('on');
 	
-	$('.acco-head').click(function(e){
+	$('.acco-btn').click(function(e){
 		e.preventDefault();
-
+		console.log($(this).closest('.acco-item'))
 		if(!$(this).closest('.acco-item').hasClass('on')){
 			$(this).closest('.acco-item').addClass('on');
-			$(this).siblings('.acco-body').slideDown(400);
+			$(this).closest('.acco-head').siblings('.acco-body').slideDown(400);
 		}else{
 			$(this).closest('.acco-item').removeClass('on');
-			$(this).siblings('.acco-body').slideUp(400);
+			$(this).closest('.acco-head').siblings('.acco-body').slideUp(400);
 		}
 	})
 });
