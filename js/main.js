@@ -105,8 +105,15 @@ const swipers = new Swiper('.swiper-container', {
 });
 
 
-
-
+// header sticky
+$($(window)).scroll(function(){
+	console.log($(window).innerHeight())
+	if($(window).scrollTop() >= $(window).innerHeight()){
+		$('header').addClass('sticky');
+	}else{
+		$('header').removeClass('sticky');
+	}
+})
 
 
 

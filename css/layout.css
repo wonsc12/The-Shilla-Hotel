@@ -26,7 +26,7 @@ header{position: fixed; top: 0; left: 0; right: 0; z-index: 999;}
 .header-wrap .util-list .lang-drop.active > ul a:hover {background-color: var(--bg-dark-gray, #ccc);}
 
 /* header fixed */
-header.sticky {position: fixed; background-color: var(--white, #fff);}
+header.sticky {position: fixed; background-color: var(--white, #fff); box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);}
 header.sticky .header-wrap .logo a {background-image:url(../images/logo_sh_b.png);}
 header.sticky .header-wrap .all-menu > button:before,
 header.sticky .header-wrap .all-menu > button:after,
