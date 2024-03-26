@@ -45,6 +45,12 @@
   background: #fff;
   font-weight: bold;
 }
+.room4 .container .tit-area .tab .tab-menu li a::after.active { 
+  content: ''; 
+  width: 5px;
+  height: 1px;
+  color: red;
+}
 .room4 .container #tabs .tab-content #tabs-1, 
 .room4 .container #tabs .tab-content #tabs-2, 
 .room4 .container #tabs .tab-content #tabs-3, 

@@ -1,5 +1,7 @@
 $(function(){ 
 
+	
+
 	// 파일 업로드 텍스트 출력
 	$('#file').change(function(){
 		let fileName = $(this).val().split('\\').pop(); // 파일 경로에서 파일명만 추출
@@ -75,9 +77,9 @@ $(function(){
 		$(this).closest('.tab-wrap').find('.tab-content > .tab-pannel').removeClass('on');
 		$(this).closest('.tab-wrap').find('.tab-content > .tab-pannel:eq('+$(this).closest('li').index()+')').addClass('on');
 	})
+
 });
 
-/*
 // 서브페이지 객실소개
 
 const swiper1 = new Swiper(".myswiper", {
@@ -119,7 +121,10 @@ const swiper2= new Swiper(".myswiper2", {
 		},
 
 });
-*/
+
+	
+
+
 
 
 
