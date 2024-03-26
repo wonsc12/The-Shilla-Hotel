@@ -79,14 +79,15 @@ $(function(){
 	// ACCORDIAN
 	$('.acco-item').eq(0).addClass('on');
 	
-	$('.acco-btn').click(function(e){
+	$('.acco-head').click(function(e){
 		e.preventDefault();
 
 		if(!$(this).closest('.acco-item').hasClass('on')){
 			$(this).closest('.acco-item').addClass('on');
-			$(".acco-body").slideToggle(400);
+			$(this).siblings('.acco-body').slideDown(400);
 		}else{
 			$(this).closest('.acco-item').removeClass('on');
+			$(this).siblings('.acco-body').slideUp(400);
 		}
 	})
 });
