@@ -1,3 +1,4 @@
+$(function(){ 
 	var swiper = new Swiper(".swiper", {
 		autoplay: {
 			delay: 3000,
@@ -109,3 +110,5 @@ let membershipParent = $('.membership-card'),
       let targetIdx = $(this).index();
       moveSlide(targetIdx);
     });
+});	
+	
