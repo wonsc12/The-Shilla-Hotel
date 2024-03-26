@@ -172,6 +172,9 @@ textarea::placeholder {color: var(--placeholder, #999); line-height: var(--line-
 .total-num-area {margin: 50px 0 30px;}
 .total-num-area > em {font-weight: 700;}
 
+/* flag */
+.flag {position: absolute; top: 0; left: 0; min-width: 124px; padding: 14px 20px; background-color: var(--black, #222); color: var(--white, #fff); text-align: center;}
+
 /* 태블릿 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 1024px) {
   /* 태블릿 크기에서 적용되는 스타일 */
