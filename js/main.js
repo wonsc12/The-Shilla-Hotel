@@ -90,7 +90,7 @@ $(function(){
 	
 
 
-	/* membership */
+	/* membership 수정 작업중
 
 let memberWrapper = $('.membership-card'),
 		memberSlide = memberWrapper.find('.membership-wrapper'),
@@ -106,11 +106,11 @@ function moveSlide(num){
 	let currentMslide = memberSlide.eq(currentIdx);
 	let nextMslide = memberSlide.eq(num);
 
-	currentMslide.css({left:'0'}).animate({left:'-1080px'});
-	nextMslide.css({left:'1080px'}).animate({left:'0'});
+	currentMslide.css({left:0}).animate({left:'-100%'});
+	nextMslide.css({left:'100%'}).animate({left:'0'});
 	currentIdx = num;
 }
-
+*/
 
 /* 시설소개 */
 
