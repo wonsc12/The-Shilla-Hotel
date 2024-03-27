@@ -92,9 +92,25 @@ $(function(){
 
 	/* membership */
 
+let memberWrapper = $('.membership-card'),
+		memberSlide = memberWrapper.find('.membership-wrapper'),
+		currentIdx = 0,
+		memberPager = memberWrapper.find('.membership-pager li a');
 
+memberPager.click(function(e){
+	e.preventDefault();
+	moveSlide($(this).index());
+});
 
-	
+function moveSlide(num){
+	let currentMslide = memberSlide.eq(currentIdx);
+	let nextMslide = memberSlide.eq(num);
+
+	currentMslide.css({left:'0'}).animate({left:'-1080px'});
+	nextMslide.css({left:'1080px'}).animate({left:'0'});
+	currentIdx = num;
+}
+
 
 /* 시설소개 */
 
