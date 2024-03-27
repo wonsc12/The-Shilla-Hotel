@@ -8,6 +8,9 @@
 .section.home .main-txt {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100%; text-align: center;}
 .section.home .main-txt strong {color: var(--white, #fff); font-size: 50px; font-weight: 100;}
 
+/* main - tit-area */
+.tit-area {margin-bottom: calc(var(--line-height)*2); padding-top: 0;}
+
 /* 객실소개 최원석*/
 
 .room4 .container .tit-area {
