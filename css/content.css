@@ -753,6 +753,18 @@
 }
 
 
+
+/* 신라호텔 - 서울, 제주 */
+.hotel-intro {
+  background: url('../images/bg_sub_seoul.jpg') no-repeat center;
+  background-size: cover;
+}
+.hotel-title {
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 /* 태블릿 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 1024px) {
   /* 태블릿 크기에서 적용되는 스타일 */

@@ -147,11 +147,6 @@ textarea::placeholder {color: var(--placeholder, #999); line-height: var(--line-
 .breadcrumbs .drop-menu li > a {font-size:12px;}
 .breadcrumbs .drop-menu li > a:hover {background-color: #ccc;}
 
-/* sub-breadcrumbs 이미지 있을 때 */
-.breadcrumbs.white > ol > li:first-child a,
-.breadcrumbs.white > ol > li button span {color: #fff;}
-.breadcrumbs.white > ol > li button span:after {border-color:#fff transparent transparent transparent;}
-
 /* sub- nodata */
 .no-data {display: flex; justify-content: center; align-items: center; padding-top: 110px; background: url(../images/icon_nodata.png) no-repeat center top; background-size: 70px auto; margin-top: 100px;}
 .no-data p {font-size: 24px;}

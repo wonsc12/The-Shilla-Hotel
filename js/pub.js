@@ -2,24 +2,16 @@ $(function(){
 
   // header footer load
   $('#header').load('header.html', function(){
-    // header 언어 영역
-		$('.lang-drop ul').hide();
-		$(".lang-drop button").click(function(){
-			if(!$(this).closest('.lang-drop').hasClass('on')){
-				$(this).closest('.lang-drop').addClass("on");
-				$(this).closest('.lang-drop').find('ul').show();
-			}else{
-				$(this).closest('.lang-drop').removeClass("on");
-				$(this).closest('.lang-drop').find('ul').hide();
-			}
-		})
-
+    
   });
-
-
   $('#footer').load('footer.html',function(){
 
   });
+
+  // header 언어 영역
+  $(".lang-drop > button").click(function(){
+    
+  })
 
   //sub-breadcrumbs
 	$(".breadcrumbs li button").off('click').click(function(){
