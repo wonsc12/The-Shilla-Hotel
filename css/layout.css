@@ -48,6 +48,7 @@ header.sticky .header-wrap .util-list .lang-drop button:after {border-color: var
 footer {
   background: var(--black, #222222);
   color:#A1A1A1;
+  margin-top: calc(var(--line-height) * 3);
 }
 footer .footer-wrap {
   padding: 72px 0;
