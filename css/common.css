@@ -148,7 +148,7 @@ textarea::placeholder {color: var(--placeholder, #999); line-height: var(--line-
 .breadcrumbs .drop-menu li > a:hover {background-color: #ccc;}
 
 /* sub-breadcrumbs 이미지 있을 때 */
-.breadcrumbs.white > ol > li a,
+.breadcrumbs.white > ol > li:first-child a,
 .breadcrumbs.white > ol > li button span {color: #fff;}
 .breadcrumbs.white > ol > li button span:after {border-color:#fff transparent transparent transparent;}
 
