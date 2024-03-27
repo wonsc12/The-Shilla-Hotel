@@ -368,10 +368,10 @@
   margin: 10px auto;
   width: 400px;
 }
-.swiper-backface-hidden .swiper-slide {
+.facility .swiper-backface-hidden .swiper-slide {
   transform: scale(.90) translateZ(0);
 }
-.swiper-slide.swiper-slide-active {  
+.facility .swiper-slide.swiper-slide-active {  
   transform: scale(1) !important;
   opacity: 1 !important;
 }
@@ -448,7 +448,7 @@
   background: var(--white, #fff);
 }
 
-.swiper-slide-active {
+.facility .swiper-slide-active {
   display: block;
 }
 
