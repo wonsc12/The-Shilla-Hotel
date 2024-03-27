@@ -116,6 +116,9 @@ $(function(){
 
 	// ACCORDIAN
 	$('.acco-item').eq(0).addClass('on');
+	if($('.acco-item').eq(0).hasClass('on')){
+		$('.acco-item').eq(0).find('.acco-body').slideDown(400);
+	}
 	
 	$('.acco-btn').click(function(e){
 		e.preventDefault();

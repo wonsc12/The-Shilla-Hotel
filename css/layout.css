@@ -1,9 +1,10 @@
 @charset "utf-8";
 
 .container {position: relative; width: 1400px; margin: 0 auto;}
+.wrapper {position: relative;}
 
 /* header */
-header{position: fixed; top: 0; left: 0; right: 0; z-index: 999;}
+header{position: fixed; top: 0; left: 0; right: 0; z-index: 100;}
 .header-wrap {display: flex; justify-content: space-between; align-items: center; padding: 32px 48px;}
 .header-wrap .left-hd {display: flex; align-items: center; gap: 16px;}
 .header-wrap .all-menu > button {position: relative; width: 36px; height: 36px; padding: 12px 5px;}
@@ -35,6 +36,13 @@ header.sticky .header-wrap .all-menu > button > span:after {background-color: va
 header.sticky .header-wrap .util-list a, 
 header.sticky .header-wrap .util-list .lang-drop button {color: var(--black, #222);}
 header.sticky .header-wrap .util-list .lang-drop button:after {border-color: var(--black, #222) transparent transparent transparent;}
+
+/* header 전체메뉴 */
+.allmenu-wrap {position: absolute; top: 100px; bottom: 0; left: 0; right: 0; z-index: 999; height: calc(100vh - 100px); background-color: var(--black, #222);}
+.allmenu-wrap .depth-01-list {display: flex; justify-content: space-between; gap: 16px;}
+.allmenu-wrap .depth-01-list > li {width:calc(100% / 6); text-align: center; color: var(--subcolor02, #D4B297);}
+.allmenu-wrap .depth-02-list {display:flex; flex-direction:column; gap: 16px; margin-top: 27px;}
+.allmenu-wrap .depth-02-list > li a {color: var(--white, #fff); font-weight: 400;}
 
 /* footer */
 footer {
