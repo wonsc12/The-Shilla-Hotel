@@ -13,10 +13,11 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/sub.js"></script>
+  <script src="js/pub.js"></script>
 </head>
 <body>
   <div class="wrapper">
-    <header class="temp-area" style="position:relative">헤더공통영역</header> <!-- 임시 : 완성된 후 넣어야함 -->
+    <header class="sticky" id="header"></header>
     <!-- 작업담당자 : 박소현 (s) -->
     <main id="content">
       <div class="section">
@@ -243,7 +244,7 @@
       </div>
     </main>
     <!-- 작업담당자 : 박소현 (e) -->
-    <footer class="temp-area" style="position:relative">푸터공통영역</footer> <!-- 임시 : 완성된 후 넣어야함 -->
+    <footer id="footer"></footer>
   </div>
 </body>
 </html>

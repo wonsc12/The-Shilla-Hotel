@@ -1,5 +1,7 @@
 $(function(){ 
 
+	
+
 	// 파일 업로드 텍스트 출력
 	$('#file').change(function(){
 		let fileName = $(this).val().split('\\').pop(); // 파일 경로에서 파일명만 추출
@@ -76,23 +78,11 @@ $(function(){
 		$(this).closest('.tab-wrap').find('.tab-content > .tab-pannel:eq('+$(this).closest('li').index()+')').addClass('on');
 	})
 
-	// ACCORDIAN
-	$('.acco-item').eq(0).addClass('on');
-	
-	$('.acco-head').click(function(e){
-		e.preventDefault();
 
-		if(!$(this).closest('.acco-item').hasClass('on')){
-			$(this).closest('.acco-item').addClass('on');
-			$(this).siblings('.acco-body').slideDown(400);
-		}else{
-			$(this).closest('.acco-item').removeClass('on');
-			$(this).siblings('.acco-body').slideUp(400);
-		}
-	})
+
+	
 });
 
-/*
 // 서브페이지 객실소개
 
 const swiper1 = new Swiper(".myswiper", {
@@ -134,7 +124,11 @@ const swiper2= new Swiper(".myswiper2", {
 		},
 
 });
-*/
+
+
+	
+
+
 
 
 

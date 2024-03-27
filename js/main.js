@@ -20,12 +20,12 @@ $(function(){
 		},
 		
 		breakpoints: {
-		  640: {
-			slidesPerView: 2,
+		  480: {
+			slidesPerView: 1,
 			spaceBetween: 20,
 		  },
 		  768: {
-			slidesPerView: 3,
+			slidesPerView: 2,
 			spaceBetween: 40,
 		  },
 		  1024: {
@@ -35,17 +35,25 @@ $(function(){
 		},
 		
 		direction:"horizontal",
+
+		
 		
 	});
 	// $('.swiper-slide').hover(function() {swiper.autoplay.stop();}, function(){swiper.autoplay.start();});
-	// $('.start').on('click',function(){
-	// 	swiper.autoplay.start();
-	// 	return false;
-	// });
-	// $('.stop').on('click',function(){
-	// 	swiper.autoplay.stop();
-	// 	return false;
-	// });
+	// 자동 재생 시작, 정지 버튼 만들기 스크립트
+	console.log(swiper);
+
+	$('.swiper-pause').click(function(){
+		let targetId = $(this).closest('.tabn').attr('data-ind');
+		console.log('멈춤');
+		swiper[targetId].autoplay.stop()
+	})
+	$('.swiper-play').click(function(){
+		let targetId = $(this).closest('.tabn').attr('data-ind');
+		console.log('시작');
+		swiper[targetId].autoplay.start()
+	})
+	
 	
 
 
@@ -105,8 +113,15 @@ const swipers = new Swiper('.swiper-container', {
 });
 
 
-
-
+// header sticky
+$($(window)).scroll(function(){
+	console.log($(window).innerHeight())
+	if($(window).scrollTop() >= $(window).innerHeight()){
+		$('header').addClass('sticky');
+	}else{
+		$('header').removeClass('sticky');
+	}
+})
 
 
 

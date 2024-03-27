@@ -18,63 +18,81 @@
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/pub.js"></script>
   <script src="js/main.js"></script>	
   <!-- 검색엔진 및 파비콘 넣기 -->
 </head>
 <body>
   <div class="wrapper">
     <!-- 작업담당자 : 박소현 (s) -->
-    <header>
-      <div class="header-wrap">
-        <div class="left-hd">
-          <div class="all-menu">
-            <button type="button">
-              <span>
-                <span class="blind">전체메뉴</span>
-              </span>
-            </button>
-          </div>
-          <h1 class="logo">
-            <a href="#">
-              <span class="blind">the shilla</span>
-            </a>
-          </h1>
-        </div>
-        <ul class="util-list">
-          <li>
-            <a href="#">예약하기</a>
-          </li>
-          <li>
-            <a href="#">예약조회</a>
-          </li>
-          <li>
-            <a href="#">로그인</a>
-          </li>
-          <li>
-            <a href="#">회원가입</a>
-          </li>
-          <li>
-            <div class="lang-drop"> <!--active 클래스 일때 ul block-->
-              <button type="button">
-                <span>한국어</span>
-              </button>
-              <ul>
-                <li>
-                  <a href="#">한국어</a>
-                </li>
-                <li>
-                  <a href="#">영어</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-      
-      </div>
-    </header>
+    <header id="header"></header> <!--header에 active 클래스 들어오면 전체메뉴 열림-->
     <div class="allmenu-wrap">
-
+      <div class="container">
+        <nav class="gnb" style="display: none;">
+          <ul classs="sub-list">
+            <li>
+              호텔소개
+                <ul class="">
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                </ul>
+            </li>
+            <li>
+              호텔소개
+                <ul>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                </ul>
+            </li>
+            <li>
+              호텔소개
+                <ul>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                </ul>
+            </li>
+            <li>
+              호텔소개
+                <ul>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                </ul>
+            </li>
+            <li>
+              호텔소개
+                <ul>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                </ul>
+            </li>
+            <li>
+              호텔소개
+                <ul>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                  <li>ddddd</li>
+                </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <!-- 작업담당자 : 박소현 (e) -->
 
@@ -112,11 +130,11 @@
           </div>
           <div id="tabs">
             <div class="tab-content">
-              <div id="tabs-1">
+              <div id="tabs-1" data-ind="0" class="tabn">
                 <div class="swiper sswiper">
-                  <ul class="swiper-wrapper ">
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                  <ul class="swiper-wrapper imgwrapper">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_deluxe1.jpg" alt="deluxe1">
                       </div>
                       <div class="bg">
@@ -128,8 +146,8 @@
                         <p>침대타입 : 더블 킹 사이즈</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_deluxe2.jpg" alt="deluxe2">
                       </div>
                       <div class="bg">
@@ -141,8 +159,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_dexule3.jpg" alt="deluxe3">
                       </div>
                       <div class="bg">
@@ -154,8 +172,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_dexule4.jpg" alt="deluxe4 ">
                       </div>
                       <div class="bg">
@@ -167,8 +185,8 @@
                         <p>침대타입 : 더블 킹 사이즈</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_dexule5.jpg" alt="deluxe5">
                       </div>
                       <div class="bg">
@@ -180,8 +198,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_deluxe6.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -193,8 +211,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive1.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -206,8 +224,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive2.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -219,8 +237,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive3.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -232,8 +250,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive4.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -245,8 +263,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive5.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -258,8 +276,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive6.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -271,8 +289,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite1.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -284,8 +302,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite2.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -297,8 +315,8 @@
                         <p>침대타입 : 더블 킹 사이즈</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite3.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -310,8 +328,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite4.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -323,8 +341,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite5.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -336,8 +354,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite6.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -353,17 +371,15 @@
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-pagination"></div>
-                  <div class="start-stop">
-                    <button class="start">시작</button>
-                    <button class="stop">정지</button>
-                  </div>
+                  <div class="swiper-pause">일시정지</div>
+                  <div class="swiper-play">재생</div>
                 </div>
               </div>
-              <div id="tabs-2">
+              <div id="tabs-2" data-ind="1" class="tabn">
                 <div class="swiper sswiper">
-                  <ul class="swiper-wrapper ">
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                  <ul class="swiper-wrapper imgwrapper">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive1.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -375,8 +391,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive2.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -388,8 +404,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive3.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -401,8 +417,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive4.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -414,8 +430,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive5.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -427,8 +443,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive6.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -444,17 +460,15 @@
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-pagination"></div>
-                  <div class="start-stop">
-                    <button class="start">시작</button>
-                    <button class="stop">정지</button>
-                  </div>
+                  <div class="swiper-pause">일시정지</div>
+                  <div class="swiper-play">재생</div>
                 </div>
               </div>
-              <div id="tabs-3">
+              <div id="tabs-3" data-ind="2" class="tabn">
                 <div class="swiper sswiper">
-                  <ul class="swiper-wrapper ">
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                  <ul class="swiper-wrapper imgwrapper">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_deluxe1.jpg" alt="deluxe1">
                       </div>
                       <div class="bg">
@@ -466,8 +480,8 @@
                         <p>침대타입 : 더블 킹 사이즈</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_deluxe2.jpg" alt="deluxe2">
                       </div>
                       <div class="bg">
@@ -479,8 +493,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_dexule3.jpg" alt="deluxe3">
                       </div>
                       <div class="bg">
@@ -492,8 +506,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_dexule4.jpg" alt="deluxe4 ">
                       </div>
                       <div class="bg">
@@ -505,8 +519,8 @@
                         <p>침대타입 : 더블 킹 사이즈</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_dexule5.jpg" alt="deluxe5">
                       </div>
                       <div class="bg">
@@ -518,8 +532,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_deluxe6.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -535,13 +549,15 @@
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-pagination"></div>
+                  <div class="swiper-pause">일시정지</div>
+                  <div class="swiper-play">재생</div>
                 </div>
               </div>
-              <div id="tabs-4">
+              <div id="tabs-4" data-ind="3" class="tabn">
                 <div class="swiper sswiper">
-                  <ul class="swiper-wrapper ">
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                  <ul class="swiper-wrapper imgwrapper">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite1.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -553,8 +569,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite2.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -566,8 +582,8 @@
                         <p>침대타입 : 더블 킹 사이즈</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite3.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -579,8 +595,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite4.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -592,8 +608,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite5.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -605,8 +621,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite6.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -622,6 +638,8 @@
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-pagination"></div>
+                  <div class="swiper-pause">일시정지</div>
+                  <div class="swiper-play">재생</div>
                 </div>
               </div>
             </div>
@@ -643,11 +661,11 @@
           </div>
           <div id="tabs2">
             <div class="tab-content2">
-              <div id="tabs-1">
+              <div id="tabs-1" data-ind="4" class="tabn">
                 <div class="swiper rswiper">
-                  <ul class="swiper-wrapper ">
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                  <ul class="swiper-wrapper imgwrapper">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_deluxe1.jpg" alt="deluxe1">
                       </div>
                       <div class="bg">
@@ -659,8 +677,8 @@
                         <p>침대타입 : 더블 킹 사이즈</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_deluxe2.jpg" alt="deluxe2">
                       </div>
                       <div class="bg">
@@ -672,8 +690,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_dexule3.jpg" alt="deluxe3">
                       </div>
                       <div class="bg">
@@ -685,8 +703,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_dexule4.jpg" alt="deluxe4 ">
                       </div>
                       <div class="bg">
@@ -698,8 +716,8 @@
                         <p>침대타입 : 더블 킹 사이즈</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_dexule5.jpg" alt="deluxe5">
                       </div>
                       <div class="bg">
@@ -711,8 +729,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_deluxe6.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -724,8 +742,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive1.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -737,8 +755,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive2.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -750,8 +768,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive3.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -763,8 +781,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive4.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -776,8 +794,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive5.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -789,8 +807,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive6.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -802,8 +820,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite1.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -815,8 +833,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite2.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -828,8 +846,8 @@
                         <p>침대타입 : 더블 킹 사이즈</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite3.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -841,8 +859,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite4.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -854,8 +872,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite5.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -867,8 +885,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite6.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -884,17 +902,15 @@
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-pagination"></div> 
-                  <div class="start-stop">
-                    <button class="start">시작</button>
-                    <button class="stop">정지</button>
-                  </div>
+                  <div class="swiper-pause">일시정지</div>
+                  <div class="swiper-play">재생</div>
                 </div>
               </div>
-              <div id="tabs-2">
+              <div id="tabs-2" data-ind="5" class="tabn">
                 <div class="swiper rswiper">
-                  <ul class="swiper-wrapper ">
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                  <ul class="swiper-wrapper imgwrapper">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive1.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -906,8 +922,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive2.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -919,8 +935,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive3.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -932,8 +948,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive4.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -945,8 +961,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive5.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -958,8 +974,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_exacutive6.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -975,13 +991,15 @@
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-pagination"></div>
+                  <div class="swiper-pause">일시정지</div>
+                  <div class="swiper-play">재생</div>
                 </div>
               </div>
-              <div id="tabs-3">
+              <div id="tabs-3" data-ind="6" class="tabn">
                 <div class="swiper rswiper">
-                  <ul class="swiper-wrapper ">
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                  <ul class="swiper-wrapper imgwrapper">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_deluxe1.jpg" alt="deluxe1">
                       </div>
                       <div class="bg">
@@ -993,8 +1011,8 @@
                         <p>침대타입 : 더블 킹 사이즈</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_deluxe2.jpg" alt="deluxe2">
                       </div>
                       <div class="bg">
@@ -1006,8 +1024,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_dexule3.jpg" alt="deluxe3">
                       </div>
                       <div class="bg">
@@ -1019,8 +1037,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_dexule4.jpg" alt="deluxe4 ">
                       </div>
                       <div class="bg">
@@ -1032,8 +1050,8 @@
                         <p>침대타입 : 더블 킹 사이즈</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_dexule5.jpg" alt="deluxe5">
                       </div>
                       <div class="bg">
@@ -1045,8 +1063,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_deluxe6.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -1062,13 +1080,15 @@
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-pagination"></div>
+                  <div class="swiper-pause">일시정지</div>
+                  <div class="swiper-play">재생</div>
                 </div>
               </div>
-              <div id="tabs-4">
+              <div id="tabs-4" data-ind="7" class="tabn">
                 <div class="swiper rswiper">
-                  <ul class="swiper-wrapper ">
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                  <ul class="swiper-wrapper imgwrapper">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite1.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -1080,8 +1100,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite2.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -1093,8 +1113,8 @@
                         <p>침대타입 : 더블 킹 사이즈</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite3.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -1106,8 +1126,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite4.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -1119,8 +1139,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite5.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -1132,8 +1152,8 @@
                         <p>침대타입 : 더블 킹 사이즈(트윈)</p>
                       </div>
                     </li>
-                    <li class="swiper-slide">
-                      <div class="image-box">
+                    <li class="swiper-slide imgslide">
+                      <div id="image-box">
                         <img src="images/img_mainroom_swite6.jpg" alt="deluxe6">
                       </div>
                       <div class="bg">
@@ -1149,6 +1169,8 @@
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-pagination"></div>
+                  <div class="swiper-pause">일시정지</div>
+                  <div class="swiper-play">재생</div>
                 </div>
               </div>
             </div>
@@ -1304,98 +1326,7 @@
     </main>
 
     <!-- 작업담당자 : 이다영 (s) -->
-    <footer>
-      <div class="footer-wrap container">
-        <ul>
-          <li class="full">
-            <h2>the shilla hotel</h2>
-            <div>
-              <div>
-                <a href="#">
-                  <img src="images/img_footer_seoul.jpg" alt="서울신라">
-                  <p>The Shilla Seoul</p>
-                </a>
-              </div>
-              <div>
-                <a href="#">
-                  <img src="images/img_footer_jeju.jpg" alt="제주신라">
-                  <p>The Shilla jeju</p>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <h2>shilla monogram</h2>
-            <div>
-              <a href="#">
-                <img src="images/img_footer_monogram.jpg" alt="">
-                <p>Shilla monogram</p>
-              </a>
-            </div>
-          </li>
-          <li>
-            <h2>shilla stay</h2>
-            <div>
-              <a href="#">
-                <img src="images/img_footer_stay.jpg" alt="">
-                <p>Shilla stay</p>
-              </a>
-            </div>
-          </li>
-        </ul>
-        <div class="footer-info-list">
-          <div>
-            <h2><a href="index.html">신라호텔</a></h2>
-            <ul>
-              <li><a href="#">신라리워즈 약관</a></li>
-              <li><a href="#">개인정보 처리방침</a></li>
-              <li><a href="#">이메일 무단수집금지</a></li>
-              <li><a href="#">윤리경영(부정제보)</a></li>
-              <li><a href="#">건축 시설물 안전관리</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-family-list">
-          <ul>
-            <li><a href="#"><img src="images/svg_footer_dutyfree.svg" alt="신라면세점"></a></li>
-            <li><a href="#"><img src="images/svg_footer_shop.svg" alt="신라숍"></a></li>
-            <li><a href="#"><img src="images/svg_footer_vant.svg" alt="피트니스멤버십"></a></li>
-          </ul>
-          <div class="footer-family-site">
-            <select>
-              <option value="FAMILY SITE">FAMILY SITE</option>
-              <option value="신라호텔">신라호텔</option>
-              <option value="신라면세점">신라면세점</option>
-              <option value="신라숍">신라숍</option>
-              <option value="삼성상품권">삼성상품권</option>
-              <option value="반트">반트</option>
-            </select>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <div class="footer-address">
-            <address>서울 특별시 중구 동호로 249</address>
-              <ul>
-                <li><strong>대표이사</strong> 이부진</li>
-                <li><strong>사업자등록번호</strong> 203-81-43363</li>
-                <li><strong>통신판매신고번호</strong> 중구 00272호</li>
-            </ul>
-            <p>copyright &copy; hotel shilla co.ltd. all right reserved.</p>
-          </div>
-          <ul class="footer-sns">
-            <li><a href="#" target="_blank">
-              <em class="icon-blog"><span class="blind">naver blog</span></em>
-            </a></li>
-            <li><a href="#" target="_blank">
-              <em class="icon-insta"><span class="blind">instagram</span></em>
-            </a></li>
-            <li><a href="#" target="_blank">
-              <em class="icon-youtube"><span class="blind">youtube</span></em>
-            </a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+    <footer id="footer"></footer>
     <!-- 작업담당자 : 이다영 (e) -->
   </div>
 </body>

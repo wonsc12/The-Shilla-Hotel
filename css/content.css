@@ -31,7 +31,6 @@
 .acco-item .acco-btn {display:block; width: 100%; padding: 14px 24px; font-size: 18px;}
 .acco-item .category {display:inline-block; min-width: 102px;}
 .acco-item .acco-body {display:none; padding: 24px; background-color: var(--bg-light-gray, #f8f8f8); color: var(--acco-txt, #666);}
-.acco-item.on .acco-body {display: block;}
 
 /* 서브페이지 객실 스탠다드 이그제큐티브 스위트 */
 
