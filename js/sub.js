@@ -78,6 +78,22 @@ $(function(){
 		$(this).closest('.tab-wrap').find('.tab-content > .tab-pannel:eq('+$(this).closest('li').index()+')').addClass('on');
 	})
 
+	// ACCORDIAN
+	$('.acco-item').eq(0).addClass('on');
+	
+	$('.acco-btn').click(function(e){
+		e.preventDefault();
+		console.log($(this).closest('.acco-item'))
+		if(!$(this).closest('.acco-item').hasClass('on')){
+			$(this).closest('.acco-item').addClass('on');
+			$(this).closest('.acco-head').siblings('.acco-body').slideDown(400);
+		}else{
+			$(this).closest('.acco-item').removeClass('on');
+			$(this).closest('.acco-head').siblings('.acco-body').slideUp(400);
+		}
+	})
+});
+
 
 	// 서브페이지 객실소개
 	if($('.myswiper').length() > 0){
