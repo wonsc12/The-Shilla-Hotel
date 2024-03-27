@@ -24,7 +24,7 @@
 }
 .room4 .container .tit-area .tab .tab-menu {
   width: 100%;
-  padding: 41px 0;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -130,7 +130,6 @@
 }
 .event4 .container .tit-area .tab2 .tab-menu2 {
   width: 100%;
-  padding: 41px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
