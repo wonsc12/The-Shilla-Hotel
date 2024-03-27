@@ -23,7 +23,7 @@
 .tab-list.faq + .tab-content .tab-pannel.on {display: block;}
 
 /* FAQ - 아코디언 */
-.faq-list {border-top: 1px solid var(--black, #222);}
+.faq-list {margin-top: 30px; border-top: 1px solid var(--black, #222);}
 .faq-list li {border-bottom: 1px solid var(--bg-dark-gray, #ccc);}
 .acco-item .acco-head {display: flex; justify-content: space-between; position: relative; width: 100%;}
 .acco-item .acco-head:after {content: ''; position: absolute; top: 50%; transform: translateY(-50%); right: 24px; border-width: 6px 4px; border-style: solid; border-color: #222 transparent transparent transparent;}
