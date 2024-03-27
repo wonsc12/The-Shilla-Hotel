@@ -66,7 +66,8 @@
 .delux .container .deluxes .deluxe-box .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .business-deluxes {
   display: flex;
@@ -94,7 +95,8 @@
 .business-deluxes .container .business-deluxe .business-deluxebox .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .business-deluxes .container .business-deluxe .business-deluxebox .business-deluxe2 {
   margin-bottom: 81px;
@@ -138,7 +140,8 @@
 .barrier-free .container .barrier-frees .barrier-free-box .barrier-free2 .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .coner-deluxe {
   height: 100vh;
@@ -167,7 +170,8 @@
 .coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe1 .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe2 {
   margin-bottom: 81px;
@@ -214,7 +218,8 @@
 .executive-business .container .executive-business .executive-box .executive2 .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .executive-grand {
   height: 100vh;
@@ -240,7 +245,8 @@
 .executive-grand .container .executive-grand .executive-grandbox .executive-grand1 .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .executive-grand .container .executive-grand .executive-grandbox .executive-grand2 {
   margin-bottom: 81px;
@@ -284,7 +290,8 @@
 .suites .container .suite .suite-box .suite2 .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .korea-suites {
   height: 100vh;
@@ -312,7 +319,8 @@
 .korea-suites .container .korea-suite .korea-suitebox .korea-suite1 .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .korea-suites .container .korea-suite .korea-suitebox .korea-suite2 {
   margin-bottom: 81px;
@@ -356,7 +364,8 @@
 .coner-suite .container .coner-suites .coner-suite-box .coner-suite2 .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .Premier-suite {
   height: 100vh;
@@ -383,8 +392,9 @@
 }
 .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit1 .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
-  height: 100%; 
-  object-fit: cover;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 {
   margin-bottom: 81px;
@@ -397,10 +407,17 @@
   margin-top: 27px;
 }
 .title1image {
- 
-  
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
-
+.title1image .titleltop {
+  position: absolute;
+  top: calc(0% + 224px);
+  left: calc(0% + 283px);
+  z-index: 12;
+}
 .title1image .titleltop h2 {
   color: var(--white);
 }
@@ -426,7 +443,7 @@
 .layeon .container .layeontime table .caption {
   width: 100%;
   height: 100%;
-  color: var(--black);
+  color: #222;
 }
 .layeon .container .layeontime table .caption h4 {
   height: 100px;
@@ -456,7 +473,8 @@
 .arestaurant .container .restaurant .restaurant-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .arestaurant .container .restaurant .restaurant-explanation {
   margin-bottom: 135px;
@@ -540,7 +558,8 @@
 .arestaurant2 .container .restaurant .restaurant-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .infomenu {
@@ -560,7 +579,8 @@
 .infomenu .container .myswiper2 .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .infomenu .container .information-email .information2 {
   display: flex;
@@ -599,7 +619,7 @@
 .continental .container .continentaltime table .caption {
   width: 100%;
   height: 100%;
-  color: var(--black);
+  color: #222;
 }
 .continental .container .continentaltime table .caption h3 {
   height: 100px;
@@ -615,6 +635,7 @@
 
 .aliakkeimage {
   height: 100vh;
+  width: 100%;
   margin: 0 auto;
 }
 .aliakkeimage img {
@@ -635,7 +656,7 @@
 .aliakke .container .aliakketime table .caption {
   width: 100%;
   height: 100%;
-  color: var(--black);
+  color: #222;
 }
 .aliakke .container .aliakketime table .caption h3 {
   height: 100px;
@@ -662,7 +683,7 @@
 .palseon .container .palseontime table .caption {
   width: 100%;
   height: 100%;
-  color: var(--black);
+  color: #222;
 }
 .palseon .container .palseontime table .caption h3 {
   height: 100px;
@@ -730,7 +751,7 @@
 .membershipcard-image .container .mpage {
   margin: 81px 0;
   text-align: center;
-  display: var(--black);
+  display: block;
   width: 100%;
   color: red;
 }
