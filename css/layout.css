@@ -15,11 +15,10 @@ header{position: fixed; top: 0; left: 0; right: 0; z-index: 999;}
 .header-wrap .logo {height: 36px; margin: 0;}
 .header-wrap .logo a {display: inline-block; width: 140px; height: 36px; background:url(../images/logo_sh_w.png) no-repeat center center; background-size: 140px auto;}
 .header-wrap .util-list {display: flex; gap: 16px;}
-.header-wrap .util-list .lang-drop.active {position: relative;}
 .header-wrap .util-list a,
 .header-wrap .util-list .lang-drop button {position:relative; font-size: 20px; color: var(--white, #fff);}
 .header-wrap .util-list .lang-drop button:after {content: ''; position: absolute; top: 50%; left: calc(100% + 10px); margin-top: -2px; border-width: 6px 4px; border-style: solid; border-color: var(--white, #fff) transparent transparent transparent;}
-
+.header-wrap .util-list .lang-drop > ul {}
 .header-wrap .util-list .lang-drop.on {position: relative;}
 .header-wrap .util-list .lang-drop.on button:after {transform: rotate(-180deg); margin-top: -8px}
 .header-wrap .util-list .lang-drop.on > ul {position: absolute; width: 80px; top: calc(100% + 8px); left: 0; right: 0; text-align: center; background-color: #fff;}
