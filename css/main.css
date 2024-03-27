@@ -9,7 +9,7 @@
 .section.home .main-txt strong {color: var(--white, #fff); font-size: 50px; font-weight: 100;}
 
 /* main - tit-area */
-.tit-area {margin-bottom: calc(var(--line-height)*2); padding-top: 0;}
+.tit-area {margin-bottom: calc(var(--line-height)*2); padding-top: 100px;}
 
 /* 객실소개 최원석*/
 
@@ -233,6 +233,13 @@
   color:var(--white, #fff);
   text-transform: uppercase;
 }
+
+.membership-card {
+  overflow: hidden;
+  width: 1084px;
+  margin: 0 auto;
+}
+
 .membership-pager {
   font-size:calc(var(--font-size) * 1.5);
   margin: 0 auto;
@@ -247,7 +254,7 @@
   text-align: center;
   padding: 20px;
 }
-.membership-pager li:active {
+.membership-pager li:focus {
   border-bottom: 6px solid #ccc;
 }
 .membership-pager li a {
@@ -255,28 +262,22 @@
   width: 100%;
 }
 
-.membership-card {
-  position: relative;
-  overflow: hidden;
-  width: 1084px;
-  margin: 0 auto;
-}
 .membership-wrapper {
+  width: 3252px;
   display: flex;
-  margin-bottom: 80px;
-  width: 100%;
 }
-.membership-wrapper > li {
+.members {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: 100%;
 }
-.membership-wrapper > li ul {
+.members ul {
   display: flex;
+  justify-content: center;
   gap: 65px;
 }
-.membership-wrapper > li ul li img {
+.members ul li img {
   width: 318px;
   border-radius: 6px;
   box-shadow: 2px 0 3px rgba(0,0,0,.2);
@@ -366,10 +367,10 @@
   margin: 10px auto;
   width: 400px;
 }
-.swiper-backface-hidden .swiper-slide {
+.facility .swiper-backface-hidden .swiper-slide {
   transform: scale(.90) translateZ(0);
 }
-.swiper-slide.swiper-slide-active {  
+.facility .swiper-slide.swiper-slide-active {  
   transform: scale(1) !important;
   opacity: 1 !important;
 }
@@ -446,7 +447,7 @@
   background: var(--white, #fff);
 }
 
-.swiper-slide-active {
+.facility .swiper-slide-active {
   display: block;
 }
 
