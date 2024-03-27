@@ -266,6 +266,7 @@
 .membership-wrapper {
   width: 3252px;
   display: flex;
+  margin-bottom: 80px;
 }
 .members {
   width: 100%;
