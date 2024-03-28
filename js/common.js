@@ -1,4 +1,5 @@
 $(function(){ 
+
 	// header sticky
 	$($(window)).scroll(function(){
 		console.log($(window).innerHeight())
@@ -11,6 +12,7 @@ $(function(){
 
 	// header footer load
   $('#header').load('header.html', function(){
+
     // header 언어 영역
 		$('.lang-drop ul').hide();
 		$(".lang-drop button").click(function(){
@@ -23,6 +25,20 @@ $(function(){
 			}
 		})
 
+		// 전체메뉴
+		$('header .all-menu > button').click(function(){
+			$('header').toggleClass('open');
+			if($('header').hasClass('open')){
+				// $('.allmenu-wrap').show();
+				$('header').addClass('sticky');
+				$('body').css({overflow: 'hidden'})
+			}else {
+				// $('.allmenu-wrap').hide();
+				$('header').removeClass('sticky');
+				$('body').css({overflow: 'auto'})
+			}
+			
+		})
   });
 
 
@@ -61,6 +77,7 @@ $(function(){
 			});
 		};
 	})
+
 	
 });
 
