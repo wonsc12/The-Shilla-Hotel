@@ -32,27 +32,6 @@
 .acco-item .category {display:inline-block; min-width: 102px;}
 .acco-item .acco-body {display:none; padding: 24px; background-color: var(--bg-light-gray, #f8f8f8); color: var(--acco-txt, #666);}
 
-/* FAQ - 페이지네이션 */
-.paging {display: flex; gap: 8px; justify-content: center;}
-.paging .btn-start,
-.paging .btn-prev,
-.paging .btn-next,
-.paging .btn-last {position: relative;}
-.paging .btn-prev:before, 
-.paging .btn-next:before {content: ''; position: absolute; left: 10px; top: 50%; width: 10px; height: 10px; border: 1px solid var(--black, #222); border-width: 0 0 2px 2px; background-color: transparent; box-sizing: border-box; transform: translateY(-50%) rotate(45deg);}
-.paging .btn-next:before {left: auto; right: 10px; transform: translateY(-50%) rotate(-135deg);}
-
-.paging .btn-start:before, 
-.paging .btn-last:before {content: ''; position: absolute; left: 7px; top: 50%; width: 10px; height: 10px; border: 1px solid var(--black, #222); border-width: 0 0 2px 2px; background-color: transparent; box-sizing: border-box; transform: translateY(-50%) rotate(45deg);}
-.paging .btn-last:before {left: auto; right: 6px; transform: translateY(-50%) rotate(-135deg);}
-.paging .btn-start:after, 
-.paging .btn-last:after {content: ''; position: absolute; left: 14px; top: 50%; width: 10px; height: 10px; border: 1px solid #444; border-width: 0 0 2px 2px; background-color: transparent; box-sizing: border-box; transform: translateY(-50%) rotate(45deg);}
-.paging .btn-last:after {left: auto; right: 13px; transform: translateY(-50%) rotate(-135deg);}
-
-.paging > ul {display: flex; gap: 8px;}
-.paging > ul > li > a,
-.paging > button {display: block; width: 27px; height: 27px; line-height: 27px; text-align: center; border: 1px solid var(--bg-dark-gray, #ccc);}
-
 /* 서브페이지 객실 스탠다드 이그제큐티브 스위트 */
 
 .delux .container .deluxes .stardardtitle h3 {
