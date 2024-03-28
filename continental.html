@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="sticky" id="header"></header> <!-- 임시 : 완성된 후 넣어야함 -->
+    <header>헤더공통영역</header> <!-- 임시 : 완성된 후 넣어야함 -->
     <!-- 작업담당자 : 담당자명 (s) -->
     <main id="content">
       <div class="section title1image full">
@@ -77,19 +77,18 @@
               </li>
             </ol>
           </div>
+  
+          <!-- 작업담당자 : 박소현 (e) -->
+
+          <!-- 타이틀과 같은 섹션의 작업 구역입니다. -->
+          <!-- 타이틀과 같은 섹션의 작업 영역입니다. -->
+        </div>
+        <div class="section title1image">
           <div class="tit-area titleltop">
-            <h2 class="tit-h2">continental</h2>
+            <h2 class="tit-h2">continental  </h2>
             <p class="desc">Modern Cuisine</p>
           </div>
         </div>
-        <!-- 작업담당자 : 박소현 (s) -->
-        
-        
-        <!-- 작업담당자 : 박소현 (e) -->
-
-        <!-- 타이틀과 같은 섹션의 작업 구역입니다. -->
-        <!-- 타이틀과 같은 섹션의 작업 영역입니다. -->
-      </div>
         <div class="section continental">
           <!-- 작업 영역입니다. -->  
           <div class="container">
@@ -197,21 +196,115 @@
         </div>    
     </main>
     <!-- 작업담당자 : 담당자명 (e) -->
-    <footer id="footer"></footer>
+    <footer>
+      <div class="footer-wrap container">
+        <ul>
+          <li class="full">
+            <h2>the shilla hotel</h2>
+            <div>
+              <div>
+                <a href="#">
+                  <img src="images/img_footer_seoul.jpg" alt="서울신라">
+                  <p>The Shilla Seoul</p>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <img src="images/img_footer_jeju.jpg" alt="제주신라">
+                  <p>The Shilla jeju</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h2>shilla monogram</h2>
+            <div>
+              <a href="#">
+                <img src="images/img_footer_monogram.jpg" alt="">
+                <p>Shilla monogram</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <h2>shilla stay</h2>
+            <div>
+              <a href="#">
+                <img src="images/img_footer_stay.jpg" alt="">
+                <p>Shilla stay</p>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <div class="footer-info-list">
+          <div>
+            <h2><a href="index.html">신라호텔</a></h2>
+            <ul>
+              <li><a href="#">신라리워즈 약관</a></li>
+              <li><a href="#">개인정보 처리방침</a></li>
+              <li><a href="#">이메일 무단수집금지</a></li>
+              <li><a href="#">윤리경영(부정제보)</a></li>
+              <li><a href="#">건축 시설물 안전관리</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-family-list">
+          <ul>
+            <li><a href="#"><img src="images/svg_footer_dutyfree.svg" alt="신라면세점"></a></li>
+            <li><a href="#"><img src="images/svg_footer_shop.svg" alt="신라숍"></a></li>
+            <li><a href="#"><img src="images/svg_footer_vant.svg" alt="피트니스멤버십"></a></li>
+          </ul>
+          <div class="footer-family-site">
+            <select>
+              <option value="FAMILY SITE">FAMILY SITE</option>
+              <option value="신라호텔">신라호텔</option>
+              <option value="신라면세점">신라면세점</option>
+              <option value="신라숍">신라숍</option>
+              <option value="삼성상품권">삼성상품권</option>
+              <option value="반트">반트</option>
+            </select>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-address">
+            <address>서울 특별시 중구 동호로 249</address>
+              <ul>
+                <li><strong>대표이사</strong> 이부진</li>
+                <li><strong>사업자등록번호</strong> 203-81-43363</li>
+                <li><strong>통신판매신고번호</strong> 중구 00272호</li>
+            </ul>
+            <p>copyright &copy; hotel shilla co.ltd. all right reserved.</p>
+          </div>
+          <ul class="footer-sns">
+            <li><a href="#" target="_blank">
+              <em class="icon-blog"><span class="blind">naver blog</span></em>
+            </a></li>
+            <li><a href="#" target="_blank">
+              <em class="icon-insta"><span class="blind">instagram</span></em>
+            </a></li>
+            <li><a href="#" target="_blank">
+              <em class="icon-youtube"><span class="blind">youtube</span></em>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+      
+    </footer> <!-- 임시 : 완성된 후 넣어야함 -->
   </div>
   <script src="https://code.jquery.com/jquery-1.12.0.js"></script>
     <!-- Latest compiled and minified CSS -->
+    
+    
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="js/jquery.parallax.min.js"></script>
     <script>
         $('.title1image').parallax({
-            src:'images/img_section1_continental.jpg'});  
+            src:'images/img_section1_continental.jpg'});
+        
     </script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="js/sub.js"></script>
-  <script src="js/pub.js"></script>
 </body>
 </html>
