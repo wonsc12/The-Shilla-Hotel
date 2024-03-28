@@ -39,7 +39,8 @@ $(function(){
 				},	
 				pagination: {
 					el: '.swiper-pagination',
-					clickable:true
+					clickable:true,
+					dynamicBullets: true,
 				},
 	
 		});
