@@ -28,6 +28,21 @@ $(function(){
 
   $('#footer').load('footer.html',function(){
 
+		let sw = true;
+
+		$('.footer-family-title button').click(function(){
+			sw=!sw;
+			
+			if(sw == true){
+				$('.footer-family-sub').hide();
+				$('.footer-family-title').removeClass("on");
+
+			} else {
+			$('.footer-family-sub').show();
+			$('.footer-family-title').addClass("on");
+		}
+		});
+
   });
 
   //sub-breadcrumbs
