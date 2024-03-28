@@ -28,21 +28,45 @@ $(function(){
 		})
 
 		// 전체메뉴
-		$('header .all-menu > button').click(function(){
-			$('header').toggleClass('open');
-			if($('header').hasClass('open')){
-				// $('.allmenu-wrap').show();
-				$('header').addClass('sticky');
-				$('body').css({overflow: 'hidden'})
-			}else {
-				// $('.allmenu-wrap').hide();
-				$('header').removeClass('sticky');
-				$('body').css({overflow: 'auto'})
-			}
+		// $('header .all-menu > button').click(function(){
+		// 	$('header').toggleClass('open');
+		// 	if($('header').hasClass('open')){
+		// 		// $('.allmenu-wrap').show();
+		// 		$('header').addClass('sticky');
+		// 		$('body').css({overflow: 'hidden'})
+		// 	}else {
+		// 		// $('.allmenu-wrap').hide();
+		// 		$('header').removeClass('sticky');
+		// 		$('body').css({overflow: 'auto'})
+		// 	}
 			
-		})
+		// })
   });
 
+	$('#allmenu').load('allmenu.html', function(){
+			// 전체메뉴
+			$('header .all-menu > button').click(function(){
+				// $('header').toggleClass('open');
+				if($('header').hasClass('open') === false){
+					// $('.allmenu-wrap').show();
+					// if($('main').hasClass('main') === false && !$('header').hasClass('sticky')){
+					// 	$('header').addClass('sticky');
+					// }
+					$('header').addClass('open');
+					$('body').css({overflow: 'hidden'})
+					$('.allmenu-wrap').css({top: `${$('html').scrollTop()}px`})
+				}else {
+					// $('.allmenu-wrap').hide();
+					// if($('main').hasClass('main') && !$('header').hasClass('sticky')){
+						// 	$('header').removeClass('sticky');
+						// }
+						$('header').removeClass('open');
+						$('body').css({overflow: 'auto'})
+						$('.allmenu-wrap').css({top: ''})
+				}
+				
+			})
+		});
 
   $('#footer').load('footer.html',function(){
 

@@ -53,7 +53,7 @@ header.open .header-wrap .all-menu > button:before,
 header.open .header-wrap .all-menu > button:after {top: 18px;}
 header.open .header-wrap .all-menu > button:before {transform: rotate(45deg);}
 header.open .header-wrap .all-menu > button:after {transform: rotate(-45deg);}
-header.open + .allmenu-wrap {top:100px; background-color: var(--black, #222);}
+header.open + .allmenu-wrap {background-color: var(--black, #222);}
 
 
 /* footer */
