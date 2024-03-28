@@ -68,6 +68,64 @@
   height: 100%;
   object-fit: cover;
 }
+.swiper-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal, 
+.swiper-pagination-custom, .swiper-pagination-fraction{ 
+  top:20px; left:20px; display: flex; flex-direction: column; margin-top: 20px; }
+
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 20px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 20px));
+    
+    border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+    background: var(--swiper-pagination-bullet-inactive-color, var(--white));
+  }
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 10px var(--swiper-pagination-bullet-horizontal-gap,4px);
+  }
+  .swiper-button-next {left: calc(50% + 650px);}
+  .swiper-button-prev { left: calc(50% - 650px);}
+ 
+
+ .swiper-button-next,
+ .swiper-button-prev {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset,50%);
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white)
+    
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: 70px;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}
+
+.infomenu .container .swiper-horizontal > .swiper-pagination-bullets {width: 100%; align-items: end; justify-content: center; flex-direction: row;  }
+
+
+.infomenu .container .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 10px var(--swiper-pagination-bullet-horizontal-gap,10px);
+  }
+
+
+
+
+
+
+
 .business-deluxes {
   display: flex;
   align-items: center;
