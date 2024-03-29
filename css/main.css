@@ -9,18 +9,25 @@
 .section.home .main-txt strong {color: var(--white, #fff); font-size: 50px; font-weight: 100;}
 
 /* 예약영역 */
-.reservation-area {display: flex; flex-wrap: wrap; justify-content: space-between; position: absolute; bottom: 0; width: 100%; height: 250px; background-color: pink;}
+.reservation-area {display: flex; flex-wrap: wrap; justify-content: space-between; position: absolute; bottom: 0; width: 100%; height: 250px;  background-color: var(--white, #fff);}
 .reservation-area .left {flex: 1 1 auto;}
-.reservation-area .top {display: flex; height: 200px; background-color: #fff;}
-.reservation-area .top > div {flex: 1 1 10%; text-align: center; padding: 50px 0;}
-.reservation-area .top > div.chk-date {flex-basis: 50%; display: flex; justify-content: space-between;}
-.reservation-area .top > div.guest-info {flex-basis: 30%; display: flex; justify-content: space-between;}
-.reservation-area .top > div.guest-info > div {flex: 1 1 auto; text-align: center;}
-.reservation-area .chk-date > div {flex-basis: 40%; text-align: center;}
+.reservation-area .top {display: flex; height: 200px;}
+.reservation-area .top > div {flex: 1 1 10%; text-align: center;}
+.reservation-area .resevation,
+.reservation-area .hotel {padding: 50px 0;}
+.reservation-area .top > .chk-date {flex-basis: 50%; display: flex; justify-content: space-between;}
+.reservation-area .top > .guest-info {flex-basis: 30%; display: flex; justify-content: space-between;}
+.reservation-area .top > .guest-info > button {flex: 1 1 auto; text-align: center;}
+.reservation-area .chk-date > button {flex-basis: 40%; text-align: center;}
 .reservation-area .chk-date .num {flex-basis: 20%; font-size: 32px; display: flex; align-items: center; text-align: center; justify-content: center;}
 .reservation-area .chk-date .num > em {font-weight: 700;}
 .reservation-area .chk-date .date,
 .reservation-area .guest-info .num {font-size: 24px;}
+.reservation-area .promotion {display: flex; align-items: center; justify-content: flex-end; height: 50px; padding: 0 40px;}
+.reservation-area .btn-prom {border-bottom: 1px solid var(--black, #222);}
+.reservation-area .promotion .ipt-wrap {display: flex; width: 318px; height: 35px; }
+.reservation-area .promotion .ipt-wrap .ipt {height: 100%}
+
 /* 타이틀 */
 .reservation-area .tit {display: block; margin-bottom: 50px;}
 
