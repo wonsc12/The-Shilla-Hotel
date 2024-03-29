@@ -17,7 +17,7 @@ $(function(){
 			el: ".swiper-pagination", 
 			clickable: true, 		
 		},
-		
+		direction:"horizontal",
 		breakpoints: {
 		  480: {
 			slidesPerView: 1,
@@ -33,7 +33,7 @@ $(function(){
 		  },
 		},
 		
-		direction:"horizontal",
+		
 
 		
 		
@@ -53,7 +53,15 @@ $(function(){
 		swiper[targetId].autoplay.start()
 	})
 	
-	
+		console.log(swiper);
+	$('.swiper .prevar').click(function(){
+	let id= $(this).closest('.swiper').attr('data-id');
+	swiper[id].slidePrev()
+	});
+	$('.swiper .nextar').click(function(){
+	let id= $(this).closest('.swiper').attr('data-id');
+	swiper[id].slideNext()
+	});
 
 
 	let tabmenu = $('.tab-menu a');
