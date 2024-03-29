@@ -1,5 +1,40 @@
 @charset "utf-8";
+.slidemenu{
+	position: fixed;
+	left: 100px;
+	top: 50%;
+	transform:translateY(-50%);
+	z-index: 100;
+	font-size: 3em;	
+}
+.slidemenu li {
+  
+}
+.slidemenu li.on a{
+	color: var(--black);
+}
+.slidemenu li.on a::before{
+	background: var(--black);
+  
+}
 
+
+.slidemenu li a{
+	color:var(--white);
+  position: relative;
+  font-size: 14px;
+  color: var(--white);
+ 
+}
+.slidemenu li a::before{
+  position: absolute;
+  top:50%;
+  left:-20px;
+  transform: translateY(-50%);
+	content: '';
+  display: inline-block;
+  width: 2px; height: 55px; background: var(--white);
+}
 /* section */
 .main .section {height: 100vh; overflow: hidden;}
 
@@ -20,7 +55,7 @@
   align-items: center;
 }
 .room4 .container .tit-area .tab {
-  width: 33%;
+  width: 33%; 
 }
 .room4 .container .tit-area .tab .tab-menu {
   width: 100%;
@@ -72,7 +107,7 @@
 .room4 .container #tabs .tab-content #tabs-2, 
 .room4 .container #tabs .tab-content #tabs-3, 
 .room4 .container #tabs .tab-content #tabs-4 {
-  width: 100%;
+  width: 100%; position: relative;
 }
 .room4 .container #tabs .tab-content #tabs-1 .sswiper, 
 .room4 .container #tabs .tab-content #tabs-2 .sswiper, 
@@ -195,7 +230,7 @@
 }
 .event4 .container #tabs2 .tab-content2 #tabs-1, .event4 .container #tabs2 .tab-content2 #tabs-2, 
 .event4 .container #tabs2 .tab-content2 #tabs-3, .event4 .container #tabs2 .tab-content2 #tabs-4 {
-  width: 100%;
+  width: 100%; position: relative;
 }
 .event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper, 
 .event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper, 
@@ -271,28 +306,25 @@
 .play-pause { display: flex; justify-content: end; margin-top: 10px;}
 .swiper-pause { margin-left: 5px;}
 
-.nextar {right: -0px;}
-.prevar {left: -0px;}
 
-.swiper-button-prev,
-.swiper-button-next { 
-  
-  width: 40px; height: 40px; background: red; border-radius: 50%;
-  margin-top: -40px;
-  position: absolute;
-  top: 50%;
-  transition: all .3s ease-out;
-  -webkit-transition: all .3s ease-out;
-  -moz-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
-  background: #fff;
-  z-index: 10;
-  width: 40px;
-  height: 40px;
-  border: 1px solid #333;
-  border-radius: 50%;
-  text-align: center;
+
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .swiper-pagination,
+.room4 .container #tabs .tab-content #tabs-2 .sswiper .swiper-pagination,
+.room4 .container #tabs .tab-content #tabs-3 .sswiper .swiper-pagination,
+.room4 .container #tabs .tab-content #tabs-4 .sswiper .swiper-pagination{ display: flex; align-items: end; justify-content: center; flex-direction: row; height: 20px; position: absolute;top:597px;
 }
+
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .swiper-pagination, .event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .swiper-pagination, .event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .swiper-pagination, .event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .swiper-pagination { display: flex; align-items: end; justify-content: center; flex-direction: row; height: 20px; position: absolute;top:597px;
+}
+
+
+  
+ 
+
+
+
+
+
 .swiper-button-prev::before {
   position: absolute;
   top: 13px;
@@ -303,7 +335,7 @@
   content: '';
   border: solid #333;
   border-width: 0 0px 1px 1px;
-  transform: translate(45deg);
+  transform: rotate(45deg);
 }
 .swiper-button-next::before{
   position: absolute;
@@ -315,7 +347,7 @@
   content: '';
   border: solid #333;
   border-width: 0 0px 1px 1px;
-  transform: translate(45deg);
+  transform: rotate(-135deg);
 }
 
 

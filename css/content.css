@@ -106,7 +106,7 @@
     margin: 10px var(--swiper-pagination-bullet-horizontal-gap,4px);
   }
   .swiper-button-next {left: calc(50% + 650px);}
-  .swiper-button-prev { left: calc(50% - 650px);}
+  .swiper-button-prev { left: calc(50% - 670px);}
  
 
  .swiper-button-next,
