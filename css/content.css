@@ -833,7 +833,12 @@
 
 
 
-/* 신라호텔 - 서울, 제주 */
+
+
+
+
+
+/* 신라호텔 - 서울 */
 .hotel-intro {
   background: url('../images/img_sub_soeul1.jpg') no-repeat center;
   background-size: cover;
@@ -914,6 +919,98 @@
   height: 560px;
 }
 .seoul-right-slide p {
+  margin: 30px;
+}
+
+.intro-bottom {
+  width: 100%;
+height: 406px;
+  background: url('../images/img_sub_soeulbottombg.jpg') no-repeat;
+  background-size: contain;
+}
+
+/* 신라호텔소개 - 제주 */
+
+.hotel-intro2 {
+  background: url('../images/img_sub_jeju1.jpg') no-repeat center;
+  background-size: cover;
+}
+.hotel-title2 {
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.hotel-jeju-section1 {
+  display: flex;
+  height: 810px;
+}
+.jeju-left {
+  position: relative;
+  width: 47%;
+  background: url('../images/img_sub_jeju2.jpg');
+}
+.jeju-left p {
+  position: absolute;
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  left: 50%;
+  top:60px;
+  transform: translate(-50%);
+  z-index: 10;
+}
+.jeju-left img {
+  position: absolute;
+  width: 480px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.jeju-right {
+  width: 53%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.jeju-right p {
+  margin: 30px;
+}
+.jeju-slide-title {
+  text-align: center;
+  font-size: calc(var(--font-size) * 1.5);
+}
+.jeju-right-slide {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.jeju-right-slide ul {
+  height:100%;
+  margin:0;
+  padding: 0;
+  display: flex;
+}
+.jeju-right-slide ul li {
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.jeju-right-slide ul li img {
+  width: 460px;
+  height: 560px;
+}
+.jeju-right-slide p {
   margin: 30px;
 }
 
