@@ -467,6 +467,7 @@
   transform: scale(.84);
   transition: all .3s ease-in-out;
   overflow: hidden;
+  filter: grayscale(100%);
 }
 .facilities-img p {
   display: block;
@@ -491,6 +492,7 @@
 .facility .swiper-slide.swiper-slide-active {  
   transform: scale(1) !important;
   opacity: 1 !important;
+  filter: grayscale(0%);
 }
 .intro-btn {
   display: flex;
