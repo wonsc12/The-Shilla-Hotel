@@ -3,38 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>타이틀명</title>
+  <title>제주신라호텔</title>
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/content.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="js/common.js"></script>
+  <script src="js/sub_02.js"></script>
 </head>
 <body>
   <div class="wrapper">
-    <header>헤더공통영역</header> <!-- 임시 : 완성된 후 넣어야함 -->
-    <!-- 작업담당자 : 담당자명 (s) -->
+    <header class="sticky" id="header"></header>
+    <!-- 작업담당자 : 이다영 (s) -->
     <main id="content">
-        <div class="section container">
+      <!-- fix:600px -->
+      <div class="section hotel-intro fix">
+        <div class="container">
           <!-- 작업담당자 : 박소현 (s) -->
-          <div class="breadcrumbs temp-area">
-            브레드크럼 공통영역
+          <div class="breadcrumbs white">
+            <ol>
+              <li>
+                <a href="index.html">HOME</a>
+              </li>
+              <li>
+                <button type="button">
+                  <span>호텔소개</span>
+                </button>
+                <ul class="drop-menu">
+                  <li>
+                    <a href="seoul.html">
+                      <span>호텔소개</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="standard.html">
+                      <span>객실</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="layeon.html">
+                      <span>다이닝</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="event.html">
+                      <span>OFFERS</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="faq.html">
+                      <span>고객센터</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="membership.html">
+                      <span>MEMBERSHIP</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button type="button">
+                  <span>이벤트</span>
+                </button>
+                <ul class="drop-menu">
+                  <li>
+                    <a href="event.html">
+                      <span>이벤트</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="pakage.html">
+                      <span>패키지프로모션</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ol>
           </div>
-          <div class="tit-area">
-            <h2>타이틀영역</h2>
+          <div class="hotel-title tit-area">
+            <h2 class="tit-h2">seoul shilla hotel</h2>
+            <p class="desc">서울신라호텔을 소개합니다.</p>
           </div>
           <!-- 작업담당자 : 박소현 (e) -->
-
-          <!-- 타이틀과 같은 섹션의 작업 구역입니다. -->
-          <div>
-
+        </div>
+      </div>
+      <!-- 다음 섹션 작업 영역입니다. -->
+      <div class="section mt0">
+        <div class="container">
+          <div class="hotel-seoul-section1">
+            <div class="seoul-left">
+              <p>urban lifestyle hotel <br> seoul shilla</p>
+              <img src="./images/img_sub_soeul3.jpg" alt="">
+            </div>
+            <div class="seoul-right">
+              <p class="seoul-slide-title"><strong>당신의 빛나는 일상</strong>에 <br> 귀를 기울이는 서울 신라 호텔</p>
+              <div class="seoul-right-slide">
+                <ul>
+                  <li>
+                    <img src="./images/img_sub_soeulslide1.jpg" alt="">
+                    <p>카바나</p>
+                  </li>
+                  <li>
+                    <img src="./images/img_sub_soeulslide1.jpg" alt="">
+                    <p>카바나</p>
+                  </li>
+                  <li>
+                    <img src="./images/img_sub_soeulslide1.jpg" alt="">
+                    <p>카바나</p>
+                  </li>
+                  <li>
+                    <img src="./images/img_sub_soeulslide1.jpg" alt="">
+                    <p>카바나</p>
+                  </li>
+                  <li>
+                    <img src="./images/img_sub_soeulslide1.jpg" alt="">
+                    <p>카바나</p>
+                  </li>
+                  <li>
+                    <img src="./images/img_sub_soeulslide1.jpg" alt="">
+                    <p>카바나</p>
+                  </li>
+                </ul>
+                <p>
+                  <button><i class="fa-solid fa-arrow-left"></i></button>
+                  <button><i class="fa-solid fa-arrow-right"></i></button>
+                </p>
+              </div>
+            </div>
           </div>
-          <!-- 타이틀과 같은 섹션의 작업 영역입니다. -->
         </div>
-        <div class="section container">
-          <!-- 작업 영역입니다. -->
-        </div>
+      </div>
     </main>
-    <!-- 작업담당자 : 담당자명 (e) -->
-    <footer>푸터공통영역</footer> <!-- 임시 : 완성된 후 넣어야함 -->
+    <!-- 작업담당자 : 이다영 (e) -->
+  <footer id="footer"></footer>
   </div>
+  
 </body>
 </html>
