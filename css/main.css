@@ -408,7 +408,6 @@
   display: block;
   width: 464px;
   text-align: center;
-  padding: 20px;
 }
 .membership-pager li:focus {
   border-bottom: 6px solid #ccc;
@@ -416,6 +415,10 @@
 .membership-pager li a {
   display: block;
   width: 100%;
+  padding: 20px;
+}
+.membership-pager li a.active {
+  border-bottom: 4px solid #ccc;
 }
 
 .membership-wrapper {
