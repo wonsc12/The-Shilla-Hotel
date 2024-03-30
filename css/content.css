@@ -1002,6 +1002,8 @@
   width: 1170px;
   height: 262px;
   margin: 0 auto;
+  margin-top: 160px;
+  margin-bottom: 160px;
 }
 .hotel-text-wrap p {
   color: #222;
@@ -1021,17 +1023,54 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
+  margin-top: 90px;
 }
 .hotel-sticky-left {
   position: sticky;
-  top: 10vh;
+  width: 100%;
+}
+.hotel-sticky-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: calc(var(--line-height)*1.5);
+  margin-bottom: 23px;
+}
+.hotel-sticky-left span {
+  display: inline-block;
+  width: 339px;
+  font-size: var(--font-size, 16px);
+  line-height: var(--line-height, 27px);
 }
 
 .intro-bottom-section5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 406px;
   background: url('../images/img_sub_soeulbottombg.jpg') no-repeat;
   background-size: contain;
+  margin-top: calc(var(--line-height) * 8);
+}
+.intro-bottom-section5 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro-bottom-section5 span:first-child {
+  display: inline-block;
+  width: 500px;
+  color: var(--white, #fff);
+}
+.intro-bottom-section5 span + span {
+  display: inline-block;
+  position: absolute;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: right;
+  right: 0;
+  color: var(--white, #fff);
+  text-transform: uppercase;
 }
 
 /* 신라호텔소개 - 제주 */
