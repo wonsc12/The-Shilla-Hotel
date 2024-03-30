@@ -7,13 +7,17 @@
 	z-index: 100;
 	font-size: 3em;	
 }
-.slidemenu li {
-  
+
+.slidemenu li.on {
+	
+  display: block;
 }
 .slidemenu li.on a{
 	color: var(--black);
+  
 }
 .slidemenu li.on a::before{
+  
 	background: var(--black);
   
 }
@@ -331,18 +335,84 @@
 
 
 
+  
+
 .room4 .container #tabs .tab-content #tabs-1 .sswiper .swiper-pagination,
 .room4 .container #tabs .tab-content #tabs-2 .sswiper .swiper-pagination,
 .room4 .container #tabs .tab-content #tabs-3 .sswiper .swiper-pagination,
-.room4 .container #tabs .tab-content #tabs-4 .sswiper .swiper-pagination{ display: flex; align-items: end; justify-content: center; flex-direction: row; height: 20px; position: absolute;top:597px;
+.room4 .container #tabs .tab-content #tabs-4 .sswiper .swiper-pagination{ 
+  display: flex; align-items: end; justify-content: center; flex-direction: row; height: 20px; position: absolute;top:597px;
 }
 
-.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .swiper-pagination, .event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .swiper-pagination, .event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .swiper-pagination, .event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .swiper-pagination { display: flex; align-items: end; justify-content: center; flex-direction: row; height: 20px; position: absolute;top:597px;
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .swiper-pagination, 
+.event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .swiper-pagination, 
+.event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .swiper-pagination, 
+.event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .swiper-pagination {
+   display: flex; align-items: end; justify-content: center; flex-direction: row; height: 20px; position: absolute;top:597px;
 }
 
 
-  
- 
+.room4 .container #tabs .tab-content #tabs-1 .nextar,
+.room4 .container #tabs .tab-content #tabs-2 .nextar,
+.room4 .container #tabs .tab-content #tabs-3 .nextar,
+.room4 .container #tabs .tab-content #tabs-4 .nextar { 
+  left:  1417px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: var(--white);
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  border: 1px solid var(--black);
+  }
+
+
+  .room4 .container #tabs .tab-content #tabs-1 .prevar,
+  .room4 .container #tabs .tab-content #tabs-2 .prevar,
+  .room4 .container #tabs .tab-content #tabs-3 .prevar,
+  .room4 .container #tabs .tab-content #tabs-4 .prevar { 
+    left: -50px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: var(--white);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border: 1px solid var(--black);
+  }
+
+.event4 .container #tabs2 .tab-content2 #tabs-1 .nextar,
+.event4 .container #tabs2 .tab-content2 #tabs-2 .nextar,
+.event4 .container #tabs2 .tab-content2 #tabs-3 .nextar,
+.event4 .container #tabs2 .tab-content2 #tabs-4 .nextar { 
+  left:  1417px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: var(--white);
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  border: 1px solid var(--black);
+  }
+
+
+  .event4 .container #tabs2 .tab-content2 #tabs-1 .prevar,
+  .event4 .container #tabs2 .tab-content2 #tabs-2 .prevar,
+  .event4 .container #tabs2 .tab-content2 #tabs-3 .prevar,
+  .event4 .container #tabs2 .tab-content2 #tabs-4 .prevar { 
+    left: -50px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: var(--white);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border: 1px solid var(--black);
+  }
 
 
 
@@ -350,7 +420,8 @@
 
 .swiper-button-prev::before {
   position: absolute;
-  top: 13px;
+  top: 11px;
+  left: 13px;
   display: inline-block;
   vertical-align: middle;
   width: 11px;
@@ -362,7 +433,8 @@
 }
 .swiper-button-next::before{
   position: absolute;
-  top: 13px;
+  top: 11px;
+  left: 9px;
   display: inline-block;
   vertical-align: middle;
   width: 11px;
