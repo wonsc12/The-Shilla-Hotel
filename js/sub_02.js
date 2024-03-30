@@ -31,5 +31,26 @@ $(function(){
     moveSlide(currentIdx - 1);
   });
 
+
+
+  
+  let tabmenu = $('.tab-menu a');
+  let tabcontent = $('#tab-content > div');
+
+
+  tabmenu.click(function(e){
+    e.preventDefault();
+    tabmenu.removeClass('active');
+    $(e.target).addClass('active');
+
+    let targetId = $(e.target).attr('href');
+
+    tabcontent.hide(); //탭을 하면 추가되서 나오니까 그걸 제거해주고
+    $(targetId).show(); //클릭한 것만 보여줌
+  });
+
+  tabcontent.eq(0).show(); 
+
+
   
 });
