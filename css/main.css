@@ -78,8 +78,9 @@
 .reservation-area .btn-select + ul a:hover {background-color: var(--bg-dark-gray, #ccc);}
 
 /* 예약 정보 영역 */
-.reservation-area .reserv-box {display:flex; position: absolute; bottom: 100%; left: 0; right: 0; background-color: var(--white, #fff);}
+.reservation-area .reserv-box {display:flex; position: absolute; bottom: 100%; left: 0; right: 0; background-color: var(--white, #fff); padding: 50px;}
 .reservation-area .reserv-box > div {flex: 1 1 auto;}
+.reservation-area .guest-info-wrap {}
 
 /* 객실소개 최원석*/
 
