@@ -38,6 +38,9 @@
 /* section */
 .main .section {height: 100vh; overflow: hidden;}
 
+/* main - tit-area */
+.tit-area {margin-bottom: calc(var(--line-height)*2); padding-top: 100px;}
+
 /* section home */
 .section.home {position: relative; background: url(../images/bg_main_01.png) no-repeat center center; background-size: cover;}
 .section.home .main-txt {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 100%; text-align: center;}
@@ -47,12 +50,13 @@
 .reservation-area {display: flex; flex-wrap: wrap; justify-content: space-between; position: absolute; bottom: 0; width: 100%; height: 250px;  background-color: var(--white, #fff);}
 .reservation-area .left {flex: 1 1 auto;}
 .reservation-area .top {display: flex; height: 200px;}
-.reservation-area .top > div {flex: 1 1 10%; text-align: center;}
+.reservation-area .top > div {position: relative; flex: 1 1 10%; text-align: center;}
 .reservation-area .resevation,
 .reservation-area .hotel {padding: 50px 0;}
-.reservation-area .top > .chk-date {flex-basis: 50%; display: flex; justify-content: space-between;}
-.reservation-area .top > .guest-info {flex-basis: 30%; display: flex; justify-content: space-between;}
-.reservation-area .top > .guest-info > button {flex: 1 1 auto; text-align: center;}
+.reservation-area .top .pick-area {flex-basis: 80%; display: flex;}
+.reservation-area .pick-area .chk-date {flex-basis: 70%; display: flex; justify-content: space-between;}
+.reservation-area .pick-area .guest-info {flex-basis: 30%; display: flex; justify-content: space-between;}
+.reservation-area .pick-area .guest-info > button {flex: 1 1 auto; text-align: center;}
 .reservation-area .chk-date > button {flex-basis: 40%; text-align: center;}
 .reservation-area .chk-date .num {flex-basis: 20%; font-size: 32px; display: flex; align-items: center; text-align: center; justify-content: center;}
 .reservation-area .chk-date .num > em {font-weight: 700;}
@@ -63,11 +67,19 @@
 .reservation-area .promotion .ipt-wrap {display: flex; width: 318px; height: 35px; }
 .reservation-area .promotion .ipt-wrap .ipt {height: 100%}
 
-/* 타이틀 */
+/* 예약 타이틀 */
 .reservation-area .tit {display: block; margin-bottom: 50px;}
 
-/* main - tit-area */
-.tit-area {margin-bottom: calc(var(--line-height)*2); padding-top: 100px;}
+/* 공통 드롭박스 */
+.reservation-area .btn-select span {position: relative;}
+.reservation-area .btn-select > span:after {content: ''; position: absolute; top: 50%; left: calc(100% + 10px); margin-top: -4px; border-width: 6px 4px; border-style: solid; border-color: var(--black, #222) transparent transparent transparent;}
+.reservation-area .btn-select + ul {position: absolute; bottom: 100%; left:0; right:0; background-color: var(--white, #fff);}
+.reservation-area .btn-select + ul a {display:block; padding: 10px 0;}
+.reservation-area .btn-select + ul a:hover {background-color: var(--bg-dark-gray, #ccc);}
+
+/* 예약 정보 영역 */
+.reservation-area .reserv-box {display:flex; position: absolute; bottom: 100%; left: 0; right: 0; background-color: var(--white, #fff);}
+.reservation-area .reserv-box > div {flex: 1 1 auto;}
 
 /* 객실소개 최원석*/
 

@@ -43,7 +43,8 @@ body {color: #222; font-family: 'Wanted Sans', sans-serif; font-weight: 400;}
 /* text */
 /* 필수 텍스트 */
 .txt-star {font-size: 14px;}
-.txt-star::before {content:'*'; color: #ED3A3F; font-size: 14px;}
+.txt-star::before {content:'*'; color: var(--black, #222); font-size: 14px;}
+.txt-star.red::before {content:'*'; color: #ED3A3F;}
 
 /* button */
 [class^=btn-] {display: inline-flex; justify-content: center; align-items:center; text-align: center;}
