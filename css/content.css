@@ -881,6 +881,7 @@
   transform: translate(-50%, -50%);
 }
 .seoul-right {
+  position: relative;
   width: 53%;
   padding: 50px;
   box-sizing: border-box;
@@ -894,8 +895,9 @@
 }
 .seoul-right-slide {
   position: relative;
-  width: 100%;
   overflow: hidden;
+  margin: 0 auto;
+  width: 460px;
 }
 .seoul-right-slide ul {
   height:100%;
@@ -921,12 +923,154 @@
 .seoul-right-slide p {
   margin: 30px;
 }
+.slide-btn .controls {
+  position: absolute;
+  top: 55%;
+  transform:translateY(-50%);
+  z-index: 999999;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transition: all .3s ease-in;
+  background: #F1E3C4;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #222;
+}
+.slide-btn #prev {
+  left: 40px;
+}
 
-.intro-bottom {
+.slide-btn #next {
+  right: 40px;
+}
+
+.hotel-seoul-section2 {
+  display: inline-flex;
+  height: 593px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.hotel-seoul-section2 .tab-menu {
+  display: flex;
+  width: 566px;
+  height: 593px;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.hotel-seoul-section2 .tab-menu li {
   width: 100%;
-height: 406px;
+}
+.hotel-seoul-section2 .tab-menu li a {
+  display: block;
+  width: 100%;
+  color: #000;
+  font-size: 20px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+.hotel-seoul-section2 .tab-menu li a:active {
+  background: var(--maincolor, #122223);
+  color: var(--white, #fff);
+}
+.hotel-seoul-section2 #tab-content {
+  display: flex;
+  width: 826px;
+  height: 593px;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+.location-tab {
+  position: relative;
+  width: 358px;
+  background: #E1E1E1;
+  margin: 20px;
+  padding: 20px;
+}
+.location-tab span {
+  position: absolute;
+  right: 20px;
+  top: 40%;
+}
+.hotel-text-wrap {
+  position: relative;
+  width: 1170px;
+  height: 262px;
+  margin: 0 auto;
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+.hotel-text-wrap p {
+  color: #222;
+  text-align: right;
+  font-size: 110px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.hotel-text-wrap span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.hotel-sticky-section3,
+.hotel-sticky-section4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  margin-top: 90px;
+}
+.hotel-sticky-left {
+  position: sticky;
+  width: 100%;
+}
+.hotel-sticky-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: calc(var(--line-height)*1.5);
+  margin-bottom: 23px;
+}
+.hotel-sticky-left span {
+  display: inline-block;
+  width: 339px;
+  font-size: var(--font-size, 16px);
+  line-height: var(--line-height, 27px);
+}
+
+.intro-bottom-section5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 406px;
   background: url('../images/img_sub_soeulbottombg.jpg') no-repeat;
   background-size: contain;
+  margin-top: calc(var(--line-height) * 8);
+}
+.intro-bottom-section5 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro-bottom-section5 span:first-child {
+  display: inline-block;
+  width: 500px;
+  color: var(--white, #fff);
+}
+.intro-bottom-section5 span + span {
+  display: inline-block;
+  position: absolute;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: right;
+  right: 0;
+  color: var(--white, #fff);
+  text-transform: uppercase;
 }
 
 /* 신라호텔소개 - 제주 */
@@ -1013,6 +1157,24 @@ height: 406px;
 .jeju-right-slide p {
   margin: 30px;
 }
+
+.hotel-tab-wrapper {
+  display: inline-flex;
+  height: 837px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.hotel-tab-wrapper .tab-menu {
+  display: flex;
+  width: 566px;
+  height: 837px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
 
 /* 태블릿 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 1024px) {
