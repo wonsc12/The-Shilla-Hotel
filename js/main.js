@@ -167,11 +167,51 @@ let content = $('.panel');
 });
 
 
+	//에약폼 영역
+	// 에약
+	$('.resevation ul').hide();
+	$('.reservation-area .resevation .btn-select').click(function(){
+		if(!$(this).closest('.resevation').hasClass('on')){
+			$(this).closest('.resevation').addClass("on");
+			$(this).closest('.resevation').find('ul').slideDown();
+		}else{
+			$(this).closest('.resevation').removeClass("on");
+			$(this).closest('.resevation').find('ul').slideUp();
+		}
+	})
 
+	// 호텔
+	$('.hotel ul').hide();
+	$('.reservation-area .hotel .btn-select').click(function(){
+		if(!$(this).closest('.hotel').hasClass('on')){
+			$(this).closest('.hotel').addClass("on");
+			$(this).closest('.hotel').find('ul').slideDown();;
+		}else{
+			$(this).closest('.hotel').removeClass("on");
+			$(this).closest('.hotel').find('ul').slideUp();
+		}
+	})
 
+	// 그외 예약요소 전체 클릭
+	$('.reserv-box').hide();
+	$('.pick-area').click(function(){
+		if(!$(this).hasClass('on')){
+			$(this).addClass("on");
+			$(this).find('.reserv-box').slideDown();;
+		}else{
+			$(this).removeClass("on");
+			$(this).find('.reserv-box').slideUp();
+		}
+	})
 
-
-
+	// 프로모션 코드
+	$('.promotion .btn-prom').click(function(){
+		if(!$(this).closest('.promotion').hasClass('on')){
+			$(this).closest('.promotion').addClass("on");
+		}else{
+			$(this).closest('.promotion').removeClass("on");
+		}
+	})
 
 
 

@@ -66,9 +66,10 @@
 .reservation-area .chk-date .num > em {font-weight: 700;}
 .reservation-area .chk-date .date,
 .reservation-area .guest-info .num {font-size: 24px;}
-.reservation-area .promotion {display: flex; align-items: center; justify-content: flex-end; height: 50px; padding: 0 40px;}
+.reservation-area .promotion {position: relative; display: flex; align-items: center; justify-content: flex-end; height: 50px; padding: 0 40px;}
 .reservation-area .btn-prom {border-bottom: 1px solid var(--black, #222);}
-.reservation-area .promotion .ipt-wrap {display: flex; width: 318px; height: 35px; }
+.reservation-area .promotion .ipt-wrap {visibility: hidden; display: flex; width: 318px; height: 35px; position: absolute; right: 40px; transition: right 0.3s ease;}
+.reservation-area .promotion.on .ipt-wrap {right: 140px; visibility: visible;}
 .reservation-area .promotion .ipt-wrap .ipt {height: 100%}
 
 /* 예약 타이틀 */
@@ -80,6 +81,9 @@
 .reservation-area .btn-select + ul {position: absolute; bottom: 100%; left:0; right:0; background-color: var(--white, #fff);}
 .reservation-area .btn-select + ul a {display:block; padding: 10px 0;}
 .reservation-area .btn-select + ul a:hover {background-color: var(--bg-dark-gray, #ccc);}
+
+.resevation.on .btn-select > span:after,
+.hotel.on .btn-select > span:after {transform: rotate(-180deg); margin-top: -12px;}
 
 /* 예약 정보 영역 */
 .reservation-area .reserv-box {display:flex; position: absolute; bottom: 100%; left: 0; right: 0; background-color: var(--white, #fff); padding: 50px;}
