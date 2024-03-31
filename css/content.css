@@ -74,6 +74,17 @@
   margin-top: 27px;
   font-size: 20px;
 }
+.delux .container .deluxes .deluxe-box .deluxe1 .readbox2 {
+  display: flex; justify-content: space-between;
+}
+.delux .container .deluxes .deluxe-box .deluxe1 .readbox2 .read-more {
+  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  display: flex; justify-content: center; align-items: center;
+}
+
+.delux .container .deluxes .deluxe-box .deluxe1 .readbox2 .read-more h6{
+  color: var(--white);
+}
 .delux .container .deluxes .deluxe-box .swiper {
   width: 880px;
   height: 600px;
@@ -93,37 +104,40 @@
 .swiper-horizontal>.swiper-pagination-bullets, 
 .swiper-pagination-bullets.swiper-pagination-horizontal, 
 .swiper-pagination-custom, .swiper-pagination-fraction{ 
-  top:20px; left:20px; display: flex; flex-direction: column; margin-top: 20px; width: 100%; }
+  top:20px; 
+  left:20px; 
+  display: flex; 
+  flex-direction: column; 
+  margin-top: 20px; 
+  width: 100%; }
 
-  .swiper-pagination-bullet {
-    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 20px));
-    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 20px));
-    
-    border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
-    background: var(--swiper-pagination-bullet-inactive-color, var(--white));
-  }
-  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
-  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 10px var(--swiper-pagination-bullet-horizontal-gap,4px);
-  }
-  .swiper-button-next {left: calc(50% + 650px);}
-  .swiper-button-prev { left: calc(50% - 670px);}
- 
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 20px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 20px));
+  
+  border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
+  background: var(--swiper-pagination-bullet-inactive-color, var(--white));
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 10px var(--swiper-pagination-bullet-horizontal-gap,4px);
+}
+.swiper-button-next {left: calc(50% + 650px);}
+.swiper-button-prev { left: calc(50% - 670px);}
 
- .swiper-button-next,
- .swiper-button-prev {
-    position: absolute;
-    top: var(--swiper-navigation-top-offset,50%);
-    width: calc(var(--swiper-navigation-size)/ 44 * 27);
-    height: var(--swiper-navigation-size);
-    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white)
-    
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: var(--swiper-navigation-top-offset,50%);
+  width: calc(var(--swiper-navigation-size)/ 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white) 
 }
 .swiper-button-next:after, .swiper-button-prev:after {
   font-family: swiper-icons;
@@ -136,17 +150,10 @@
 
 .infomenu .container .swiper-horizontal > .swiper-pagination-bullets {width: 100%; align-items: end; justify-content: center; flex-direction: row;  }
 
-
 .infomenu .container .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
-  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 10px var(--swiper-pagination-bullet-horizontal-gap,10px);
-  }
-
-
-
-
-
-
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 10px var(--swiper-pagination-bullet-horizontal-gap,10px);
+}
 
 .business-deluxes {
   display: flex;
@@ -186,6 +193,16 @@
   font-size: 20px;
   margin-top: 27px;
 }
+.business-deluxes .container .business-deluxe .business-deluxebox .business-deluxe2 .readbox2 {
+  display: flex; justify-content: space-between;
+}
+.business-deluxes .container .business-deluxe .business-deluxebox .business-deluxe2 .read-more {
+  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  display: flex; justify-content: center; align-items: center;
+}
+.business-deluxes .container .business-deluxe .business-deluxebox .business-deluxe2 .read-more h6{
+  color: var(--white);
+}
 .barrier-free .container .barrier-frees .barrier-freetitle h3 {
   text-align: center;
   margin-bottom: 81px;
@@ -200,6 +217,16 @@
   flex-direction: column;
   justify-content: end;
   text-align: end;
+}
+.barrier-free .container .barrier-frees .barrier-free-box .barrier-free1 .readbox2 {
+  display: flex; justify-content: space-between;
+}
+.barrier-free .container .barrier-frees .barrier-free-box .barrier-free1 .readbox2 .read-more {
+  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  display: flex; justify-content: center; align-items: center;
+}
+.barrier-free .container .barrier-frees .barrier-free-box .barrier-free1 .readbox2 .read-more h6 {
+  color: var(--white);
 }
 .barrier-free .container .barrier-frees .barrier-free-box .barrier-free1 p {
   font-size: 20px;
@@ -255,13 +282,62 @@
   flex-direction: column;
   justify-content: end;
 }
+.coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe2 .readbox2 {
+  display: flex; justify-content: space-between;
+}
+.coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe2 .readbox2 .read-more{
+  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  display: flex; justify-content: center; align-items: center;
+}
+.coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe2 .readbox2 .read-more h6{
+  color: var(--white);
+}
 .coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe2 p {
   font-size: 20px;
   margin-top: 27px;
 }
+.room-Amenities .container .amenties .bath-room h4, 
+.room-Amenities .container .amenties .bed-room h4, 
+.room-Amenities .container .amenties .private-bar h4, 
+.room-Amenities .container .amenties .closet h4 { 
+  margin: 27px 0 ;
+}
+.room-Amenities .container .amenties{ 
+  display: flex; justify-content: space-between;
+}
+.room-Amenities .container .amenties .bath-room > ul > li, 
+.room-Amenities .container .amenties .bed-room > ul > li, 
+.room-Amenities .container .amenties .private-bar > ul > li, 
+.room-Amenities .container .amenties .closet > ul > li {
+ margin: 10px 0;
+  
+}
+.room-Amenities .container .pbox { line-height: 25px; display: flex; flex-direction: column; align-items: center; width: 100%; height: 50px; background: #ccc;}
 .executive-business .container .executive-business {
   margin-bottom: 150px;
 }
+.special .container > ul {  display: flex; flex-wrap: wrap; margin-top: 27px;}
+.special .container > ul > li { margin: 27px ;  display: flex;  align-items: center; width: 295px;}
+.special .container > ul > li .spumage { width: 40px; height: 40px; margin-right: 15px;}
+.special .container > ul > li .spumage img { width: 100%; height: 100%;}
+
+.room-use .container .facility { display: flex; justify-content: space-between;}
+.room-use .container .facility .smart h4{ margin-bottom: 27px;}
+.room-use .container .facility .smart ul li { margin-top: 10px;}
+
+.hotelinfo .container h4 { margin-bottom: 27px;}
+.hotelinfo .container ul .bold3 { font-weight: bold;}
+.hotelinfo .container ul li { margin-top: 10px;}
+.hotelinfo .container .peak { margin-top: 27px;}
+.hotelinfo .container .peak-season { 
+  line-height: 25px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  width: 100%; 
+  height: 50px; 
+  background: #ccc; 
+  margin-top: 52px;}
 .executive-business .container .executive-business .executive-title h3 {
   text-align: center;
   margin-bottom: 81px;
@@ -276,6 +352,16 @@
   flex-direction: column;
   justify-content: end;
   text-align: end;
+}
+.executive-business .container .executive-business .executive-box .executive1 .readbox2 {
+  display: flex; justify-content: space-between;
+}
+.executive-business .container .executive-business .executive-box .executive1 .readbox2 .read-more{
+  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  display: flex; justify-content: center; align-items: center;
+}
+.executive-business .container .executive-business .executive-box .executive1 .readbox2 .read-more h6 {
+  color: var(--white);
 }
 .executive-business .container .executive-business .executive-box .executive1 p {
   font-size: 20px;
@@ -328,6 +414,16 @@
   flex-direction: column;
   justify-content: end;
 }
+.executive-grand .container .executive-grand .executive-grandbox .executive-grand2 .readbox2 {
+  display: flex; justify-content: space-between;
+}
+.executive-grand .container .executive-grand .executive-grandbox .executive-grand2 .readbox2 .read-more {
+  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  display: flex; justify-content: center; align-items: center;
+}
+.executive-grand .container .executive-grand .executive-grandbox .executive-grand2 .readbox2 .read-more h6{
+  color: var(--white);
+}
 .executive-grand .container .executive-grand .executive-grandbox .executive-grand2 .executive-grande p {
   font-size: 20px;
   margin-top: 27px;
@@ -346,6 +442,14 @@
   flex-direction: column;
   justify-content: end;
   text-align: end;
+}
+.suites .container .suite .suite-box .suite1 .readbox2 {
+  display: flex; justify-content: space-between;
+}.suites .container .suite .suite-box .suite1 .readbox2 .read-more {
+  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  display: flex; justify-content: center; align-items: center;
+}.suites .container .suite .suite-box .suite1 .readbox2 .read-more h6 {
+  color: var(--white);
 }
 .suites .container .suite .suite-box .suite1 p {
   font-size: 20px;
@@ -400,6 +504,16 @@
   flex-direction: column;
   justify-content: end;
 }
+.korea-suites .container .korea-suite .korea-suitebox .korea-suite2 .readbox2 {
+  display: flex; justify-content: space-between;
+}
+.korea-suites .container .korea-suite .korea-suitebox .korea-suite2 .readbox2 .read-more{
+  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  display: flex; justify-content: center; align-items: center;
+}
+.korea-suites .container .korea-suite .korea-suitebox .korea-suite2 .readbox2 .read-more h6{
+  color: var(--white);
+}
 .korea-suites .container .korea-suite .korea-suitebox .korea-suite2 p {
   font-size: 20px;
   margin-top: 27px;
@@ -418,6 +532,16 @@
   flex-direction: column;
   justify-content: end;
   text-align: end;
+}
+.coner-suite .container .coner-suites .coner-suite-box .coner-suite1 .readbox2 {
+  display: flex; justify-content: space-between;
+}
+.coner-suite .container .coner-suites .coner-suite-box .coner-suite1 .readbox2 .read-more {
+  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  display: flex; justify-content: center; align-items: center;
+}
+.coner-suite .container .coner-suites .coner-suite-box .coner-suite1 .readbox2 .read-more h6 {
+  color: var(--white);
 }
 .coner-suite .container .coner-suites .coner-suite-box .coner-suite1 p {
   font-size: 20px;
@@ -471,6 +595,16 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
+}
+.Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 .readbox2 {
+  display: flex; justify-content: space-between;
+}
+.Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 .readbox2 .read-more{
+  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  display: flex; justify-content: center; align-items: center;
+}
+.Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 .readbox2 .read-more h6{
+    color: var(--white);
 }
 .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 p {
   font-size: 20px;
@@ -581,7 +715,7 @@
 .arestaurant2 .container .restaurant .restaurant-explanation .call-reservation .reservation {
   width: 160px;
   height: 50px;
-  background: var(--black, #222);
+  background: var(--maincolor);
   display: flex;
 }
 .arestaurant2 .container .restaurant .restaurant-explanation .call-reservation .reservation a {
@@ -599,7 +733,7 @@
 .arestaurant2 .container .restaurant .restaurant-explanation .call-reservation .inquiry {
   width: 160px;
   height: 50px;
-  background: var(--black, #222);
+  background: var(--maincolor);
 }
 .arestaurant2 .container .restaurant .restaurant-explanation .call-reservation .inquiry a {
   display: flex;
@@ -858,8 +992,6 @@
 .membershipcard-image .container .boxx .member-info h6 {
   color: var(--white);
 }
-
-
 
 
 
