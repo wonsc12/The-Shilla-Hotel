@@ -33,7 +33,7 @@
 .acco-item .acco-body {display:none; padding: 24px; background-color: var(--bg-light-gray, #f8f8f8); color: var(--acco-txt, #666);}
 
 /* FAQ - 페이지네이션 */
-.paging {display: flex; gap: 8px; justify-content: center;}
+.paging {display: flex; gap: 8px; justify-content: center; margin-top: 100px;}
 .paging .btn-start,
 .paging .btn-prev,
 .paging .btn-next,

@@ -92,6 +92,51 @@ $(function(){
 			$(this).closest('.acco-head').siblings('.acco-body').slideUp(400);
 		}
 	})
+
+
+	  // 초기 페이지 설정
+    var currentPage = 1;
+    var pageSize = 10; // 한 페이지에 보여질 항목 수
+    var faqItems = $(".tab-pannel.on .faq-list .acco-item");
+
+    // 페이지 로드 시 첫 페이지 항목만 표시
+    faqItems.hide().slice(0, pageSize).show();
+
+    // 페이지 버튼 클릭 이벤트 처리
+    $(".paging ul li a").on("click", function(e){
+      e.preventDefault();
+      var $this = $(this);
+      var page = parseInt($this.text()); // 클릭한 페이지 번호
+      if(page === currentPage) return; // 현재 페이지면 처리 중지
+
+      // 이전 페이지 항목 숨기기
+      var start = (page - 1) * pageSize;
+      var end = start + pageSize;
+      faqItems.hide().slice(start, end).show();
+
+      // 페이지 버튼 스타일 업데이트
+      $(".paging ul li").removeClass("on");
+      $this.parent().addClass("on");
+
+      // 현재 페이지 업데이트
+      currentPage = page;
+    });
+
+    // 이전 페이지 버튼 클릭 이벤트 처리
+    $(".btn-prev").on("click", function(){
+      var $currentPage = $(".paging ul li.on");
+      if($currentPage.prev().length > 0) {
+        $currentPage.prev().find("a").click();
+      }
+    });
+
+    // 다음 페이지 버튼 클릭 이벤트 처리
+    $(".btn-next").on("click", function(){
+      var $currentPage = $(".paging ul li.on");
+      if($currentPage.next().length > 0) {
+        $currentPage.next().find("a").click();
+      }
+    });
 });
 
 
