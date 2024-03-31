@@ -100,13 +100,12 @@
 .reservation-area .btn-add span:after {content: ''; position: absolute; top: -3px; width: 30px; height: 30px; background-color: #d9d9d9; border-radius: 50%; margin-left: 8px; }
 
 /* 수량 */
-.quantity {display: flex;}
-.quantity [class^="btn"] {width: 40px; height: 34px; background-color: #ebebeb; border: 1px solid #ebebeb; border-radius: 6px 0 0 6px;}
-.quantity [class^="btn"].btn-plus {border-radius: 0 6px 6px 0;}
+.quantity {display: flex; position: relative;}
+.quantity [class^="btn"] {position:absolute; width: 40px; height: 34px; background-color: #ebebeb; border: 1px solid #ebebeb; border-radius: 6px 0 0 6px;}
+.quantity [class^="btn"].btn-plus {border-radius: 0 6px 6px 0; right: 0;}
 .quantity [class^="btn"]:after {content: ''; position: absolute; width: 16px; height: 2px; background-color: var(--black, #222);}
 .quantity .btn-plus:before {content:''; position: absolute; width: 2px; height: 16px; background-color: var(--black, #222);}
-.quantity .ipt {height: 34px; border-width: 1px 0; width: 102px;}
-
+.quantity .count {display: flex; width: 182px; height: 34px; align-items: center; justify-content: center; border: 1px solid #ccc; border-radius: 6px; font-size: 20px; }}
 
 /* 객실소개 최원석*/
 

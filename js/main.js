@@ -199,16 +199,16 @@ let content = $('.panel');
 	})
 
 	// 그외 예약요소 전체 클릭
-	$('.reserv-box').hide();
-	$('.pick-area').click(function(){
-		if(!$(this).hasClass('on')){
-			$(this).addClass("on");
-			$(this).find('.reserv-box').slideDown();;
-		}else{
-			$(this).removeClass("on");
-			$(this).find('.reserv-box').slideUp();
-		}
-	})
+	// $('.reserv-box').hide();
+	// $('.pick-area').click(function(){
+	// 	if(!$(this).hasClass('on')){
+	// 		$(this).addClass("on");
+	// 		$(this).find('.reserv-box').slideDown();;
+	// 	}else{
+	// 		$(this).removeClass("on");
+	// 		$(this).find('.reserv-box').slideUp();
+	// 	}
+	// })
 
 	// 프로모션 코드
 	$('.promotion .btn-prom').click(function(){
