@@ -72,13 +72,13 @@
 }
 .delux .container .deluxes .deluxe-box .deluxe1 p {
   margin-top: 27px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .delux .container .deluxes .deluxe-box .deluxe1 .readbox2 {
   display: flex; justify-content: space-between;
 }
 .delux .container .deluxes .deluxe-box .deluxe1 .readbox2 .read-more {
-  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  width: 130px; height: 40px; background: var(--maincolor); margin-top: 27px;
   display: flex; justify-content: center; align-items: center;
 }
 
@@ -122,8 +122,8 @@
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 10px var(--swiper-pagination-bullet-horizontal-gap,4px);
 }
-.swiper-button-next {left: calc(50% + 650px);}
-.swiper-button-prev { left: calc(50% - 670px);}
+.swiper-button-next {left: calc(50% + 600px);}
+.swiper-button-prev { left: calc(50% - 617px);}
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -190,14 +190,14 @@
   justify-content: end;
 }
 .business-deluxes .container .business-deluxe .business-deluxebox .business-deluxe2 .business-deluxet p {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 27px;
 }
 .business-deluxes .container .business-deluxe .business-deluxebox .business-deluxe2 .readbox2 {
   display: flex; justify-content: space-between;
 }
 .business-deluxes .container .business-deluxe .business-deluxebox .business-deluxe2 .read-more {
-  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  width: 130px; height: 40px; background: var(--maincolor); margin-top: 27px;
   display: flex; justify-content: center; align-items: center;
 }
 .business-deluxes .container .business-deluxe .business-deluxebox .business-deluxe2 .read-more h6{
@@ -222,14 +222,14 @@
   display: flex; justify-content: space-between;
 }
 .barrier-free .container .barrier-frees .barrier-free-box .barrier-free1 .readbox2 .read-more {
-  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  width: 160px; height: 40px; background: var(--maincolor); margin-top: 27px;
   display: flex; justify-content: center; align-items: center;
 }
 .barrier-free .container .barrier-frees .barrier-free-box .barrier-free1 .readbox2 .read-more h6 {
   color: var(--white);
 }
 .barrier-free .container .barrier-frees .barrier-free-box .barrier-free1 p {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 27px;
 }
 .barrier-free .container .barrier-frees .barrier-free-box .barrier-free2 .swiper {
@@ -286,14 +286,14 @@
   display: flex; justify-content: space-between;
 }
 .coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe2 .readbox2 .read-more{
-  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  width: 130px; height: 40px; background: var(--maincolor); margin-top: 27px;
   display: flex; justify-content: center; align-items: center;
 }
 .coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe2 .readbox2 .read-more h6{
   color: var(--white);
 }
 .coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe2 p {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 27px;
 }
 .room-Amenities .container .amenties .bath-room h4, 
@@ -357,14 +357,14 @@
   display: flex; justify-content: space-between;
 }
 .executive-business .container .executive-business .executive-box .executive1 .readbox2 .read-more{
-  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  width: 130px; height: 40px; background: var(--maincolor); margin-top: 27px;
   display: flex; justify-content: center; align-items: center;
 }
 .executive-business .container .executive-business .executive-box .executive1 .readbox2 .read-more h6 {
   color: var(--white);
 }
 .executive-business .container .executive-business .executive-box .executive1 p {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 27px;
 }
 .executive-business .container .executive-business .executive-box .executive2 .swiper {
@@ -418,14 +418,14 @@
   display: flex; justify-content: space-between;
 }
 .executive-grand .container .executive-grand .executive-grandbox .executive-grand2 .readbox2 .read-more {
-  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  width: 130px; height: 40px; background: var(--maincolor); margin-top: 27px;
   display: flex; justify-content: center; align-items: center;
 }
 .executive-grand .container .executive-grand .executive-grandbox .executive-grand2 .readbox2 .read-more h6{
   color: var(--white);
 }
 .executive-grand .container .executive-grand .executive-grandbox .executive-grand2 .executive-grande p {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 27px;
 }
 .suites .container .suite .suitetitle h3 {
@@ -446,13 +446,13 @@
 .suites .container .suite .suite-box .suite1 .readbox2 {
   display: flex; justify-content: space-between;
 }.suites .container .suite .suite-box .suite1 .readbox2 .read-more {
-  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  width: 130px; height: 40px; background: var(--maincolor); margin-top: 27px;
   display: flex; justify-content: center; align-items: center;
 }.suites .container .suite .suite-box .suite1 .readbox2 .read-more h6 {
   color: var(--white);
 }
 .suites .container .suite .suite-box .suite1 p {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 27px;
 }
 .suites .container .suite .suite-box .suite2 .swiper {
@@ -508,14 +508,14 @@
   display: flex; justify-content: space-between;
 }
 .korea-suites .container .korea-suite .korea-suitebox .korea-suite2 .readbox2 .read-more{
-  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  width: 130px; height: 40px; background: var(--maincolor); margin-top: 27px;
   display: flex; justify-content: center; align-items: center;
 }
 .korea-suites .container .korea-suite .korea-suitebox .korea-suite2 .readbox2 .read-more h6{
   color: var(--white);
 }
 .korea-suites .container .korea-suite .korea-suitebox .korea-suite2 p {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 27px;
 }
 .coner-suite .container .coner-suites .coner-suitetitle h3 {
@@ -537,14 +537,14 @@
   display: flex; justify-content: space-between;
 }
 .coner-suite .container .coner-suites .coner-suite-box .coner-suite1 .readbox2 .read-more {
-  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  width: 130px; height: 40px; background: var(--maincolor); margin-top: 27px;
   display: flex; justify-content: center; align-items: center;
 }
 .coner-suite .container .coner-suites .coner-suite-box .coner-suite1 .readbox2 .read-more h6 {
   color: var(--white);
 }
 .coner-suite .container .coner-suites .coner-suite-box .coner-suite1 p {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 27px;
 }
 .coner-suite .container .coner-suites .coner-suite-box .coner-suite2 .swiper {
@@ -600,20 +600,17 @@
   display: flex; justify-content: space-between;
 }
 .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 .readbox2 .read-more{
-  width: 150px; height: 50px; background: var(--maincolor); margin-top: 27px;
+  width: 130px; height: 50px; background: var(--maincolor); margin-top: 27px;
   display: flex; justify-content: center; align-items: center;
 }
 .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 .readbox2 .read-more h6{
     color: var(--white);
 }
 .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 p {
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 27px;
 }
-.title1image {
- 
-  
-}
+
 
 .title1image .titleltop h2 {
   color: var(--white);
@@ -679,7 +676,7 @@
   justify-content: end;
 }
 .arestaurant .container .restaurant .restaurant-explanation p {
-  font-size: 24px;
+  font-size: 18px;
   margin-top: 27px;
 }
 
@@ -700,11 +697,11 @@
   text-align: end;
 }
 .arestaurant2 .container .restaurant .restaurant-explanation span {
-  font-size: 24px;
+  font-size: 18px;
   margin-top: 15px;
 }
 .arestaurant2 .container .restaurant .restaurant-explanation p {
-  font-size: 24px;
+  font-size: 18px;
   margin-top: 27px;
 }
 .arestaurant2 .container .restaurant .restaurant-explanation .call-reservation {
@@ -713,8 +710,8 @@
   margin-top: 27px;
 }
 .arestaurant2 .container .restaurant .restaurant-explanation .call-reservation .reservation {
-  width: 160px;
-  height: 50px;
+  width: 120px;
+  height: 40px;
   background: var(--maincolor);
   display: flex;
 }
@@ -726,13 +723,13 @@
   height: 100%;
 }
 .arestaurant2 .container .restaurant .restaurant-explanation .call-reservation .reservation a p {
-  font-size: 24px;
+  font-size: 16px;
   color: var(--white, #fff);
   height: 100%;
 }
 .arestaurant2 .container .restaurant .restaurant-explanation .call-reservation .inquiry {
-  width: 160px;
-  height: 50px;
+  width: 120px;
+  height: 40px;
   background: var(--maincolor);
 }
 .arestaurant2 .container .restaurant .restaurant-explanation .call-reservation .inquiry a {
@@ -743,7 +740,7 @@
   height: 100%;
 }
 .arestaurant2 .container .restaurant .restaurant-explanation .call-reservation .inquiry a p {
-  font-size: 24px;
+  font-size: 16px;
   color: var(--white, #fff);
   height: 100%;
 }
