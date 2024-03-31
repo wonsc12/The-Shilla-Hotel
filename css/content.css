@@ -987,11 +987,11 @@
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20px;
   border-right: 1px solid #222;
 }
 .hotel-seoul-section2 .tab-menu li {
   width: 100%;
+
 }
 .hotel-seoul-section2 .tab-menu li a {
   display: block;
@@ -1000,9 +1000,10 @@
   font-size: 20px;
   line-height: 44px;
   text-transform: uppercase;
+  padding: 10px 20px;
+  box-sizing: border-box;
 }
-.hotel-seoul-section2 .tab-menu li a:active,
-.hotel-seoul-section2 .tab-menu li.ui-tabs-active a {
+.hotel-seoul-section2 .tab-menu li a.active {
   background: var(--maincolor, #122223);
   color: var(--white, #fff);
 }
@@ -1019,7 +1020,7 @@
   min-height: 500px;
 }
 #tab-content::-webkit-scrollbar {
-  width: 10px;  /* 스크롤바의 너비 */
+  width: 8px;  /* 스크롤바의 너비 */
 }
 
 #tab-content::-webkit-scrollbar-thumb {
@@ -1052,6 +1053,7 @@
   margin: 0 auto;
   margin-top: 160px;
   margin-bottom: 160px;
+  overflow: hidden;
 }
 .hotel-text-wrap p {
   color: #222;
@@ -1059,23 +1061,33 @@
   font-size: 110px;
   font-weight: 700;
   text-transform: uppercase;
+  opacity: 0;
+}
+.scroll-txt-right {
+  transform: translate(1920px, 0px);
+  background: linear-gradient(to top, #F1E3C4 50%, transparent 50%) no-repeat;
+}
+.scroll-txt-left {
+  transform: translate(-1920px, 0px);
 }
 .hotel-text-wrap span {
   position: absolute;
   bottom: 0;
   left: 0;
+  transform: translate(0px, 500px);
 }
 
 .hotel-sticky-section3,
 .hotel-sticky-section4 {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   margin-top: 90px;
   height: auto;
 }
-.hotel-sticky-left {
-  position: sticky;
+.hotel-sticky-section3 .hotel-sticky-left {
+  position:sticky;
   top:10px;
   left:10px; 
   width: 100%;
