@@ -182,10 +182,10 @@ textarea::placeholder {color: var(--placeholder, #999); line-height: var(--line-
 .flag {position: absolute; top: 0; left: 0; min-width: 124px; padding: 14px 20px; background-color: var(--black, #222); color: var(--white, #fff); text-align: center;}
 
 /* tooltip */
-.tooltip {position: relative; text-align: right; display: inline-block; padding-left: 24px;}
+.tooltip {position: relative; display: inline-block; padding-left: 24px;}
 .tooltip:before {content: ''; position: absolute; top: 0; left: 0; width: 16px; height: 16px; background: url(../images/ico_tooltip.png) no-repeat left center / 16px auto;}
-.tooltip .tool-txt {position: absolute; left: 0; bottom: 100%; z-index: 1; visibility: hidden; padding: 10px 6px; background-color: var(--black,#222); color: #fff; text-align: center;}
-.tooltip .tool-txt:after {content:''; position: absolute; top: 100%;  width: 8px; height: 12px; background-color: red;}
+.tooltip .tool-txt {min-width: 194px; position: absolute; left: 0; bottom: calc(100% + 10px); z-index: 1; visibility: hidden; padding: 10px 6px; background-color: var(--black,#222); color: #fff; text-align: center;}
+.tooltip .tool-txt:after {content: ''; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); border-style: solid; border-width: 8px 12px; border-color: var(--black, #222) transparent transparent transparent;}
 .tooltip:hover .tool-txt {visibility: visible;}
 
 /* 태블릿 사이즈 미디어 쿼리 */

@@ -139,32 +139,37 @@
                     </div>
                     <ul class="room-info-list">
                       <li>
-                        <div>
-                          <button>
-                            <span class="blind">제외</span>
-                          </button>
-                          <input type="text" title="성인">
-                          <button>
-                            <span class="blind">추가</span>
-                          </button>
-                        </div>
+                        <span class="tit">객실 1</span>
+                        <ul class="quantity-list">
+                          <li class="quantity">
+                            <button type="button" class="btn-minus">
+                              <span class="blind">제외</span>
+                            </button>
+                            <input type="number" class="ipt" title="성인" value="0" maxlength="2" min="1" max="2">
+                            <span>성인 1</span>
+                            <button type="button" class="btn-plus">
+                              <span class="blind">추가</span>
+                            </button>
+                          </li>
+                          <li class="quantity">
+                            <button type="button" class="btn-minus">
+                              <span class="blind">제외</span>
+                            </button>
+                            <input type="number" class="ipt"  title="어린이" value="0" maxlength="2" min="1" max="2">
+                            <button type="button" class="btn-plus">
+                              <span class="blind">추가</span>
+                            </button>
+                          </li>
+                        </ul>
                       </li>
-                      <!-- <li>
-                        <div>
-                          <button>
-                            <span class="blind">제외</span>
-                          </button>
-                          <input type="text" title="성인">
-                          <button>
-                            <span class="blind">추가</span>
-                          </button>
-                        </div>
-                      </li> -->
                     </ul>
+                    <button type="button" class="btn-add">
+                      <span>객실추가</span>
+                    </button>
                     <p class="txt-star">객실추가는 최대 3개까지만 입력 가능합니다.</p>
                     <div class=""btn-area>
                       <button type="button" class="btn-p m">
-                        <span>검색</span>
+                        <span>선택완료</span>
                       </button>
                     </div>
                   </div>
