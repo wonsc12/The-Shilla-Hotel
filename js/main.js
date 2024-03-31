@@ -97,15 +97,21 @@ $(function(){
 
 /* membership */
 
-let memberIdx = $('.membership-wrapper .members');
-let srt = 1;
+let mslide = 1;
 
-$('.membership-pager li a').click(function(){
-	let idx = $(this).index();
-	srt = idx;
-	$(this).addClass('active').siblings().removeClass('active');
+$('.mslide1').click(function(){
+	$('.membership-wrapper').css('transform','translateX(0px)');
+	mslide = 1;
+})
 
-	$('')
+$('.mslide2').click(function(){
+	$('.membership-wrapper').css('transform','translateX(-1084px)');
+	mslide = 2;
+})
+
+$('.mslide3').click(function(){
+	$('.membership-wrapper').css('transform','translateX(-2172px)');
+	mslide = 3;
 })
 
 /* 시설소개 */

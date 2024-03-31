@@ -519,12 +519,13 @@
 .membership-pager li:focus {
   border-bottom: 6px solid #ccc;
 }
-.membership-pager li a {
+.membership-pager li button {
   display: block;
   width: 100%;
   padding: 20px;
+  color: var(--white, #fff);
 }
-.membership-pager li a.active {
+.membership-pager li button.active {
   border-bottom: 4px solid #ccc;
 }
 
