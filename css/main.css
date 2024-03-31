@@ -563,7 +563,7 @@
   justify-content: center;
   gap:10px;
 }
-.membership-link {
+.membership-link:first-child {
   position: relative;
   width: 180px;
   height: 52px;
@@ -578,7 +578,47 @@
   border: 1px solid var(--black, #222);
   box-sizing: border-box;
 }
-.membership-link span::after{
+.membership-link:first-child::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--maincolor, #122223);
+  top:100%;
+  left: 0;
+  transition: all 0.3s;
+  z-index: -10;
+}
+.membership-link:last-child {
+  position: relative;
+  width: 180px;
+  height: 52px;
+  margin: 0 10px;
+  padding: 0 30px;
+  color: var(--subcolor02, #D4B297);
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: .06em;
+  line-height: 52px;
+  text-align: left;
+  border: 1px solid var(--subcolor02, #D4B297);
+  box-sizing: border-box;
+}
+.membership-link:last-child::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--subcolor02, #D4B297);
+  top:100%;
+  left: 0;
+  transition: all 0.3s;
+  z-index: -10;
+}
+.membership-link:hover::before {
+  transform: translateY(-100%);
+}
+.membership-link:first-child span::after{
   content: "";
   position: absolute;
   display: block;
@@ -590,7 +630,7 @@
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.membership-link span::before {
+.membership-link:first-child span::before {
   content: "";
   position: absolute;
   display: block;
@@ -601,7 +641,39 @@
   margin-top: 4px;
   background: var(--black, #2222);
 }
-
+.membership-link:last-child span::after{
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 25px;
+  width: 10px;
+  height: 1px;
+  background: var(--subcolor02, #D4B297);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.membership-link:last-child span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 25px;
+  height: 1px;
+  width: 30px;
+  margin-top: 4px;
+  background: var(--subcolor02, #D4B297);
+}
+.membership-link:last-child:hover {
+  border: 1px solid var(--subcolor02, #D4B297);
+}
+.membership-link:hover span {
+  color:var(--white, #fff);
+}
+.membership-link:hover span::after,
+.membership-link:hover span::before {
+  background:var(--white, #fff);
+}
 /* 시설소개 */
 
 .facilities-slide {
