@@ -219,6 +219,88 @@ let content = $('.panel');
 		}
 	})
 
+	// 수량 증감
+	// 추가 버튼 클릭 시
+  $(".btn-plus").click(function(){
+    let ipt = $(this).siblings(".ipt");
+    let currentValue = parseInt(ipt.val()); //문자열을 숫자열로 변경
+    let maxValue = parseInt(ipt.attr("max"));
+    let currentCount = getCurrentCount($(this));
+    if(currentCount < 3 && currentValue < maxValue) {
+      ipt.val(currentValue + 1);
+      updateCount(ipt);
+    }
+  });
+  
+  // 제외 버튼 클릭 시
+  $(".btn-minus").click(function(){
+    let ipt = $(this).siblings(".ipt");
+    let currentValue = parseInt(ipt.val());
+    let minValue = parseInt(ipt.attr("min"));
+    if(currentValue > minValue) {
+      ipt.val(currentValue - 1);
+      updateCount(ipt);
+    }
+  });
+  
+  // 입력 값이 변경되었을 때
+  $(".ipt").change(function() {
+    updateCount($(this));
+  });
+  
+  // 수량 표시 업데이트 함수
+  function updateCount(ipt) {
+    let value = parseInt(ipt.val());
+    let countElement = ipt.siblings(".count");
+    let title = ipt.attr("title");
+    countElement.text(title + " " + value);
+  }
+  
+  // 현재 객실의 성인과 어린이 수량 합을 반환하는 함수
+  function getCurrentCount(button) {
+    let room = button.closest(".room-info-list");
+    let adultCount = parseInt(room.find(".quantity-list .ipt[title='성인']").val());
+    let childCount = parseInt(room.find(".quantity-list .ipt[title='어린이']").val());
+    return adultCount + childCount;
+  }
+
+	// 객실 추가 버튼 클릭 시
+  $(".btn-add").click(function(){
+    var roomList = $(".room-info-list");
+    var roomCount = roomList.find("> li").length;
+    if (roomCount < 3) {
+      var newRoom = `
+        <li>
+          <span class="tit">객실 ${roomCount + 1}</span>
+          <ul class="quantity-list">
+            <li class="quantity">
+              <button type="button" class="btn-minus">
+                <span class="blind">제외</span>
+              </button>
+              <input type="number" class="ipt blind" title="성인" value="0" maxlength="2" min="1" max="3">
+              <span class="count">성인 0</span>
+              <button type="button" class="btn-plus">
+                <span class="blind">추가</span>
+              </button>
+            </li>
+            <li class="quantity">
+              <button type="button" class="btn-minus">
+                <span class="blind">제외</span>
+              </button>
+              <input type="number" class="ipt blind"  title="어린이" value="0" maxlength="2" min="0" max="2">
+              <span class="count">어린이 0</span>
+              <button type="button" class="btn-plus">
+                <span class="blind">추가</span>
+              </button>
+            </li>
+          </ul>
+        </li>
+      `;
+      roomList.append(newRoom);
+    } else {
+      alert("객실추가는 최대 3개까지만 입력 가능합니다.");
+    }
+  });
 
 
 });
