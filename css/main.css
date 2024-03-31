@@ -86,11 +86,10 @@
 .hotel.on .btn-select > span:after {transform: rotate(-180deg); margin-top: -12px;}
 
 /* 예약 정보 영역 */
-.reservation-area .reserv-box {display:flex; height: 576px; position: absolute; bottom: 100%; left: 0; right: 0; background-color: var(--white, #fff); padding: 50px;}
+.reservation-area .reserv-box {display:flex; position: absolute; bottom: 100%; left: 0; right: 0; background-color: var(--white, #fff); padding: 50px;}
 .reservation-area .reserv-box > div {flex: 1 1 auto;}
-.reservation-area .guest-info-wrap {display: flex; flex-direction: column; gap: 40px;}
+.reservation-area .guest-info-wrap {display: flex; flex-direction: column; align-items: center; gap: 50px;}
 .reservation-area .guest-info-wrap .tooltip {align-self: end; }
-.reservation-area .room-info-list {display: flex; flex-direction: column; gap: 50px;}
 .reservation-area .room-info-list > li {display: flex; align-items: center; gap: 20px;}
 .reservation-area .room-info-list .tit {font-size: 20px; margin-bottom: 0;}
 .reservation-area .room-info-list .quantity-list {display: flex; gap: 16px;}
@@ -99,8 +98,6 @@
 .reservation-area .btn-add span {position:relative; font-size: 20px;}
 .reservation-area .btn-add span:before {content: '+'; position: absolute; top: -1px; left: calc(100% + 17px); z-index: 1; font-size: 20px;}
 .reservation-area .btn-add span:after {content: ''; position: absolute; top: -3px; width: 30px; height: 30px; background-color: #d9d9d9; border-radius: 50%; margin-left: 8px; }
-.reservation-area .txt-star {align-self: flex-start;}
-.reservation-area .guest-info-wrap .btn-area > button {min-width: 100%;}
 
 /* 수량 */
 .quantity {display: flex; position: relative;}
@@ -425,7 +422,7 @@
 .event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide .bg2 .businessp, 
 .event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide .bg2 .businessp, 
 .event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide .bg2 .businessp, 
-.event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide .bg2 .businessp{
+.event4 .container #tabs2 .tab-content2 #tabs-4 .r  swiper .imgwrapper .imgslide .bg2 .businessp{
   margin: 18px 0 10px 0;
   color: var(--white);
   text-align: center;

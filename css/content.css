@@ -259,9 +259,39 @@
   font-size: 20px;
   margin-top: 27px;
 }
+.room-Amenities .container .amenties .bath-room h4, 
+.room-Amenities .container .amenties .bed-room h4, 
+.room-Amenities .container .amenties .private-bar h4, 
+.room-Amenities .container .amenties .closet h4 { 
+  margin: 27px 0 ;
+}
+.room-Amenities .container .amenties{ 
+  display: flex; justify-content: space-between;
+}
+.room-Amenities .container .amenties .bath-room > ul > li, 
+.room-Amenities .container .amenties .bed-room > ul > li, 
+.room-Amenities .container .amenties .private-bar > ul > li, 
+.room-Amenities .container .amenties .closet > ul > li {
+ margin: 10px 0;
+  
+}
+.room-Amenities .container .pbox { line-height: 25px; display: flex; flex-direction: column; align-items: center; width: 100%; height: 50px; background: #ccc;}
 .executive-business .container .executive-business {
   margin-bottom: 150px;
 }
+.special .container > ul {  display: flex; flex-wrap: wrap; margin-top: 27px;}
+.special .container > ul > li { margin: 27px ;  display: flex;  align-items: center; width: 295px;}
+.special .container > ul > li .spumage { width: 40px; height: 40px; margin-right: 15px;}
+.special .container > ul > li .spumage img { width: 100%; height: 100%;}
+
+.room-use .container .facility { display: flex; justify-content: space-between;}
+.room-use .container .facility .smart h4{ margin-bottom: 27px;}
+.room-use .container .facility .smart ul li { margin-top: 10px;}
+
+.hotelinfo .container h4 { margin-bottom: 27px;}
+.hotelinfo .container ul .bold3 { font-weight: bold;}
+.hotelinfo .container ul li { margin-top: 10px;}
+.hotelinfo .container .peak-season { line-height: 25px; display: flex; flex-direction: column; align-items: center; width: 100%; height: 50px; background: #ccc; margin-top: 52px;}
 .executive-business .container .executive-business .executive-title h3 {
   text-align: center;
   margin-bottom: 81px;
