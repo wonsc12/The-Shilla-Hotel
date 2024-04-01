@@ -1671,7 +1671,7 @@ body { overflow-x: hidden;}
    
   }
  
-  
+  .coner-suite .container { width: 100%; margin: 0 auto;}
   .coner-suite .container .coner-suites .coner-suite-box {
     display: flex;
     justify-content: space-between;
@@ -1700,8 +1700,7 @@ body { overflow-x: hidden;}
     margin: 0 auto;
   }
 
- 
- 
+  .Premier-suite .container { width: 100%; margin: 0 auto;}
   .Premier-suite .container .Premier-suit .Premier-suitbox {
     display: flex;
     justify-content: space-between;
@@ -1935,4 +1934,106 @@ body { overflow-x: hidden;}
 /* 모바일 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 480px) {
   /* 모바일 크기에서 적용되는 스타일 */
+ 
+  .barrier-free .container .barrier-frees .barrier-freetitle h3 {
+    font-size: 14px;
+  }
+  
+  .executive-business .container .executive-business .executive-title h3 {
+    font-size:19px ;
+  }
+  .executive-grand .container .executive-grand .executive-grandtitle h3 {
+    font-size: 15px;
+  }
+  .coner-deluxe .container .coner-deluxes .coner-title h3 {
+    font-size:15px ;
+  }
+
+
+  .room-Amenities .container .amenties{ 
+    display: flex; justify-content: space-between;  flex-wrap: wrap;
+  }
+  .room-Amenities .container .amenties > div {margin-top: 27px; width: 100%; text-align: center;}
+  .room-use .container .facility .smart ul li { font-size: 15px;}
+  .special .container >ul li { width: 100%; padding: 0 100px;}
+  .hotelinfo .container .peak-season p{ font-size: 12px;}
+  
+
+  
+  .layeon { margin-bottom: 150px;}
+  .layeon .container .layeont p {
+    font-size: 13px;
+    
+  }
+ 
+  
+  
+  .layeon .container .layeontime table tbody th, 
+  .layeon .container .layeontime table tbody td {
+    
+    font-size: 18px;
+    
+  }
+ 
+  .infomenu .container .email p {
+    font-size: 17px;
+  }
+  
+  
+  .continental .container .continentalt p {
+    font-size: 13px;
+    
+  }
+ 
+  
+  .continental .container .continentaltime table tbody th, 
+  .continental .container .continentaltime table tbody td {
+    
+    font-size: 18px;
+  }
+  
+ 
+  
+  .aliakke .container .aliakket p {
+    font-size: 13px;
+    margin: 27px 0 81px 0;
+  }
+  
+
+  
+ 
+  .palseon .container .palseont p {
+    font-size: 12px;
+    margin: 27px 0 81px 0;
+  }
+ 
+
+
+  
+  .membership4 .container .membership4t p {
+    font-size: 18px; padding:0 66px;
+    
+  }
+
+ 
+ 
+  .membership4 .container .point-benefit .box1pro p {
+    font-size: 18px;
+  }
+ 
+  .membership4 .container .point-benefit .benefit .drink p {
+    font-size: 18px;
+  }
+  
+  .membershipcard-image .container .memberscard-title p {
+    font-size: 18px;padding:0 66px;
+    
+  }
+  .membershipcard-image .container .membercardi {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .membershipcard-image .container .membercardi .card4 { width: 100%; margin-top: 52px;}
+ 
 }
