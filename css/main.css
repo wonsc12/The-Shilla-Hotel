@@ -641,7 +641,8 @@
 }
 .membership-pager li {
   display: block;
-  width: 464px;
+  max-width: 464px;
+  width: 100%;
   text-align: center;
 }
 .membership-pager li:focus {
@@ -674,7 +675,8 @@
   gap: 65px;
 }
 .members ul li img {
-  width: 318px;
+  max-width: 318px;
+  width: 100%;
   border-radius: 6px;
   box-shadow: 2px 0 3px rgba(0,0,0,.2);
 }
@@ -685,7 +687,9 @@
   margin: 0 auto;
   line-height: var(--line-height, 27px);
 }
-
+.tb-members {
+  display: none;
+}
 .membership-btn {
   display: flex;
   justify-content: center;
@@ -1399,9 +1403,91 @@ body { overflow-x: hidden;}
 .swiper-button-next::after, .swiper-button-prev::after{ display: none;}
 
 
+/* membership */
+.membership {
+  background: url('../images/bg_main_tmembership.png') no-repeat;
+}
+.membership-card {
+  width: 100%;
+  overflow:visible;
+}
+.membership-pager {
+  margin-bottom: 20px;
+}
+.membership-wrapper {
+  height: auto;
+  margin-bottom: 27px;
+}
+.membership-wrapper .members ul {display:none;}
+.membership-wrapper .tb-members { 
+  display: flex;
+  width: 100%;
+  margin: 0 100px;
+}
+.membership-wrapper .tb-members img {
+  width: 776px;
+  overflow: hidden;
+}
+.membership-wrapper p {
+  color: var(--white, #fff);
+  text-align: start;
+  margin-left: 100px;
+}
+.membership-btn {
+  display: block;
+  margin: 0 100px;
+}
+.membership-link:first-child {
+  display: none;
+}
+.membership-link:last-child {
+  display: block;
+  width: 276px;
+  height: 52px;
+}
+.membership-link:last-child::before {
+  width: 0;
+  height: 0;
+}
+.membership-link:hover {
+  background: var(--subcolor02, #D4B297);
+}
+/* .membership-link.active span {
+  color:var(--white, #fff);
+}
+.membership-link.active span::after,
+.membership-link.active span::before {
+  background:var(--white, #fff);
+} */
+
 /* 시설소개 */
 .facilities-slide {
   width: 100%;
+}
+.facilities-img {
+  width: 50%;
+}
+.intro-btn {
+  top: 69%;
+}
+.intro-prev {
+  margin-left: 117px;
+}
+.intro-prev::before {
+  left: 17%;
+}
+.intro-prev::after {
+  left: 16.5%;
+}
+.intro-next {
+  margin-left: 527px;
+}
+.intro-next::before {
+  right: 3%;
+}
+
+.intro-next::after {
+  right: 2.6%;
 }
   /* 태블릿 크기에서 적용되는 스타일 */
 }
