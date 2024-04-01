@@ -359,5 +359,121 @@ let content = $('.panel');
 	
 		// form 영역
 		console.log('form 영역', $(".reservation-area .pick-area .guest-info-wrap"))
+		
+		$("<div>").datepicker({
+			dateFormat: 'yy-mm-dd',
+			prevText: '이전 달',
+			nextText: '다음 달',
+			monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+			monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+			dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+			showMonthAfterYear: true,
+			yearSuffix: '년'
+		}).appendTo("#today-month").datepicker("show");
+
+		$("<div>").datepicker({
+			dateFormat: 'yy-mm-dd',
+			prevText: '이전 달',
+			nextText: '다음 달',
+			monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+			monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+			dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+			showMonthAfterYear: true,
+			yearSuffix: '년',
+			defaultDate: '+1m'
+		}).appendTo("#next-month").datepicker("show");
+
+		// 데이트픽커 클래스 추가
+		$("#ui-datepicker-div").datepicker("widget").addClass("custom-date-pick");
+
+		// 데이트픽커
+		// if($('.date-picker').length > 0){
+		// 	// 현재달
+		// 	$("#today-month").datepicker({
+		// 		dateFormat: 'yy-mm-dd',
+		// 		prevText: '이전 달',
+		// 		nextText: '다음 달',
+		// 		monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+		// 		monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+		// 		dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+		// 		dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+		// 		dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+		// 		showMonthAfterYear: true,
+		// 		yearSuffix: '년',
+				
+		// 	});
+	
+		// 	// 다음달
+		// 	$("#next-month").datepicker({
+		// 		dateFormat: 'yy-mm-dd',
+		// 		prevText: '이전 달',
+		// 		nextText: '다음 달',
+		// 		monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+		// 		monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+		// 		dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+		// 		dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+		// 		dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+		// 		showMonthAfterYear: true,
+		// 		yearSuffix: '년',
+		// 		defaultDate: '+1m'
+				
+		// 	});
+	
+		// 	// 데이트픽커 클래스 추가
+		// 	$("#ui-datepicker-div").datepicker("widget").addClass("custom-date-pick");
+		// }
+
+// 쿠키
+
+		let popup = $('.popup');
+		let input = popup.find('input');
+		console.log(input);
+		let closeBtn = popup.find('button');
+		
+		closeBtn.click(function(){
+		
+		  if(input.get(0).checked){
+			// 쿠키생성
+			setCookie('Company','ABC',1);
+		  }else{
+			// 쿠기삭제
+			delCookie('Company');
+		  }
+		
+		  popup.hide();
+		})
+		function setCookie(name,val,day){
+			console.log('쿠키생성함수');
+			let date = new Date();
+			date.setDate(date.getDate()+day);
+			document.cookie = `${name}=${val};Expires=${date}`; 
+		  }
+		function delCookie(name){
+		  let date = new Date();
+		  date.setDate(date.getDate()-1);
+		  document.cookie = `${name}='';Expires=${date}`;
+		}
+			
+		function checkCookie(name){
+		  let cookieArr = document.cookie.split(';');
+		  let visited = false;
+		
+		  console.log(cookieArr);
+		  for(let cookie of cookieArr){
+			if(cookie.indexOf(name) > -1 ){
+			  visited = true;
+			}
+		  }
+		  if(visited){
+			popup.removeClass('show');
+		  }else{
+			popup.addClass('show');
+		  }
+		}
+		  checkCookie('ABC');
 
 });
