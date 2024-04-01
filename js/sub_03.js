@@ -32,6 +32,7 @@ $(function(){
 				
 				pauseOnMouseEnter:true
 			},	
+			
 				slidesPerView: 1,
 				direction:"horizontal",
 	
@@ -44,6 +45,7 @@ $(function(){
 					clickable:true,
 					dynamicBullets: true,
 				},
+				
 	
 		});
 	
