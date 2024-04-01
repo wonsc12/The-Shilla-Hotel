@@ -894,6 +894,11 @@
   display: block;
 }
 
+
+
+
+
+
 /* 태블릿 사이즈 미디어 쿼리 */
 body { overflow-x: hidden;}
 @media only screen and (max-width: 1024px) {
