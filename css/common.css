@@ -229,9 +229,6 @@ textarea::placeholder {color: var(--placeholder, #999); line-height: var(--line-
 
   /* section */
   .section {padding: 0 24px;}
-
-  /* container */
-  .container {width: auto; margin: 0;}
 }
 
 

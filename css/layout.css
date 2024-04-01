@@ -263,7 +263,10 @@ address {
 /* 태블릿 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 1024px) {
 
-
+  /* container */
+  /* 태블릿 크기에서 적용되는 스타일 */
+  
+  .container {width: auto; margin: 0;}
 
 
   /* footer */
@@ -331,7 +334,6 @@ address {
     padding:10px;
   }
 
-  /* 태블릿 크기에서 적용되는 스타일 */
 }
 
 /* 모바일 사이즈 미디어 쿼리 */
