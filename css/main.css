@@ -27,7 +27,20 @@
   display: block;
 }
 
-.slidemenu{
+/* 스크롤 네비 */
+.scroll-navi {position: fixed; left: 70px; top: 50%; height: 250px; transform: translateY(-50%); z-index: 10;}
+.scroll-navi ul {position: relative; height: 280px; display: flex; flex-direction: column; justify-content: space-between;}
+.scroll-navi ul:before {content: ''; position: absolute; left: 0; top: 0; width: 1px; height: 100%; background-color: var(--bg-dark-gray, #ccc); }}
+.scroll-navi ul > li {height: 50px; line-height: 50px;}
+.scroll-navi ul > li a {position:relative; display:block; padding: 18px 20px; color: var(--bg-dark-gray, #ccc); opacity: 0;} /*기본컬러*/
+.scroll-navi ul:hover > li a {opacity: 1;}
+.scroll-navi ul > li.on a {color: var(--black, #222); opacity: 1;}
+.scroll-navi ul > li.on a:before {content: ''; position: absolute; width: 2px; height: 50px; left: 0px; top: 0; background-color: var(--black, #222); z-index: 11;}
+/* .scroll-navi ul > li:not(.on) a {opacity: 0;} */
+.scroll-navi ul > li.on.white a {color: var(--white, #fff);}
+.scroll-navi ul > li.on.white a:before {background-color: var(--white, #fff);}
+
+/* .slidemenu{
 	position: fixed;
 	left: 100px;
 	top: 50%;
@@ -66,7 +79,7 @@
 	content: '';
   display: inline-block;
   width: 2px; height: 55px; background: var(--white);
-}
+} */
 /* section */
 .main .section {height: 100vh; overflow: hidden;}
 
