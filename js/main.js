@@ -344,7 +344,7 @@ let content = $('.panel');
 		// form 영역
 		console.log('form 영역', $(".reservation-area .pick-area .guest-info-wrap"))
 
-
+	//쿠키
 		let popup = $('.popup');
 		let input = popup.find('input');
 		console.log(input);
