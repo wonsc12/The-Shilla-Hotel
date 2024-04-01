@@ -339,5 +339,33 @@ address {
 /* 모바일 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 480px) {
   /* 모바일 크기에서 적용되는 스타일 */
+
+  footer .container {
+    width: 100%;
+    padding:0 24px;
+    margin: 0 auto;
+  }
+  footer .footer-wrap > ul {
+    display: block;
+    padding-top: 27px;
+  }
+  footer .footer-wrap > ul > li {
+    margin-bottom: 27px;
+  }
+  footer .footer-wrap > ul > li > div {
+    display: block;
+  }
+  footer .footer-wrap > ul a img {
+    display: none;
+  }
+  .footer-info-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+
+
 }
 
