@@ -57,7 +57,8 @@
 .reservation-area .top > div {position: relative; flex: 1 1 10%; text-align: center;}
 .reservation-area .resevation,
 .reservation-area .hotel {padding: 50px 0;}
-.reservation-area .top .pick-area {flex-basis: 80%; display: flex;}
+.reservation-area .top .all-slide {flex-basis: 80%;}
+.reservation-area .pick-area {display: flex; height: 100%;}
 .reservation-area .pick-area .chk-date {flex-basis: 70%; display: flex; justify-content: space-between;}
 .reservation-area .pick-area .guest-info {flex-basis: 30%; display: flex; justify-content: space-between;}
 .reservation-area .pick-area .guest-info > button {flex: 1 1 auto; text-align: center;}

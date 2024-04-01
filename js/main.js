@@ -173,8 +173,8 @@ let content = $('.panel');
 });
 
 
-	//에약폼 영역
-	// 에약
+	//예약폼 영역
+	// 예약
 	$('.resevation ul').hide();
 	$('.reservation-area .resevation .btn-select').click(function(){
 		if(!$(this).closest('.resevation').hasClass('on')){
@@ -199,16 +199,21 @@ let content = $('.panel');
 	})
 
 	// 그외 예약요소 전체 클릭
-	// $('.reserv-box').hide();
-	// $('.pick-area').click(function(){
-	// 	if(!$(this).hasClass('on')){
-	// 		$(this).addClass("on");
-	// 		$(this).find('.reserv-box').slideDown();;
-	// 	}else{
-	// 		$(this).removeClass("on");
-	// 		$(this).find('.reserv-box').slideUp();
-	// 	}
-	// })
+	$('.reserv-box').hide();
+	$('.pick-area').click(function(){
+		if(!$(this).hasClass('on')){
+			$(this).addClass("on");
+			$(this).siblings('.reserv-box').slideDown();
+		}else{
+			$(this).removeClass("on");
+			$(this).siblings('.reserv-box').slideUp();
+		}
+	})
+
+	// 선택완료
+	$('.reserv-box .btn-area.complete > button').on('click', function(){
+		$('.reserv-box').slideToggle();
+	})
 
 	// 프로모션 코드
 	$('.promotion .btn-prom').click(function(){
@@ -221,86 +226,120 @@ let content = $('.panel');
 
 	// 수량 증감
 	// 추가 버튼 클릭 시
-  $(".btn-plus").click(function(){
-    let ipt = $(this).siblings(".ipt");
-    let currentValue = parseInt(ipt.val()); //문자열을 숫자열로 변경
-    let maxValue = parseInt(ipt.attr("max"));
-    let currentCount = getCurrentCount($(this));
-    if(currentCount < 3 && currentValue < maxValue) {
-      ipt.val(currentValue + 1);
-      updateCount(ipt);
-    }
-  });
-  
-  // 제외 버튼 클릭 시
-  $(".btn-minus").click(function(){
-    let ipt = $(this).siblings(".ipt");
-    let currentValue = parseInt(ipt.val());
-    let minValue = parseInt(ipt.attr("min"));
-    if(currentValue > minValue) {
-      ipt.val(currentValue - 1);
-      updateCount(ipt);
-    }
-  });
-  
-  // 입력 값이 변경되었을 때
-  $(".ipt").change(function() {
-    updateCount($(this));
-  });
-  
-  // 수량 표시 업데이트 함수
-  function updateCount(ipt) {
-    let value = parseInt(ipt.val());
-    let countElement = ipt.siblings(".count");
-    let title = ipt.attr("title");
-    countElement.text(title + " " + value);
-  }
-  
-  // 현재 객실의 성인과 어린이 수량 합을 반환하는 함수
-  function getCurrentCount(button) {
-    let room = button.closest(".room-info-list");
-    let adultCount = parseInt(room.find(".quantity-list .ipt[title='성인']").val());
-    let childCount = parseInt(room.find(".quantity-list .ipt[title='어린이']").val());
-    return adultCount + childCount;
-  }
+  // $(".btn-plus").click(function(){	
+	// $(".quantity").on('click', '.btn-plus', function(){
+		// $('.quantity-list > li').each(() => {
 
-	// 객실 추가 버튼 클릭 시
-  $(".btn-add").click(function(){
-    var roomList = $(".room-info-list");
-    var roomCount = roomList.find("> li").length;
-    if (roomCount < 3) {
-      var newRoom = `
-        <li>
-          <span class="tit">객실 ${roomCount + 1}</span>
-          <ul class="quantity-list">
-            <li class="quantity">
-              <button type="button" class="btn-minus">
-                <span class="blind">제외</span>
-              </button>
-              <input type="number" class="ipt blind" title="성인" value="0" maxlength="2" min="1" max="3">
-              <span class="count">성인 0</span>
-              <button type="button" class="btn-plus">
-                <span class="blind">추가</span>
-              </button>
-            </li>
-            <li class="quantity">
-              <button type="button" class="btn-minus">
-                <span class="blind">제외</span>
-              </button>
-              <input type="number" class="ipt blind"  title="어린이" value="0" maxlength="2" min="0" max="2">
-              <span class="count">어린이 0</span>
-              <button type="button" class="btn-plus">
-                <span class="blind">추가</span>
-              </button>
-            </li>
-          </ul>
-        </li>
-      `;
-      roomList.append(newRoom);
-    } else {
-      alert("객실추가는 최대 3개까지만 입력 가능합니다.");
-    }
-  });
-
+		// })
+		$(document).on("click", ".quantity .btn-plus", function(){
+			let ipt = $(this).siblings(".ipt");
+			// console.log('인붓aaaaaa', $(this).siblings(".ipt").val())
+			let currentValue = parseInt(ipt.val()); //문자열을 숫자열로 변경
+			let maxValue = parseInt(ipt.attr("max"));
+			let currentCount = getCurrentCount($(this));
+			console.log('ddddddd', currentCount, currentValue, maxValue, ipt)
+			if(currentCount < 3 && currentValue < maxValue) {
+				ipt.val(currentValue + 1);
+				updateCount(ipt);
+			}
+		});
+	
+		// 제외 버튼 클릭 시
+		// $(".btn-minus").click(function(){
+		// $(".quantity").on('click', '.btn-minus', function(){
+		let adultTotal = 0
+		let childTotal = 0
+		$(document).on("click", ".quantity .btn-minus", function(){
+			let ipt = $(this).siblings(".ipt");
+			let currentValue = parseInt(ipt.val());
+			let minValue = parseInt(ipt.attr("min"));
+			if(currentValue > minValue) {
+				ipt.val(currentValue - 1);
+				updateCount(ipt);
+			}
+		});
+		
+		// 입력 값이 변경되었을 때
+		$(".ipt").change(function() {
+			updateCount($(this));
+		});
+		
+		// 수량 표시 업데이트 함수
+		function updateCount(ipt) {
+			let value = parseInt(ipt.val());
+			let countElement = ipt.siblings(".count");
+			let title = ipt.attr("title");
+			countElement.text(title + " " + value);
+	
+			calcTotal()
+		}
+	
+		// 전체 인원수 갱신 함수
+		function calcTotal() {
+			adultTotal = 0
+			childTotal = 0
+	
+			for(let i=0; i<$('.room-info-list > li').length; i++){
+				adultTotal += parseInt($(".room-info-list > li").eq(i).find('.quantity-list > li').eq(0).find('input').val());
+				childTotal += parseInt($(".room-info-list > li").eq(i).find('.quantity-list > li').eq(1).find('input').val());
+			}
+			
+			$(".guest-info .adult .num").text(adultTotal)
+			$(".guest-info .child .num").text(childTotal)
+		}
+	
+		// 현재 객실의 성인과 어린이 수량 합을 반환하는 함수
+		function getCurrentCount(button) {
+			// let room = button.closest(".room-info-list");
+			let room = button.closest(".quantity-list");
+			let adultCount = parseInt(room.find(".quantity .ipt[title='성인']").val());
+			let childCount = parseInt(room.find(".quantity .ipt[title='어린이']").val());
+			return adultCount + childCount;
+		}
+	
+		// 객실 추가 버튼 클릭 시
+		$(".btn-add").click(function(){
+			var roomList = $(".room-info-list");
+			var roomCount = roomList.find("> li").length;
+			if (roomCount < 3) {
+				var newRoom = `
+					<li>
+						<span class="tit">객실 ${roomCount + 1}</span>
+						<ul class="quantity-list">
+							<li class="quantity">
+								<button type="button" class="btn-minus">
+									<span class="blind">제외</span>
+								</button>
+								<input type="number" class="ipt blind" title="성인" value="1" maxlength="3" min="1" max="3">
+								<span class="count">성인 1</span>
+								<button type="button" class="btn-plus">
+									<span class="blind">추가</span>
+								</button>
+							</li>
+							<li class="quantity">
+								<button type="button" class="btn-minus">
+									<span class="blind">제외</span>
+								</button>
+								<input type="number" class="ipt blind"  title="어린이" value="0" maxlength="2" min="0" max="2">
+								<span class="count">어린이 0</span>
+								<button type="button" class="btn-plus">
+									<span class="blind">추가</span>
+								</button>
+							</li>
+						</ul>
+					</li>
+				`;
+				roomList.append(newRoom);
+			} else {
+				alert("객실추가는 최대 3개까지만 입력 가능합니다.");
+			}
+	
+			// 객실수 갱신
+			$(".guest-info .room .num").text($('.room-info-list > li').length)
+			calcTotal()
+		});
+	
+		// form 영역
+		console.log('form 영역', $(".reservation-area .pick-area .guest-info-wrap"))
 
 });
