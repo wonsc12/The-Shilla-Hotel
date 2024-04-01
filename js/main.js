@@ -133,47 +133,60 @@ const swipers = new Swiper('.swiper-container', {
   }
 });
 
-
+//  스크롤네비
+$('.scroll-navi ul li').eq(0).addClass('on')
+$('.scroll-navi ul li a').click(function(e){
+	e.preventDefault();
+	let index = $(this).parent().index();
+	let targetSection = $('.section').eq(index);
+	$('html, body').animate({
+			scrollTop: targetSection.offset().top
+	}, 500);
+	if(!$(this).closest('li').hasClass('on')){
+		$(this).closest('li').addClass('on');
+		$(this).closest('li').siblings().removeClass('on');
+	}
+});
 
 
   //변수지정
-let menu = $('.slidemenu li');
-let content = $('.panel');
+// let menu = $('.slidemenu li');
+// let content = $('.panel');
 
-//메뉴 클릭 이동
+// //메뉴 클릭 이동
 
-	menu.click(function(e){
-	e.preventDefault();
-	// menu.removeClass('on');
-	// $(this).addClass('on');
-	let targetSectionOst = content.eq($(this).index()).offset().top;
-	$('html,body').stop().animate({scrollTop:targetSectionOst},500,'easeOutCubic');
-	});
-	/*
-	변수명 targetSectionOst에 클릭한 그요소의 순번에 해당하는 content가 화면 상단에서 떨어진 거리를 저장
-	그 거리 만큼 html,body에 스크롤양을 생성한다.
-	jquery_base/b/04_back_to_top 참조
-	*/
+// 	menu.click(function(e){
+// 	e.preventDefault();
+// 	// menu.removeClass('on');
+// 	// $(this).addClass('on');
+// 	let targetSectionOst = content.eq($(this).index()).offset().top;
+// 	$('html,body').stop().animate({scrollTop:targetSectionOst},500,'easeOutCubic');
+// 	});
+// 	/*
+// 	변수명 targetSectionOst에 클릭한 그요소의 순번에 해당하는 content가 화면 상단에서 떨어진 거리를 저장
+// 	그 거리 만큼 html,body에 스크롤양을 생성한다.
+// 	jquery_base/b/04_back_to_top 참조
+// 	*/
 
-//스크롤 이동 반영하기  
-	$(window).scroll(()=>{
-	let sct = $(window).scrollTop();
-	/*
-	content들 마다 할일
-	만약 각 content가 화면에서 떨어진 거리보다 스크롤이 많다면
-	모든 메뉴에서 on을 제거하고
-	그 content의 인덱스 번호에 해당하는 menu에 on추가
-	*/
-	$(window).scroll(()=>{
-	let sct = $(window).scrollTop();
-	content.each(function(idx){
-	if($(this).offset().top - 450 <=sct){
-		menu.removeClass('on');
-		menu.eq(idx).addClass('on');
-	}
-	})
-});
-});
+// //스크롤 이동 반영하기  
+// 	$(window).scroll(()=>{
+// 	let sct = $(window).scrollTop();
+// 	/*
+// 	content들 마다 할일
+// 	만약 각 content가 화면에서 떨어진 거리보다 스크롤이 많다면
+// 	모든 메뉴에서 on을 제거하고
+// 	그 content의 인덱스 번호에 해당하는 menu에 on추가
+// 	*/
+// 	$(window).scroll(()=>{
+// 	let sct = $(window).scrollTop();
+// 	content.each(function(idx){
+// 	if($(this).offset().top - 450 <=sct){
+// 		menu.removeClass('on');
+// 		menu.eq(idx).addClass('on');
+// 	}
+// 	})
+// });
+// });
 
 
 	//예약폼 영역
