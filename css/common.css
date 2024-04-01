@@ -190,6 +190,18 @@ textarea::placeholder {color: var(--placeholder, #999); line-height: var(--line-
 .custom-date-pick .ui-widget-header .ui-icon {background: none;}
 .ui-state-default, .ui-widget-content .ui-state-default {text-align: center; border: none; font-size: 15px; background: none; color: #222; line-height: 27px;}
 
+/* 메인 -데이트 픽커 */
+.calendar-wrap {font-weight: 400; font-family: 'Wanted Sans', sans-serif;}
+.calendar-wrap .ui-datepicker .ui-datepicker-header {background: none; border: none;}
+.calendar-wrap .ui-datepicker-title {font-size: 20px; color: #222;}
+.calendar-wrap#today-month .ui-datepicker-next {display: none;}
+.calendar-wrap#next-month .ui-datepicker-prev {display: none;}
+.calendar-wrap .ui-widget.ui-widget-content {width: 375px; min-height: 400px;}
+.calendar-wrap .ui-datepicker table {height: 400px;}
+.calendar-wrap .ui-datepicker th {font-size: 16px;}
+.calendar-wrap .ui-state-default, 
+.calendar-wrap .ui-widget-content .ui-state-default {font-size: 15px;}
+
 /* 총 몇건 */
 .total-num-area {margin: 50px 0 30px;}
 .total-num-area > em {font-weight: 700;}
@@ -214,6 +226,12 @@ textarea::placeholder {color: var(--placeholder, #999); line-height: var(--line-
   .tit-h4{font-size:calc(var(--font-size) * 1.125);}
   .tit-h5{font-size:calc(var(--font-size) * 1);}
   .tit-h6{font-size:calc(var(--font-size) * 0.875);}
+
+  /* section */
+  .section {padding: 0 24px;}
+
+  /* container */
+  .container {width: auto; margin: 0;}
 }
 
 

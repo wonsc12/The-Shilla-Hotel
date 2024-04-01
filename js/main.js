@@ -188,17 +188,33 @@ let content = $('.panel');
 		}
 	})
 
+	// 예약 드롭박스 맵핑
+	$('.resevation > ul a').click(function() {
+		let dropText = $(this).text(); 
+		$('.resevation .btn-select span').text(dropText);
+		$('.resevation > ul').slideToggle();
+		$('.resevation').removeClass("on");
+	});
+
 	// 호텔
 	$('.hotel ul').hide();
 	$('.reservation-area .hotel .btn-select').click(function(){
 		if(!$(this).closest('.hotel').hasClass('on')){
 			$(this).closest('.hotel').addClass("on");
-			$(this).closest('.hotel').find('ul').slideDown();;
+			$(this).closest('.hotel').find('ul').slideDown();
 		}else{
 			$(this).closest('.hotel').removeClass("on");
 			$(this).closest('.hotel').find('ul').slideUp();
 		}
 	})
+
+	// 호텔 드롭박스 맵핑
+	$('.hotel > ul a').click(function() {
+		let dropText = $(this).text(); 
+		$('.hotel .btn-select span').text(dropText);
+		$('.hotel > ul').slideToggle();
+		$('.hotel').removeClass("on");
+	});
 
 	// 그외 예약요소 전체 클릭
 	$('.reserv-box').hide();
@@ -411,54 +427,6 @@ let content = $('.panel');
 		// 	$("#ui-datepicker-div").datepicker("widget").addClass("custom-date-pick");
 		// }
 
-
-	//쿠키
-		let popup = $('.popup');
-		let input = popup.find('input');
-		console.log(input);
-		let closeBtn = popup.find('button');
-		
-		closeBtn.click(function(){
-		
-		  if(input.get(0).checked){
-			// 쿠키생성
-			setCookie('Company','ABC',1);
-		  }else{
-			// 쿠기삭제
-			delCookie('Company');
-		  }
-		
-		  popup.hide();
-		})
-		function setCookie(name,val,day){
-			console.log('쿠키생성함수');
-			let date = new Date();
-			date.setDate(date.getDate()+day);
-			document.cookie = `${name}=${val};Expires=${date}`; 
-		  }
-		function delCookie(name){
-		  let date = new Date();
-		  date.setDate(date.getDate()-1);
-		  document.cookie = `${name}='';Expires=${date}`;
-		}
-			
-		function checkCookie(name){
-		  let cookieArr = document.cookie.split(';');
-		  let visited = false;
-		
-		  console.log(cookieArr);
-		  for(let cookie of cookieArr){
-			if(cookie.indexOf(name) > -1 ){
-			  visited = true;
-			}
-		  }
-		  if(visited){
-			popup.removeClass('show');
-		  }else{
-			popup.addClass('show');
-		  }
-		}
-		  checkCookie('ABC');
 
 
 		  

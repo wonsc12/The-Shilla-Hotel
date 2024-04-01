@@ -45,11 +45,18 @@ $(function(){
 
     let targetId = $(e.target).attr('href');
 
+    tabcontent.removeClass('active');
+    tabcontent.addClass('active');
+
+
     tabcontent.hide(); //탭을 하면 추가되서 나오니까 그걸 제거해주고
     $(targetId).show(); //클릭한 것만 보여줌
   });
 
-  tabcontent.eq(0).show(); 
+  tabcontent.eq(0).show();
+
+
+
 
 
   gsap.registerPlugin(ScrollTrigger);
@@ -62,6 +69,6 @@ $(function(){
   gsap.to(".hotel-text-wrap span", {
 	scrollTrigger: ".scroll-txt-right", y: 0, duration: 3, opacity:1 })
 
-
+  $('#footer').css({marginTop:'0px'});
 
 });
