@@ -88,13 +88,12 @@
 .hotel.on .btn-select > span:after {transform: rotate(-180deg); margin-top: -12px;}
 
 /* 예약영역 -  예약 정보 영역 */
-.reservation-area .reserv-box {display:flex; height: 576px; position: absolute; bottom: 100%; left: 0; right: 0; background-color: var(--white, #fff); padding: 50px;}
-.reservation-area .reserv-box > div {flex: 1 1 auto;}
+.reservation-area .reserv-box {display:flex; justify-content: space-between ;height: 576px; position: absolute; bottom: 100%; left: 0; right: 0; background-color: var(--white, #fff); padding: 50px;}
 .reservation-area .guest-info-wrap {display: flex; flex-direction: column; gap: 40px;}
 .reservation-area .guest-info-wrap .tooltip {align-self: end; }
 .reservation-area .room-info-list {display: flex; flex-direction: column; gap: 50px;}
-.reservation-area .room-info-list > li {display: flex; align-items: center; gap: 20px;}
-.reservation-area .room-info-list .tit {font-size: 20px; margin-bottom: 0;}
+.reservation-area .room-info-list > li {display: flex; align-items: center;}
+.reservation-area .room-info-list .tit {font-size: 20px; margin: 0 20px 0 0;}
 .reservation-area .room-info-list .quantity-list {display: flex; gap: 16px;}
 
 .reservation-area .btn-add {display: block; text-align: center;}
