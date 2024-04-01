@@ -402,7 +402,7 @@ $(window).on('scroll', function() {
 							</li>
 						</ul>
 						<button type="button" class="btn-close">
-							<span class="blind"></span>
+							<span class="blind">삭제</span>
 						</button>
 					</li>
 				`;
