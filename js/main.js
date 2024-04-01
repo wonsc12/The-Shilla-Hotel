@@ -133,8 +133,25 @@ const swipers = new Swiper('.swiper-container', {
   }
 });
 
-//  스크롤네비
+// 스크롤 한 번 내릴 때 다음 섹션으로 이동
+// $(window).on('wheel', function(e) {
+// 	e.preventDefault();
+// 	let delta = e.originalEvent.deltaY;
+// 	if (delta > 0) { // 마우스 휠을 아래로 내린 경우
+// 			let currentSection = $('.section.on');
+// 			let nextSection = currentSection.next('.section');
+// 			if (nextSection.length > 0) {
+// 					$('html, body').animate({
+// 							scrollTop: nextSection.offset().top
+// 					}, 800); // 부드러운 스크롤링 시간을 조절할 수 있습니다.
+// 			}
+// 	}
+// });
+
+
+//  네비게이션 항목 클릭 시 스크롤링
 $('.scroll-navi ul li').eq(0).addClass('on')
+
 $('.scroll-navi ul li a').click(function(e){
 	e.preventDefault();
 	let index = $(this).parent().index();
@@ -142,14 +159,37 @@ $('.scroll-navi ul li a').click(function(e){
 	$('html, body').animate({
 			scrollTop: targetSection.offset().top
 	}, 500);
-	if(!$(this).closest('li').hasClass('on')){
-		$(this).closest('li').addClass('on');
-		$(this).closest('li').siblings().removeClass('on');
-	}
+	$('.scroll-navi li').removeClass('on');
+	$(this).closest('li').addClass('on');
 });
 
 
-  //변수지정
+// 섹션 스크롤 시 네비게이션 항목 활성화
+$(window).on('scroll', function() {
+	$('.section').each(function() {
+			let sectionId = $(this).attr('id');
+			let sectionTop = $(this).offset().top;
+			let sectionHeight = $(this).outerHeight();
+			let scrollPos = $(window).scrollTop();
+
+			if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+					$('.scroll-navi li').removeClass('on');
+					$('.scroll-navi li a[href="#' + sectionId + '"]').closest('li').addClass('on');
+			}
+	});
+
+	let footerTop = $('#footer').offset().top; // 푸터의 상단 위치
+	let scrollTop = $(this).scrollTop();
+	if (scrollTop + $(window).height() >= footerTop) {
+			$('.scroll-navi').fadeOut(); 
+	} else {
+			$('.scroll-navi').fadeIn(); 
+	}
+
+});
+
+
+//변수지정
 // let menu = $('.slidemenu li');
 // let content = $('.panel');
 
