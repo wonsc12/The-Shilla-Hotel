@@ -390,44 +390,98 @@ let content = $('.panel');
 		// 데이트픽커 클래스 추가
 		$("#ui-datepicker-div").datepicker("widget").addClass("custom-date-pick");
 
-		// 데이트픽커
-		// if($('.date-picker').length > 0){
-		// 	// 현재달
-		// 	$("#today-month").datepicker({
-		// 		dateFormat: 'yy-mm-dd',
-		// 		prevText: '이전 달',
-		// 		nextText: '다음 달',
-		// 		monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
-		// 		monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
-		// 		dayNames: ['일', '월', '화', '수', '목', '금', '토'],
-		// 		dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
-		// 		dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
-		// 		showMonthAfterYear: true,
-		// 		yearSuffix: '년',
-				
-		// 	});
-	
-		// 	// 다음달
-		// 	$("#next-month").datepicker({
-		// 		dateFormat: 'yy-mm-dd',
-		// 		prevText: '이전 달',
-		// 		nextText: '다음 달',
-		// 		monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
-		// 		monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
-		// 		dayNames: ['일', '월', '화', '수', '목', '금', '토'],
-		// 		dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
-		// 		dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
-		// 		showMonthAfterYear: true,
-		// 		yearSuffix: '년',
-		// 		defaultDate: '+1m'
-				
-		// 	});
-	
-		// 	// 데이트픽커 클래스 추가
-		// 	$("#ui-datepicker-div").datepicker("widget").addClass("custom-date-pick");
-		// }
+		// 날씨 슬라이드
+		let slideIndex = 0;
+    let slideCount = $('.weather-area .slide').length;
+    let slideHeight = $('.weather-area .slide').outerHeight();
 
-// 쿠키
+    $('.weather-area .btn-prev').click(function() {
+        slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+        moveSlide();
+    });
+
+    $('.weather-area .btn-next').click(function() {
+        slideIndex = (slideIndex + 1) % slideCount;
+        moveSlide();
+    });
+
+    function moveSlide() {
+        let newPosition = -slideHeight * slideIndex;
+        $('.weather-area .slider-list').css('transform', 'translateY(' + newPosition + 'px)');
+    }
+
+    // 자동 슬라이드 기능 추가
+    function autoSlide() {
+        slideIndex = (slideIndex + 1) % slideCount;
+        moveSlide();
+        setTimeout(autoSlide, 5000);
+    }
+
+    autoSlide(); // 자동 슬라이드 시작
+
+		// 날씨 api
+		let seoul = 'Seoul'; // 가져올 지역 설정
+		let jeju = 'Jeju'; // 가져올 지역 설정
+		let danang = 'Da Nang'; // 가져올 지역 설정
+    let apiKey = '06882828eda4e33e6f2df6599e212004'; // OpenWeatherMap에서 발급받은 API 키
+
+    let url = `http://api.openweathermap.org/data/2.5/weather?q=${seoul}&appid=${apiKey}&units=metric`;
+    let url2 = `http://api.openweathermap.org/data/2.5/weather?q=${jeju}&appid=${apiKey}&units=metric`;
+    let url3 = `http://api.openweathermap.org/data/2.5/weather?q=${danang}&appid=${apiKey}&units=metric`;
+
+    $.ajax({
+        url: url,
+        method: 'GET',
+        success: function(data) {
+            let region = seoul;
+            let weatherIcon = data.weather[0].icon;
+            let temperature = Math.round(data.main.temp);
+
+            // 가져온 정보를 마크업에 삽입
+            $('.weather-area .seoul').text(region);
+            $('.weather-area .seoul + .ico-condition').html(`<img src="https://openweathermap.org/img/wn/${weatherIcon}@2x.png" alt="${data.weather[0].description}">`);
+            $('.weather-area .seoul ~ .temperature').text(temperature + '°C');
+        },
+        error: function(xhr, status, error) {
+            console.error('날씨 정보를 가져오는 데 실패했습니다.');
+        }
+    });
+		$.ajax({
+			url: url2,
+			method: 'GET',
+			success: function(data) {
+					let region = jeju;
+					let weatherIcon = data.weather[0].icon;
+					let temperature = Math.round(data.main.temp);
+
+					// 가져온 정보를 마크업에 삽입
+					$('.weather-area .jeju').text(region);
+					$('.weather-area .jeju + .ico-condition').html(`<img src="https://openweathermap.org/img/wn/${weatherIcon}@2x.png" alt="${data.weather[0].description}">`);
+					$('.weather-area .jeju ~ .temperature').text(temperature + '°C');
+			},
+			error: function(xhr, status, error) {
+					console.error('날씨 정보를 가져오는 데 실패했습니다.');
+			}
+		});
+		$.ajax({
+			url: url3,
+			method: 'GET',
+			success: function(data) {
+					let region = danang;
+					let weatherIcon = data.weather[0].icon;
+					let temperature = Math.round(data.main.temp);
+
+					// 가져온 정보를 마크업에 삽입
+					$('.weather-area .danang').text(region);
+					$('.weather-area .danang + .ico-condition').html(`<img src="https://openweathermap.org/img/wn/${weatherIcon}@2x.png" alt="${data.weather[0].description}">`);
+					$('.weather-area .danang ~ .temperature').text(temperature + '°C');
+			},
+			error: function(xhr, status, error) {
+					console.error('날씨 정보를 가져오는 데 실패했습니다.');
+			}
+		});
+
+		// 쿠키
 
 		let popup = $('.popup');
 		let input = popup.find('input');
