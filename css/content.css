@@ -1379,11 +1379,11 @@ body { overflow-x: hidden;}
 /* 태블릿 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 1024px) {
   /* 태블릿 크기에서 적용되는 스타일 */
-  .delux { width: 1024px; margin: 0 auto;}
+  .delux { width: 100%; margin: 0 auto;}
   .delux .container {width: 100%; margin: 0 auto; }
   .delux .container .deluxes .stardardtitle h3 {
     width: 100%; margin: 0 auto;
-    text-align: center;
+   
     margin-bottom: 81px;
   }
   .delux .container .deluxes .deluxe-box {
@@ -1399,7 +1399,8 @@ body { overflow-x: hidden;}
    order: -1;
   }
   .delux .container .deluxes .deluxe-box .deluxe1 {
-    margin-bottom: 81px;
+    margin-bottom: 81px; 
+    margin-top: 27px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1414,707 +1415,433 @@ body { overflow-x: hidden;}
     display: flex; justify-content: center;
   }
   .delux .container .deluxes .deluxe-box .deluxe1 .readbox2 .read-more {
-    width: 130px; height: 40px; background: var(--maincolor); margin-top: 27px;
-    display: flex; justify-content: center; align-items: center;
+    width: 130px; height: 40px; background: var(--maincolor); 
+    margin: 27px 10px;
   }
   
-  .delux .container .deluxes .deluxe-box .deluxe1 .readbox2 .read-more h6{
-    color: var(--white);
-  }
+
   .delux .container .deluxes .deluxe-box .swiper {
-    width: 880px;
-    height: 600px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .delux .container .deluxes .deluxe-box .swiper .swiper-wrapper .swiper-slide {
-    width: 880px;
-    height: 600px;
-  }
-  .delux .container .deluxes .deluxe-box .swiper .swiper-wrapper .swiper-slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 537px;
+   margin: 0 auto;
   }
-  .pagination2 { width: 50px;}
-  .swiper-horizontal>.swiper-pagination-bullets, 
-  .swiper-pagination-bullets.swiper-pagination-horizontal, 
-  .swiper-pagination-custom, .swiper-pagination-fraction{ 
-    top:20px; 
-    left:20px; 
-    display: flex; 
-    flex-direction: column; 
-    margin-top: 20px; 
-    width: 100%; }
+
   
-  .swiper-pagination-bullet {
-    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 20px));
-    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 20px));
-    
-    border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
-    background: var(--swiper-pagination-bullet-inactive-color, var(--white));
-  }
-  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
-  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 10px var(--swiper-pagination-bullet-horizontal-gap,4px);
-  }
-  .swiper-button-next {left: calc(50% + 600px);}
-  .swiper-button-prev { left: calc(50% - 617px);}
+ 
+  .business-deluxes .container { width: 100%; margin: 0 auto;}
   
-  .swiper-button-next,
-  .swiper-button-prev {
-    position: absolute;
-    top: var(--swiper-navigation-top-offset,50%);
-    width: calc(var(--swiper-navigation-size)/ 44 * 27);
-    height: var(--swiper-navigation-size);
-    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--white) 
-  }
-  .swiper-button-next:after, .swiper-button-prev:after {
-    font-family: swiper-icons;
-    font-size: 70px;
-    text-transform: none !important;
-    letter-spacing: 0;
-    font-variant: initial;
-    line-height: 1;
-  }
-  
-  .infomenu .container .swiper-horizontal > .swiper-pagination-bullets {width: 100%; align-items: end; justify-content: center; flex-direction: row;  }
-  
-  .infomenu .container .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
-  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 10px var(--swiper-pagination-bullet-horizontal-gap,10px);
-  }
-  
-  .business-deluxes {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-  }
   .business-deluxes .container .business-deluxe .business-deluxetitle h3 {
     text-align: center;
     margin-bottom: 81px;
   }
   .business-deluxes .container .business-deluxe .business-deluxebox {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
   .business-deluxes .container .business-deluxe .business-deluxebox .swiper {
-    width: 880px;
-    height: 600px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .business-deluxes .container .business-deluxe .business-deluxebox .swiper .swiper-wrapper .swiper-slide {
-    width: 880px;
-    height: 600px;
-  }
-  .business-deluxes .container .business-deluxe .business-deluxebox .swiper .swiper-wrapper .swiper-slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+    height: 537px;
+    margin: 0 auto;
+    
+  } 
+ 
   .business-deluxes .container .business-deluxe .business-deluxebox .business-deluxe2 {
-    margin-bottom: 81px;
+    margin-bottom: 81px; 
+    margin-top: 27px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+    text-align: center;
+    
   }
-  .business-deluxes .container .business-deluxe .business-deluxebox .business-deluxe2 .business-deluxet p {
-    font-size: 18px;
-    margin-top: 27px;
-  }
+  
   .business-deluxes .container .business-deluxe .business-deluxebox .business-deluxe2 .readbox2 {
-    display: flex; justify-content: space-between;
+    display: flex; justify-content: center;
   }
   .business-deluxes .container .business-deluxe .business-deluxebox .business-deluxe2 .read-more {
-    width: 130px; height: 40px; background: var(--maincolor); margin-top: 27px;
-    display: flex; justify-content: center; align-items: center;
+     margin: 27px 10px;
   }
-  .business-deluxes .container .business-deluxe .business-deluxebox .business-deluxe2 .read-more h6{
-    color: var(--white);
-  }
-  .barrier-free .container .barrier-frees .barrier-freetitle h3 {
-    text-align: center;
-    margin-bottom: 81px;
-  }
+  
   .barrier-free .container .barrier-frees .barrier-free-box {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
   }
   .barrier-free .container .barrier-frees .barrier-free-box .barrier-free1 {
-    margin-bottom: 81px;
+    
+    margin-top: 27px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    text-align: end;
+    justify-content: center;
+    text-align: center;
+    order: 1;
+   
   }
+
   .barrier-free .container .barrier-frees .barrier-free-box .barrier-free1 .readbox2 {
-    display: flex; justify-content: space-between;
+    display: flex; justify-content: center;
   }
   .barrier-free .container .barrier-frees .barrier-free-box .barrier-free1 .readbox2 .read-more {
-    width: 160px; height: 40px; background: var(--maincolor); margin-top: 27px;
-    display: flex; justify-content: center; align-items: center;
+    width: 160px; height: 40px; background: var(--maincolor); margin: 27px 10px;
+    
   }
-  .barrier-free .container .barrier-frees .barrier-free-box .barrier-free1 .readbox2 .read-more h6 {
-    color: var(--white);
-  }
-  .barrier-free .container .barrier-frees .barrier-free-box .barrier-free1 p {
-    font-size: 18px;
-    margin-top: 27px;
-  }
+ 
+  
   .barrier-free .container .barrier-frees .barrier-free-box .barrier-free2 .swiper {
-    width: 880px;
-    height: 600px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .barrier-free .container .barrier-frees .barrier-free-box .barrier-free2 .swiper .swiper-wrapper .swiper-slide {
-    width: 880px;
-    height: 600px;
-  }
-  .barrier-free .container .barrier-frees .barrier-free-box .barrier-free2 .swiper .swiper-wrapper .swiper-slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 537px;
+    margin: 0 auto;
   }
-  .coner-deluxe {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-  }
-  .coner-deluxe .container .coner-deluxes .coner-title h3 {
-    text-align: center;
-    margin-bottom: 81px;
-  }
+  
+  .coner-deluxe .container { width: 100%; margin: 0 auto;}
+  
   .coner-deluxe .container .coner-deluxes .coner-deluxe-box {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
   }
   .coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe1 .swiper {
-    width: 880px;
-    height: 600px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe1 .swiper .swiper-wrapper .swiper-slide {
-    width: 880px;
-    height: 600px;
-  }
-  .coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe1 .swiper .swiper-wrapper .swiper-slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 537px;
+    margin: 0 auto;
+   
   }
+ 
+ 
   .coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe2 {
     margin-bottom: 81px;
+    margin-top: 27px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+    text-align: center;
   }
   .coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe2 .readbox2 {
-    display: flex; justify-content: space-between;
+    display: flex; justify-content: center;
   }
   .coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe2 .readbox2 .read-more{
-    width: 130px; height: 40px; background: var(--maincolor); margin-top: 27px;
-    display: flex; justify-content: center; align-items: center;
-  }
-  .coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe2 .readbox2 .read-more h6{
-    color: var(--white);
-  }
-  .coner-deluxe .container .coner-deluxes .coner-deluxe-box .coner-deluxe2 p {
-    font-size: 18px;
-    margin-top: 27px;
-  }
-  .room-Amenities .container .amenties .bath-room h4, 
-  .room-Amenities .container .amenties .bed-room h4, 
-  .room-Amenities .container .amenties .private-bar h4, 
-  .room-Amenities .container .amenties .closet h4 { 
-    margin: 27px 0 ;
-  }
-  .room-Amenities .container .amenties{ 
-    display: flex; justify-content: space-between;
-  }
-  .room-Amenities .container .amenties .bath-room > ul > li, 
-  .room-Amenities .container .amenties .bed-room > ul > li, 
-  .room-Amenities .container .amenties .private-bar > ul > li, 
-  .room-Amenities .container .amenties .closet > ul > li {
-   margin: 10px 0;
+     margin: 27px 10px;
     
   }
-  .room-Amenities .container .pbox { line-height: 25px; display: flex; flex-direction: column; align-items: center; width: 100%; height: 50px; background: #ccc;}
-  .special .container >ul { display: flex; flex-wrap: wrap; margin-top: 27px;}
-  .special .container >ul li { margin: 27px; display: flex; align-items: center; width: 295px;}
-  .special .container >ul li .spumage { width: 40px; height: 40px; margin-right: 15px;}
-  .special .container >ul li .spumage img { width: 100%; height: 100%;}
-  .room-use .container .facility { display: flex; justify-content: space-between;}
-  .room-use .container .facility .smart h4 { margin-bottom: 27px;}
-  .room-use .container .facility .smart ul li { margin-top: 10px;}
+  .room-Amenities .container h3 { text-align: center; margin: 107px 0 27px 0;}
+ 
+  .room-Amenities .container .amenties{ 
+    display: flex; justify-content: space-between;  flex-wrap: wrap;
+  }
+  .room-Amenities .container .amenties > div {margin-top: 27px; width: 50%; text-align: center;}
   
-  .hotelinfo .container h4 { margin-bottom: 27px;}
-  .hotelinfo .container ul .bold3 { font-weight: bold;}
-  .hotelinfo .container ul li { margin-top: 10px;}
-  .hotelinfo .container .peak-season {
-    line-height: 25px; display: flex; flex-direction: column; 
-    align-items: center; width: 100%; height: 50px; background: #ccc;
-    margin-top: 52px;
-  }
-  .executive-business .container .executive-business {
-    margin-bottom: 150px;
-  }
-  .executive-business .container .executive-business .executive-title h3 {
-    text-align: center;
-    margin-bottom: 81px;
-  }
+  .room-Amenities .container .pbox { margin-top: 27px; text-align: center;}
+  .special .container h4 { text-align: center;}
+  .special .container >ul { display: flex; flex-wrap: wrap; justify-content:center;}
+  .special .container >ul li { width: 28%;}
+  
+  .room-use .container .facility { display: flex; flex-direction: column; justify-content: center;}
+  .room-use .container .facility .smart { text-align: center; margin-top: 52px;}
+  
+  
+  .hotelinfo .container { text-align: center;}
+  .hotelinfo .container .peak { margin-top: 27px;}
+  
+
+  .executive-business .container { width: 100%; margin: 0 auto;}
+  
+  
   .executive-business .container .executive-business .executive-box {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
   }
+  .executive-business .container .executive-business { margin-bottom: 27px;}
   .executive-business .container .executive-business .executive-box .executive1 {
     margin-bottom: 81px;
+    margin-top: 27px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    text-align: end;
+    justify-content: center;
+    text-align: center;
+    order: 1;
   }
   .executive-business .container .executive-business .executive-box .executive1 .readbox2 {
-    display: flex; justify-content: space-between;
+    display: flex; justify-content: center;
   }
   .executive-business .container .executive-business .executive-box .executive1 .readbox2 .read-more{
-    width: 130px; height: 40px; background: var(--maincolor); margin-top: 27px;
-    display: flex; justify-content: center; align-items: center;
+    width: 130px; height: 40px; background: var(--maincolor); margin: 27px 10px;
+    
   }
-  .executive-business .container .executive-business .executive-box .executive1 .readbox2 .read-more h6 {
-    color: var(--white);
-  }
-  .executive-business .container .executive-business .executive-box .executive1 p {
-    font-size: 18px;
-    margin-top: 27px;
-  }
+  
+ 
   .executive-business .container .executive-business .executive-box .executive2 .swiper {
-    width: 880px;
-    height: 600px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .executive-business .container .executive-business .executive-box .executive2 .swiper .swiper-wrapper .swiper-slide {
-    width: 880px;
-    height: 600px;
-  }
-  .executive-business .container .executive-business .executive-box .executive2 .swiper .swiper-wrapper .swiper-slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 537px;
+   margin: 0 auto;
   }
   .executive-grand {
-    height: 100vh;
+    margin-bottom: 257px;
   }
-  .executive-grand .container .executive-grand .executive-grandtitle h3 {
-    text-align: center;
-    margin-bottom: 81px;
+  .executive-grand .container { width: 100%; margin: 0 auto; 
+    
+    
   }
+  
   .executive-grand .container .executive-grand .executive-grandbox {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between  ;
+    flex-direction: column;
   }
   .executive-grand .container .executive-grand .executive-grandbox .executive-grand1 .swiper {
-    width: 880px;
-    height: 600px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .executive-grand .container .executive-grand .executive-grandbox .executive-grand1 .swiper .swiper-wrapper .swiper-slide {
-    width: 880px;
-    height: 600px;
-  }
-  .executive-grand .container .executive-grand .executive-grandbox .executive-grand1 .swiper .swiper-wrapper .swiper-slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 530px;
+   margin: 0 auto;
   }
+
   .executive-grand .container .executive-grand .executive-grandbox .executive-grand2 {
     margin-bottom: 81px;
+    margin-top: 27px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+    text-align: center;
+    order: 1;
   }
   .executive-grand .container .executive-grand .executive-grandbox .executive-grand2 .readbox2 {
-    display: flex; justify-content: space-between;
+    display: flex; justify-content: center;
   }
   .executive-grand .container .executive-grand .executive-grandbox .executive-grand2 .readbox2 .read-more {
-    width: 130px; height: 40px; background: var(--maincolor); margin-top: 27px;
-    display: flex; justify-content: center; align-items: center;
+    width: 130px; height: 40px; background: var(--maincolor); margin: 27px 10px;
+    
   }
-  .executive-grand .container .executive-grand .executive-grandbox .executive-grand2 .readbox2 .read-more h6{
-    color: var(--white);
-  }
-  .executive-grand .container .executive-grand .executive-grandbox .executive-grand2 .executive-grande p {
-    font-size: 18px;
-    margin-top: 27px;
-  }
-  .suites .container .suite .suitetitle h3 {
-    text-align: center;
-    margin-bottom: 81px;
-  }
+
+ 
   .suites .container .suite .suite-box {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
   }
   .suites .container .suite .suite-box .suite1 {
-    margin-bottom: 81px;
+    margin-bottom: 129px;
+    margin-top: 27px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    text-align: end;
+    justify-content: center;
+    text-align: center;
+    order: 1;
   }
   .suites .container .suite .suite-box .suite1 .readbox2 {
-    display: flex; justify-content: space-between;
-  }.suites .container .suite .suite-box .suite1 .readbox2 .read-more {
-    width: 130px; height: 40px; background: var(--maincolor); margin-top: 27px;
-    display: flex; justify-content: center; align-items: center;
-  }.suites .container .suite .suite-box .suite1 .readbox2 .read-more h6 {
-    color: var(--white);
+    display: flex; justify-content: center;
   }
-  .suites .container .suite .suite-box .suite1 p {
-    font-size: 18px;
-    margin-top: 27px;
-  }
+  
   .suites .container .suite .suite-box .suite2 .swiper {
-    width: 880px;
-    height: 600px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .suites .container .suite .suite-box .suite2 .swiper .swiper-wrapper .swiper-slide {
-    width: 880px;
-    height: 600px;
-  }
-  .suites .container .suite .suite-box .suite2 .swiper .swiper-wrapper .swiper-slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 530px;
+    margin: 0 auto;
   }
-  .korea-suites {
-    height: 100vh;
-    display: flex;
-    align-items: center;
+  .suites .container .suite .suite-box .suite1 .readbox2 .read-more {
+    width: 130px; height: 40px; background: var(--maincolor);margin: 27px 10px;
   }
-  .korea-suites .container .korea-suite .korea-suitetitle h3 {
-    text-align: center;
-    margin-bottom: 81px;
-  }
+  
+  .korea-suites .container { width: 100%; margin: 0 auto;}
+  
   .korea-suites .container .korea-suite .korea-suitebox {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
   }
   .korea-suites .container .korea-suite .korea-suitebox .korea-suite1 .swiper {
-    width: 880px;
-    height: 600px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .korea-suites .container .korea-suite .korea-suitebox .korea-suite1 .swiper .swiper-wrapper .swiper-slide {
-    width: 880px;
-    height: 600px;
-  }
-  .korea-suites .container .korea-suite .korea-suitebox .korea-suite1 .swiper .swiper-wrapper .swiper-slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 530px;
+    margin: 0 auto;
+   
   }
+  
+
+  
   .korea-suites .container .korea-suite .korea-suitebox .korea-suite2 {
-    margin-bottom: 81px;
+    margin-bottom: 200px;
+    margin-top: 27px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+    text-align: center;
   }
   .korea-suites .container .korea-suite .korea-suitebox .korea-suite2 .readbox2 {
-    display: flex; justify-content: space-between;
+    display: flex; justify-content: center;
   }
   .korea-suites .container .korea-suite .korea-suitebox .korea-suite2 .readbox2 .read-more{
-    width: 130px; height: 40px; background: var(--maincolor); margin-top: 27px;
-    display: flex; justify-content: center; align-items: center;
+    width: 130px; height: 40px; background: var(--maincolor); margin: 27px 10px;
+   
   }
-  .korea-suites .container .korea-suite .korea-suitebox .korea-suite2 .readbox2 .read-more h6{
-    color: var(--white);
-  }
-  .korea-suites .container .korea-suite .korea-suitebox .korea-suite2 p {
-    font-size: 18px;
-    margin-top: 27px;
-  }
-  .coner-suite .container .coner-suites .coner-suitetitle h3 {
-    text-align: center;
-    margin-bottom: 81px;
-  }
+ 
+  
   .coner-suite .container .coner-suites .coner-suite-box {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
   }
   .coner-suite .container .coner-suites .coner-suite-box .coner-suite1 {
     margin-bottom: 81px;
+    margin-top: 27px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    text-align: end;
+    justify-content:center;
+    text-align: center;
+    order: 1;
   }
   .coner-suite .container .coner-suites .coner-suite-box .coner-suite1 .readbox2 {
-    display: flex; justify-content: space-between;
+    display: flex; justify-content: center;
   }
   .coner-suite .container .coner-suites .coner-suite-box .coner-suite1 .readbox2 .read-more {
-    width: 130px; height: 40px; background: var(--maincolor); margin-top: 27px;
-    display: flex; justify-content: center; align-items: center;
+    width: 130px; height: 40px; background: var(--maincolor);  margin: 27px 10px;
+
   }
-  .coner-suite .container .coner-suites .coner-suite-box .coner-suite1 .readbox2 .read-more h6 {
-    color: var(--white);
-  }
-  .coner-suite .container .coner-suites .coner-suite-box .coner-suite1 p {
-    font-size: 18px;
-    margin-top: 27px;
-  }
+  
   .coner-suite .container .coner-suites .coner-suite-box .coner-suite2 .swiper {
-    width: 880px;
-    height: 600px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .coner-suite .container .coner-suites .coner-suite-box .coner-suite2 .swiper .swiper-wrapper .swiper-slide {
-    width: 880px;
-    height: 600px;
-  }
-  .coner-suite .container .coner-suites .coner-suite-box .coner-suite2 .swiper .swiper-wrapper .swiper-slide img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 530px;
+    margin: 0 auto;
   }
-  .Premier-suite {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-  .Premier-suite .container .Premier-suit .Premier-suit h3 {
-    text-align: center;
-    margin-bottom: 81px;
-  }
+
+ 
+ 
   .Premier-suite .container .Premier-suit .Premier-suitbox {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
   }
   .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit1 .swiper {
-    width: 880px;
-    height: 600px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit1 .swiper .swiper-wrapper .swiper-slide {
-    width: 880px;
-    height: 600px;
-  }
-  .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit1 .swiper .swiper-wrapper .swiper-slide img {
     width: 100%;
-    height: 100%; 
-    object-fit: cover;
+    height: 530px;
+    margin: 0 auto;
+   
   }
+
   .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 {
     margin-bottom: 81px;
+    margin-top: 27px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-  }
-  .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 .readbox2 {
-    display: flex; justify-content: space-between;
-  }
-  .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 .readbox2 .read-more{
-    width: 130px; height: 50px; background: var(--maincolor); margin-top: 27px;
-    display: flex; justify-content: center; align-items: center;
-  }
-  .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 .readbox2 .read-more h6{
-      color: var(--white);
-  }
-  .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 p {
-    font-size: 18px;
-    margin-top: 27px;
-  }
-  
-  
-  .title1image .titleltop h2 {
-    color: var(--white);
-  }
-  .title1image .titleltop p {
-    color: var(--white);
-    font-size: 20px;
-  }
-  .title1image img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .layeon .container .layeont {
+    justify-content: center;
     text-align: center;
   }
+  .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 .readbox2 {
+    display: flex; justify-content: center;
+  }
+  .Premier-suite .container .Premier-suit .Premier-suitbox .Premier-suit2 .readbox2 .read-more{
+    width: 130px; height: 50px; background: var(--maincolor); margin: 27px 10px;
+
+  }
+  
+  
+  
+
+  
+  .layeon { margin-bottom: 150px;}
   .layeon .container .layeont p {
-    font-size: 24px;
-    margin: 27px 0 81px 0;
+    font-size: 16px;
+    
   }
-  .layeon .container .layeontime table {
-    border-collapse: collapse;
-  }
-  .layeon .container .layeontime table .caption {
-    width: 100%;
-    height: 100%;
-    color: var(--black);
-  }
-  .layeon .container .layeontime table .caption h4 {
-    height: 100px;
-    display: flex;
-    align-items: center;
-  }
-  .layeon .container .layeontime table tbody th, .layeon .container .layeontime table tbody td {
-    border: 1px solid;
-    height: 89px;
-    font-size: 24px;
+ 
+  
+  
+  .layeon .container .layeontime table tbody th, 
+  .layeon .container .layeontime table tbody td {
+    
+    font-size: 18px;
+    
   }
   
   .arestaurant {
-    height: 707px;
+    
     display: flex;
     align-items: center;
+    margin-bottom: 350px;
   }
   .arestaurant .container .restaurant {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     margin-top: 150px;
   }
   .arestaurant .container .restaurant .restaurant-image {
-    width: 880px;
-    height: 600px;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
   }
   .arestaurant .container .restaurant .restaurant-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+  
   .arestaurant .container .restaurant .restaurant-explanation {
     margin-bottom: 135px;
+    margin-top: 27px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
+    text-align: center;
   }
-  .arestaurant .container .restaurant .restaurant-explanation p {
-    font-size: 18px;
-    margin-top: 27px;
-  }
+ 
   
   .arestaurant2 {
-    height: 908px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
   }
   .arestaurant2 .container .restaurant {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    
   }
+  .arestaurant2 .container .restaurant .restaurant-image {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+  }
+ 
   .arestaurant2 .container .restaurant .restaurant-explanation {
     margin-bottom: 135px;
+    margin-top: 52px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    text-align: end;
+    justify-content: center;
+    text-align: center;
+    order: 1;
+    
   }
-  .arestaurant2 .container .restaurant .restaurant-explanation span {
-    font-size: 18px;
-    margin-top: 15px;
-  }
-  .arestaurant2 .container .restaurant .restaurant-explanation p {
-    font-size: 18px;
-    margin-top: 27px;
-  }
+
   .arestaurant2 .container .restaurant .restaurant-explanation .call-reservation {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 27px;
   }
   .arestaurant2 .container .restaurant .restaurant-explanation .call-reservation .reservation {
-    width: 120px;
-    height: 40px;
-    background: var(--maincolor);
+    
     display: flex;
-  }
-  .arestaurant2 .container .restaurant .restaurant-explanation .call-reservation .reservation a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-  .arestaurant2 .container .restaurant .restaurant-explanation .call-reservation .reservation a p {
-    font-size: 16px;
-    color: var(--white, #fff);
-    height: 100%;
-  }
-  .arestaurant2 .container .restaurant .restaurant-explanation .call-reservation .inquiry {
-    width: 120px;
-    height: 40px;
-    background: var(--maincolor);
-  }
-  .arestaurant2 .container .restaurant .restaurant-explanation .call-reservation .inquiry a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-  .arestaurant2 .container .restaurant .restaurant-explanation .call-reservation .inquiry a p {
-    font-size: 16px;
-    color: var(--white, #fff);
-    height: 100%;
-  }
-  .arestaurant2 .container .restaurant .restaurant-image {
-    width: 880px;
-    height: 600px;
-  }
-  .arestaurant2 .container .restaurant .restaurant-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    margin: 0 10px;
   }
   
-  .infomenu {
-    margin-bottom: 218px;
-    display: flex;
-    align-items: center;
+ 
+  
+  .infomenu { width: 100%; margin: 0 auto;
+   
+  }
+  .infomenu .container { width: 100%; margin: 0 auto;
+   
   }
   .infomenu .container .menu {
     margin-bottom: 54px;
   }
   .infomenu .container .myswiper2 .swiper-wrapper .swiper-slide {
-    width: 100%;
-    height: 100%;
-    width: 1400px;
-    height: 620px;
+   
+    width: 1024px;
+    height: 427px;
   }
-  .infomenu .container .myswiper2 .swiper-wrapper .swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .infomenu .container .information-email .information2 {
-    display: flex;
-    justify-content: space-between;
-  }
-  .infomenu .container .information-email .information2 h4 {
-    margin: 54px 0 27px;
-  }
-  .infomenu .container .email .color {
-    margin-bottom: 27px;
-  }
+ 
+
   .infomenu .container .email p {
-    font-size: 24px;
+    font-size: 18px;
   }
   
   .layeonimage {
@@ -2126,22 +1853,23 @@ body { overflow-x: hidden;}
     width: 100%;
     height: 100%;
   }
-  
+  .continental .container {width: 100%; margin: 0 auto;}
   .continental .container .continentalt {
     text-align: center;
   }
   .continental .container .continentalt p {
-    font-size: 24px;
-    margin: 27px 0 81px 0;
-  }
-  .continental .container .continentaltime table {
-    border-collapse: collapse;
+    font-size: 18px;
+    
   }
   .continental .container .continentaltime table .caption {
     width: 100%;
     height: 100%;
     color: var(--black);
   }
+  .continental .container .continentaltime table {
+    border-collapse: collapse;
+  }
+  
   .continental .container .continentaltime table .caption h3 {
     height: 100px;
     display: flex;
@@ -2149,176 +1877,59 @@ body { overflow-x: hidden;}
   }
   .continental .container .continentaltime table tbody th, 
   .continental .container .continentaltime table tbody td {
-    border: 1px solid;
-    height: 89px;
+    
     font-size: 18px;
   }
   
-  .aliakkeimage {
-    height: 100vh;
-    margin: 0 auto;
-  }
-  .aliakkeimage img {
-    width: 100%;
-    height: 100%;
-  }
+ 
   
-  .aliakke .container .aliakket {
-    text-align: center;
-  }
   .aliakke .container .aliakket p {
     font-size: 18px;
     margin: 27px 0 81px 0;
   }
-  .aliakke .container .aliakketime table {
-    border-collapse: collapse;
-  }
-  .aliakke .container .aliakketime table .caption {
-    width: 100%;
-    height: 100%;
-    color: var(--black);
-  }
-  .aliakke .container .aliakketime table .caption h3 {
-    height: 100px;
-    display: flex;
-    align-items: center;
-  }
+  
   .aliakke .container .aliakketime table tbody th, 
   .aliakke .container .aliakketime table tbody td {
     border: 1px solid;
     height: 89px;
-    font-size: 24px;
+    font-size: 18px;
   }
   
-  .palseon .container .palseont {
-    text-align: center;
-  }
+ 
   .palseon .container .palseont p {
-    font-size: 24px;
+    font-size: 18px;
     margin: 27px 0 81px 0;
   }
-  .palseon .container .palseontime table {
-    border-collapse: collapse;
-  }
-  .palseon .container .palseontime table .caption {
-    width: 100%;
-    height: 100%;
-    color: var(--black);
-  }
-  .palseon .container .palseontime table .caption h3 {
-    height: 100px;
-    display: flex;
-    align-items: center;
-  }
+ 
+
+
   .palseon .container .palseontime table tbody th, 
   .palseon .container .palseontime table tbody td {
     border: 1px solid;
     height: 89px;
-    font-size: 24px;
+    font-size: 18px;
   }
   
-  .membership4 .container .membership4t {
-    text-align: center;
-  }
-  .membership4 .container .membership4t p {
-    font-size: 24px;
-    margin: 79px 0 81px 0;
-  }
-  .membership4 .container .point-benefit {
-    text-align: center; 
-    width: 475px;
-    margin: 0 auto;
-    
-  }
-  .membership4 .container .point-benefit .hrt {
-    width: 100% ; height: 2px; background: var(--black); opacity: 0.2;
-    margin-bottom: 27px;
-   }
-  .membership4 .container .point-benefit h4{
-    text-align: start;
-    margin-right: 54px;
-    color: #b79d58;
-    
-  }
-  .membership4 .container .point-benefit .point .pointg{
-    
-    margin-right: 73px;
-    
-  }
-  .membership4 .container .point-benefit .point {
-    margin-bottom: 27px;
-    display: flex;
-    text-align: start;
-    justify-content: start;
-  }
-  
+ 
+ 
+ 
   .membership4 .container .point-benefit .box1pro p {
-    font-size: 24px;
+    font-size: 18px;
   }
-  .membership4 .container .point-benefit .benefit {
-    display: flex;
-    text-align: start;
-    justify-content: start;
-  }
-  .membership4 .container .point-benefit .hrt2 {
-    width: 100% ; height: 2px; background: var(--black); opacity: 0.2;
-    margin-top: 27px;
-  }
+ 
   .membership4 .container .point-benefit .benefit .drink p {
-    font-size: 24px;
+    font-size: 18px;
   }
   
-  .membershipcard-image .container {
-    text-align: center;
-  }
-  .membershipcard-image .container .memberscard-title {
-    text-align: center; 
-    margin-top: 135px;
-  }
-  .membershipcard-image .container .memberscard-title p {
-    font-size: 24px;
-    margin: 54px 0 81px 0;
-  }
+ 
   .membershipcard-image .container .membercardi {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
-  .membershipcard-image .container .membercardi .card4 .card-explanation > ul li {
-    margin: 27px 0;
-  }
-  .membershipcard-image .container .membercardi .card4 .card-explanation > ul li span {
-    font-size: 18px;
-  }
-  .membershipcard-image .container .membercardi .card4 .card-explanation > ul .redcard {
-    color: red;
-  }
-  .membershipcard-image .container .mpage {
-    margin: 80px 0;
-    text-align: center;
-    
-    width: 100%;
-    color: red;
-    
-  }
-  .mpage { margin: 80px 0;}
-  .membershipcard-image .container .boxx {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .membershipcard-image .container .boxx .member-info {
-    text-align: center;
-    margin-bottom: 108px;
-    width: 180px;
-    height: 40px;
-    background: var(--black);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .membershipcard-image .container .boxx .member-info h6 {
-    color: var(--white);
-  }
+  .membershipcard-image .container .membercardi .card4 { width: 50%; margin-top: 52px;}
+ 
+ 
 }
 
 /* 모바일 사이즈 미디어 쿼리 */
