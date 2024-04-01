@@ -73,10 +73,11 @@
 .reservation-area .promotion.on .ipt-wrap {right: 140px; visibility: visible;}
 .reservation-area .promotion .ipt-wrap .ipt {height: 100%}
 
-/* 예약 타이틀 */
+
+/* 예약영역 - 예약 타이틀 */
 .reservation-area .tit {display: block; margin-bottom: 50px;}
 
-/* 공통 드롭박스 */
+/* 예약영역 -  공통 드롭박스 */
 .reservation-area .btn-select span {position: relative;}
 .reservation-area .btn-select > span:after {content: ''; position: absolute; top: 50%; left: calc(100% + 10px); margin-top: -4px; border-width: 6px 4px; border-style: solid; border-color: var(--black, #222) transparent transparent transparent;}
 .reservation-area .btn-select + ul {position: absolute; bottom: 100%; left:0; right:0; background-color: var(--white, #fff);}
@@ -86,11 +87,12 @@
 .resevation.on .btn-select > span:after,
 .hotel.on .btn-select > span:after {transform: rotate(-180deg); margin-top: -12px;}
 
-/* 예약 정보 영역 */
-.reservation-area .reserv-box {display:flex; position: absolute; bottom: 100%; left: 0; right: 0; background-color: var(--white, #fff); padding: 50px;}
+/* 예약영역 -  예약 정보 영역 */
+.reservation-area .reserv-box {display:flex; height: 576px; position: absolute; bottom: 100%; left: 0; right: 0; background-color: var(--white, #fff); padding: 50px;}
 .reservation-area .reserv-box > div {flex: 1 1 auto;}
-.reservation-area .guest-info-wrap {display: flex; flex-direction: column; align-items: center; gap: 50px;}
+.reservation-area .guest-info-wrap {display: flex; flex-direction: column; gap: 40px;}
 .reservation-area .guest-info-wrap .tooltip {align-self: end; }
+.reservation-area .room-info-list {display: flex; flex-direction: column; gap: 50px;}
 .reservation-area .room-info-list > li {display: flex; align-items: center; gap: 20px;}
 .reservation-area .room-info-list .tit {font-size: 20px; margin-bottom: 0;}
 .reservation-area .room-info-list .quantity-list {display: flex; gap: 16px;}
@@ -99,14 +101,20 @@
 .reservation-area .btn-add span {position:relative; font-size: 20px;}
 .reservation-area .btn-add span:before {content: '+'; position: absolute; top: -1px; left: calc(100% + 17px); z-index: 1; font-size: 20px;}
 .reservation-area .btn-add span:after {content: ''; position: absolute; top: -3px; width: 30px; height: 30px; background-color: #d9d9d9; border-radius: 50%; margin-left: 8px; }
+.reservation-area .txt-star {align-self: flex-start;}
 
-/* 수량 */
+/* 예약영역 - 수량 */
 .quantity {display: flex; position: relative;}
 .quantity [class^="btn"] {position:absolute; width: 40px; height: 34px; background-color: #ebebeb; border: 1px solid #ebebeb; border-radius: 6px 0 0 6px;}
 .quantity [class^="btn"].btn-plus {border-radius: 0 6px 6px 0; right: 0;}
 .quantity [class^="btn"]:after {content: ''; position: absolute; width: 16px; height: 2px; background-color: var(--black, #222);}
 .quantity .btn-plus:before {content:''; position: absolute; width: 2px; height: 16px; background-color: var(--black, #222);}
 .quantity .count {display: flex; width: 182px; height: 34px; align-items: center; justify-content: center; border: 1px solid #ccc; border-radius: 6px; font-size: 20px; }
+
+/* 에약영역 - 하단 버튼 */
+.btn-area.complete {width: 100%;}
+.btn-area.complete > button {min-width: 100%;}
+
 
 /* 객실소개 최원석*/
 
