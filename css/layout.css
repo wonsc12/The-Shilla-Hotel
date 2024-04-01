@@ -267,8 +267,69 @@ address {
 
 
   /* footer */
-
-
+  footer .container {
+    width: 100%;
+    padding:0 24px;
+    margin: 0 auto;
+  }
+  footer-wrap ul h2{
+    display: block;
+  }
+  footer .footer-wrap > ul {
+    margin-bottom: 0;
+    padding-top: 81px;
+    justify-content: space-between;
+  }
+  footer .footer-wrap > ul > li {
+    display: block;
+    margin-bottom: 54px;
+  }
+  footer .footer-wrap > ul .full{
+    flex-direction: column;
+  }
+  .footer-wrap ul h2 {
+    width: 100%
+  }
+  footer .footer-wrap > ul > li > div {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .footer-info-list {
+    height: auto;
+  }
+  .footer-info-list div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-info-list div h2 {
+    display: none;
+  }
+  .footer-family-title {
+    display: none;
+  }
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 51px;
+    padding:0;
+  }
+  .footer-address {
+    text-align: center;
+  }
+  .footer-address >* {
+    margin-bottom: 10px;
+  }
+  .footer-sns {
+    width: 1024px;
+    height: auto;
+    background: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:10px;
+  }
 
   /* 태블릿 크기에서 적용되는 스타일 */
 }
