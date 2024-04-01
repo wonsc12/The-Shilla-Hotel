@@ -75,6 +75,7 @@ $(function(){
 		console.log(targetIdx);
 		tabcontent.hide(); // 모든 컨텐츠가 안보이게
 		tabcontent.eq(targetIdx).show(); // 인덱스 번호로 요소를 선택하는 메서드 eq
+		tabcontent.eq(targetIdx).find('.swiper-pagination span').eq(0).trigger('click');
 	})
 	tabmenu.eq(0).trigger('click');
 
@@ -89,6 +90,7 @@ $(function(){
 		console.log(targetIdx2);
 		tabcontent2.hide(); // 모든 컨텐츠가 안보이게
 		tabcontent2.eq(targetIdx2).show(); // 인덱스 번호로 요소를 선택하는 메서드 eq
+		tabcontent2.eq(targetIdx2).find('.swiper-pagination span').eq(0).trigger('click');
 	})
 	tabmenu2.eq(0).trigger('click');
 
@@ -186,17 +188,33 @@ let content = $('.panel');
 		}
 	})
 
+	// 예약 드롭박스 맵핑
+	$('.resevation > ul a').click(function() {
+		let dropText = $(this).text(); 
+		$('.resevation .btn-select span').text(dropText);
+		$('.resevation > ul').slideToggle();
+		$('.resevation').removeClass("on");
+	});
+
 	// 호텔
 	$('.hotel ul').hide();
 	$('.reservation-area .hotel .btn-select').click(function(){
 		if(!$(this).closest('.hotel').hasClass('on')){
 			$(this).closest('.hotel').addClass("on");
-			$(this).closest('.hotel').find('ul').slideDown();;
+			$(this).closest('.hotel').find('ul').slideDown();
 		}else{
 			$(this).closest('.hotel').removeClass("on");
 			$(this).closest('.hotel').find('ul').slideUp();
 		}
 	})
+
+	// 호텔 드롭박스 맵핑
+	$('.hotel > ul a').click(function() {
+		let dropText = $(this).text(); 
+		$('.hotel .btn-select span').text(dropText);
+		$('.hotel > ul').slideToggle();
+		$('.hotel').removeClass("on");
+	});
 
 	// 그외 예약요소 전체 클릭
 	$('.reserv-box').hide();
@@ -341,5 +359,72 @@ let content = $('.panel');
 	
 		// form 영역
 		console.log('form 영역', $(".reservation-area .pick-area .guest-info-wrap"))
+
+		$("<div>").datepicker({
+			dateFormat: 'yy-mm-dd',
+			prevText: '이전 달',
+			nextText: '다음 달',
+			monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+			monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+			dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+			showMonthAfterYear: true,
+			yearSuffix: '년'
+		}).appendTo("#today-month").datepicker("show");
+
+		$("<div>").datepicker({
+			dateFormat: 'yy-mm-dd',
+			prevText: '이전 달',
+			nextText: '다음 달',
+			monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+			monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+			dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+			showMonthAfterYear: true,
+			yearSuffix: '년',
+			defaultDate: '+1m'
+		}).appendTo("#next-month").datepicker("show");
+
+		// 데이트픽커 클래스 추가
+		$("#ui-datepicker-div").datepicker("widget").addClass("custom-date-pick");
+
+		// 데이트픽커
+		// if($('.date-picker').length > 0){
+		// 	// 현재달
+		// 	$("#today-month").datepicker({
+		// 		dateFormat: 'yy-mm-dd',
+		// 		prevText: '이전 달',
+		// 		nextText: '다음 달',
+		// 		monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+		// 		monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+		// 		dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+		// 		dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+		// 		dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+		// 		showMonthAfterYear: true,
+		// 		yearSuffix: '년',
+				
+		// 	});
+	
+		// 	// 다음달
+		// 	$("#next-month").datepicker({
+		// 		dateFormat: 'yy-mm-dd',
+		// 		prevText: '이전 달',
+		// 		nextText: '다음 달',
+		// 		monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+		// 		monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+		// 		dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+		// 		dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+		// 		dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+		// 		showMonthAfterYear: true,
+		// 		yearSuffix: '년',
+		// 		defaultDate: '+1m'
+				
+		// 	});
+	
+		// 	// 데이트픽커 클래스 추가
+		// 	$("#ui-datepicker-div").datepicker("widget").addClass("custom-date-pick");
+		// }
 
 });
