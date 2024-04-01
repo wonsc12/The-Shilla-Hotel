@@ -186,17 +186,33 @@ let content = $('.panel');
 		}
 	})
 
+	// 예약 드롭박스 맵핑
+	$('.resevation > ul a').click(function() {
+		let dropText = $(this).text(); 
+		$('.resevation .btn-select span').text(dropText);
+		$('.resevation > ul').slideToggle();
+		$('.resevation').removeClass("on");
+	});
+
 	// 호텔
 	$('.hotel ul').hide();
 	$('.reservation-area .hotel .btn-select').click(function(){
 		if(!$(this).closest('.hotel').hasClass('on')){
 			$(this).closest('.hotel').addClass("on");
-			$(this).closest('.hotel').find('ul').slideDown();;
+			$(this).closest('.hotel').find('ul').slideDown();
 		}else{
 			$(this).closest('.hotel').removeClass("on");
 			$(this).closest('.hotel').find('ul').slideUp();
 		}
 	})
+
+	// 호텔 드롭박스 맵핑
+	$('.hotel > ul a').click(function() {
+		let dropText = $(this).text(); 
+		$('.hotel .btn-select span').text(dropText);
+		$('.hotel > ul').slideToggle();
+		$('.hotel').removeClass("on");
+	});
 
 	// 그외 예약요소 전체 클릭
 	$('.reserv-box').hide();
