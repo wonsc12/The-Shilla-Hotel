@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="_01" data-name="01" transform="translate(3 7.16)">
+    <rect id="guide_box" data-name="guide box" width="32" height="32" transform="translate(-3 -7.16)" fill="rgba(255,255,255,0)"/>
+    <g id="그룹_467" data-name="그룹 467" transform="translate(1)">
+      <circle id="타원_117" data-name="타원 117" cx="5.709" cy="5.709" r="5.709" transform="translate(0.815 10.602)" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="패스_1162" data-name="패스 1162" d="M7.749,11.517l-1.957-9.8H1.714" transform="translate(-0.898 -0.899)" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="패스_1163" data-name="패스 1163" d="M18.962,25.215h5.627a.818.818,0,0,0,.8-.946l-1.011-6.116a3.262,3.262,0,0,0-3.262-2.723H12.96" transform="translate(-6.795 -8.089)" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <line id="선_47" data-name="선 47" x1="6.867" transform="translate(11.206 13.048)" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path id="패스_1164" data-name="패스 1164" d="M41.059,39.429a1.631,1.631,0,1,1-1.631,1.631A1.631,1.631,0,0,1,41.059,39.429Z" transform="translate(-20.671 -20.672)" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <line id="선_48" data-name="선 48" x2="1.435" y2="2.104" transform="translate(17.794 17.125)" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <g id="그룹_460" data-name="그룹 460" transform="translate(13.597 -4.007)">
+        <circle id="타원_118" data-name="타원 118" cx="4.5" cy="4.5" r="4.5" transform="translate(1.903)" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path id="패스_1165" data-name="패스 1165" d="M9.792,9.263V7.678a.4.4,0,0,0-.4-.4H9m0,1.98h1.584M9.4,5.5h0m0,0a.2.2,0,1,0,.2.2.2.2,0,0,0-.2-.2" transform="translate(-3.389 -2.882)" fill="none" stroke="#222" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -52,5 +52,16 @@ $(function(){
   tabcontent.eq(0).show(); 
 
 
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.to(".scroll-txt-right", {
+	scrollTrigger: ".scroll-txt-right", x: 0, duration: 2, opacity:1 })
+
+  gsap.to(".scroll-txt-left", {
+	scrollTrigger: ".scroll-txt-right", x: 0, duration: 2.5, opacity:1 })
   
+  gsap.to(".hotel-text-wrap span", {
+	scrollTrigger: ".scroll-txt-right", y: 0, duration: 3, opacity:1 })
+
+
+
 });
