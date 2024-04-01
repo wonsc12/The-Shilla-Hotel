@@ -133,7 +133,20 @@ const swipers = new Swiper('.swiper-container', {
   }
 });
 
-
+//  스크롤네비
+$('.scroll-navi ul li').eq(0).addClass('on')
+$('.scroll-navi ul li a').click(function(e){
+	e.preventDefault();
+	let index = $(this).parent().index();
+	let targetSection = $('.section').eq(index);
+	$('html, body').animate({
+			scrollTop: targetSection.offset().top
+	}, 500);
+	if(!$(this).closest('li').hasClass('on')){
+		$(this).closest('li').addClass('on');
+		$(this).closest('li').siblings().removeClass('on');
+	}
+});
 
 
   //변수지정
