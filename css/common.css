@@ -120,12 +120,14 @@ textarea::placeholder {color: var(--placeholder, #999); line-height: var(--line-
 .ipt-wrap.ceri .count {position: absolute; top: 0; right: 16px; line-height: 27px; color: var(--black),; font-size: 12px;}
 
 /* email */
-.form-list .data.email {display: flex; justify-content: space-between; align-items: center; gap: 8px;}
+.form-list .data.email {display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap;}
+.form-list .data.email .ipt-wrap  {width: calc((100% / 3) - 14px);}
 
 /* 첨부파일 */
 .form-list .data.file {display: flex; gap: 24px; justify-content: space-between; align-items: center;position: relative;}
-.data.file .ipt-wrap:last-child {width: 97px;}
+.data.file .ipt-wrap:last-of-type {width: auto;}
 .data.file .file-name.on {display:block; position: absolute; top: 5px; left: 16px;}
+.data.file .error-txt {display: none;}
 
 /* 약관 */
 .terms-area {margin-top: 24px;}
