@@ -1,4 +1,32 @@
 @charset "utf-8";
+.popup {
+  position: fixed;
+  z-index: 101;
+  left: 100px;
+  top: 100px;
+  background: green;
+  display: none;
+}
+.popup label{
+  cursor: pointer;
+}
+.popup #check:checked +label{
+  color:blue;
+}
+.popup input:checked + .check i:last-child{
+  display: inline-block;
+}
+.popup input:checked + .check i:first-child{
+  display: none;
+}
+
+.popup .check i:last-child{
+  display: none;
+}
+.popup.show{
+  display: block;
+}
+
 .slidemenu{
 	position: fixed;
 	left: 100px;
