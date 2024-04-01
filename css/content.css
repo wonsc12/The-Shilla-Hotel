@@ -1078,7 +1078,7 @@
   position: absolute;
   top: 55%;
   transform:translateY(-50%);
-  z-index: 999999;
+  z-index: 10;
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -1137,26 +1137,33 @@
   align-items: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 #tab-content {
   min-height: 500px;
 }
+/*
 #tab-content::-webkit-scrollbar {
-  width: 8px;  /* 스크롤바의 너비 */
+  width: 8px;  /* 스크롤바의 너비 
 }
 
 #tab-content::-webkit-scrollbar-thumb {
-  height: 20%; /* 스크롤바의 길이 */
-  background: var(--maincolor, #122223); /* 스크롤바의 색상 */
+  height: 20%; /* 스크롤바의 길이 
+  background: var(--maincolor, #122223); /* 스크롤바의 색상
   border-radius: 10px;
 }
 
 #tab-content::-webkit-scrollbar-track {
-  background: rgba(18, 34, 35, .3);  /*스크롤바 뒷 배경 색상*/
+  background: rgba(18, 34, 35, .3);  /*스크롤바 뒷 배경 색상
   border-radius: 10px;
 }
+*/
 #tab-content > div {display: none;}
+#tab-content > div.active {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .location-tab {
   position: relative;
   width: 358px;
@@ -1208,10 +1215,11 @@
   grid-template-rows: auto;
   margin-top: 90px;
   height: auto;
+  align-items: start;
 }
-.hotel-sticky-section3 .hotel-sticky-left {
+.hotel-sticky-left {
   position:sticky;
-  top:10px;
+  top:200px;
   left:10px; 
   width: 100%;
 }
