@@ -203,6 +203,12 @@ textarea::placeholder {color: var(--placeholder, #999); line-height: var(--line-
 .calendar-wrap .ui-datepicker th {font-size: 16px;}
 .calendar-wrap .ui-state-default, 
 .calendar-wrap .ui-widget-content .ui-state-default {font-size: 15px;}
+.calendar-wrap .ui-datepicker-current-day a {background-color: #222;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  color: #fff;}
 
 /* 총 몇건 */
 .total-num-area {margin: 50px 0 30px;}

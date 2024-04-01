@@ -358,6 +358,8 @@ $(window).on('scroll', function() {
 			
 			$(".guest-info .adult .num").text(adultTotal)
 			$(".guest-info .child .num").text(childTotal)
+			// 객실수 갱신
+			$(".guest-info .room .num").text($('.room-info-list > li').length)
 		}
 	
 		// 현재 객실의 성인과 어린이 수량 합을 반환하는 함수
@@ -399,38 +401,39 @@ $(window).on('scroll', function() {
 								</button>
 							</li>
 						</ul>
+						<button type="button" class="btn-close">
+							<span class="blind"></span>
+						</button>
 					</li>
 				`;
 				roomList.append(newRoom);
 			} else {
 				alert("객실추가는 최대 3개까지만 입력 가능합니다.");
 			}
-	
-			// 객실수 갱신
-			$(".guest-info .room .num").text($('.room-info-list > li').length)
+
 			calcTotal()
+		});
+
+		$(document).on("click", ".room-info-list .btn-close", function(){
+			if($(this).closest('.room-info-list').find('> li').length > 1){
+				$(this).closest('li').remove();
+				for(let i=0; i<$('.room-info-list > li').length; i++){
+					$(".room-info-list .tit").eq(i).text("객실"+(i+1))
+				};
+			};
+			calcTotal();
 		});
 	
 		// form 영역
 		console.log('form 영역', $(".reservation-area .pick-area .guest-info-wrap"))
 		
 		$("<div>").datepicker({
-			dateFormat: 'yy-mm-dd',
+			dateFormat: 'yy.mm.dd',
+			altField: '#today-month-val', // input hidden value
 			prevText: '이전 달',
 			nextText: '다음 달',
-			monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
-			monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
-			dayNames: ['일', '월', '화', '수', '목', '금', '토'],
-			dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
-			dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
-			showMonthAfterYear: true,
-			yearSuffix: '년'
-		}).appendTo("#today-month").datepicker("show");
-
-		$("<div>").datepicker({
-			dateFormat: 'yy-mm-dd',
-			prevText: '이전 달',
-			nextText: '다음 달',
+			minDate: '-0d',
+			maxDate: '12m',
 			monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
 			monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
 			dayNames: ['일', '월', '화', '수', '목', '금', '토'],
@@ -438,11 +441,119 @@ $(window).on('scroll', function() {
 			dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
 			showMonthAfterYear: true,
 			yearSuffix: '년',
-			defaultDate: '+1m'
-		}).appendTo("#next-month").datepicker("show");
+			onSelect: function (date, inst) {
+				formSet(this)
+			}
+		}).appendTo("#today-month").datepicker("show")
+
+		$("<div>").datepicker({
+			dateFormat: 'yy.mm.dd',
+			altField: '#next-month-val', // input hidden value
+			prevText: '이전 달',
+			nextText: '다음 달',
+			minDate: '+1d',
+			maxDate: '12m',
+			monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+			monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+			dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+			dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+			showMonthAfterYear: true,
+			yearSuffix: '년',
+			defaultDate: "+1", // 1박 디폴트 설정
+			onSelect: function (date, inst) {
+				formSet(this)
+			}
+		}).appendTo("#next-month").datepicker("show")
 
 		// 데이트픽커 클래스 추가
 		$("#ui-datepicker-div").datepicker("widget").addClass("custom-date-pick");
+
+		function formSet(target){
+			let week = null;
+
+			// 로드 시 적용
+			if(target === undefined){
+				let el = ".reservation-area .chk-date .date > input"
+				for(let i=0; i<$(".reservation-area .chk-date .date").length; i++){
+					switch (new Date($(el).eq(i).val()).getDay()) {
+						case 1: // 월요일
+							week = "(월)"
+							break;
+						case 2: // 화요일
+							week = "(화)"
+							break;
+						case 3: // 수요일
+							week = "(수)"
+							break;
+						case 4: // 목요일
+							week = "(목)"
+							break;
+						case 5: // 금요일
+							week = "(금)"
+							break;
+						case 6: // 토요일
+							week = "(토)"
+							break;
+							case 0: // 일요일
+							week = "(일)"
+							break;
+					};
+					$(".reservation-area .chk-date .date").eq(i).find("> em").text($(".reservation-area .chk-date .date").eq(i).find("> input").val() + week)
+				}
+
+				return false
+			};
+
+			switch (new Date($(target).val()).getDay()) {
+				case 1: // 월요일
+					week = "(월)"
+					break;
+				case 2: // 화요일
+					week = "(화)"
+					break;
+				case 3: // 수요일
+					week = "(수)"
+					break;
+				case 4: // 목요일
+					week = "(목)"
+					break;
+				case 5: // 금요일
+					week = "(금)"
+					break;
+				case 6: // 토요일
+					week = "(토)"
+					break;
+					case 0: // 일요일
+					week = "(일)"
+					break;
+			};
+
+			// 숙박 예약 시
+			const day = (new Date($('#next-month-val').val().split('.')).getTime() - new Date($('#today-month-val').val().split('.')).getTime()) / (1000*60*60*24)
+
+			if(Math.sign(day) === -1 && $(target).closest('#today-month').length > 0){
+				alert('체크인 날짜를 체크아웃 날짜 이전으로 설정해주세요.')
+				$('.chk-date .date').eq(0).find('> em').text($('#today-month-val').val() + week)
+				$('.reservation-area .chk-date .num > em').text(0)
+				return false
+			}else if(Math.sign(day) === -1 && $(target).closest('#next-month').length > 0){
+				alert('체크아웃 날짜를 체크인 날짜 다음으로 설정해주세요.')
+				$('.chk-date .date').eq(1).find('> em').text($('#next-month-val').val() + week)
+				$('.reservation-area .chk-date .num > em').text(0)
+				return false
+			};
+
+			if($(target).closest('#today-month').length > 0){
+				$('.chk-date .date').eq(0).find('> em').text($('#today-month-val').val() + week)
+				$('.reservation-area .chk-date .num > em').text(day)
+			}else if($(target).closest('#next-month').length > 0){
+				$('.chk-date .date').eq(1).find('> em').text($('#next-month-val').val() + week)
+				$('.reservation-area .chk-date .num > em').text(day)
+			}
+		}
+		formSet(); // 로드 시 실행
+
 
 		// 날씨 슬라이드
 		let slideIndex = 0;

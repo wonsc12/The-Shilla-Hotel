@@ -80,7 +80,7 @@
 /* 스크롤 네비 */
 .scroll-navi {position: fixed; left: 70px; top: 50%; height: 250px; transform: translateY(-50%); z-index: 10;}
 .scroll-navi ul {position: relative; height: 280px; display: flex; flex-direction: column; justify-content: space-between;}
-.scroll-navi ul:before {content: ''; position: absolute; left: 0; top: 0; width: 1px; height: 100%; background-color: var(--bg-dark-gray, #ccc); }}
+.scroll-navi ul:before {content: ''; position: absolute; left: 0; top: 0; width: 1px; height: 100%; background-color: var(--bg-dark-gray, #ccc); }
 .scroll-navi ul > li {height: 50px; line-height: 50px;}
 .scroll-navi ul > li a {position:relative; display:block; padding: 18px 20px; color: var(--bg-dark-gray, #ccc); opacity: 0; font-size: 14px;} /*기본컬러*/
 .scroll-navi ul:hover > li a {opacity: 1;}
@@ -209,6 +209,7 @@
 .reservation-area .room-info-list > li {display: flex; align-items: center;}
 .reservation-area .room-info-list .tit {font-size: 20px; margin: 0 20px 0 0;}
 .reservation-area .room-info-list .quantity-list {display: flex; gap: 16px;}
+.reservation-area .room-info-list .btn-close {width: 30px; height: 30px; border: 1px solid red;}
 
 .reservation-area .btn-add {display: block; text-align: center;}
 .reservation-area .btn-add span {position:relative; font-size: 20px;}
