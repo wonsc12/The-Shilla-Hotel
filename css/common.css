@@ -226,6 +226,12 @@ textarea::placeholder {color: var(--placeholder, #999); line-height: var(--line-
   .tit-h4{font-size:calc(var(--font-size) * 1.125);}
   .tit-h5{font-size:calc(var(--font-size) * 1);}
   .tit-h6{font-size:calc(var(--font-size) * 0.875);}
+
+  /* section */
+  .section {padding: 0 24px;}
+
+  /* container */
+  .container {width: auto; margin: 0;}
 }
 
 
