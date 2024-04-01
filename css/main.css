@@ -1,11 +1,55 @@
 @charset "utf-8";
+
+/* 팝업 */
 .popup {
   position: fixed;
+  width: 600px;
   z-index: 98;
   left: 100px;
   top: 100px;
-  background: green;
+  background: var(--white, #fff);
   display: none;
+  padding: 30px;
+  border: 3px solid #D4B297;
+  box-sizing: border-box;
+}
+.popup h2 {
+  width: 270px;
+  margin: 0 auto;
+}
+.popup h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin:20px 0 10px 0;
+  color: var(--maincolor);
+}
+.popup p {
+  line-height: var(--line-height);
+}
+.popup p a {
+  text-decoration: underline;
+}
+.popup p:nth-child(-n+7) {
+  text-align: center;
+  line-height: 30px;
+}
+.popup p:nth-child(5) {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 32px;
+  padding-bottom: 10px;
+}
+.popup p:nth-child(7) {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #000;
+}
+.popup p:nth-child(8) {
+  padding-top: 23px;
+}
+
+.popup div {
+  border-top: 1px solid #000;
+  padding-top: 25px;
 }
 .popup label{
   cursor: pointer;
@@ -25,6 +69,12 @@
 }
 .popup.show{
   display: block;
+}
+.popup div button {
+  width: 50px;
+  padding: 5px;
+  background: var(--maincolor);
+  color: var(--white);
 }
 
 /* 스크롤 네비 */
