@@ -315,6 +315,7 @@
   color: var(--white);
   text-align: center;
   
+  
 }
 .room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide .bg2 .room-type,
 .room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide .bg2 .room-type, 
@@ -947,9 +948,9 @@
 body { overflow-x: hidden;}
 @media only screen and (max-width: 1024px) {
   /* 객실소개 최원석*/
-/* .room4 { width: 1024px; margin: 0 auto; }
-.room4 .container {  margin: 0 auto;
-  width: 90%; margin: 0 auto;
+.room4 { width: 100%; margin: 0 auto; }
+.room4 .container {  
+  width: 100%; margin: 0 auto;
 }
 
 .room4 .container .tit-area .tab {
@@ -982,6 +983,18 @@ body { overflow-x: hidden;}
   width: 100%;
   height: 100%; 
 }
+.room4 .container #tabs .tab-content #tabs-1 .prevar,
+.room4 .container #tabs .tab-content #tabs-2 .prevar,
+.room4 .container #tabs .tab-content #tabs-3 .prevar,
+.room4 .container #tabs .tab-content #tabs-4 .prevar {
+  left: 0px;
+}
+.event4 .container #tabs2 .tab-content2 #tabs-1 .prevar,
+.event4 .container #tabs2 .tab-content2 #tabs-2 .prevar,
+.event4 .container #tabs2 .tab-content2 #tabs-3 .prevar,
+.event4 .container #tabs2 .tab-content2 #tabs-4 .prevar {
+  left: 0px;
+}
 
 .room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide .bg2, 
 .room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide .bg2, 
@@ -990,9 +1003,9 @@ body { overflow-x: hidden;}
   width: 100%;
   text-align: center;
 }
-.event4 { width: 1024px; margin: 0 auto; }
-.event4 .container { margin: 0 auto;
-  width: 90%; margin: 0 auto;
+.event4 { width: 100%; margin: 0 auto; }
+.event4 .container { 
+  width: 100%; margin: 0 auto;
 }
 .event4 .container .tit-area .tab2 {
   width: 46%;
@@ -1044,7 +1057,7 @@ body { overflow-x: hidden;}
 .room4 .container #tabs .tab-content #tabs-2 .nextar,
 .room4 .container #tabs .tab-content #tabs-3 .nextar,
 .room4 .container #tabs .tab-content #tabs-4 .nextar { 
-  left:  886px;
+  left:  calc(50% + 445px );
   }
 
  
@@ -1053,8 +1066,8 @@ body { overflow-x: hidden;}
 .event4 .container #tabs2 .tab-content2 #tabs-2 .nextar,
 .event4 .container #tabs2 .tab-content2 #tabs-3 .nextar,
 .event4 .container #tabs2 .tab-content2 #tabs-4 .nextar { 
-  left:  891px;
-  } */
+  left:  calc(50% + 445px);
+  }
  
 
 /* membership */
@@ -1151,112 +1164,69 @@ body { overflow-x: hidden;}
 @media only screen and (max-width: 480px) {
   /* 모바일 크기에서 적용되는 스타일 */
 
-/* .room4 { width: 480px;; margin: 0 auto; }
-.room4 .container {  margin: 0 auto;
-  width: 90%; margin: 0 auto;
-}
-
-.room4 .container .tit-area .tab {
-  width: 46%; 
-}
-.room4 .container .tit-area .tab .tab-menu { 
-  width: 100%;
-  
-}
-.room4 .container .tit-area .tab .tab-menu li:hover a::after {
-  width: 100%;
-}
-.room4 .container #tabs .tab-content #tabs-1, 
-.room4 .container #tabs .tab-content #tabs-2, 
-.room4 .container #tabs .tab-content #tabs-3, 
-.room4 .container #tabs .tab-content #tabs-4 {
-  width: 100%; position: relative;
-}
-
-.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide #image-box, 
-.room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide #image-box, 
-.room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide #image-box, 
-.room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide #image-box {
-  width: 100%; 
-}
-.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide #image-box img, 
-.room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide #image-box img, 
-.room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide #image-box img, 
-.room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide #image-box img {
-  width: 100%;
-  height: 100%; 
-}
-
-  .room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide .bg2, 
-  .room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide .bg2, 
-  .room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide .bg2, 
-  .room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide .bg2 {
-    width: 100%;
-    text-align: center;
+  .room4 { width: 100%; margin: 0 auto; }
+  .room4 .container {  
+    width: 100%; margin: 0 auto;
   }
+  
+  .room4 .container .tit-area .tab {
+    width: 54%; 
+  }
+ 
+  .room4 .container .tit-area .tab .tab-menu li a {
+    font-size: 10px;
+  }
+
+  
+
+  .room4 .container #tabs .tab-content #tabs-1 .prevar,
+  .room4 .container #tabs .tab-content #tabs-2 .prevar,
+  .room4 .container #tabs .tab-content #tabs-3 .prevar,
+  .room4 .container #tabs .tab-content #tabs-4 .prevar {
+    left: 0px;
+  }
+  .event4 .container #tabs2 .tab-content2 #tabs-1 .prevar,
+  .event4 .container #tabs2 .tab-content2 #tabs-2 .prevar,
+  .event4 .container #tabs2 .tab-content2 #tabs-3 .prevar,
+  .event4 .container #tabs2 .tab-content2 #tabs-4 .prevar {
+    left: 0px;
+  }
+  
+
   .event4 { width: 100%; margin: 0 auto; }
-  .event4 .container { margin: 0 auto;
-    width: 90%; margin: 0 auto;
+  .event4 .container { 
+    width: 100%; margin: 0 auto;
   }
   .event4 .container .tit-area .tab2 {
-    width: 46%;
+    width: 54%;
   }
-  .event4 .container .tit-area .tab2 .tab-menu2 {
-    width: 100%;
+  .event4 .container .tit-area .tab2 .tab-menu2 li a {
+    font-size: 10px;
   }
-  .event4 .container .tit-area .tab2 .tab-menu2 li {
-    width: 100%;
-  }
-
-  .event4 .container .tit-area .tab2 .tab-menu2 li a::after {
-    background:var(--error-color);
-  }
+  
   .event4 .container .tit-area .tab2 .tab-menu2 li:hover a::after {
     width: 100%;
   }
-
+  
   .event4 .container #tabs2 .tab-content2 #tabs-1, .event4 .container #tabs2 .tab-content2 #tabs-2, 
   .event4 .container #tabs2 .tab-content2 #tabs-3, .event4 .container #tabs2 .tab-content2 #tabs-4 {
     width: 100%; 
   }
-
-  .event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide #image-box, 
-  .event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide #image-box, 
-  .event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide #image-box, 
-  .event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide #image-box {
-    width: 100%;
-    
-  }
-  .event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide #image-box img, 
-  .event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide #image-box img, 
-  .event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide #image-box img,
-  .event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide #image-box img {
-    width: 100%;
-    height: 100%;
-      
-  }
-
-  .event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide .bg2, 
-  .event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide .bg2, 
-  .event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide .bg2, 
-  .event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide .bg2 {
-    width:100%;
-    text-align: center;  
-  }
-
+  
   .room4 .container #tabs .tab-content #tabs-1 .nextar,
   .room4 .container #tabs .tab-content #tabs-2 .nextar,
   .room4 .container #tabs .tab-content #tabs-3 .nextar,
   .room4 .container #tabs .tab-content #tabs-4 .nextar { 
-    left:  886px;
+    left:  calc(50% + 173px)
     }
-
-  
-
   .event4 .container #tabs2 .tab-content2 #tabs-1 .nextar,
   .event4 .container #tabs2 .tab-content2 #tabs-2 .nextar,
   .event4 .container #tabs2 .tab-content2 #tabs-3 .nextar,
   .event4 .container #tabs2 .tab-content2 #tabs-4 .nextar { 
-    left:  891px;
-    } */
+    left:  calc(50% + 172px)
+    
+  }
+  .swiper-pagination-bullet {
+    display: none;
+  }
 }
