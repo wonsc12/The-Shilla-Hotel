@@ -104,7 +104,7 @@ $(function(){
     var pageSize = 10; // 한 페이지에 보여질 항목 수
     var faqItems = $(".tab-pannel.on .faq-list .acco-item");
 
-    // 페이지 로드 시 첫 페이지 항목만 표시
+    // 페이지 로드 시 첫 페이지 항목만 표시 
     faqItems.hide().slice(0, pageSize).show();
 
     // 페이지 버튼 클릭 이벤트 처리
@@ -353,8 +353,8 @@ $(function(){
 		let listUi = $('.event-list');
 		let queryData = null;
 		let item = null;
-		let index = 6;
-		let listAdd = 4;
+		let index = 6; //디폴트 갯수
+		let listAdd = 4; //더보기 추가 갯수
 
 		$.ajax({
 			type: 'get',
@@ -394,6 +394,12 @@ $(function(){
 						);
 						listUi.find('.info .date').eq(idx).append( // 날짜
 							queryData[idx].time
+						);
+						listUi.find('.info .price-wrap').eq(idx).prepend( // 가격 설명
+							queryData[idx].priceDesc
+						);
+						listUi.find('.info .price-wrap > em').eq(idx).append( // 가격
+							queryData[idx].price
 						);
 					};
 				});

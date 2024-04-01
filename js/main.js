@@ -426,9 +426,9 @@ let content = $('.panel');
 		let danang = 'Da Nang'; // 가져올 지역 설정
     let apiKey = '06882828eda4e33e6f2df6599e212004'; // OpenWeatherMap에서 발급받은 API 키
 
-    let url = `http://api.openweathermap.org/data/2.5/weather?q=${seoul}&appid=${apiKey}&units=metric`;
-    let url2 = `http://api.openweathermap.org/data/2.5/weather?q=${jeju}&appid=${apiKey}&units=metric`;
-    let url3 = `http://api.openweathermap.org/data/2.5/weather?q=${danang}&appid=${apiKey}&units=metric`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${seoul}&appid=${apiKey}&units=metric`;
+    let url2 = `https://api.openweathermap.org/data/2.5/weather?q=${jeju}&appid=${apiKey}&units=metric`;
+    let url3 = `https://api.openweathermap.org/data/2.5/weather?q=${danang}&appid=${apiKey}&units=metric`;
 
     $.ajax({
         url: url,
