@@ -895,7 +895,479 @@
 }
 
 /* 태블릿 사이즈 미디어 쿼리 */
+body { overflow-x: hidden;}
 @media only screen and (max-width: 1024px) {
+  /* 객실소개 최원석*/
+.room4 { width: 1024px; margin: 0 auto; overflow-x: hidden;}
+.room4 .container { width: 100%; margin: 0 auto;
+  width: 90%; margin: 0 auto;
+}
+.room4 .container .roomarea12 {
+  width: 90%; margin: 0 auto;
+}
+.room4 .container .tit-area .tab {
+  width: 45%; 
+}
+.room4 .container .tit-area .tab .tab-menu { 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.room4 .container .tit-area .tab .tab-menu li {
+  width: 100%;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  
+}
+.room4 .container .tit-area .tab .tab-menu li a {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 1.2rem;
+  display: inline-block;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  
+}
+.room4 .container .tit-area .tab .tab-menu li a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: red;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 34px;
+  width: 0%;
+  transition: all 0.5s;
+  
+}
+.room4 .container .tit-area .tab .tab-menu li:hover a::after {
+  width: 100%;
+}
+
+.room4 .container .tit-area .tab .tab-menu li a.active {
+  color: var(--black);
+  background: var(--white);
+  font-weight: bold;
+}
+.room4 .container #tabs .tab-content #tabs-1, 
+.room4 .container #tabs .tab-content #tabs-2, 
+.room4 .container #tabs .tab-content #tabs-3, 
+.room4 .container #tabs .tab-content #tabs-4 {
+  width: 100%; position: relative; 
+}
+.room4 .container #tabs .tab-content #tabs-1 .sswiper, 
+.room4 .container #tabs .tab-content #tabs-2 .sswiper, 
+.room4 .container #tabs .tab-content #tabs-3 .sswiper, 
+.room4 .container #tabs .tab-content #tabs-4 .sswiper {
+  padding-bottom: 18px; 
+}
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper, 
+.room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper, 
+.room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper, 
+.room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper {
+  display: flex;
+  position: relative;
+  
+  
+}
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide, 
+.room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide, 
+.room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide, 
+.room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide {
+  position: relative;
+  
+ 
+  
+  
+}
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide:hover #image-box img, 
+.room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide:hover #image-box img, 
+.room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide:hover #image-box img, 
+.room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide:hover #image-box img{
+  transform: scale(1.2);
+  
+}
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide #image-box, 
+.room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide #image-box, 
+.room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide #image-box, 
+.room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide #image-box {
+  width: 90%; margin: 0 auto;
+  height: 592px;
+  
+ 
+}
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide #image-box img, 
+.room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide #image-box img, 
+.room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide #image-box img, 
+.room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide #image-box img {
+  width: 100%;
+  height: 100%;
+     object-fit: cover;
+     transition: all 0.5s;
+    
+    
+}
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide .flag, 
+.room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide .flag, 
+.room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide .flag, 
+.room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide .flag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  
+}
+
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide .bg2, 
+.room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide .bg2, 
+.room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide .bg2, 
+.room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide .bg2 {
+ 
+  position: absolute;
+ 
+  left: 0;  
+  background: rgba(0,0,0,.2);
+  width: 450px;
+  text-align: center;
+  bottom: 0px;
+  opacity: 1;
+ 
+  
+}
+
+  
+  
+
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide .bg2 h4, 
+.room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide .bg2 h4, 
+.room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide .bg2 h4, 
+.room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide .bg2 h4{
+  color: var(--white);
+  margin: 23px 0 18px 0;
+}
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide .bg2 .businessp, 
+.room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide .bg2 .businessp, 
+.room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide .bg2 .businessp, 
+.room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide .bg2 .businessp{
+  margin: 18px 0 10px 0;
+  color: var(--white);
+  text-align: center;
+}
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide .bg2 .room-type,
+.room4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide .bg2 .room-type, 
+.room4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide .bg2 .room-type, 
+.room4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide .bg2 .room-type {
+  margin-bottom: 23px;
+  color: var(--white);
+  
+}
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .swiper-pagination, 
+.room4 .container #tabs .tab-content #tabs-2 .sswiper .swiper-pagination, 
+.room4 .container #tabs .tab-content #tabs-3 .sswiper .swiper-pagination, 
+.room4 .container #tabs .tab-content #tabs-4 .sswiper .swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .swiper-pagination .swiper-pagination-bullet, 
+.room4 .container #tabs .tab-content #tabs-2 .sswiper .swiper-pagination .swiper-pagination-bullet, 
+.room4 .container #tabs .tab-content #tabs-3 .sswiper .swiper-pagination .swiper-pagination-bullet, 
+.room4 .container #tabs .tab-content #tabs-4 .sswiper .swiper-pagination .swiper-pagination-bullet {
+  background: var(--black);
+}
+
+
+
+.event4 .container .tit-area {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.event4 .container .tit-area .tab2 {
+  width: 33%;
+}
+.event4 .container .tit-area .tab2 .tab-menu2 {
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.event4 .container .tit-area .tab2 .tab-menu2 li {
+  width: 100%;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+}
+.event4 .container .tit-area .tab2 .tab-menu2 li a {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 1.2rem;
+  display: inline-block;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+.event4 .container .tit-area .tab2 .tab-menu2 li a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: red;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 34px;
+  width: 0%;
+  transition: all 0.5s;
+  
+}
+.event4 .container .tit-area .tab2 .tab-menu2 li:hover a::after {
+  width: 100%;
+}
+.event4 .container .tit-area .tab2 .tab-menu2 li a.active {
+  color: var(--black);
+  background: var(--white);
+  font-weight: bold;
+}
+.event4 .container #tabs2 .tab-content2 #tabs-1, .event4 .container #tabs2 .tab-content2 #tabs-2, 
+.event4 .container #tabs2 .tab-content2 #tabs-3, .event4 .container #tabs2 .tab-content2 #tabs-4 {
+  width: 100%; position: relative;
+}
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper, 
+.event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper, 
+.event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper, 
+.event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper {
+  padding-bottom: 18px;
+}
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper, 
+.event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper, 
+.event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper, 
+.event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper {
+  display: flex;
+}
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide, 
+.event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide, 
+.event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide, 
+.event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide {
+  position: relative;
+}
+.event4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide:hover #image-box img, 
+.event4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide:hover #image-box img, 
+.event4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide:hover #image-box img, 
+.event4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide:hover #image-box img{
+  transform: scale(1.2);
+  
+}
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide #image-box, 
+.event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide #image-box, 
+.event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide #image-box, 
+.event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide #image-box {
+  width: 450px;
+  height: 592px;
+  overflow: hidden;
+}
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide #image-box img, 
+.event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide #image-box img, 
+.event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide #image-box img,
+.event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide #image-box img {
+  width: 100%;
+  height: 100%;
+     object-fit: cover;
+     transition: all 0.5s;
+}
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide .flag, 
+.event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide .flag, 
+.event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide .flag, 
+.event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide .flag {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide .bg2, 
+.event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide .bg2, 
+.event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide .bg2, 
+.event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide .bg2 {
+  position: absolute;
+ 
+  left: 0;  
+  background: rgba(0,0,0,.2);
+  width: 450px;
+  text-align: center;
+  bottom: 0px;
+  opacity: 1;
+}
+
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide .bg2 h4, 
+.event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide .bg2 h4, 
+.event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide .bg2 h4, 
+.event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide .bg2 h4{
+  color: var(--white);
+  margin: 23px 0 18px 0;
+}
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide .bg2 .businessp, 
+.event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide .bg2 .businessp, 
+.event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide .bg2 .businessp, 
+.event4 .container #tabs2 .tab-content2 #tabs-4 .r  swiper .imgwrapper .imgslide .bg2 .businessp{
+  margin: 18px 0 10px 0;
+  color: var(--white);
+  text-align: center;
+}
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide .bg2 .room-type,
+.event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide .bg2 .room-type, 
+.event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide .bg2 .room-type, 
+.event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide .bg2 .room-type {
+  margin-bottom: 23px;
+  color: var(--white);
+  
+}
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .swiper-pagination, 
+.event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .swiper-pagination, 
+.event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .swiper-pagination, 
+.event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .swiper-pagination {
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+}
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .swiper-pagination .swiper-pagination-bullet, 
+.event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .swiper-pagination .swiper-pagination-bullet, 
+.event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .swiper-pagination .swiper-pagination-bullet, 
+.event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .swiper-pagination .swiper-pagination-bullet {
+  background: var(--black); 
+ 
+}
+.swiper-pagination-bullet{
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 12px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 12px));
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin :0 var(--swiper-pagination-bullet-horizontal-gap,10px)
+}
+.play-pause { display: flex; justify-content: end; margin-top: 10px;}
+.swiper-pause { margin-left: 5px;}
+
+
+
+  
+
+.room4 .container #tabs .tab-content #tabs-1 .sswiper .swiper-pagination,
+.room4 .container #tabs .tab-content #tabs-2 .sswiper .swiper-pagination,
+.room4 .container #tabs .tab-content #tabs-3 .sswiper .swiper-pagination,
+.room4 .container #tabs .tab-content #tabs-4 .sswiper .swiper-pagination{ 
+  display: flex; align-items: end; justify-content: center; flex-direction: row; height: 20px; position: absolute;top:597px;
+}
+
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .swiper-pagination, 
+.event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .swiper-pagination, 
+.event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .swiper-pagination, 
+.event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .swiper-pagination {
+   display: flex; align-items: end; justify-content: center; flex-direction: row; height: 20px; position: absolute;top:597px;
+}
+
+
+.room4 .container #tabs .tab-content #tabs-1 .nextar,
+.room4 .container #tabs .tab-content #tabs-2 .nextar,
+.room4 .container #tabs .tab-content #tabs-3 .nextar,
+.room4 .container #tabs .tab-content #tabs-4 .nextar { 
+  left:  1417px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: var(--white);
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  border: 1px solid var(--black);
+  }
+
+
+  .room4 .container #tabs .tab-content #tabs-1 .prevar,
+  .room4 .container #tabs .tab-content #tabs-2 .prevar,
+  .room4 .container #tabs .tab-content #tabs-3 .prevar,
+  .room4 .container #tabs .tab-content #tabs-4 .prevar { 
+    left: -50px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: var(--white);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border: 1px solid var(--black);
+  }
+
+.event4 .container #tabs2 .tab-content2 #tabs-1 .nextar,
+.event4 .container #tabs2 .tab-content2 #tabs-2 .nextar,
+.event4 .container #tabs2 .tab-content2 #tabs-3 .nextar,
+.event4 .container #tabs2 .tab-content2 #tabs-4 .nextar { 
+  left:  1417px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: var(--white);
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  border: 1px solid var(--black);
+  }
+
+
+  .event4 .container #tabs2 .tab-content2 #tabs-1 .prevar,
+  .event4 .container #tabs2 .tab-content2 #tabs-2 .prevar,
+  .event4 .container #tabs2 .tab-content2 #tabs-3 .prevar,
+  .event4 .container #tabs2 .tab-content2 #tabs-4 .prevar { 
+    left: -50px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: var(--white);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border: 1px solid var(--black);
+  }
+
+
+
+
+
+.swiper-button-prev::before {
+  position: absolute;
+  top: 11px;
+  left: 13px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 11px;
+  height: 11px;
+  content: '';
+  border: solid #333;
+  border-width: 0 0px 1px 1px;
+  transform: rotate(45deg);
+}
+.swiper-button-next::before{
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 11px;
+  height: 11px;
+  content: '';
+  border: solid #333;
+  border-width: 0 0px 1px 1px;
+  transform: rotate(-135deg);
+}
+
+
+
+.swiper-button-next::after, .swiper-button-prev::after{ display: none;}
+
+
+
   /* 태블릿 크기에서 적용되는 스타일 */
 }
 
