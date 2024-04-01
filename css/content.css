@@ -320,10 +320,11 @@
 .room-use .container .facility { display: flex; justify-content: space-between;}
 .room-use .container .facility .smart h4 { margin-bottom: 27px;}
 .room-use .container .facility .smart ul li { margin-top: 10px;}
-
+.hotelinfo .container { text-align: center;}
 .hotelinfo .container h4 { margin-bottom: 27px;}
 .hotelinfo .container ul .bold3 { font-weight: bold;}
 .hotelinfo .container ul li { margin-top: 10px;}
+.hotelinfo .container .peak { margin-top: 27px;}
 .hotelinfo .container .peak-season {
   line-height: 25px; display: flex; flex-direction: column; 
   align-items: center; width: 100%; height: 50px; background: #ccc;
