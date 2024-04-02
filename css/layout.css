@@ -254,10 +254,15 @@ address {
   width: 30px;
   height: 30px;
 }
-.icon-blog { background: url('../images/icon_blog.svg') no-repeat; }
-.icon-insta { background: url('../images/icon_instagram.svg') no-repeat; }
-.icon-youtube { background: url('../images/icon_youtube.svg') no-repeat; }
-.icon-travel { background: url('../images/icon_travel.svg') no-repeat; }
+.icon-blog { background: url('../images/icon_blog.svg') no-repeat; transition: all 0.3s; }
+.icon-insta { background: url('../images/icon_instagram.svg') no-repeat; transition: all 0.3s; }
+.icon-youtube { background: url('../images/icon_youtube.svg') no-repeat; transition: all 0.3s; }
+.icon-travel { background: url('../images/icon_travel.svg') no-repeat; transition: all 0.3s; }
+
+.icon-blog:hover { background: url('../images/icon_blogh.svg') no-repeat; }
+.icon-insta:hover { background: url('../images/icon_instagramh.svg') no-repeat; }
+.icon-youtube:hover { background: url('../images/icon_youtubeh.svg') no-repeat; }
+.icon-travel:hover { background: url('../images/icon_travelh.svg') no-repeat; }
 
 
 /* 태블릿 사이즈 미디어 쿼리 */
