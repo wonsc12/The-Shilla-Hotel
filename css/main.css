@@ -1024,7 +1024,6 @@
 
 
 /* 태블릿 사이즈 미디어 쿼리 */
-body { overflow-x: hidden;}
 @media only screen and (max-width: 1024px) {
   /* 객실소개 최원석*/
 .room4 { width: 100%; margin: 0 auto; }

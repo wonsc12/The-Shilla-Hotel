@@ -267,12 +267,27 @@ address {
 
 /* 태블릿 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 1024px) {
-
-  /* container */
   /* 태블릿 크기에서 적용되는 스타일 */
-  
-  .container {width: auto; margin: 0;}
+   /* container */
+   .container {width: auto; margin: 0;}
 
+   /* header */
+   .header-wrap {padding: 32px 24px;}
+   .header-wrap .util-list {display: none;}
+
+   .header-wrap .left-hd {width: 100%; justify-content: space-between; gap: 0;}
+   .header-wrap .logo {order: 1;}
+   .header-wrap .all-menu {order: 2;}
+
+
+   /* 스크롤 네비 */
+   .scroll-navi {display: none;}
+
+   /* section-home */
+   .section.home .main-txt {display: none !important;}
+
+  /* 날씨영역 */
+  .weather-area {left: 0; right: 0;}
 
   /* footer */
   footer .container {
