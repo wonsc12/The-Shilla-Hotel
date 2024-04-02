@@ -490,10 +490,10 @@
 .event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide {
   position: relative;
 }
-.event4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide:hover #image-box img, 
-.event4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide:hover #image-box img, 
-.event4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide:hover #image-box img, 
-.event4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide:hover #image-box img{
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide:hover #image-box img, 
+.event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide:hover #image-box img, 
+.event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide:hover #image-box img, 
+.event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide:hover #image-box img{
   transform: scale(1.2);
   
 }
