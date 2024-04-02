@@ -369,7 +369,7 @@
   position: absolute;
   left: 0;  
   background: rgba(0,0,0,.2);
-  width: 450px;
+  width: 100%;
   text-align: center;
   bottom: 0px;
   opacity: 1;
@@ -538,7 +538,7 @@
  
   left: 0;  
   background: rgba(0,0,0,.2);
-  width: 450px;
+  width: 100%;
   text-align: center;
   bottom: 0px;
   opacity: 1;
@@ -1072,9 +1072,13 @@
 
 
   /* 객실소개 최원석*/
-.room4 { width: 100%; margin: 0 auto; }
+#content { width: 100%; margin: 0 auto;}
 .room4 .container {  
-  width: 100%; margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+
 }
 
 .room4 .container .tit-area .tab {
@@ -1132,9 +1136,12 @@
   width: 100%;
   text-align: center;
 }
-.event4 { width: 100%; margin: 0 auto; }
+.event4 {  }
 .event4 .container { 
-  width: 100%; margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 .event4 .container .tit-area .tab2 {
   width: 46%;
@@ -1191,7 +1198,7 @@
 .room4 .container #tabs .tab-content #tabs-2 .nextar,
 .room4 .container #tabs .tab-content #tabs-3 .nextar,
 .room4 .container #tabs .tab-content #tabs-4 .nextar { 
-  left:  calc(50% + 452px );
+  left:  calc(50% + 431px );
   }
 
  
@@ -1200,7 +1207,7 @@
 .event4 .container #tabs2 .tab-content2 #tabs-6 .nextar,
 .event4 .container #tabs2 .tab-content2 #tabs-7 .nextar,
 .event4 .container #tabs2 .tab-content2 #tabs-8 .nextar { 
-  left:  calc(50% + 452px);
+  left:  calc(50% + 432px);
   }
  
 
@@ -1295,9 +1302,12 @@
 @media only screen and (max-width: 480px) {
   /* 모바일 크기에서 적용되는 스타일 */
 
-  .room4 { width: 100%; margin: 0 auto; }
+  
   .room4 .container {  
-    width: 100%; margin: 0 auto;
+    width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
   }
   
   .room4 .container .tit-area .tab {
@@ -1324,9 +1334,12 @@
   }
   
 
-  .event4 { width: 100%; margin: 0 auto; }
+  
   .event4 .container { 
-    width: 100%; margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
   .event4 .container .tit-area .tab2 {
     width: 65%;
@@ -1339,8 +1352,10 @@
     width: 100%;
   }
   
-  .event4 .container #tabs2 .tab-content2 #tabs-1, .event4 .container #tabs2 .tab-content2 #tabs-2, 
-  .event4 .container #tabs2 .tab-content2 #tabs-3, .event4 .container #tabs2 .tab-content2 #tabs-4 {
+  .event4 .container #tabs2 .tab-content2 #tabs-5, 
+  .event4 .container #tabs2 .tab-content2 #tabs-6, 
+  .event4 .container #tabs2 .tab-content2 #tabs-7, 
+  .event4 .container #tabs2 .tab-content2 #tabs-8 {
     width: 100%; 
   }
   
@@ -1348,13 +1363,13 @@
   .room4 .container #tabs .tab-content #tabs-2 .nextar,
   .room4 .container #tabs .tab-content #tabs-3 .nextar,
   .room4 .container #tabs .tab-content #tabs-4 .nextar { 
-    left:  calc(50% + 129px)
+    left:  calc(50% + 159px)
     }
-  .event4 .container #tabs2 .tab-content2 #tabs-1 .nextar,
-  .event4 .container #tabs2 .tab-content2 #tabs-2 .nextar,
-  .event4 .container #tabs2 .tab-content2 #tabs-3 .nextar,
-  .event4 .container #tabs2 .tab-content2 #tabs-4 .nextar { 
-    left:  calc(50% + 172px)
+  .event4 .container #tabs2 .tab-content2 #tabs-5 .nextar,
+  .event4 .container #tabs2 .tab-content2 #tabs-6 .nextar,
+  .event4 .container #tabs2 .tab-content2 #tabs-7 .nextar,
+  .event4 .container #tabs2 .tab-content2 #tabs-8 .nextar { 
+    left:  calc(50% + 160px)
     
   }
   .swiper-pagination-bullet {
