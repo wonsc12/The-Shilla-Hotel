@@ -360,7 +360,7 @@ $(function(){
 			type: 'get',
 			dataType : 'json',
 			async : 'false',
-			url: '/json/event_info.json',
+			url: './json/event_info.json',
 			success: function(data){
 				queryData = data['Query'];
 
@@ -410,7 +410,7 @@ $(function(){
 			error: function(){
 				listUi.css({'display':'none'});
 				$('.btn-area.bottom').css({'display':'none'});
-				$('.no-data').css({'display':'block'});
+				$('.no-data').css({'display':'flex'});
 				$('.total-num-area > em').text(0)
 			},
 			complete: function(data){
@@ -433,7 +433,7 @@ $(function(){
 				type: 'get',
 				dataType : 'json',
 				async : 'false',
-				url: '/json/event_info.json',
+				url: './json/event_info.json',
 				success: function(data){
 					queryData = data['Query'];
 					item = unit;
