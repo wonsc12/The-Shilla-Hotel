@@ -209,7 +209,7 @@
 .reservation-area .room-info-list > li {display: flex; align-items: center;}
 .reservation-area .room-info-list .tit {font-size: 20px; margin: 0 20px 0 0;}
 .reservation-area .room-info-list .quantity-list {display: flex; gap: 16px;}
-.reservation-area .room-info-list .btn-close {width: 30px; height: 30px; border: 1px solid red;}
+.reservation-area .room-info-list .btn-close {width: 34px; height: 34px; border-radius: 50%; background-color: #ebebeb;}
 
 .reservation-area .btn-add {display: block; text-align: center;}
 .reservation-area .btn-add span {position:relative; font-size: 20px;}
