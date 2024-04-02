@@ -9,9 +9,11 @@
 .event-list .info {display: flex; flex-direction: column; gap: 10px;}
 .event-list .desc {font-size: 20px;}
 .event-list .date {font-size: 20px; color: #666;}
+.event-list .price-wrap {font-size: 20px;}
+.event-list .price-wrap > em {font-size: 24px; font-weight: 700;}
 
 /* FAQ - Tab */
-.tab-wrap {}
+.tab-wrap {margin-top: 50px;}
 .tab-list.faq {display: flex; justify-content: space-between; align-items: center;}
 .tab-list.faq > li {position:relative; width:20%; border:1px solid var(--bg-dark-gray, #ccc); padding: 14px 0; text-align: center;}
 .tab-list.faq > li.on {border-bottom: 0;}
