@@ -175,15 +175,16 @@
 .reservation-area .resevation,
 .reservation-area .hotel {padding: 50px 0;}
 .reservation-area .top .all-slide {flex-basis: 80%;}
-.reservation-area .pick-area {display: flex; height: 100%;}
+.reservation-area .pick-area {display: flex; align-items: center; height: 100%; cursor: pointer;}
 .reservation-area .pick-area .chk-date {flex-basis: 70%; display: flex; justify-content: space-between;}
 .reservation-area .pick-area .guest-info {flex-basis: 30%; display: flex; justify-content: space-between;}
 .reservation-area .pick-area .guest-info > button {flex: 1 1 auto; text-align: center;}
-.reservation-area .chk-date > button {flex-basis: 40%; text-align: center;}
+.reservation-area .chk-date > div {flex-basis: 40%; text-align: center;}
 .reservation-area .chk-date .num {flex-basis: 20%; font-size: 32px; display: flex; align-items: center; text-align: center; justify-content: center;}
 .reservation-area .chk-date .num > em {font-weight: 700;}
 .reservation-area .chk-date .date,
 .reservation-area .guest-info .num {font-size: 24px;}
+.reservation-area .guest-info > div {width: calc(100% / 3);}
 .reservation-area .promotion {position: relative; display: flex; align-items: center; justify-content: flex-end; height: 50px; padding: 0 40px;}
 .reservation-area .btn-prom {border-bottom: 1px solid var(--black, #222);}
 .reservation-area .promotion .ipt-wrap {visibility: hidden; display: flex; width: 318px; height: 35px; position: absolute; right: 40px; transition: right 0.3s ease;}
@@ -212,7 +213,8 @@
 .reservation-area .room-info-list > li {display: flex; align-items: center; gap: 10px;}
 .reservation-area .room-info-list .tit {font-size: 20px; margin: 0 20px 0 0;}
 .reservation-area .room-info-list .quantity-list {display: flex; gap: 16px;}
-.reservation-area .room-info-list .btn-close {width: 34px; height: 34px; border-radius: 50%; background-color: #ebebeb;}
+.reservation-area .room-info-list .btn-close {position: relative; width: 34px; height: 34px; border-radius: 50%; background-color: #ebebeb;}
+.reservation-area .room-info-list .btn-close:before {content: '+'; position: absolute; top: 0; left: 11px; font-size: 27px; transform: rotate(45deg);}
 
 .reservation-area .btn-add {display: block; text-align: center;}
 .reservation-area .btn-add span {position:relative; font-size: 20px;}
