@@ -335,7 +335,7 @@ address {
     margin-bottom: 10px;
   }
   .footer-sns {
-    width: 1024px;
+    width: 100%;
     height: auto;
     background: #000;
     display: flex;
@@ -374,8 +374,15 @@ address {
     justify-content: center;
     gap: 10px;
   }
-
-
+  .footer-family-list > ul {
+    gap: 10px;
+}
+.footer-address ul {
+  flex-direction: column;
+}
+.footer-sns {
+  width: 100%;
+}
 
 }
 
