@@ -1207,42 +1207,42 @@
   overflow:visible;
 }
 .membership-pager {
-  margin-bottom: 20px;
+  margin-bottom: 70px;
   margin-top: 0;
 }
 .membership-wrapper {
   height: auto;
   margin-bottom: 27px;
 }
+.membership-wrapper .members {
+  flex-direction: row;
+}
 .membership-wrapper .members ul {display:none;}
 .membership-wrapper .tb-members { 
   display: flex;
-  width: 100%;
-  margin:0 auto;
+  /* width: 56%;
+  margin:0 auto; */
 }
 .membership-wrapper .tb-members img {
-  max-width: 976px;
   overflow: hidden;
-  height: 300px;
 }
 .membership-wrapper p {
+  width: 45%;
   color: var(--white, #fff);
   text-align: start;
   margin: 0;
 }
 .membership-btn {
   display: block;
-  position: absolute;
-  margin: 0;
-  bottom: 0;
-  right: 0;
+  width: 100%;
 }
 .membership-link:first-child {
   display: none;
 }
 .membership-link:last-child {
   display: block;
-  width: 276px;
+  text-align: center;
+  width: 100%;
   height: 52px;
 }
 .membership-link:last-child::before {
@@ -1354,4 +1354,31 @@
   .swiper-pagination-bullet {
     display: none;
   }
+
+    /* membership */
+
+    .membership .tit-area h2 {
+      display: none;
+    }
+    .membership-card .btn-area {
+      align-items: center;
+    }
+    .membership-pager {
+      margin-bottom: 30px;
+    }
+    .membership-card li button {
+      padding: 10px;
+    }
+    .membership-wrapper p {
+      width: 100%;
+    }
+    .membership-wrapper .members {
+      flex-direction: column;
+    }
+    .membership-wrapper .tb-members img {
+      width: 40%;
+    }
+
+    /* 시설소개 */
+    .intro-btn {display: none;}
 }

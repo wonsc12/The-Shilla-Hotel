@@ -350,6 +350,7 @@ address {
 @media only screen and (max-width: 480px) {
   /* 모바일 크기에서 적용되는 스타일 */
 
+  footer {margin: 0;}
   footer .container {
     width: 100%;
     padding:0 24px;
