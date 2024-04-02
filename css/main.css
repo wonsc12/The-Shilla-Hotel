@@ -1028,6 +1028,9 @@
 
 /* 태블릿 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 1024px) {
+  /* section */
+  .main .section {position: static;}
+
   /* 스크롤 네비 */
   .scroll-navi {display: none !important;}
 
@@ -1036,19 +1039,29 @@
   .section.home .main-txt {display: none;}
 
   /* 날씨영역 */
-  .weather-area {position: relative; background-color: transparent; top: auto; width: 100px; margin: 0 auto;}
+  .weather-area {position: relative; background-color: transparent; top: auto; width: 100px; margin: 0 auto; font-size: 28px;}
+  .weather-area .ico-condition {width: 60px; height: 60px;}
 
   /* 예약영역 */
   .reservation-area {display: none;}
-  .reservation-area.mo {display: flex; align-items: center; flex-direction: column; gap: 20px; position: static; height: auto; background-color: transparent; text-align: center; margin-top: 16px;}
+  .reservation-area.mo {display: flex; align-items: center; flex-direction: column; gap: 70px; position: static; height: auto; background-color: transparent; text-align: center; margin-top: 50px;}
   .reservation-area.mo .resevation, 
-  .reservation-area.mo .hotel {padding: 0;}
+  .reservation-area.mo .hotel {padding: 0; position:relative;}
   .reservation-area.mo .resevation button, 
   .reservation-area.mo .hotel button {color: var(--white, #fff); font-size: 20px;}
+  .reservation-area.mo .btn-select > span {font-size: 28px;}
   .reservation-area.mo .btn-select > span:after {border-color: var(--white, #fff) transparent transparent transparent;}
+  .reservation-area.mo .btn-select + ul {bottom:auto; top: 100%; z-index: 1;}
+  .reservation-area.mo .chk-date,
+  .reservation-area.mo .guest-info {width: 100%; color: var(--white,#fff);}
+  .reservation-area.mo .link-pop { display: flex; justify-content: space-between; align-items: center; border: 1px solid var(--white); padding: 14px 70px;}
+  .reservation-area.mo .num {font-size: 20px;}
+  .reservation-area.mo .tit {font-size: 20px;}
 
-  .section.home .btn-area.bottom {width: 100%; position: absolute; height: 54px; bottom: 36px;}
+  .section.home .btn-area.bottom {width: calc(100% - 24px); position: absolute; height: 54px; bottom: 36px;}
   .section.home .btn-area.bottom > button {width: 100%; min-height: 54px;}
+
+  
 
 
   /* 객실소개 최원석*/
