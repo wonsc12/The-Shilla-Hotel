@@ -490,6 +490,13 @@ $(function(){
 				}
 			});
 		});
+
+		// faq 총 건수 체크
+		if($('.faq-list').length > 0){
+			$('.total-num-area > em').each(function(){
+				$(this).text($('.faq-list > li').length)
+			})
+		}
 });
 
 

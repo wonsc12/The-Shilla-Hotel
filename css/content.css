@@ -31,7 +31,7 @@
 .acco-item .acco-head:after {content: ''; position: absolute; top: 50%; transform: translateY(-50%); right: 24px; border-width: 6px 4px; border-style: solid; border-color: #222 transparent transparent transparent;}
 .acco-item.on .acco-head:after {transform: rotate(180deg); top: calc(50% - 10px);}
 .acco-item .acco-btn {display:block; width: 100%; padding: 14px 24px; font-size: 18px;}
-.acco-item .category {display:inline-block; min-width: 102px; margin-right: 60px;}
+.acco-item .category {display:inline-block; min-width: 120px; margin-right: 60px;}
 .acco-item .acco-body {display:none; padding: 24px; background-color: var(--bg-light-gray, #f8f8f8); color: var(--acco-txt, #666);}
 
 /* FAQ - 페이지네이션 */
