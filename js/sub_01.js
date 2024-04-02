@@ -401,6 +401,9 @@ $(function(){
 						listUi.find('.info .price-wrap > em').eq(idx).append( // 가격
 							queryData[idx].price
 						);
+						listUi.find('.info .hash').eq(idx).html( // 해쉬태그
+							queryData[idx].hash
+						);
 					};
 				});
 			},
