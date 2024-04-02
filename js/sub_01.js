@@ -373,7 +373,11 @@ $(function(){
 					if(idx < index && item != undefined && queryData != undefined){ // 기본 6개 까지 노출 && data undefined 체크
 						// ui list 추가
 						listUi.append(item);
-						
+
+						listUi.find('.img-wrap').eq(idx).append( // 이미지 태그
+							'<img src="" alt="">'
+						);
+							
 						// img 데이터
 						listUi.find('.img-wrap > img').eq(idx).attr({
 							'src':queryData[idx].hotelImg
@@ -444,6 +448,10 @@ $(function(){
 						if(idx < index && item != undefined && queryData != undefined && $('.event-list > li').length  < queryData.length){ // 2개씩 노출 && data undefined 체크
 							// ui list 추가
 							listUi.append(item);
+
+							listUi.find('.img-wrap').eq(idx).append( // 이미지 태그
+								'<img src="" alt="">'
+							);
 							
 							// img 데이터
 							listUi.find('.img-wrap > img').eq(idx).attr({
