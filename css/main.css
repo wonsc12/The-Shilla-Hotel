@@ -490,10 +490,10 @@
 .event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide {
   position: relative;
 }
-.event4 .container #tabs .tab-content #tabs-1 .sswiper .imgwrapper .imgslide:hover #image-box img, 
-.event4 .container #tabs .tab-content #tabs-2 .sswiper .imgwrapper .imgslide:hover #image-box img, 
-.event4 .container #tabs .tab-content #tabs-3 .sswiper .imgwrapper .imgslide:hover #image-box img, 
-.event4 .container #tabs .tab-content #tabs-4 .sswiper .imgwrapper .imgslide:hover #image-box img{
+.event4 .container #tabs2 .tab-content2 #tabs-1 .rswiper .imgwrapper .imgslide:hover #image-box img, 
+.event4 .container #tabs2 .tab-content2 #tabs-2 .rswiper .imgwrapper .imgslide:hover #image-box img, 
+.event4 .container #tabs2 .tab-content2 #tabs-3 .rswiper .imgwrapper .imgslide:hover #image-box img, 
+.event4 .container #tabs2 .tab-content2 #tabs-4 .rswiper .imgwrapper .imgslide:hover #image-box img{
   transform: scale(1.2);
   
 }
@@ -1028,11 +1028,14 @@ body { overflow-x: hidden;}
 }
 
 .room4 .container .tit-area .tab {
-  width: 46%; 
+  width: 52%; 
 }
 .room4 .container .tit-area .tab .tab-menu { 
   width: 100%;
   
+}
+.room4 .container .tit-area .tab .tab-menu li a {
+  font-size: 14px;
 }
 .room4 .container .tit-area .tab .tab-menu li:hover a::after {
   width: 100%;
@@ -1086,6 +1089,9 @@ body { overflow-x: hidden;}
 }
 .event4 .container .tit-area .tab2 .tab-menu2 {
   width: 100%;
+}
+.event4 .container .tit-area .tab2 .tab-menu2 li a {
+  font-size: 14px;
 }
 .event4 .container .tit-area .tab2 .tab-menu2 li {
   width: 100%;

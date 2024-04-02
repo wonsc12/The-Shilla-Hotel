@@ -950,6 +950,16 @@
   display: flex;
   justify-content: space-between;
 }
+.membershipcard-image .container .membercardi .card4 .bg{
+  width: 320px; 
+  height: 200px;
+  margin-bottom: 52px;
+}
+.membershipcard-image .container .membercardi .card4 .bg img{
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
 .membershipcard-image .container .membercardi .card4 .card-explanation > ul li {
   margin: 27px 0;
 }
@@ -957,14 +967,14 @@
   font-size: 18px;
 }
 .membershipcard-image .container .membercardi .card4 .card-explanation > ul .redcard {
-  color: red;
+  color: var(--error-color);
 }
 .membershipcard-image .container .mpage {
   margin: 80px 0;
   text-align: center;
   
   width: 100%;
-  color: red;
+  color: var(--error-color);
   
 }
 .mpage { margin: 80px 0;}
@@ -1252,7 +1262,7 @@
   width: 100%;
   height: 406px;
   background: url('../images/img_sub_soeulbottombg.jpg') no-repeat;
-  background-size: contain;
+  background-size: cover;
   margin-top: calc(var(--line-height) * 8);
 }
 .intro-bottom-section5 .container {
@@ -1383,7 +1393,11 @@ body { overflow-x: hidden;}
 @media only screen and (max-width: 1024px) {
   /* 태블릿 크기에서 적용되는 스타일 */
   .delux { width: 100%; margin: 0 auto;}
-  .delux .container {width: 100%; margin: 0 auto; }
+  .delux .container {width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+ }
   .delux .container .deluxes .stardardtitle h3 {
     width: 100%; margin: 0 auto;
    
@@ -1431,7 +1445,11 @@ body { overflow-x: hidden;}
 
   
  
-  .business-deluxes .container { width: 100%; margin: 0 auto;}
+  .business-deluxes .container { width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
   
   .business-deluxes .container .business-deluxe .business-deluxetitle h3 {
     text-align: center;
@@ -1496,7 +1514,11 @@ body { overflow-x: hidden;}
     margin: 0 auto;
   }
   
-  .coner-deluxe .container { width: 100%; margin: 0 auto;}
+  .coner-deluxe .container { width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
   
   .coner-deluxe .container .coner-deluxes .coner-deluxe-box {
     display: flex;
@@ -1546,7 +1568,12 @@ body { overflow-x: hidden;}
   .hotelinfo .container .peak { margin-top: 27px;}
   
 
-  .executive-business .container { width: 100%; margin: 0 auto;}
+  .executive-business .container { 
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
   
   
   .executive-business .container .executive-business .executive-box {
@@ -1581,7 +1608,12 @@ body { overflow-x: hidden;}
   .executive-grand {
     margin-bottom: 257px;
   }
-  .executive-grand .container { width: 100%; margin: 0 auto; 
+  .executive-grand .container { 
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+
     
     
   }
@@ -1913,7 +1945,9 @@ body { overflow-x: hidden;}
   }
   
  
- 
+  .membershipcard-image .container .memberscard-title p {
+    font-size: 20px;
+  }
  
   .membership4 .container .point-benefit .box1pro p {
     font-size: 18px;
@@ -1922,7 +1956,21 @@ body { overflow-x: hidden;}
   .membership4 .container .point-benefit .benefit .drink p {
     font-size: 18px;
   }
-  
+  .membershipcard-image .container .membercardi {
+    display: flex;
+    justify-content: space-between;
+  }
+  .membershipcard-image .container .membercardi .card4 .bg{
+    width: 320px; 
+    height: 200px;
+    
+    margin: 27px auto;
+  }
+  .membershipcard-image .container .membercardi .card4 .bg img{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+  }
  
   .membershipcard-image .container .membercardi {
     display: flex;
@@ -2038,5 +2086,11 @@ body { overflow-x: hidden;}
     flex-wrap: wrap;
   }
   .membershipcard-image .container .membercardi .card4 { width: 100%; margin-top: 52px;}
+
+  .membershipcard-image .container .mpage {
+    padding: 0 35px;
+    text-align: center;
+    
+  }
  
 }
