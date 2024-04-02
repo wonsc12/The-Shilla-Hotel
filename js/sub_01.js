@@ -497,6 +497,331 @@ $(function(){
 				$(this).text($('.faq-list > li').length)
 			})
 		}
+
+		// 검색필터
+		$(".search button").off('click').on('click', function(e){
+			queryData = null;
+			let branchArray = []; // 호텔지점
+			let srchArray = []; // 검색어
+			let dateArray = []; // 날짜
+			let keyWordArray = []; // 키워드
+
+			$.ajax({
+				type: 'get',
+				dataType : 'json',
+				async : 'false',
+				url: './json/event_info.json',
+				success: function(data){
+					queryData = data['Query'];
+
+					// 날짜
+					const startDate = new Date($(".date-wrap input").eq(0).val().split('-')).getTime()
+					const endDate = new Date($(".date-wrap input").eq(1).val().split('-')).getTime()
+
+					// 키워드
+					const keyword = $(".check-list .ipt").toArray().filter((item) => {
+						return item.checked === true
+					})
+					
+					if(queryData != undefined){ // data undefined 체크
+						// console.log('queryData:', queryData)
+						switch($(".ipt-wrap.select select").val()){
+							case "all": // 전체
+								// 호텔지점 
+								$.each(queryData, function(idx){
+									branchArray.push(queryData[idx])
+								})
+
+								// 검색어
+								$.each(branchArray, function(idx){
+									if($(".search input").val() !== ''){
+										if((branchArray[idx].title.includes($(".search input").val()) || branchArray[idx].desc.includes($(".search input").val()))){
+											srchArray.push(branchArray[idx])
+										}
+									}else{
+										srchArray.push(branchArray[idx])
+									}
+								})
+								
+								// 날짜
+								$.each(srchArray, function(idx){
+									if($(".date-wrap input").eq(0).val() !== '' && $(".date-wrap input").eq(1).val() !== ''){
+										// console.log(startDate >= new Date(srchArray[idx].time.split('~')[0].split('.')).getTime() && endDate <= new Date(srchArray[idx].time.split('~')[1].split('.')).getTime(), '날짜 해당 기간')
+										if(startDate >= new Date(srchArray[idx].time.split('~')[0].split('.')).getTime() && endDate <= new Date(srchArray[idx].time.split('~')[1].split('.')).getTime()){
+											dateArray.push(srchArray[idx])
+										}
+									}else{
+										dateArray.push(srchArray[idx])
+									}
+								})
+
+								// 키워드
+								$.each(dateArray, function(idx){
+									if($(keyword).length > 0){
+										const hashData = dateArray[idx].hash.split('#')
+										const hashIdx = hashData.findIndex((item) => {
+											return item.trim() === $(keyword).next().text()
+										})
+										console.log('키워드',hashIdx, hashData)
+										if(hashIdx > -1){
+											keyWordArray.push(dateArray[idx])
+										}
+									}else{
+										keyWordArray.push(dateArray[idx])
+									}
+								})
+								break;
+							case "seoul": // 서울
+								// 호텔지점 
+								$.each(queryData, function(idx){
+									if('서울신라' === queryData[idx].branch){
+										branchArray.push(queryData[idx])
+									}
+								})
+
+								// 검색어
+								$.each(branchArray, function(idx){
+									if($(".search input").val() !== ''){
+										if((branchArray[idx].title.includes($(".search input").val()) || branchArray[idx].desc.includes($(".search input").val()))){
+											srchArray.push(branchArray[idx])
+										}
+									}else{
+										srchArray.push(branchArray[idx])
+									}
+								})
+								
+								// 날짜
+								$.each(srchArray, function(idx){
+									if($(".date-wrap input").eq(0).val() !== '' && $(".date-wrap input").eq(1).val() !== ''){
+										// console.log(startDate >= new Date(srchArray[idx].time.split('~')[0].split('.')).getTime() && endDate <= new Date(srchArray[idx].time.split('~')[1].split('.')).getTime(), '날짜 해당 기간')
+										if(startDate >= new Date(srchArray[idx].time.split('~')[0].split('.')).getTime() && endDate <= new Date(srchArray[idx].time.split('~')[1].split('.')).getTime()){
+											dateArray.push(srchArray[idx])
+										}
+									}else{
+										dateArray.push(srchArray[idx])
+									}
+								})
+
+								// 키워드
+								$.each(dateArray, function(idx){
+									if($(keyword).length > 0){
+										const hashData = dateArray[idx].hash.split('#')
+										const hashIdx = hashData.findIndex((item) => {
+											return item.trim() === $(keyword).next().text()
+										})
+										console.log('키워드',hashIdx, hashData)
+										if(hashIdx > -1){
+											keyWordArray.push(dateArray[idx])
+										}
+									}else{
+										keyWordArray.push(dateArray[idx])
+									}
+								})
+								break;
+							case "jeju": // 제주
+								// 호텔지점 
+								$.each(queryData, function(idx){
+									if('제주신라' === queryData[idx].branch){
+										branchArray.push(queryData[idx])
+									}
+								})
+
+								// 검색어
+								$.each(branchArray, function(idx){
+									if($(".search input").val() !== ''){
+										if((branchArray[idx].title.includes($(".search input").val()) || branchArray[idx].desc.includes($(".search input").val()))){
+											srchArray.push(branchArray[idx])
+										}
+									}else{
+										srchArray.push(branchArray[idx])
+									}
+								})
+								
+								// 날짜
+								$.each(srchArray, function(idx){
+									if($(".date-wrap input").eq(0).val() !== '' && $(".date-wrap input").eq(1).val() !== ''){
+										// console.log(startDate >= new Date(srchArray[idx].time.split('~')[0].split('.')).getTime() && endDate <= new Date(srchArray[idx].time.split('~')[1].split('.')).getTime(), '날짜 해당 기간')
+										if(startDate >= new Date(srchArray[idx].time.split('~')[0].split('.')).getTime() && endDate <= new Date(srchArray[idx].time.split('~')[1].split('.')).getTime()){
+											dateArray.push(srchArray[idx])
+										}
+									}else{
+										dateArray.push(srchArray[idx])
+									}
+								})
+
+								// 키워드
+								$.each(dateArray, function(idx){
+									if($(keyword).length > 0){
+										const hashData = dateArray[idx].hash.split('#')
+										const hashIdx = hashData.findIndex((item) => {
+											return item.trim() === $(keyword).next().text()
+										})
+										console.log('키워드',hashIdx, hashData)
+										if(hashIdx > -1){
+											keyWordArray.push(dateArray[idx])
+										}
+									}else{
+										keyWordArray.push(dateArray[idx])
+									}
+								})
+								break;
+							case "mono": // 신라모노
+								// 호텔지점 
+								$.each(queryData, function(idx){
+									if('신라모노그램' === queryData[idx].branch){
+										branchArray.push(queryData[idx])
+									}
+								})
+
+								// 검색어
+								$.each(branchArray, function(idx){
+									if($(".search input").val() !== ''){
+										if((branchArray[idx].title.includes($(".search input").val()) || branchArray[idx].desc.includes($(".search input").val()))){
+											srchArray.push(branchArray[idx])
+										}
+									}else{
+										srchArray.push(branchArray[idx])
+									}
+								})
+								
+								// 날짜
+								$.each(srchArray, function(idx){
+									if($(".date-wrap input").eq(0).val() !== '' && $(".date-wrap input").eq(1).val() !== ''){
+										// console.log(startDate >= new Date(srchArray[idx].time.split('~')[0].split('.')).getTime() && endDate <= new Date(srchArray[idx].time.split('~')[1].split('.')).getTime(), '날짜 해당 기간')
+										if(startDate >= new Date(srchArray[idx].time.split('~')[0].split('.')).getTime() && endDate <= new Date(srchArray[idx].time.split('~')[1].split('.')).getTime()){
+											dateArray.push(srchArray[idx])
+										}
+									}else{
+										dateArray.push(srchArray[idx])
+									}
+								})
+
+								// 키워드
+								$.each(dateArray, function(idx){
+									if($(keyword).length > 0){
+										const hashData = dateArray[idx].hash.split('#')
+										const hashIdx = hashData.findIndex((item) => {
+											return item.trim() === $(keyword).next().text()
+										})
+										console.log('키워드',hashIdx, hashData)
+										if(hashIdx > -1){
+											keyWordArray.push(dateArray[idx])
+										}
+									}else{
+										keyWordArray.push(dateArray[idx])
+									}
+								})
+								break;
+							case "stay": // 스테이
+								// 호텔지점 
+								$.each(queryData, function(idx){
+									if('신라스테이' === queryData[idx].branch){
+										branchArray.push(queryData[idx])
+									}
+								})
+
+								// 검색어
+								$.each(branchArray, function(idx){
+									if($(".search input").val() !== ''){
+										if((branchArray[idx].title.includes($(".search input").val()) || branchArray[idx].desc.includes($(".search input").val()))){
+											srchArray.push(branchArray[idx])
+										}
+									}else{
+										srchArray.push(branchArray[idx])
+									}
+								})
+								
+								// 날짜
+								$.each(srchArray, function(idx){
+									if($(".date-wrap input").eq(0).val() !== '' && $(".date-wrap input").eq(1).val() !== ''){
+										// console.log(startDate >= new Date(srchArray[idx].time.split('~')[0].split('.')).getTime() && endDate <= new Date(srchArray[idx].time.split('~')[1].split('.')).getTime(), '날짜 해당 기간')
+										if(startDate >= new Date(srchArray[idx].time.split('~')[0].split('.')).getTime() && endDate <= new Date(srchArray[idx].time.split('~')[1].split('.')).getTime()){
+											dateArray.push(srchArray[idx])
+										}
+									}else{
+										dateArray.push(srchArray[idx])
+									}
+								})
+
+								// 키워드
+								$.each(dateArray, function(idx){
+									if($(keyword).length > 0){
+										const hashData = dateArray[idx].hash.split('#')
+										const hashIdx = hashData.findIndex((item) => {
+											return item.trim() === $(keyword).next().text()
+										})
+										console.log('키워드',hashIdx, hashData)
+										if(hashIdx > -1){
+											keyWordArray.push(dateArray[idx])
+										}
+									}else{
+										keyWordArray.push(dateArray[idx])
+									}
+								})
+								break;
+						};
+						queryData = keyWordArray
+						console.log('최종 결과 값', keyWordArray)
+					};
+				},
+				error: function(){
+					// alert('데이터를 불러오지 못했습니다. 다시 시도해 주세요.')
+				},
+				complete: function(data){
+					if(data.state() === 'resolved'){  // 통신 성공 시						
+						item = null;
+						listUi.empty();
+
+						item = unit;
+						
+						$.each(queryData, function(idx){
+							if(item != undefined && queryData != undefined){ // data undefined 체크
+								// ui list 추가
+								listUi.append(item);
+
+								listUi.find('.img-wrap').eq(idx).append( // 이미지 태그
+									'<img src="" alt="">'
+								);
+								
+								// img 데이터
+								listUi.find('.img-wrap > img').eq(idx).attr({
+									'src':queryData[idx].hotelImg
+								});
+								listUi.find('.img-wrap > img').eq(idx).attr({
+									'alt':queryData[idx].title
+								});
+							
+								// text 데이터
+								listUi.find('.flag > span').eq(idx).append( // flag
+									queryData[idx].branch
+								);
+								listUi.find('.tit-h3').eq(idx).append( // title
+									queryData[idx].title
+								);
+								listUi.find('.info .desc').eq(idx).append( // sub title
+									queryData[idx].desc
+								);
+								listUi.find('.info .date').eq(idx).append( // 날짜
+									queryData[idx].time
+								);
+								listUi.find('.info .price-wrap').eq(idx).prepend( // 가격 설명
+									queryData[idx].priceDesc
+								);
+								listUi.find('.info .price-wrap > em').eq(idx).append( // 가격
+									queryData[idx].price
+								);
+								listUi.find('.info .hash').eq(idx).html( // 해쉬태그
+									queryData[idx].hash
+								);
+							};
+						});
+
+						$('.btn-area.bottom > button').css({'display':'none'})
+						$('.total-num-area > em').text($('.event-list > li').length)
+					}
+				}
+			});
+		});
 });
 
 
