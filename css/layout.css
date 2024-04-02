@@ -279,16 +279,6 @@ address {
    .header-wrap .logo {order: 1;}
    .header-wrap .all-menu {order: 2;}
 
-
-   /* 스크롤 네비 */
-   .scroll-navi {display: none;}
-
-   /* section-home */
-   .section.home .main-txt {display: none !important;}
-
-  /* 날씨영역 */
-  .weather-area {left: 0; right: 0;}
-
   /* footer */
   footer .container {
     width: 100%;
@@ -345,7 +335,7 @@ address {
     margin-bottom: 10px;
   }
   .footer-sns {
-    width: 1024px;
+    width: 100%;
     height: auto;
     background: #000;
     display: flex;
@@ -360,6 +350,7 @@ address {
 @media only screen and (max-width: 480px) {
   /* 모바일 크기에서 적용되는 스타일 */
 
+  footer {margin: 0;}
   footer .container {
     width: 100%;
     padding:0 24px;
@@ -384,8 +375,15 @@ address {
     justify-content: center;
     gap: 10px;
   }
-
-
+  .footer-family-list > ul {
+    gap: 10px;
+}
+.footer-address ul {
+  flex-direction: column;
+}
+.footer-sns {
+  width: 100%;
+}
 
 }
 

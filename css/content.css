@@ -1388,7 +1388,6 @@
   flex-shrink: 0;
 }
 
-body { overflow-x: hidden;}
 /* 태블릿 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 1024px) {
   /* 태블릿 크기에서 적용되는 스타일 */

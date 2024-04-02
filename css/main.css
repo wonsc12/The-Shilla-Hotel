@@ -169,6 +169,7 @@
 
 /* 예약영역 */
 .reservation-area {display: flex; flex-wrap: wrap; justify-content: space-between; position: absolute; bottom: 0; width: 100%; height: 250px;  background-color: var(--white, #fff);}
+.reservation-area.mo {display:none;}
 .reservation-area .left {flex: 1 1 auto;}
 .reservation-area .top {display: flex; height: 200px;}
 .reservation-area .top > div {position: relative; flex: 1 1 10%; text-align: center;}
@@ -756,14 +757,11 @@
 .membership-wrapper {
   width: 3252px;
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
-.members li {
-  transition: margin-left 1.25s cubic-bezier(.5,.01,.2,1);
-    transition-delay: 1s;
-}
-.blue1 {margin-left: 174px;}
-.membership-wrapper .blue-club .members {
+
+
+.membership-wrapper .members {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -772,11 +770,11 @@
 .members ul {
   display: flex;
   justify-content: center;
-  gap: 65px;
+  gap: 35px;
 }
 .members ul li img {
   max-width: 318px;
-  width: 100%;
+  width: 90%;
   border-radius: 6px;
   box-shadow: 2px 0 3px rgba(0,0,0,.2);
 }
@@ -1032,6 +1030,47 @@
 
 /* 태블릿 사이즈 미디어 쿼리 */
 @media only screen and (max-width: 1024px) {
+  /* section */
+  .main .section {position: static;}
+  .main .section + .section {margin-top: 40px;}
+  .tit-area {padding: 0;}
+
+  /* 스크롤 네비 */
+  .scroll-navi {display: none !important;}
+
+  /* section-home */
+  .section.home {padding-top: 108px; position: relative; }
+  .section.home .main-txt {display: none;}
+
+  /* 날씨영역 */
+  .weather-area {position: relative; background-color: transparent; top: auto; width: 100px; margin: 0 auto; font-size: 28px;}
+  .weather-area .ico-condition {width: 60px; height: 60px;}
+
+  /* 예약영역 */
+  .reservation-area {display: none;}
+  .reservation-area.mo {display: flex; align-items: center; flex-direction: column; gap: 50px; position: static; height: auto; background-color: transparent; text-align: center; margin-top: 50px;}
+  .reservation-area.mo .resevation, 
+  .reservation-area.mo .hotel {padding: 0; position:relative;}
+  .reservation-area.mo .resevation button, 
+  .reservation-area.mo .hotel button {color: var(--white, #fff); font-size: 20px;}
+  .reservation-area.mo .btn-select > span {font-size: 28px;}
+  .reservation-area.mo .btn-select > span:after {border-color: var(--white, #fff) transparent transparent transparent;}
+  .reservation-area.mo .btn-select + ul {bottom:auto; top: 100%; z-index: 1;}
+  .reservation-area.mo .chk-date,
+  .reservation-area.mo .guest-info {width: 100%; color: var(--white,#fff);}
+  .reservation-area.mo .link-pop { display: flex; justify-content: space-between; align-items: center; border: 1px solid var(--white); padding: 14px 70px;}
+  .reservation-area.mo .num {font-size: 20px;}
+  .reservation-area.mo .tit {font-size: 20px; margin-bottom: 0;}
+  .reservation-area.mo .promotion {align-self: self-end; padding: 0;}
+  .reservation-area.mo .btn-prom {border-color: var(--white,#fff); color: #fff;}
+  .reservation-area.mo .promotion.on .ipt-wrap {right: 100px;}
+
+  .section.home .btn-area.bottom {width: calc(100% - 24px); position: absolute; height: 54px; bottom: 36px;}
+  .section.home .btn-area.bottom > button {width: 100%; min-height: 54px;}
+
+  
+
+
   /* 객실소개 최원석*/
 .room4 { width: 100%; margin: 0 auto; }
 .room4 .container {  
@@ -1174,38 +1213,42 @@
   overflow:visible;
 }
 .membership-pager {
-  margin-bottom: 20px;
+  margin-bottom: 70px;
+  margin-top: 0;
 }
 .membership-wrapper {
   height: auto;
   margin-bottom: 27px;
 }
+.membership-wrapper .members {
+  flex-direction: row;
+}
 .membership-wrapper .members ul {display:none;}
 .membership-wrapper .tb-members { 
   display: flex;
-  width: 100%;
-  margin:0 auto;
+  /* width: 56%;
+  margin:0 auto; */
 }
 .membership-wrapper .tb-members img {
-  max-width: 776px;
   overflow: hidden;
-  width: 90%
 }
 .membership-wrapper p {
+  width: 45%;
   color: var(--white, #fff);
   text-align: start;
   margin: 0;
 }
 .membership-btn {
   display: block;
-  margin: 0;
+  width: 100%;
 }
 .membership-link:first-child {
   display: none;
 }
 .membership-link:last-child {
   display: block;
-  width: 276px;
+  text-align: center;
+  width: 100%;
   height: 52px;
 }
 .membership-link:last-child::before {
@@ -1215,13 +1258,6 @@
 .membership-link:hover {
   background: var(--subcolor02, #D4B297);
 }
-/* .membership-link.active span {
-  color:var(--white, #fff);
-}
-.membership-link.active span::after,
-.membership-link.active span::before {
-  background:var(--white, #fff);
-} */
 
 /* 시설소개 */
 .facilities-slide {
@@ -1324,4 +1360,31 @@
   .swiper-pagination-bullet {
     display: none;
   }
+
+    /* membership */
+
+    .membership .tit-area h2 {
+      display: none;
+    }
+    .membership-card .btn-area {
+      align-items: center;
+    }
+    .membership-pager {
+      margin-bottom: 30px;
+    }
+    .membership-card li button {
+      padding: 10px;
+    }
+    .membership-wrapper p {
+      width: 100%;
+    }
+    .membership-wrapper .members {
+      flex-direction: column;
+    }
+    .membership-wrapper .tb-members img {
+      width: 40%;
+    }
+
+    /* 시설소개 */
+    .intro-btn {display: none;}
 }
