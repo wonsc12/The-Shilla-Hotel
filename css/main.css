@@ -1030,12 +1030,14 @@
 @media only screen and (max-width: 1024px) {
   /* section */
   .main .section {position: static;}
+  .main .section + .section {margin-top: 40px;}
+  .tit-area {padding: 0;}
 
   /* 스크롤 네비 */
   .scroll-navi {display: none !important;}
 
   /* section-home */
-  .section.home {padding-top: 108px;}
+  .section.home {padding-top: 108px; position: relative; }
   .section.home .main-txt {display: none;}
 
   /* 날씨영역 */
@@ -1044,7 +1046,7 @@
 
   /* 예약영역 */
   .reservation-area {display: none;}
-  .reservation-area.mo {display: flex; align-items: center; flex-direction: column; gap: 70px; position: static; height: auto; background-color: transparent; text-align: center; margin-top: 50px;}
+  .reservation-area.mo {display: flex; align-items: center; flex-direction: column; gap: 50px; position: static; height: auto; background-color: transparent; text-align: center; margin-top: 50px;}
   .reservation-area.mo .resevation, 
   .reservation-area.mo .hotel {padding: 0; position:relative;}
   .reservation-area.mo .resevation button, 
@@ -1056,7 +1058,10 @@
   .reservation-area.mo .guest-info {width: 100%; color: var(--white,#fff);}
   .reservation-area.mo .link-pop { display: flex; justify-content: space-between; align-items: center; border: 1px solid var(--white); padding: 14px 70px;}
   .reservation-area.mo .num {font-size: 20px;}
-  .reservation-area.mo .tit {font-size: 20px;}
+  .reservation-area.mo .tit {font-size: 20px; margin-bottom: 0;}
+  .reservation-area.mo .promotion {align-self: self-end; padding: 0;}
+  .reservation-area.mo .btn-prom {border-color: var(--white,#fff); color: #fff;}
+  .reservation-area.mo .promotion.on .ipt-wrap {right: 100px;}
 
   .section.home .btn-area.bottom {width: calc(100% - 24px); position: absolute; height: 54px; bottom: 36px;}
   .section.home .btn-area.bottom > button {width: 100%; min-height: 54px;}
