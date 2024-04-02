@@ -1262,7 +1262,7 @@
   width: 100%;
   height: 406px;
   background: url('../images/img_sub_soeulbottombg.jpg') no-repeat;
-  background-size: contain;
+  background-size: cover;
   margin-top: calc(var(--line-height) * 8);
 }
 .intro-bottom-section5 .container {
