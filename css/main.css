@@ -29,6 +29,9 @@
 .popup p a {
   text-decoration: underline;
 }
+.popup span {
+  margin:5px 0;
+}
 .popup p:nth-child(-n+7) {
   text-align: center;
   line-height: 30px;
