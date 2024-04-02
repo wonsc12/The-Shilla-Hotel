@@ -491,13 +491,6 @@ $(function(){
 			});
 		});
 
-		// faq 총 건수 체크
-		if($('.faq-list').length > 0){
-			$('.total-num-area > em').each(function(){
-				$(this).text($('.faq-list > li').length)
-			})
-		}
-
 		// 검색필터
 		$(".search button").off('click').on('click', function(e){
 			queryData = null;
@@ -822,6 +815,15 @@ $(function(){
 				}
 			});
 		});
+
+		// faq 총 건수 체크
+		if($('.faq-list').length > 0 && $('.total-num-area.faq').length > 0){
+			setTimeout(()=>{
+				$('.total-num-area.faq > em').each(function(){
+					$(this).text($('.faq-list > li').length)
+				})
+			}, 800)
+		}
 });
 
 
